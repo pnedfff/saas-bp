@@ -1037,6 +1037,170 @@ body {
 }
 
 
+
+/* === Bot 闭环页（S11） === */
+.bot-grid {
+  display: grid; grid-template-columns: repeat(3, 1fr);
+  gap: 14px; margin-bottom: 28px;
+}
+.bot-col {
+  background: var(--bg-card);
+  border: 1px solid var(--border);
+  border-radius: 12px;
+  padding: 16px 14px;
+  display: flex; flex-direction: column;
+}
+.bot-head {
+  display: flex; align-items: center; gap: 10px;
+  padding-bottom: 12px; margin-bottom: 12px;
+  border-bottom: 1px solid var(--border);
+}
+.bot-head-mid { border-bottom-color: var(--gold); }
+.bot-head-hq { border-bottom-color: var(--accent); }
+.bot-avatar {
+  font-size: 26px;
+  width: 40px; height: 40px;
+  background: var(--bg-elevated);
+  border-radius: 50%;
+  display: flex; align-items: center; justify-content: center;
+  flex-shrink: 0;
+}
+.bot-meta { display: flex; flex-direction: column; gap: 2px; }
+.bot-role { font-size: 14px; font-weight: 700; color: var(--text-primary); }
+.bot-store { font-family: var(--mono); font-size: 11px; color: var(--text-muted); }
+.bot-chat { display: flex; flex-direction: column; gap: 8px; }
+.bubble {
+  font-size: 13px; line-height: 1.55;
+  padding: 9px 12px;
+  border-radius: 10px;
+  max-width: 92%;
+}
+.bubble-user {
+  align-self: flex-end;
+  background: var(--accent);
+  color: #fff;
+  border-bottom-right-radius: 3px;
+}
+.bubble-bot {
+  align-self: flex-start;
+  background: var(--bg-elevated);
+  color: var(--text-primary);
+  border: 1px solid var(--border);
+  border-bottom-left-radius: 3px;
+}
+.bubble-later { opacity: 0.85; border-style: dashed; }
+.bubble-img {
+  margin-top: 4px;
+  padding: 8px 10px;
+  background: rgba(0,0,0,0.18);
+  border-radius: 6px;
+  font-family: var(--mono); font-size: 11px;
+  color: rgba(255,255,255,0.8);
+}
+.bubble-img-small {
+  margin-top: 6px;
+  padding: 6px 8px;
+  background: var(--bg-ink);
+  border: 1px dashed var(--border-warm);
+  border-radius: 4px;
+  font-family: var(--mono); font-size: 10px;
+  color: var(--gold-soft);
+  text-align: center;
+}
+.bot-icon { display: inline-block; margin-right: 4px; }
+.bot-action {
+  display: inline-block;
+  margin: 2px 4px 2px 0;
+  padding: 3px 8px;
+  background: var(--bg-card);
+  border: 1px solid var(--border-warm);
+  border-radius: 4px;
+  font-family: var(--mono); font-size: 11px;
+  color: var(--gold);
+}
+.bubble-status {
+  display: inline-block;
+  margin-top: 8px;
+  padding: 3px 9px;
+  border-radius: 4px;
+  font-family: var(--mono); font-size: 11px;
+  font-weight: 700;
+}
+.bubble-status.st-pending { background: rgba(217,119,6,0.18); color: #fbbf24; }
+.bubble-status.st-pass { background: rgba(22,163,74,0.18); color: #86efac; }
+.bubble-status.st-reject { background: rgba(220,38,38,0.18); color: #fca5a5; }
+
+.bot-features {
+  display: grid; grid-template-columns: repeat(4, 1fr);
+  gap: 14px;
+}
+.bf-item {
+  background: var(--bg-card);
+  border: 1px solid var(--border);
+  border-radius: 10px;
+  padding: 16px 18px;
+  border-left: 3px solid var(--accent);
+}
+.bf-icon { font-size: 22px; margin-bottom: 8px; }
+.bf-title { font-size: 14px; font-weight: 700; margin-bottom: 4px; color: var(--text-primary); }
+.bf-desc { font-size: 12px; color: var(--text-muted); line-height: 1.5; }
+
+@media (max-width: 880px) {
+  .bot-grid { grid-template-columns: 1fr; }
+  .bot-features { grid-template-columns: 1fr 1fr; }
+  .bubble { font-size: 12px; }
+}
+
+
+/* === S11 80/20 banner === */
+.ai-banner {
+  display: grid; grid-template-columns: 2fr 1.3fr 1fr;
+  gap: 0;
+  margin-bottom: 30px;
+  border-radius: 14px;
+  overflow: hidden;
+  border: 1px solid var(--border);
+}
+.ai-banner-cell {
+  padding: 20px 24px;
+  text-align: left;
+}
+.ai-banner-main {
+  background: linear-gradient(135deg, rgba(22,163,74,0.18) 0%, rgba(22,163,74,0.06) 100%);
+  border-right: 1px solid var(--border);
+}
+.ai-banner-mid {
+  background: linear-gradient(135deg, rgba(217,119,6,0.16) 0%, rgba(217,119,6,0.04) 100%);
+  border-right: 1px solid var(--border);
+}
+.ai-banner-edge {
+  background: linear-gradient(135deg, rgba(220,38,38,0.14) 0%, rgba(220,38,38,0.04) 100%);
+}
+.ai-banner-num {
+  font-family: var(--mono);
+  font-size: 38px; font-weight: 800;
+  margin-bottom: 4px;
+  letter-spacing: -0.02em;
+}
+.ai-banner-main .ai-banner-num { color: #86efac; }
+.ai-banner-mid .ai-banner-num { color: #fbbf24; }
+.ai-banner-edge .ai-banner-num { color: #fca5a5; }
+.ai-banner-lbl { font-size: 14px; font-weight: 700; color: var(--text-primary); margin-bottom: 4px; }
+.ai-banner-sub { font-size: 12px; color: var(--text-muted); font-family: var(--mono); }
+
+.bot-col-pass { border-top: 3px solid var(--success); }
+.bot-col-mid { border-top: 3px solid var(--gold); }
+.bot-col-edge { border-top: 3px solid var(--seal-red); }
+.bubble-pass-emphasis {
+  background: linear-gradient(135deg, rgba(22,163,74,0.20), rgba(22,163,74,0.08)) !important;
+  border-color: rgba(22,163,74,0.35) !important;
+}
+
+@media (max-width: 880px) {
+  .ai-banner { grid-template-columns: 1fr; }
+  .ai-banner-cell { border-right: none; border-bottom: 1px solid var(--border); }
+}
+
 </style>
 </head>
 <body>
@@ -1045,7 +1209,7 @@ body {
   <div class="brand">SAAS.<span class="dom">1PRO.MEN</span> · BP</div>
   <div class="meta">
     <span>2026</span>
-    <span>页 <span class="pg" id="cur-page">01</span> / 15</span>
+    <span>页 <span class="pg" id="cur-page">01</span> / 16</span>
   </div>
 </div>
 
@@ -1060,11 +1224,12 @@ body {
   <a href="#s8" data-label="08 · 产品架构"></a>
   <a href="#s9" data-label="09 · 沁园春案例"></a>
   <a href="#s10" data-label="10 · 真实产品 demo"></a>
-  <a href="#s11" data-label="11 · 团队配置"></a>
-  <a href="#s12" data-label="12 · 商业模式"></a>
-  <a href="#s13" data-label="13 · 市场规模"></a>
-  <a href="#s14" data-label="14 · 竞品 + GTM"></a>
-  <a href="#s15" data-label="15 · 路线图 + Ask"></a>
+  <a href="#s11" data-label="11 · 企微 bot 闭环"></a>
+  <a href="#s12" data-label="12 · 团队配置"></a>
+  <a href="#s13" data-label="13 · 商业模式"></a>
+  <a href="#s14" data-label="14 · 市场规模"></a>
+  <a href="#s15" data-label="15 · 竞品 + GTM"></a>
+  <a href="#s16" data-label="16 · 路线图 + Ask"></a>
 </nav>
 
 <!-- ============ S1 · COVER ============ -->
@@ -1651,10 +1816,157 @@ body {
   <div class="slide-foot">SAAS.1PRO.MEN · BP · 2026</div>
 </section>
 
-<!-- ============ S11 · 团队配置 ⭐ ============ -->
+<!-- ============ S11 · 企微 bot 闭环 · 三级审核（亮点页） ============ -->
+<!-- ============ S11 · AI 主审 + 人工兜底（亮点页）============ -->
 <section class="slide" id="s11">
+  <div class="slide-inner" style="max-width: 1200px;">
+    <div class="slide-tag">▸ 11 · 亮点 · AI 主审 + 人工兜底</div>
+    <h2 class="slide-h">店员发图，<span class="hl">80% 自动通过</span>，<span class="hl">20%</span> 才打扰人</h2>
+    <p class="slide-sub">店员、店长、总店各有自己的企微 bot。AI vision 当主审，<strong style="color: var(--gold);">合规图秒过</strong>，<strong style="color: var(--gold);">不确定的才升级给人工</strong>——既保证执行率，又把人力从重复审核中解放。</p>
+
+    <!-- 80/20 数据高亮 banner -->
+    <div class="ai-banner">
+      <div class="ai-banner-cell ai-banner-main">
+        <div class="ai-banner-num">80%</div>
+        <div class="ai-banner-lbl">AI 主审 · 自动通过</div>
+        <div class="ai-banner-sub">合规图秒过 · 0 人工</div>
+      </div>
+      <div class="ai-banner-cell ai-banner-mid">
+        <div class="ai-banner-num">15%</div>
+        <div class="ai-banner-lbl">AI 不确定 → 店长审</div>
+        <div class="ai-banner-sub">边界情况 / 模糊 / 部分缺失</div>
+      </div>
+      <div class="ai-banner-cell ai-banner-edge">
+        <div class="ai-banner-num">5%</div>
+        <div class="ai-banner-lbl">店长拿不定 → 总店兜底</div>
+        <div class="ai-banner-sub">关键活动 / 政策合规</div>
+      </div>
+    </div>
+
+    <!-- 3 列场景演示：每列一种路径 -->
+    <div class="bot-grid">
+      <!-- 列 1: 80% 路径 — AI 主审 -->
+      <div class="bot-col bot-col-pass">
+        <div class="bot-head">
+          <span class="bot-avatar">👷</span>
+          <div class="bot-meta">
+            <div class="bot-role">店员 · 张三</div>
+            <div class="bot-store">深圳一店 · 80% 路径</div>
+          </div>
+        </div>
+        <div class="bot-chat">
+          <div class="bubble bubble-user">
+            <div class="bubble-img">📷 [中岛柜近景]</div>
+          </div>
+          <div class="bubble bubble-bot">
+            <span class="bot-icon">🤖</span> AI 识别 + 合规检查…<br>
+            <span style="color: var(--gold-soft);">✓ M1 中岛柜柜贴 · 近景</span><br>
+            <span style="color: var(--gold-soft);">✓ 活动：生肖新品·立春版</span><br>
+            <span style="color: var(--gold-soft);">✓ 画面完整 · 边距合规</span>
+          </div>
+          <div class="bubble bubble-bot bubble-pass-emphasis">
+            🎉 <strong>AI 已自动通过 · 已上画</strong>
+            <div class="bubble-status st-pass">✓ 1.2 秒完成</div>
+          </div>
+          <div class="bubble bubble-bot bubble-later" style="opacity: 0.6;">
+            <span style="font-size: 11px; color: var(--text-muted);">📋 备案：店长、总店各收 1 条简报</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- 列 2: 15% 路径 — AI 升级给店长 -->
+      <div class="bot-col bot-col-mid">
+        <div class="bot-head bot-head-mid">
+          <span class="bot-avatar">🏪</span>
+          <div class="bot-meta">
+            <div class="bot-role">店长 · 李四</div>
+            <div class="bot-store">深圳一店 · 15% 路径</div>
+          </div>
+        </div>
+        <div class="bot-chat">
+          <div class="bubble bubble-bot">
+            <span class="bot-icon">🤖</span> AI 不确定，请你判断：<br>
+            <span style="color: #fbbf24;">⚠ M1 中岛柜贴</span><br>
+            <span style="color: #fbbf24;">⚠ 灯光偏暗，画面 15% 反光</span>
+            <div class="bubble-img-small">📷 缩略图 + AI 标注</div>
+          </div>
+          <div class="bubble bubble-bot">
+            <span class="bot-action">[ ✓ 通过 ]</span>
+            <span class="bot-action">[ ✗ 退回 ]</span>
+            <span class="bot-action">[ ↑ 升总店 ]</span>
+          </div>
+          <div class="bubble bubble-user">
+            ✓ 通过（反光不影响）
+          </div>
+          <div class="bubble bubble-bot bubble-later">
+            ✓ 已上画 · 通知店员
+            <div class="bubble-status st-pass">✓ 已通过</div>
+          </div>
+        </div>
+      </div>
+
+      <!-- 列 3: 5% 路径 — 总店兜底 -->
+      <div class="bot-col bot-col-edge">
+        <div class="bot-head bot-head-hq">
+          <span class="bot-avatar">🏛</span>
+          <div class="bot-meta">
+            <div class="bot-role">总店审核 · 王五</div>
+            <div class="bot-store">沁园春总部 · 5% 路径</div>
+          </div>
+        </div>
+        <div class="bot-chat">
+          <div class="bubble bubble-bot">
+            <span class="bot-icon">🤖</span> 店长李四升级：<br>
+            <span style="color: #fca5a5;">⚠ K1 店外 KT 板</span><br>
+            <span style="color: #fca5a5;">⚠ 团购价格未含合规角标</span>
+            <div class="bubble-img-small">📷 全尺寸 + 合规对比图</div>
+          </div>
+          <div class="bubble bubble-bot">
+            <span class="bot-action">[ ✓ 通过 ]</span>
+            <span class="bot-action">[ ✗ 退回重做 ]</span>
+          </div>
+          <div class="bubble bubble-user">
+            ✗ 退回 · 加合规角标
+          </div>
+          <div class="bubble bubble-bot bubble-later">
+            ⚠ 已退回店员，请重做
+            <div class="bubble-status st-reject">✗ 退回</div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- 商业价值 4 列 -->
+    <div class="bot-features">
+      <div class="bf-item">
+        <div class="bf-icon">⚡</div>
+        <div class="bf-title">省 80% 人力</div>
+        <div class="bf-desc">沁园春 ~300 张返图/月，AI 主审省下 240 次人工</div>
+      </div>
+      <div class="bf-item">
+        <div class="bf-icon">🤖</div>
+        <div class="bf-title">每人独立 bot</div>
+        <div class="bf-desc">店员/店长/总店三套 agent，隐私+责任清晰</div>
+      </div>
+      <div class="bf-item">
+        <div class="bf-icon">🔍</div>
+        <div class="bf-title">每张都留痕</div>
+        <div class="bf-desc">AI 决策 + 人工决策都进 audit log，可追溯</div>
+      </div>
+      <div class="bf-item">
+        <div class="bf-icon">📈</div>
+        <div class="bf-title">越用越准</div>
+        <div class="bf-desc">人工纠正 → 喂回模型 → AI 准确率持续上升</div>
+      </div>
+    </div>
+  </div>
+  <div class="slide-foot">SAAS.1PRO.MEN · BP · 2026</div>
+</section>
+
+<!-- ============ S12 · 团队配置 ⭐ ============ -->
+<section class="slide" id="s12">
   <div class="slide-inner">
-    <div class="slide-tag">▸ 11 · 团队配置 · 关键卖点</div>
+    <div class="slide-tag">▸ 12 · 团队配置 · 关键卖点</div>
     <h2 class="slide-h">3 个人 + Claude Max ＝<br><span class="hl">传统 50 人团队的产能</span></h2>
     <div class="team-hero">
       <span class="gold">5 年前要 50 人 6 个月</span>，
@@ -1715,9 +2027,9 @@ body {
 </section>
 
 <!-- ============ S11 · 商业模式 + 财务 ⭐ ============ -->
-<section class="slide" id="s12">
+<section class="slide" id="s13">
   <div class="slide-inner">
-    <div class="slide-tag">▸ 12 · 商业模式 + 财务</div>
+    <div class="slide-tag">▸ 13 · 商业模式 + 财务</div>
     <h2 class="slide-h"><span class="hl">第一年就能盈利</span> —<br>不需要烧钱跑增长</h2>
     <div class="model-grid">
       <div class="fin-card">
@@ -1751,9 +2063,9 @@ body {
 </section>
 
 <!-- ============ S12 · 市场规模 ============ -->
-<section class="slide" id="s13">
+<section class="slide" id="s14">
   <div class="slide-inner">
-    <div class="slide-tag">▸ 13 · 市场规模 + 3 阶段路径</div>
+    <div class="slide-tag">▸ 14 · 市场规模 + 3 阶段路径</div>
     <h2 class="slide-h">天花板 80 万家，<br>3 年触达 <span class="hl">2000+ 家</span></h2>
     <div class="market-hero">
       <div class="tam-circle tam-tam">
@@ -1803,9 +2115,9 @@ body {
 </section>
 
 <!-- ============ S13 · 竞品 + GTM ============ -->
-<section class="slide" id="s14">
+<section class="slide" id="s15">
   <div class="slide-inner">
-    <div class="slide-tag">▸ 14 · 竞品定位 · 唯一象限</div>
+    <div class="slide-tag">▸ 15 · 竞品定位 · 唯一象限</div>
     <h2 class="slide-h">通用 vs 垂直 × 贵 vs 平 —<br>我们处在 <span class="hl">唯一空白象限</span></h2>
     <div class="matrix">
       <div class="matrix-grid">
@@ -1843,9 +2155,9 @@ body {
 </section>
 
 <!-- ============ S14 · 路线图 + Ask ============ -->
-<section class="slide" id="s15">
+<section class="slide" id="s16">
   <div class="slide-inner">
-    <div class="slide-tag">▸ 15 · 当前进度 + Ask</div>
+    <div class="slide-tag">▸ 16 · 当前进度 + Ask</div>
     <h2 class="slide-h">已经跑通 PMF，<br><span class="hl">寻找加速器</span></h2>
     <div class="roadmap">
       <div class="road-step">
