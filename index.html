@@ -1201,6 +1201,38 @@ body {
   .ai-banner-cell { border-right: none; border-bottom: 1px solid var(--border); }
 }
 
+
+/* === 真实实拍图 slot === */
+.lb-slot-photo {
+  padding: 0 !important;
+  overflow: hidden;
+  background: var(--bg-ink);
+  border: 1px solid rgba(22, 163, 74, 0.45) !important;
+  border-style: solid !important;
+}
+.lb-slot-photo img {
+  width: 100%; aspect-ratio: 4/3;
+  object-fit: cover; display: block;
+}
+.lb-slot-photo .lb-slot-meta {
+  padding: 9px 11px;
+  background: rgba(22, 163, 74, 0.10);
+  border-top: 1px solid rgba(22, 163, 74, 0.30);
+}
+.lb-slot-photo .lb-slot-label {
+  font-family: var(--mono); font-size: 12px;
+  color: #86efac;
+  font-weight: 700;
+}
+.lb-slot-photo .lb-slot-hint-inline {
+  color: #d1fae5; font-weight: 400;
+}
+.lb-slot-photo .lb-slot-source {
+  font-family: var(--mono); font-size: 10px;
+  color: #6ee7b7; margin-top: 3px;
+  letter-spacing: 0.3px;
+}
+
 </style>
 </head>
 <body>
@@ -2297,23 +2329,24 @@ body {
 
   const PHOTO_SLOTS = {
     A1: [
-      { label: '远景', hint: '完整门头或整面墙' },
-      { label: '近景', hint: '完整灯箱' }
+      { label: '远景', hint: '完整门头', img: 'photos/A1-wide.jpg', source: '广州四店 · 真实门头' },
+      { label: '近景', hint: '完整灯箱', img: 'photos/A1-close.jpg', source: '银川二店 · 机场店' }
     ],
     M1: [
-      { label: '远景', hint: '整排柜子效果' },
-      { label: '近景', hint: '完整柜贴' }
+      { label: '远景', hint: '整排柜效', img: 'photos/M1-wide.jpg', source: '广州四店 · 爆款专区' },
+      { label: '近景', hint: '完整柜贴', img: 'photos/M1-close.jpg', source: '银川二店 · 金玉满堂系列' }
     ],
     Z9: [
-      { label: '顾客视角', hint: '站立拍摄' },
-      { label: '平拍视角', hint: '镜头水平' }
+      { label: '顾客视角', hint: '站立拍摄', img: 'photos/Z9-wide.jpg', source: '广州四店 · 高品质陈列' },
+      { label: '平拍视角', hint: '镜头水平', img: 'photos/Z9-close.jpg', source: '银川二店 · 新品专区' }
     ],
     K1: [
-      { label: '远景', hint: '完整门头或整面墙' }
+      { label: '远景', hint: '完整门头', img: 'photos/K1-wide.jpg', source: '银川二店 · 机场店全景' },
+      { label: '近景', hint: '陈列细节', img: 'photos/K1-close.jpg', source: '广州四店 · 店内陈列' }
     ],
     D1: [
-      { label: '远景', hint: '整排柜子效果' },
-      { label: '近景', hint: '完整柜贴' }
+      { label: '远景', hint: '整排柜效', img: 'photos/D1-wide.jpg', source: '银川二店 · 中岛俯视' },
+      { label: '近景', hint: '完整柜贴', img: 'photos/D1-close.jpg', source: '银川二店 · 吊坠墙' }
     ]
   };
 
@@ -2353,12 +2386,20 @@ body {
     lb.querySelector('.lb-art').innerHTML = ARTWORK[key] || '<div style="color:#78716c">— 暂无示意图 —</div>';
     const slots = PHOTO_SLOTS[key] || [];
     lb.querySelector('.lb-photo-slots').innerHTML = slots.map(s =>
-      `<div class="lb-slot">
-        <div class="lb-slot-icon">📸</div>
-        <div class="lb-slot-label">${s.label}</div>
-        <div class="lb-slot-hint">${s.hint}</div>
-        <div class="lb-slot-upload">↑ 企微发图</div>
-      </div>`
+      s.img
+        ? `<div class="lb-slot lb-slot-photo">
+            <img src="${s.img}" alt="${s.label}" loading="lazy"/>
+            <div class="lb-slot-meta">
+              <div class="lb-slot-label">${s.label} · <span class="lb-slot-hint-inline">${s.hint}</span></div>
+              <div class="lb-slot-source">▸ ${s.source}</div>
+            </div>
+          </div>`
+        : `<div class="lb-slot">
+            <div class="lb-slot-icon">📸</div>
+            <div class="lb-slot-label">${s.label}</div>
+            <div class="lb-slot-hint">${s.hint}</div>
+            <div class="lb-slot-upload">↑ 企微发图</div>
+          </div>`
     ).join('');
     lb.querySelector('.lb-spot-id').textContent = '点位 ' + key;
     const titleParts = spot.label.split(' · ');
