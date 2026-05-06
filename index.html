@@ -1321,9 +1321,56 @@ body {
 .floorplan-stage[data-store="yc2"][data-layer="space"] .floorplan-svg {
   display: none !important;
 }
-.floorplan-stage[data-store="gz4"][data-layer="hotspot"] .fp-cad-img,
-.floorplan-stage[data-store="yc2"][data-layer="hotspot"] .fp-cad-img {
-  display: none !important;
+/* layer=hotspot 时 CAD 不隐藏，hotspots 叠加显示 */
+
+
+/* === CAD 工程图 hotspot overlay === */
+.fp-cad-wrap {
+  position: relative;
+  max-width: 900px;
+  margin: 0 auto;
+  display: block;
+}
+.fp-cad-img {
+  width: 100%;
+  height: auto;
+  display: block;
+  background: #fafaf9;
+  border-radius: 8px;
+}
+.fp-cad-hotspots {
+  position: absolute; inset: 0;
+  pointer-events: none;
+  display: none;
+}
+.fp-cad-hotspot {
+  position: absolute;
+  transform: translate(-50%, -50%);
+  width: 36px; height: 36px;
+  border-radius: 50%;
+  background: var(--accent);
+  color: #fff;
+  border: 3px solid #fff;
+  font-family: var(--mono);
+  font-size: 12px; font-weight: 700;
+  cursor: pointer;
+  pointer-events: auto;
+  box-shadow: 0 0 0 6px rgba(220,38,38,0.25), 0 4px 12px rgba(0,0,0,0.3);
+  transition: all 0.2s;
+  animation: fp-cad-pulse 2s ease-in-out infinite;
+}
+.fp-cad-hotspot:hover {
+  transform: translate(-50%, -50%) scale(1.15);
+  box-shadow: 0 0 0 10px rgba(220,38,38,0.30), 0 6px 18px rgba(0,0,0,0.4);
+}
+@keyframes fp-cad-pulse {
+  0%, 100% { box-shadow: 0 0 0 6px rgba(220,38,38,0.25), 0 4px 12px rgba(0,0,0,0.3); }
+  50%      { box-shadow: 0 0 0 12px rgba(220,38,38,0.10), 0 4px 12px rgba(0,0,0,0.3); }
+}
+/* layer=hotspot 时显示 cad hotspots overlay */
+.floorplan-stage[data-store="gz4"][data-layer="hotspot"] .fp-cad-hotspots,
+.floorplan-stage[data-store="yc2"][data-layer="hotspot"] .fp-cad-hotspots {
+  display: block;
 }
 
 </style>
@@ -1882,8 +1929,26 @@ body {
           </g>
         </svg>
 
-        <img id="fp-cad-gz4" class="fp-cad-img" src="photos/cad-gz4.jpg" alt="广州四店 CAD 工程图" style="display:none;"/>
-        <img id="fp-cad-yc2" class="fp-cad-img" src="photos/cad-yc2.jpg" alt="银川二店 CAD 工程图" style="display:none;"/>
+        <div id="fp-cad-wrap-gz4" class="fp-cad-wrap" style="display:none;">
+          <img class="fp-cad-img" src="photos/cad-gz4.jpg" alt="广州四店 CAD 工程图"/>
+          <div class="fp-cad-hotspots">
+            <button class="fp-cad-hotspot" data-spot="A1" style="top:7%;left:50%" title="A1 门头大灯箱">A1</button>
+            <button class="fp-cad-hotspot" data-spot="M1" style="top:42%;left:38%" title="M1 中岛柜贴">M1</button>
+            <button class="fp-cad-hotspot" data-spot="Z9" style="top:58%;left:62%" title="Z9 生肖特陈">Z9</button>
+            <button class="fp-cad-hotspot" data-spot="K1" style="top:85%;left:50%" title="K1 店外 KT">K1</button>
+            <button class="fp-cad-hotspot" data-spot="D1" style="top:50%;left:91%" title="D1 吊坠柜贴">D1</button>
+          </div>
+        </div>
+        <div id="fp-cad-wrap-yc2" class="fp-cad-wrap" style="display:none;">
+          <img class="fp-cad-img" src="photos/cad-yc2.jpg" alt="银川二店 CAD 工程图"/>
+          <div class="fp-cad-hotspots">
+            <button class="fp-cad-hotspot" data-spot="A1" style="top:14%;left:48%" title="A1 门头大灯箱">A1</button>
+            <button class="fp-cad-hotspot" data-spot="M1" style="top:38%;left:46%" title="M1 中岛柜贴">M1</button>
+            <button class="fp-cad-hotspot" data-spot="Z9" style="top:62%;left:46%" title="Z9 生肖特陈">Z9</button>
+            <button class="fp-cad-hotspot" data-spot="K1" style="top:88%;left:50%" title="K1 店外 KT">K1</button>
+            <button class="fp-cad-hotspot" data-spot="D1" style="top:32%;left:91%" title="D1 吊坠柜贴">D1</button>
+          </div>
+        </div>
         <div id="fp-placeholder" style="display:none; flex-direction:column; align-items:center; justify-content:center; min-height:380px; padding:40px; text-align:center;">
           <div style="font-size:42px; margin-bottom:16px; opacity:0.4;">📐</div>
           <div style="font-size:16px; font-weight:700; color:var(--text-primary); margin-bottom:8px;"><span class="fp-ph-name">—</span></div>
@@ -2467,6 +2532,14 @@ body {
   }
 
   const hotspots = stage.querySelectorAll('.fp-hotspot');
+  // CAD overlay hotspots click → openLightbox
+  document.querySelectorAll('.fp-cad-hotspot').forEach(h => {
+    h.addEventListener('click', e => { e.preventDefault(); openLightbox(h.dataset.spot); });
+    h.addEventListener('keydown', e => {
+      if (e.key === 'Enter' || e.key === ' ') { e.preventDefault(); openLightbox(h.dataset.spot); }
+    });
+  });
+
   hotspots.forEach(h => {
     h.addEventListener('mouseenter', () => showPop(h));
     h.addEventListener('mouseleave', () => hidePop());
@@ -2586,17 +2659,17 @@ body {
     const svgKey = STORE_SVG[name];
     const cadKey = STORE_CAD[name];
     document.querySelectorAll('.floorplan-svg').forEach(s => s.style.display = 'none');
-    document.querySelectorAll('.fp-cad-img').forEach(c => c.style.display = 'none');
+    document.querySelectorAll('.fp-cad-wrap').forEach(c => c.style.display = 'none');
     if (svgKey) {
       document.getElementById('fp-svg-' + svgKey).style.display = '';
       stage.dataset.store = svgKey;
       placeholderEl.style.display = 'none';
     } else if (cadKey) {
-      document.getElementById('fp-svg-sz1').style.display = '';
-      document.getElementById('fp-cad-' + cadKey).style.display = '';
+      // 不再 fallback sz1 SVG，CAD wrap 自带 hotspots overlay
+      document.getElementById('fp-cad-wrap-' + cadKey).style.display = '';
       stage.dataset.store = cadKey;
       placeholderEl.style.display = 'none';
-      // 选 CAD store 时默认显"平面图"layer
+      // 选 CAD store 时默认显"平面图"layer（layer=floor 隐藏 hotspots）
       document.querySelectorAll('.fp-layer-btn').forEach(b => b.classList.remove('active'));
       const fb = document.querySelector('.fp-layer-btn[data-layer="floor"]');
       if (fb) fb.classList.add('active');
