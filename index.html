@@ -731,6 +731,312 @@ body {
   .tam-sam { width: 190px; height: 190px; }
   .tam-som { width: 110px; height: 110px; }
 }
+
+/* === FLOORPLAN === */
+.floorplan-shell { background: var(--bg-card); border: 1px solid var(--border); border-radius: 14px; overflow: hidden; }
+.floorplan-toolbar {
+  display: flex; align-items: center; gap: 10px;
+  padding: 14px 18px; background: var(--bg-elevated);
+  border-bottom: 1px solid var(--border); flex-wrap: wrap;
+}
+.fp-mode-btn {
+  font-family: var(--mono); font-size: 14px;
+  padding: 7px 14px; background: transparent;
+  border: 1px solid var(--border); border-radius: 100px;
+  color: var(--text-muted); cursor: pointer; font-weight: 600;
+  transition: all 0.2s;
+}
+.fp-mode-btn:hover { border-color: var(--accent); color: var(--accent); }
+.fp-mode-btn.active { background: var(--accent); color: #fff; border-color: var(--accent); }
+.fp-legend {
+  margin-left: auto; display: flex; gap: 14px;
+  font-size: 13px; color: var(--text-muted);
+  font-family: var(--mono); flex-wrap: wrap;
+}
+.fp-legend .lg-item { display: flex; align-items: center; gap: 5px; }
+.fp-legend .lg-dot { width: 9px; height: 9px; border-radius: 50%; display: inline-block; }
+.fp-legend .lg-dot.st-pass { background: #16a34a; }
+.fp-legend .lg-dot.st-pending { background: #d97706; }
+.fp-legend .lg-dot.st-reject { background: #dc2626; }
+.fp-legend .lg-dot.st-before { background: #a8a29e; }
+
+.floorplan-stage { position: relative; padding: 24px 40px; background: var(--bg-card); }
+.floorplan-svg { display: block; width: 100%; height: auto; margin: 0 auto; }
+.floorplan-foot {
+  padding: 12px 18px; border-top: 1px solid var(--border);
+  font-family: var(--mono); font-size: 12px; color: var(--text-muted); text-align: center;
+}
+
+.fp-hotspot { cursor: pointer; outline: none; }
+.fp-hotspot:focus .fp-dot { stroke: var(--seal-red); stroke-width: 3; }
+.fp-pulse {
+  fill: rgba(234, 88, 12, 0.30);
+  transform-origin: center;
+  transform-box: fill-box;
+  animation: fp-pulse 2.4s ease-out infinite;
+}
+@keyframes fp-pulse {
+  0%   { transform: scale(0.55); opacity: 0.85; }
+  100% { transform: scale(1.85); opacity: 0; }
+}
+.fp-dot {
+  fill: var(--accent); stroke: #fff; stroke-width: 2;
+  transition: fill 0.3s, stroke 0.2s;
+}
+.fp-hotspot:hover .fp-dot { stroke: var(--seal-red); stroke-width: 3; }
+.fp-label {
+  fill: #fff; font-family: var(--mono);
+  font-size: 11px; font-weight: 700; text-anchor: middle;
+  pointer-events: none; user-select: none;
+}
+
+/* status mapping */
+.floorplan-stage[data-mode="after"] .fp-hotspot[data-status="pass"] .fp-dot { fill: #16a34a; }
+.floorplan-stage[data-mode="after"] .fp-hotspot[data-status="pass"] .fp-pulse { fill: rgba(22,163,74,0.30); }
+.floorplan-stage[data-mode="after"] .fp-hotspot[data-status="pending"] .fp-dot { fill: #d97706; }
+.floorplan-stage[data-mode="after"] .fp-hotspot[data-status="pending"] .fp-pulse { fill: rgba(217,119,6,0.30); }
+.floorplan-stage[data-mode="after"] .fp-hotspot[data-status="reject"] .fp-dot { fill: #dc2626; }
+.floorplan-stage[data-mode="after"] .fp-hotspot[data-status="reject"] .fp-pulse { fill: rgba(220,38,38,0.30); }
+.floorplan-stage[data-mode="before"] .fp-hotspot .fp-dot { fill: #a8a29e; }
+.floorplan-stage[data-mode="before"] .fp-hotspot .fp-pulse { fill: rgba(168,162,158,0.20); animation: none; }
+
+/* popover */
+.fp-popover {
+  position: absolute; z-index: 10;
+  background: #1c1917; color: #fff;
+  border-radius: 10px; padding: 14px 16px;
+  min-width: 250px; max-width: 290px;
+  box-shadow: 0 10px 30px rgba(0,0,0,0.25);
+  font-size: 13px; pointer-events: none;
+  display: none;
+  transform: translate(-50%, -100%);
+}
+.fp-popover.visible { display: block; }
+.fp-popover::after {
+  content: ''; position: absolute;
+  bottom: -6px; left: 50%;
+  transform: translateX(-50%) rotate(45deg);
+  width: 12px; height: 12px; background: #1c1917;
+}
+.fp-popover.below { transform: translate(-50%, 0); margin-top: 8px; }
+.fp-popover.below::after { top: -6px; bottom: auto; }
+.fp-popover .pop-title { font-weight: 700; font-size: 15px; margin-bottom: 6px; color: #fff; }
+.fp-popover .pop-type {
+  display: inline-block; font-family: var(--mono);
+  font-size: 12px; padding: 2px 9px;
+  background: rgba(255,255,255,0.10); border-radius: 100px;
+  color: #fed7aa; margin-bottom: 10px;
+}
+.fp-popover .pop-row {
+  display: flex; justify-content: space-between; gap: 12px;
+  padding: 4px 0; font-size: 13px; align-items: baseline;
+}
+.fp-popover .pop-row .k { color: #a8a29e; font-family: var(--mono); font-size: 12px; }
+.fp-popover .pop-row .v { color: #fff; font-weight: 500; text-align: right; }
+.fp-popover .pop-status {
+  display: inline-block; margin-top: 10px;
+  padding: 5px 12px; border-radius: 4px;
+  font-family: var(--mono); font-size: 12px; font-weight: 700;
+}
+.fp-popover .pop-status.st-pass { background: rgba(22,163,74,0.20); color: #86efac; }
+.fp-popover .pop-status.st-pending { background: rgba(217,119,6,0.20); color: #fbbf24; }
+.fp-popover .pop-status.st-reject { background: rgba(220,38,38,0.20); color: #fca5a5; }
+.fp-popover .pop-status.st-before { background: rgba(168,162,158,0.20); color: #d6d3d1; }
+
+@media (max-width: 760px) {
+  .fp-legend { display: none; }
+  .floorplan-stage { padding: 12px 6px; }
+  .fp-popover { min-width: 200px; max-width: 230px; font-size: 12px; padding: 11px 13px; }
+}
+
+/* === LIGHTBOX === */
+.fp-lightbox {
+  position: fixed; inset: 0; z-index: 1000;
+  display: flex; align-items: center; justify-content: center;
+  padding: 32px 20px;
+}
+.fp-lightbox[hidden] { display: none; }
+.lb-backdrop {
+  position: absolute; inset: 0;
+  background: rgba(28, 25, 23, 0.78);
+  backdrop-filter: blur(4px);
+  cursor: pointer;
+  animation: lb-fade 0.2s ease-out;
+}
+.lb-card {
+  position: relative;
+  background: var(--bg-card);
+  border-radius: 16px;
+  width: 100%; max-width: 900px;
+  max-height: calc(100vh - 64px);
+  overflow: auto;
+  box-shadow: 0 20px 60px rgba(0,0,0,0.4);
+  animation: lb-pop 0.25s ease-out;
+}
+@keyframes lb-fade { from { opacity: 0; } to { opacity: 1; } }
+@keyframes lb-pop { from { opacity: 0; transform: scale(0.94) translateY(8px); } to { opacity: 1; transform: none; } }
+.lb-close {
+  position: absolute; top: 12px; right: 14px; z-index: 2;
+  width: 36px; height: 36px;
+  border: none; background: var(--bg-elevated);
+  border-radius: 50%;
+  font-size: 22px; line-height: 1; color: var(--text-secondary);
+  cursor: pointer; transition: all 0.2s;
+}
+.lb-close:hover { background: var(--accent); color: #fff; transform: rotate(90deg); }
+.lb-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1.1fr;
+  gap: 0;
+}
+.lb-art-wrap {
+  position: relative;
+  background: linear-gradient(135deg, #fef3e2 0%, #fed7aa 100%);
+  padding: 32px 28px;
+  display: flex; align-items: center; justify-content: center;
+  min-height: 360px;
+  border-radius: 16px 0 0 16px;
+}
+.lb-photo-wrap {
+  position: relative;
+  background: var(--bg-elevated);
+  padding: 32px 28px;
+  display: flex; align-items: center; justify-content: center;
+  min-height: 360px;
+  border-right: 1px solid var(--border);
+}
+.lb-photo-tag {
+  position: absolute; top: 14px; left: 16px;
+  font-family: var(--mono); font-size: 11px;
+  color: var(--text-muted); letter-spacing: 1px;
+}
+.lb-photo-slots {
+  width: 100%; display: flex; gap: 10px;
+  justify-content: center; flex-wrap: wrap;
+}
+.lb-slot {
+  flex: 1; min-width: 110px; max-width: 175px;
+  aspect-ratio: 3/4;
+  border: 2px dashed var(--border); border-radius: 10px;
+  display: flex; flex-direction: column;
+  align-items: center; justify-content: center;
+  gap: 7px; text-align: center; padding: 14px 10px;
+}
+.lb-slot-icon { font-size: 22px; opacity: 0.35; }
+.lb-slot-label {
+  font-size: 12px; font-weight: 700;
+  color: var(--text-secondary);
+}
+.lb-slot-hint { font-size: 10px; line-height: 1.5; color: var(--text-muted); }
+.lb-slot-upload {
+  font-size: 10px; font-family: var(--mono);
+  color: var(--accent); margin-top: 2px;
+}
+.fp-sep { color: var(--border); margin: 0 2px; font-size: 16px; user-select: none; }
+.fp-region-sel, .fp-store-sel {
+  font-family: var(--mono); font-size: 14px; font-weight: 600;
+  padding: 7px 28px 7px 14px;
+  background: var(--accent); color: #fff;
+  border: 1px solid var(--accent); border-radius: 100px;
+  cursor: pointer; outline: none; appearance: none;
+  background-image: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='10' height='6' viewBox='0 0 10 6'><path d='M0 0l5 6 5-6z' fill='%23fff'/></svg>");
+  background-repeat: no-repeat; background-position: right 10px center;
+}
+.fp-region-sel:hover, .fp-store-sel:hover { background: var(--accent-hover); }
+.fp-region-sel option, .fp-store-sel option { background: #fff; color: #1c1917; }
+.fp-region-sel option:disabled { color: #a8a29e; }
+.lb-art-tag {
+  position: absolute; top: 14px; left: 16px;
+  font-family: var(--mono); font-size: 11px;
+  color: var(--gold); letter-spacing: 1px;
+}
+.lb-art {
+  width: 100%; max-width: 360px;
+  filter: drop-shadow(0 8px 24px rgba(127, 29, 29, 0.18));
+}
+.lb-art svg { width: 100%; height: auto; display: block; border-radius: 4px; }
+.lb-info { padding: 30px 28px; }
+.lb-spot-id {
+  display: inline-block;
+  font-family: var(--mono); font-size: 12px;
+  padding: 3px 10px;
+  background: var(--bg-ink); color: #fed7aa;
+  border-radius: 100px;
+  letter-spacing: 1px;
+  margin-bottom: 12px;
+}
+.lb-title { font-size: 24px; font-weight: 800; margin-bottom: 6px; letter-spacing: -0.01em; }
+.lb-type {
+  display: inline-block;
+  font-family: var(--mono); font-size: 12px;
+  color: var(--gold);
+  padding: 3px 10px;
+  background: var(--bg-elevated);
+  border-radius: 100px;
+  margin-bottom: 18px;
+}
+.lb-detail { border: 1px solid var(--border); border-radius: 10px; overflow: hidden; margin-bottom: 16px; }
+.lb-row {
+  display: flex; justify-content: space-between; gap: 12px;
+  padding: 11px 14px;
+  border-bottom: 1px solid var(--border);
+  font-size: 14px;
+  align-items: baseline;
+}
+.lb-row:last-child { border-bottom: none; }
+.lb-row .k { color: var(--text-muted); font-family: var(--mono); font-size: 12px; }
+.lb-row .v { color: var(--text-primary); font-weight: 600; text-align: right; }
+.lb-status {
+  display: inline-block;
+  padding: 6px 14px;
+  border-radius: 6px;
+  font-family: var(--mono); font-size: 13px; font-weight: 700;
+  margin-bottom: 22px;
+}
+.lb-status.st-pass { background: rgba(22,163,74,0.14); color: #16a34a; }
+.lb-status.st-pending { background: rgba(217,119,6,0.14); color: #d97706; }
+.lb-status.st-reject { background: rgba(220,38,38,0.14); color: #dc2626; }
+.lb-status.st-before { background: rgba(168,162,158,0.14); color: #78716c; }
+.lb-history h4 {
+  font-size: 13px; font-weight: 600; color: var(--text-muted);
+  font-family: var(--mono); letter-spacing: 0.5px;
+  margin-bottom: 10px; text-transform: uppercase;
+}
+.lb-history-list { list-style: none; padding: 0; }
+.lb-history-list li {
+  display: grid;
+  grid-template-columns: 1fr auto;
+  gap: 12px;
+  padding: 9px 0;
+  border-bottom: 1px dashed var(--border);
+  font-size: 13px;
+  align-items: center;
+}
+.lb-history-list li:last-child { border-bottom: none; }
+.lb-history-list .ht { font-family: var(--mono); color: var(--text-muted); font-size: 12px; }
+.lb-history-list .hi { color: var(--text-secondary); font-size: 13px; grid-column: 1 / 2; }
+.lb-history-list .hs {
+  font-family: var(--mono); font-size: 11px; font-weight: 700;
+  padding: 2px 8px; border-radius: 4px;
+  grid-row: 1 / 3; grid-column: 2 / 3;
+  align-self: start;
+  white-space: nowrap;
+}
+.lb-history-list .hs.st-pass { background: rgba(22,163,74,0.14); color: #16a34a; }
+.lb-history-list .hs.st-pending { background: rgba(217,119,6,0.14); color: #d97706; }
+.lb-history-list .hs.st-reject { background: rgba(220,38,38,0.14); color: #dc2626; }
+
+@media (max-width: 760px) {
+  .fp-lightbox { padding: 16px 12px; }
+  .lb-grid { grid-template-columns: 1fr; }
+  .lb-art-wrap { min-height: 240px; padding: 24px 18px; border-radius: 16px 16px 0 0; }
+  .lb-photo-wrap { min-height: 180px; padding: 20px 18px; border-right: none; border-bottom: 1px solid var(--border); }
+  .lb-art { max-width: 280px; }
+  .lb-info { padding: 22px 20px; }
+  .lb-title { font-size: 21px; }
+}
+
+
 </style>
 </head>
 <body>
@@ -739,7 +1045,7 @@ body {
   <div class="brand">SAAS.<span class="dom">1PRO.MEN</span> · BP</div>
   <div class="meta">
     <span>2026</span>
-    <span>页 <span class="pg" id="cur-page">01</span> / 14</span>
+    <span>页 <span class="pg" id="cur-page">01</span> / 15</span>
   </div>
 </div>
 
@@ -753,11 +1059,12 @@ body {
   <a href="#s7" data-label="07 · 解决方案"></a>
   <a href="#s8" data-label="08 · 产品架构"></a>
   <a href="#s9" data-label="09 · 沁园春案例"></a>
-  <a href="#s10" data-label="10 · 团队配置"></a>
-  <a href="#s11" data-label="11 · 商业模式"></a>
-  <a href="#s12" data-label="12 · 市场规模"></a>
-  <a href="#s13" data-label="13 · 竞品 + GTM"></a>
-  <a href="#s14" data-label="14 · 路线图 + Ask"></a>
+  <a href="#s10" data-label="10 · 真实产品 demo"></a>
+  <a href="#s11" data-label="11 · 团队配置"></a>
+  <a href="#s12" data-label="12 · 商业模式"></a>
+  <a href="#s13" data-label="13 · 市场规模"></a>
+  <a href="#s14" data-label="14 · 竞品 + GTM"></a>
+  <a href="#s15" data-label="15 · 路线图 + Ask"></a>
 </nav>
 
 <!-- ============ S1 · COVER ============ -->
@@ -1032,10 +1339,322 @@ body {
   <div class="slide-foot">SAAS.1PRO.MEN · BP · 2026</div>
 </section>
 
-<!-- ============ S10 · 团队配置 ⭐ ============ -->
-<section class="slide" id="s10">
+<!-- ============ S10 · 真实产品 demo（沁园春门店地图）============ -->
+<section class="slide" id="s10" style="padding: 56px 32px 40px; align-items: flex-start;">
+  <div class="slide-inner" style="max-width: 1200px; padding-top: 24px;">
+    <div class="slide-tag">▸ 10 · 真实产品 demo</div>
+    <h2 class="slide-h" style="font-size: clamp(32px, 4.4vw, 50px); margin-bottom: 14px;">不是 mockup，是<span class="hl">线上真实产品</span></h2>
+    <p class="slide-sub" style="font-size: 16px; margin-bottom: 18px; max-width: none;">下方是 saas.1pro.men 上沁园春门店地图实时数据。Hover 圆点看详情，点击看效果图大图，切换"上画前 / 上画后"看执行进度。</p>
+
+    <div class="floorplan-shell">
+      <div class="floorplan-toolbar">
+        <button class="fp-mode-btn fp-layer-btn" data-layer="floor">平面图</button>
+        <button class="fp-mode-btn fp-layer-btn" data-layer="space">空间规划</button>
+        <button class="fp-mode-btn fp-layer-btn active" data-layer="hotspot">广告点位</button>
+        <span class="fp-sep">|</span>
+        <select class="fp-region-sel" id="fp-region-sel"></select>
+        <select class="fp-store-sel" id="fp-store-sel"></select>
+        <div class="fp-legend">
+          <span class="lg-item"><span class="lg-dot st-pass"></span>通过</span>
+          <span class="lg-item"><span class="lg-dot st-pending"></span>待审</span>
+          <span class="lg-item"><span class="lg-dot st-reject"></span>退回</span>
+        </div>
+      </div>
+
+      <div class="floorplan-stage" data-mode="after" data-store="sz1" data-layer="hotspot">
+        <!-- ===== 深圳一店 SVG 矢量平面图 · 三层结构 (720×396) ===== -->
+        <svg id="fp-svg-sz1" viewBox="0 0 720 396" class="floorplan-svg" xmlns="http://www.w3.org/2000/svg">
+          <defs>
+            <pattern id="hatch1" width="6" height="6" patternUnits="userSpaceOnUse" patternTransform="rotate(45)">
+              <line x1="0" y1="0" x2="0" y2="6" stroke="#c8c4bc" stroke-width="1"/>
+            </pattern>
+          </defs>
+          <!-- ▌LAYER 1 · 平面图（建筑结构） -->
+          <g class="fp-layer-floor">
+            <rect x="4" y="4" width="712" height="350" fill="#fafaf9" stroke="#44403c" stroke-width="2.5" rx="3"/>
+            <rect x="100" y="4" width="420" height="48" fill="url(#hatch1)" stroke="#a8a29e" stroke-width="1"/>
+            <path d="M 100 52 A 30 30 0 0 1 130 22" fill="none" stroke="#a8a29e" stroke-width="0.8" stroke-dasharray="2,2"/>
+            <line x1="100" y1="52" x2="100" y2="22" stroke="#44403c" stroke-width="1"/>
+            <rect x="475" y="14" width="30" height="28" fill="#fef9e7" stroke="#a8a29e" stroke-width="0.8"/>
+            <text x="490" y="26" font-size="5.5" text-anchor="middle" fill="#78716c" font-family="-apple-system,sans-serif">配电</text>
+            <text x="490" y="34" font-size="5" text-anchor="middle" fill="#78716c" font-family="monospace">⚡</text>
+            <rect x="4" y="4" width="62" height="48" fill="#fef3e2" stroke="#ea580c" stroke-width="1.5" rx="2"/>
+            <rect x="554" y="4" width="162" height="48" fill="#f0ede8" stroke="#a8a29e" stroke-width="1"/>
+            <line x1="635" y1="4" x2="635" y2="52" stroke="#a8a29e" stroke-width="0.6"/>
+            <rect x="100" y="52" width="420" height="18" fill="#fef3e2" stroke="#a8a29e" stroke-width="1"/>
+            <line x1="260" y1="52" x2="260" y2="70" stroke="#a8a29e" stroke-width="0.5"/>
+            <line x1="420" y1="52" x2="420" y2="70" stroke="#a8a29e" stroke-width="0.5"/>
+            <rect x="4" y="4" width="50" height="350" fill="#f0ede8" stroke="#a8a29e" stroke-width="1"/>
+            <rect x="666" y="4" width="50" height="350" fill="#f0ede8" stroke="#a8a29e" stroke-width="1"/>
+            <line x1="666" y1="74" x2="716" y2="74" stroke="#a8a29e" stroke-width="0.6"/>
+            <line x1="666" y1="144" x2="716" y2="144" stroke="#a8a29e" stroke-width="0.6"/>
+            <line x1="666" y1="214" x2="716" y2="214" stroke="#a8a29e" stroke-width="0.6"/>
+            <line x1="666" y1="284" x2="716" y2="284" stroke="#a8a29e" stroke-width="0.6"/>
+            <rect x="666" y="354" width="50" height="50" fill="#fef3e2" stroke="#ea580c" stroke-width="1.5" rx="2"/>
+            <text x="691" y="375" font-size="7.5" text-anchor="middle" fill="#b45309" font-family="monospace" font-weight="700">灯箱</text>
+            <rect x="4" y="354" width="50" height="50" fill="#e7e5e4" stroke="#a8a29e" stroke-width="1" rx="2"/>
+            <text x="29" y="375" font-size="7" text-anchor="middle" fill="#78716c" font-family="-apple-system,sans-serif">收银台</text>
+            <circle cx="200" cy="178" r="3" fill="#44403c"/>
+            <circle cx="520" cy="178" r="3" fill="#44403c"/>
+            <rect x="340" y="334" width="40" height="14" fill="#fff" stroke="#a8a29e" stroke-width="0.6" rx="2"/>
+            <text x="360" y="344" font-size="5.5" text-anchor="middle" fill="#a8a29e" font-family="-apple-system,sans-serif">接待台</text>
+            <circle cx="68" cy="345" r="3" fill="#dc2626" opacity="0.5"/>
+            <text x="68" y="348" font-size="4" text-anchor="middle" fill="#fff" font-family="monospace">F</text>
+            <circle cx="652" cy="345" r="3" fill="#dc2626" opacity="0.5"/>
+            <text x="652" y="348" font-size="4" text-anchor="middle" fill="#fff" font-family="monospace">F</text>
+            <line x1="280" y1="354" x2="440" y2="354" stroke="#fafaf9" stroke-width="3"/>
+            <path d="M 280 354 A 80 80 0 0 1 360 274" fill="none" stroke="#a8a29e" stroke-width="0.8" stroke-dasharray="2,2"/>
+            <line x1="280" y1="354" x2="280" y2="274" stroke="#44403c" stroke-width="1"/>
+            <text x="360" y="368" font-size="8" text-anchor="middle" fill="#78716c" font-family="-apple-system,sans-serif">▽ A立面 入口</text>
+            <text x="360" y="394" font-size="8" text-anchor="middle" fill="#a8a29e" font-family="monospace" font-weight="700" letter-spacing="2">深圳一店</text>
+          </g>
+          <!-- ▌LAYER 2 · 空间规划（区域用途） -->
+          <g class="fp-layer-space">
+            <text x="310" y="32" font-size="9" text-anchor="middle" fill="#78716c" font-family="-apple-system,sans-serif">仓 库</text>
+            <text x="35" y="23" font-size="8" text-anchor="middle" fill="#b45309" font-family="monospace" font-weight="700">灯箱</text>
+            <text x="35" y="38" font-size="7" text-anchor="middle" fill="#b45309" font-family="monospace">顶左</text>
+            <text x="595" y="32" font-size="7" text-anchor="middle" fill="#a8a29e" font-family="-apple-system,sans-serif">眼镜柜1</text>
+            <text x="675" y="32" font-size="7" text-anchor="middle" fill="#a8a29e" font-family="-apple-system,sans-serif">镜子</text>
+            <text x="180" y="64" font-size="7" text-anchor="middle" fill="#78716c" font-family="-apple-system,sans-serif">C1</text>
+            <text x="340" y="64" font-size="7" text-anchor="middle" fill="#78716c" font-family="-apple-system,sans-serif">C立面</text>
+            <text x="490" y="64" font-size="7" text-anchor="middle" fill="#78716c" font-family="-apple-system,sans-serif">C2</text>
+            <line x1="4" y1="91" x2="54" y2="91" stroke="#a8a29e" stroke-width="0.6"/>
+            <line x1="4" y1="178" x2="54" y2="178" stroke="#a8a29e" stroke-width="0.6"/>
+            <line x1="4" y1="265" x2="54" y2="265" stroke="#a8a29e" stroke-width="0.6"/>
+            <text x="29" y="177" font-size="8" text-anchor="middle" fill="#78716c" font-family="-apple-system,sans-serif" transform="rotate(-90,29,177)">D立面 · 手串柜</text>
+            <text x="14" y="54" font-size="7.5" fill="#b45309" font-family="monospace" font-weight="700">D4</text>
+            <text x="14" y="141" font-size="7.5" fill="#b45309" font-family="monospace" font-weight="700">D3</text>
+            <text x="14" y="228" font-size="7.5" fill="#b45309" font-family="monospace" font-weight="700">D2</text>
+            <text x="14" y="315" font-size="7.5" fill="#b45309" font-family="monospace" font-weight="700">D1</text>
+            <rect x="58" y="74" width="138" height="96" fill="#fff" stroke="#78716c" stroke-width="1.2" rx="3"/>
+            <text x="127" y="117" font-size="8" text-anchor="middle" fill="#44403c" font-family="-apple-system,sans-serif">中岛4 · Z4</text>
+            <rect x="206" y="74" width="138" height="96" fill="#fff" stroke="#78716c" stroke-width="1.2" rx="3"/>
+            <text x="275" y="117" font-size="8" text-anchor="middle" fill="#44403c" font-family="-apple-system,sans-serif">中岛8 · Z8</text>
+            <rect x="354" y="74" width="138" height="96" fill="#fff" stroke="#78716c" stroke-width="1.2" rx="3"/>
+            <text x="423" y="117" font-size="8" text-anchor="middle" fill="#44403c" font-family="-apple-system,sans-serif">中岛3 · Z3</text>
+            <rect x="502" y="74" width="138" height="96" fill="#fff" stroke="#78716c" stroke-width="1.2" rx="3"/>
+            <text x="571" y="117" font-size="8" text-anchor="middle" fill="#44403c" font-family="-apple-system,sans-serif">中岛7 · Z7</text>
+            <rect x="58" y="180" width="138" height="96" fill="#fff" stroke="#78716c" stroke-width="1.2" rx="3"/>
+            <text x="127" y="223" font-size="8" text-anchor="middle" fill="#44403c" font-family="-apple-system,sans-serif">中岛2 · Z2</text>
+            <rect x="206" y="180" width="138" height="96" fill="#fff" stroke="#78716c" stroke-width="1.2" rx="3"/>
+            <text x="275" y="223" font-size="8" text-anchor="middle" fill="#44403c" font-family="-apple-system,sans-serif">中岛6 · Z6</text>
+            <rect x="354" y="180" width="138" height="96" fill="#fff" stroke="#78716c" stroke-width="1.2" rx="3"/>
+            <text x="423" y="223" font-size="8" text-anchor="middle" fill="#44403c" font-family="-apple-system,sans-serif">中岛1 · Z1</text>
+            <rect x="502" y="180" width="138" height="96" fill="#fff" stroke="#78716c" stroke-width="1.2" rx="3"/>
+            <text x="571" y="223" font-size="8" text-anchor="middle" fill="#44403c" font-family="-apple-system,sans-serif">中岛5 · Z5</text>
+            <rect x="192" y="288" width="328" height="46" fill="#fef3e2" stroke="#78716c" stroke-width="1.5" rx="4"/>
+            <text x="356" y="306" font-size="8" text-anchor="middle" fill="#44403c" font-family="-apple-system,sans-serif">中岛9 · 生肖特陈台</text>
+            <text x="356" y="321" font-size="7" text-anchor="middle" fill="#b45309" font-family="monospace" font-weight="700">Z9</text>
+            <text x="691" y="177" font-size="8" text-anchor="middle" fill="#78716c" font-family="-apple-system,sans-serif" transform="rotate(90,691,177)">B立面 · 吊坠柜（6柜）</text>
+            <text x="691" y="44" font-size="7.5" text-anchor="middle" fill="#b45309" font-family="monospace" font-weight="700">B1</text>
+            <text x="691" y="114" font-size="7.5" text-anchor="middle" fill="#b45309" font-family="monospace" font-weight="700">B2</text>
+            <text x="691" y="184" font-size="7.5" text-anchor="middle" fill="#b45309" font-family="monospace" font-weight="700">B3</text>
+            <text x="691" y="254" font-size="7.5" text-anchor="middle" fill="#b45309" font-family="monospace" font-weight="700">B4</text>
+            <text x="691" y="321" font-size="7.5" text-anchor="middle" fill="#b45309" font-family="monospace" font-weight="700">B5</text>
+          </g>
+          <!-- ▌LAYER 3 · 广告点位 -->
+          <g class="fp-layer-hotspot">
+            <g class="fp-hotspot" data-spot="A1" data-status="pass" transform="translate(35,26)" tabindex="0">
+              <circle class="fp-pulse" r="13"/><circle class="fp-dot" r="8"/>
+              <text class="fp-label" y="3">A1</text>
+            </g>
+            <g class="fp-hotspot" data-spot="M1" data-status="pass" transform="translate(275,90)" tabindex="0">
+              <circle class="fp-pulse" r="13"/><circle class="fp-dot" r="8"/>
+              <text class="fp-label" y="3">M1</text>
+            </g>
+            <g class="fp-hotspot" data-spot="Z9" data-status="pending" transform="translate(210,311)" tabindex="0">
+              <circle class="fp-pulse" r="13"/><circle class="fp-dot" r="8"/>
+              <text class="fp-label" y="3">Z9</text>
+            </g>
+            <g class="fp-hotspot" data-spot="K1" data-status="pass" transform="translate(360,382)" tabindex="0">
+              <circle class="fp-pulse" r="11"/><circle class="fp-dot" r="7"/>
+              <text class="fp-label" y="2.5">K1</text>
+            </g>
+            <g class="fp-hotspot" data-spot="D1" data-status="reject" transform="translate(691,44)" tabindex="0">
+              <circle class="fp-pulse" r="11"/><circle class="fp-dot" r="7"/>
+              <text class="fp-label" y="2.5">D1</text>
+            </g>
+          </g>
+        </svg>
+        <!-- ===== 深圳二店 SVG 矢量平面图 · 三层结构 (720×396) ===== -->
+        <svg id="fp-svg-sz2" viewBox="0 0 720 396" class="floorplan-svg" xmlns="http://www.w3.org/2000/svg" style="display:none">
+          <defs>
+            <pattern id="hatch2" width="6" height="6" patternUnits="userSpaceOnUse" patternTransform="rotate(45)">
+              <line x1="0" y1="0" x2="0" y2="6" stroke="#c8c4bc" stroke-width="1"/>
+            </pattern>
+          </defs>
+          <!-- ▌LAYER 1 · 平面图（建筑结构） -->
+          <g class="fp-layer-floor">
+            <rect x="4" y="4" width="712" height="350" fill="#fafaf9" stroke="#44403c" stroke-width="2.5" rx="3"/>
+            <rect x="100" y="4" width="420" height="48" fill="url(#hatch2)" stroke="#a8a29e" stroke-width="1"/>
+            <rect x="475" y="14" width="30" height="28" fill="#fef9e7" stroke="#a8a29e" stroke-width="0.8"/>
+            <text x="490" y="26" font-size="5.5" text-anchor="middle" fill="#78716c" font-family="-apple-system,sans-serif">配电</text>
+            <text x="490" y="34" font-size="5" text-anchor="middle" fill="#78716c" font-family="monospace">⚡</text>
+            <rect x="4" y="4" width="62" height="48" fill="#fef3e2" stroke="#ea580c" stroke-width="1.5" rx="2"/>
+            <rect x="554" y="4" width="162" height="48" fill="#f0ede8" stroke="#a8a29e" stroke-width="1"/>
+            <line x1="608" y1="4" x2="608" y2="52" stroke="#a8a29e" stroke-width="0.6"/>
+            <line x1="662" y1="4" x2="662" y2="52" stroke="#a8a29e" stroke-width="0.6"/>
+            <rect x="100" y="52" width="420" height="18" fill="#fef3e2" stroke="#a8a29e" stroke-width="1"/>
+            <rect x="4" y="4" width="50" height="350" fill="#f0ede8" stroke="#a8a29e" stroke-width="1"/>
+            <rect x="666" y="4" width="50" height="350" fill="#f0ede8" stroke="#a8a29e" stroke-width="1"/>
+            <line x1="666" y1="54" x2="716" y2="54" stroke="#a8a29e" stroke-width="0.6"/>
+            <line x1="666" y1="104" x2="716" y2="104" stroke="#a8a29e" stroke-width="0.6"/>
+            <line x1="666" y1="154" x2="716" y2="154" stroke="#a8a29e" stroke-width="0.6"/>
+            <line x1="666" y1="204" x2="716" y2="204" stroke="#a8a29e" stroke-width="0.6"/>
+            <line x1="666" y1="254" x2="716" y2="254" stroke="#a8a29e" stroke-width="0.6"/>
+            <line x1="666" y1="304" x2="716" y2="304" stroke="#a8a29e" stroke-width="0.6"/>
+            <rect x="4" y="354" width="62" height="50" fill="#fef3e2" stroke="#ea580c" stroke-width="1.5" rx="2"/>
+            <text x="35" y="375" font-size="7.5" text-anchor="middle" fill="#b45309" font-family="monospace" font-weight="700">灯箱</text>
+            <text x="80" y="372" font-size="7" fill="#dc2626" font-family="monospace" font-weight="700">A1</text>
+            <rect x="654" y="354" width="62" height="50" fill="#e7e5e4" stroke="#a8a29e" stroke-width="1" rx="2"/>
+            <text x="685" y="375" font-size="7" text-anchor="middle" fill="#78716c" font-family="-apple-system,sans-serif">收银台</text>
+            <circle cx="200" cy="178" r="3" fill="#44403c"/>
+            <circle cx="520" cy="178" r="3" fill="#44403c"/>
+            <rect x="340" y="334" width="40" height="14" fill="#fff" stroke="#a8a29e" stroke-width="0.6" rx="2"/>
+            <text x="360" y="344" font-size="5.5" text-anchor="middle" fill="#a8a29e" font-family="-apple-system,sans-serif">接待台</text>
+            <circle cx="68" cy="345" r="3" fill="#dc2626" opacity="0.5"/>
+            <text x="68" y="348" font-size="4" text-anchor="middle" fill="#fff" font-family="monospace">F</text>
+            <circle cx="652" cy="345" r="3" fill="#dc2626" opacity="0.5"/>
+            <text x="652" y="348" font-size="4" text-anchor="middle" fill="#fff" font-family="monospace">F</text>
+            <line x1="280" y1="354" x2="440" y2="354" stroke="#fafaf9" stroke-width="3"/>
+            <path d="M 280 354 A 80 80 0 0 1 360 274" fill="none" stroke="#a8a29e" stroke-width="0.8" stroke-dasharray="2,2"/>
+            <line x1="280" y1="354" x2="280" y2="274" stroke="#44403c" stroke-width="1"/>
+            <text x="360" y="368" font-size="8" text-anchor="middle" fill="#78716c" font-family="-apple-system,sans-serif">▽ A立面 入口</text>
+            <text x="360" y="394" font-size="8" text-anchor="middle" fill="#a8a29e" font-family="monospace" font-weight="700" letter-spacing="2">深圳二店</text>
+          </g>
+          <!-- ▌LAYER 2 · 空间规划（区域用途） -->
+          <g class="fp-layer-space">
+            <text x="310" y="32" font-size="9" text-anchor="middle" fill="#78716c" font-family="-apple-system,sans-serif">配电箱 / 仓库</text>
+            <text x="35" y="23" font-size="8" text-anchor="middle" fill="#b45309" font-family="monospace" font-weight="700">灯箱</text>
+            <text x="35" y="38" font-size="7" text-anchor="middle" fill="#b45309" font-family="monospace">顶左</text>
+            <text x="581" y="32" font-size="7" text-anchor="middle" fill="#a8a29e" font-family="-apple-system,sans-serif">镜子</text>
+            <text x="635" y="32" font-size="7" text-anchor="middle" fill="#a8a29e" font-family="-apple-system,sans-serif">眼镜柜1</text>
+            <text x="689" y="32" font-size="6.5" text-anchor="middle" fill="#a8a29e" font-family="-apple-system,sans-serif">吊坠柜1</text>
+            <text x="310" y="64" font-size="7.5" text-anchor="middle" fill="#78716c" font-family="-apple-system,sans-serif">C立面 · C1</text>
+            <line x1="4" y1="91" x2="54" y2="91" stroke="#a8a29e" stroke-width="0.6"/>
+            <line x1="4" y1="178" x2="54" y2="178" stroke="#a8a29e" stroke-width="0.6"/>
+            <line x1="4" y1="265" x2="54" y2="265" stroke="#a8a29e" stroke-width="0.6"/>
+            <text x="29" y="177" font-size="8" text-anchor="middle" fill="#78716c" font-family="-apple-system,sans-serif" transform="rotate(-90,29,177)">D立面 · 手串柜</text>
+            <text x="14" y="54" font-size="7.5" fill="#b45309" font-family="monospace" font-weight="700">D4</text>
+            <text x="14" y="141" font-size="7.5" fill="#b45309" font-family="monospace" font-weight="700">D3</text>
+            <text x="14" y="228" font-size="7.5" fill="#b45309" font-family="monospace" font-weight="700">D2</text>
+            <text x="14" y="315" font-size="7.5" fill="#b45309" font-family="monospace" font-weight="700">D1</text>
+            <rect x="58" y="74" width="138" height="96" fill="#fff" stroke="#78716c" stroke-width="1.2" rx="3"/>
+            <text x="127" y="117" font-size="8" text-anchor="middle" fill="#44403c" font-family="-apple-system,sans-serif">中岛4 · Z4</text>
+            <rect x="206" y="74" width="138" height="96" fill="#fff" stroke="#78716c" stroke-width="1.2" rx="3"/>
+            <text x="275" y="117" font-size="8" text-anchor="middle" fill="#44403c" font-family="-apple-system,sans-serif">中岛8 · Z8</text>
+            <rect x="354" y="74" width="138" height="96" fill="#fff" stroke="#78716c" stroke-width="1.2" rx="3"/>
+            <text x="423" y="117" font-size="8" text-anchor="middle" fill="#44403c" font-family="-apple-system,sans-serif">中岛3 · Z3</text>
+            <rect x="502" y="74" width="138" height="96" fill="#fff" stroke="#78716c" stroke-width="1.2" rx="3"/>
+            <text x="571" y="117" font-size="8" text-anchor="middle" fill="#44403c" font-family="-apple-system,sans-serif">中岛7 · Z7</text>
+            <rect x="58" y="180" width="138" height="96" fill="#fff" stroke="#78716c" stroke-width="1.2" rx="3"/>
+            <text x="127" y="223" font-size="8" text-anchor="middle" fill="#44403c" font-family="-apple-system,sans-serif">中岛2 · Z2</text>
+            <rect x="206" y="180" width="138" height="96" fill="#fff" stroke="#78716c" stroke-width="1.2" rx="3"/>
+            <text x="275" y="223" font-size="8" text-anchor="middle" fill="#44403c" font-family="-apple-system,sans-serif">中岛6 · Z6</text>
+            <rect x="354" y="180" width="138" height="96" fill="#fff" stroke="#78716c" stroke-width="1.2" rx="3"/>
+            <text x="423" y="223" font-size="8" text-anchor="middle" fill="#44403c" font-family="-apple-system,sans-serif">中岛1 · Z1</text>
+            <rect x="502" y="180" width="138" height="96" fill="#fff" stroke="#78716c" stroke-width="1.2" rx="3"/>
+            <text x="571" y="223" font-size="8" text-anchor="middle" fill="#44403c" font-family="-apple-system,sans-serif">中岛5 · Z5</text>
+            <rect x="192" y="288" width="328" height="46" fill="#fef3e2" stroke="#78716c" stroke-width="1.5" rx="4"/>
+            <text x="356" y="306" font-size="8" text-anchor="middle" fill="#44403c" font-family="-apple-system,sans-serif">中岛9 · 生肖特陈台</text>
+            <text x="356" y="321" font-size="7" text-anchor="middle" fill="#b45309" font-family="monospace" font-weight="700">Z9</text>
+            <text x="691" y="177" font-size="8" text-anchor="middle" fill="#78716c" font-family="-apple-system,sans-serif" transform="rotate(90,691,177)">B立面 · 吊坠柜（7柜）</text>
+            <text x="691" y="33" font-size="7" text-anchor="middle" fill="#b45309" font-family="monospace" font-weight="700">B1</text>
+            <text x="691" y="83" font-size="7" text-anchor="middle" fill="#b45309" font-family="monospace" font-weight="700">B2</text>
+            <text x="691" y="133" font-size="6" text-anchor="middle" fill="#a8a29e" font-family="monospace">柜3</text>
+            <text x="691" y="183" font-size="6" text-anchor="middle" fill="#a8a29e" font-family="monospace">柜4</text>
+            <text x="691" y="233" font-size="6" text-anchor="middle" fill="#a8a29e" font-family="monospace">柜5</text>
+            <text x="691" y="283" font-size="6" text-anchor="middle" fill="#a8a29e" font-family="monospace">柜6</text>
+            <text x="691" y="333" font-size="6" text-anchor="middle" fill="#a8a29e" font-family="monospace">柜7</text>
+          </g>
+          <!-- ▌LAYER 3 · 广告点位 -->
+          <g class="fp-layer-hotspot">
+            <g class="fp-hotspot" data-spot="A1" data-status="pass" transform="translate(35,26)" tabindex="0">
+              <circle class="fp-pulse" r="13"/><circle class="fp-dot" r="8"/>
+              <text class="fp-label" y="3">A1</text>
+            </g>
+            <g class="fp-hotspot" data-spot="M1" data-status="pass" transform="translate(275,90)" tabindex="0">
+              <circle class="fp-pulse" r="13"/><circle class="fp-dot" r="8"/>
+              <text class="fp-label" y="3">M1</text>
+            </g>
+            <g class="fp-hotspot" data-spot="Z9" data-status="pending" transform="translate(210,311)" tabindex="0">
+              <circle class="fp-pulse" r="13"/><circle class="fp-dot" r="8"/>
+              <text class="fp-label" y="3">Z9</text>
+            </g>
+            <g class="fp-hotspot" data-spot="K1" data-status="pass" transform="translate(80,382)" tabindex="0">
+              <circle class="fp-pulse" r="11"/><circle class="fp-dot" r="7"/>
+              <text class="fp-label" y="2.5">K1</text>
+            </g>
+            <g class="fp-hotspot" data-spot="D1" data-status="reject" transform="translate(691,33)" tabindex="0">
+              <circle class="fp-pulse" r="11"/><circle class="fp-dot" r="7"/>
+              <text class="fp-label" y="2.5">D1</text>
+            </g>
+          </g>
+        </svg>
+
+        <div id="fp-placeholder" style="display:none; flex-direction:column; align-items:center; justify-content:center; min-height:380px; padding:40px; text-align:center;">
+          <div style="font-size:42px; margin-bottom:16px; opacity:0.4;">📐</div>
+          <div style="font-size:16px; font-weight:700; color:var(--text-primary); margin-bottom:8px;"><span class="fp-ph-name">—</span></div>
+          <div style="font-size:13px; color:var(--text-muted); line-height:1.7;">该门店平面图正在录入<br>预计 2 周内上线 · 现支持 30 + 门店扩容</div>
+        </div>
+        <div class="fp-popover" id="fp-popover">
+          <div class="pop-title"></div>
+          <div class="pop-type"></div>
+          <div class="pop-row"><span class="k">尺寸</span><span class="v pop-size"></span></div>
+          <div class="pop-row"><span class="k">当前活动</span><span class="v pop-activity"></span></div>
+          <div class="pop-row"><span class="k">最近返图</span><span class="v pop-returned"></span></div>
+          <div class="pop-status"></div>
+        </div>
+      </div>
+
+      <div class="floorplan-foot">
+        ▢ 真实平面图 · 系统按空间设施 → 广告点位三级结构标注 · <strong style="color: var(--accent);">点击任意圆点查看效果图 / 实拍对比</strong>
+      </div>
+    </div>
+
+  <!-- Lightbox -->
+  <div class="fp-lightbox" id="fp-lightbox" hidden>
+    <div class="lb-backdrop" data-close></div>
+    <div class="lb-card" role="dialog" aria-modal="true" aria-labelledby="lb-title">
+      <button class="lb-close" data-close aria-label="关闭">×</button>
+      <div class="lb-grid">
+        <div class="lb-art-wrap">
+          <div class="lb-art-tag">▣ 效果图 · 设计标准</div>
+          <div class="lb-art"></div>
+        </div>
+        <div class="lb-photo-wrap">
+          <div class="lb-photo-tag">📷 实拍图 · 门店返图</div>
+          <div class="lb-photo-slots"></div>
+        </div>
+        <div class="lb-info">
+          <div class="lb-spot-id"></div>
+          <h3 class="lb-title" id="lb-title"></h3>
+          <div class="lb-type"></div>
+          <div class="lb-detail">
+            <div class="lb-row"><span class="k">规格尺寸</span><span class="v lb-size"></span></div>
+            <div class="lb-row"><span class="k">当前活动</span><span class="v lb-activity"></span></div>
+            <div class="lb-row"><span class="k">最近返图</span><span class="v lb-returned"></span></div>
+            <div class="lb-row"><span class="k">合格率</span><span class="v lb-quality"></span></div>
+          </div>
+          <div class="lb-status"></div>
+          <div class="lb-history">
+            <h4>近 5 次返图记录</h4>
+            <ul class="lb-history-list"></ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+    <p style="text-align:center; font-family: var(--mono); font-size: 13px; color: var(--text-muted); margin-top: 14px;">▢ 完整 demo 见 <a href="https://saas.1pro.men" target="_blank" style="color: var(--accent); border-bottom: 1px dashed var(--accent); text-decoration: none;">→ saas.1pro.men</a></p>
+  </div>
+  <div class="slide-foot">SAAS.1PRO.MEN · BP · 2026</div>
+</section>
+
+<!-- ============ S11 · 团队配置 ⭐ ============ -->
+<section class="slide" id="s11">
   <div class="slide-inner">
-    <div class="slide-tag">▸ 10 · 团队配置 · 关键卖点</div>
+    <div class="slide-tag">▸ 11 · 团队配置 · 关键卖点</div>
     <h2 class="slide-h">3 个人 + Claude Max ＝<br><span class="hl">传统 50 人团队的产能</span></h2>
     <div class="team-hero">
       <span class="gold">5 年前要 50 人 6 个月</span>，
@@ -1096,9 +1715,9 @@ body {
 </section>
 
 <!-- ============ S11 · 商业模式 + 财务 ⭐ ============ -->
-<section class="slide" id="s11">
+<section class="slide" id="s12">
   <div class="slide-inner">
-    <div class="slide-tag">▸ 11 · 商业模式 + 财务</div>
+    <div class="slide-tag">▸ 12 · 商业模式 + 财务</div>
     <h2 class="slide-h"><span class="hl">第一年就能盈利</span> —<br>不需要烧钱跑增长</h2>
     <div class="model-grid">
       <div class="fin-card">
@@ -1132,9 +1751,9 @@ body {
 </section>
 
 <!-- ============ S12 · 市场规模 ============ -->
-<section class="slide" id="s12">
+<section class="slide" id="s13">
   <div class="slide-inner">
-    <div class="slide-tag">▸ 12 · 市场规模 + 3 阶段路径</div>
+    <div class="slide-tag">▸ 13 · 市场规模 + 3 阶段路径</div>
     <h2 class="slide-h">天花板 80 万家，<br>3 年触达 <span class="hl">2000+ 家</span></h2>
     <div class="market-hero">
       <div class="tam-circle tam-tam">
@@ -1184,9 +1803,9 @@ body {
 </section>
 
 <!-- ============ S13 · 竞品 + GTM ============ -->
-<section class="slide" id="s13">
+<section class="slide" id="s14">
   <div class="slide-inner">
-    <div class="slide-tag">▸ 13 · 竞品定位 · 唯一象限</div>
+    <div class="slide-tag">▸ 14 · 竞品定位 · 唯一象限</div>
     <h2 class="slide-h">通用 vs 垂直 × 贵 vs 平 —<br>我们处在 <span class="hl">唯一空白象限</span></h2>
     <div class="matrix">
       <div class="matrix-grid">
@@ -1224,9 +1843,9 @@ body {
 </section>
 
 <!-- ============ S14 · 路线图 + Ask ============ -->
-<section class="slide" id="s14">
+<section class="slide" id="s15">
   <div class="slide-inner">
-    <div class="slide-tag">▸ 14 · 当前进度 + Ask</div>
+    <div class="slide-tag">▸ 15 · 当前进度 + Ask</div>
     <h2 class="slide-h">已经跑通 PMF，<br><span class="hl">寻找加速器</span></h2>
     <div class="roadmap">
       <div class="road-step">
@@ -1303,6 +1922,272 @@ body {
     if (next !== cur) slides[next].scrollIntoView({ behavior: 'smooth' });
   });
 })();
+
+(function(){
+  const SPOTS = {
+    A1: { type: '大灯箱', label: 'A1 · 门头大灯箱', size: '1490 × 2050 mm',
+          activity: '生肖新品 · 立春版', returned: '2026-04-28 14:23', status: 'pass',
+          quality: '94% · 近 30 天 16 次返图',
+          history: [
+            { t: '2026-04-28 14:23', i: '生肖新品 · 立春版', s: 'pass' },
+            { t: '2026-03-15 11:05', i: '春节回馈', s: 'pass' },
+            { t: '2026-02-08 09:42', i: '春节·发财金喜', s: 'pass' },
+            { t: '2026-01-12 16:30', i: '元旦·礼献新春', s: 'pending' },
+            { t: '2025-12-20 10:18', i: '年终钜惠', s: 'pass' }
+          ]},
+    M1: { type: '中岛柜贴', label: 'M1 · 中岛柜柜贴海报', size: '600 × 400 mm',
+          activity: '生肖新品 · 立春版', returned: '2026-04-28 15:10', status: 'pass',
+          quality: '88% · 近 30 天 22 次返图',
+          history: [
+            { t: '2026-04-28 15:10', i: '生肖新品 · 立春版', s: 'pass' },
+            { t: '2026-03-22 14:00', i: '春日新品·赏春', s: 'pass' },
+            { t: '2026-02-15 11:20', i: '情人节·甜蜜礼遇', s: 'pass' },
+            { t: '2026-01-30 09:45', i: '春节·开门红', s: 'reject' },
+            { t: '2026-01-08 16:55', i: '元旦·礼献新春', s: 'pass' }
+          ]},
+    Z9: { type: '生肖特陈区', label: 'Z9 · 生肖特陈台', size: 'A5 立牌 ×2 + 产品 5 款',
+          activity: '生肖新品 · 立春版', returned: '2026-04-28 15:42', status: 'pending',
+          quality: '76% · 近 30 天 8 次返图',
+          history: [
+            { t: '2026-04-28 15:42', i: '生肖新品 · 立春版', s: 'pending' },
+            { t: '2026-03-10 13:15', i: '生肖系列 · 春版', s: 'pass' },
+            { t: '2026-02-20 10:30', i: '生肖系列 · 节庆版', s: 'pass' },
+            { t: '2026-01-25 11:48', i: '春节·生肖首发', s: 'pass' },
+            { t: '2025-12-28 15:20', i: '生肖预热', s: 'reject' }
+          ]},
+    K1: { type: '店外 KT 板', label: 'K1 · 店外 KT 板', size: '1037 × 600 mm（弧角 R=50）',
+          activity: '团购活动 · 五一专场', returned: '2026-04-29 09:15', status: 'pass',
+          quality: '90% · 近 30 天 12 次返图',
+          history: [
+            { t: '2026-04-29 09:15', i: '团购 · 五一专场', s: 'pass' },
+            { t: '2026-04-15 10:30', i: '团购 · 春日预约', s: 'pass' },
+            { t: '2026-03-28 14:00', i: '团购 · 三月会员日', s: 'pass' },
+            { t: '2026-03-08 11:00', i: '团购 · 妇女节', s: 'pass' },
+            { t: '2026-02-14 15:45', i: '团购 · 情人节专场', s: 'pending' }
+          ]},
+    D1: { type: '吊坠柜贴', label: 'D1 · 吊坠柜柜贴', size: '300 × 200 mm',
+          activity: '团购活动 · 五一专场', returned: '2026-04-28 16:08', status: 'reject',
+          quality: '72% · 近 30 天 18 次返图',
+          history: [
+            { t: '2026-04-28 16:08', i: '团购 · 五一专场', s: 'reject' },
+            { t: '2026-04-12 14:30', i: '团购 · 春日吊坠', s: 'pass' },
+            { t: '2026-03-25 10:15', i: '团购 · 三月精选', s: 'pass' },
+            { t: '2026-03-08 11:50', i: '团购 · 妇女节限定', s: 'reject' },
+            { t: '2026-02-20 16:20', i: '团购 · 情人节限定', s: 'pass' }
+          ]}
+  };
+  const STATUS_LABEL = {
+    pass: '✓ 已通过审核',
+    pending: '⏳ 待品牌部审核',
+    reject: '✗ 已退回，需重做',
+    before: '○ 待派发上画'
+  };
+
+  const PHOTO_SLOTS = {
+    A1: [
+      { label: '远景', hint: '完整门头或整面墙' },
+      { label: '近景', hint: '完整灯箱' }
+    ],
+    M1: [
+      { label: '远景', hint: '整排柜子效果' },
+      { label: '近景', hint: '完整柜贴' }
+    ],
+    Z9: [
+      { label: '顾客视角', hint: '站立拍摄' },
+      { label: '平拍视角', hint: '镜头水平' }
+    ],
+    K1: [
+      { label: '远景', hint: '完整门头或整面墙' }
+    ],
+    D1: [
+      { label: '远景', hint: '整排柜子效果' },
+      { label: '近景', hint: '完整柜贴' }
+    ]
+  };
+
+  const ARTWORK = {
+    A1: `<svg viewBox="0 0 280 380" xmlns="http://www.w3.org/2000/svg"><rect width="280" height="380" fill="#7f1d1d" rx="4"/><rect x="10" y="10" width="260" height="360" fill="none" stroke="#fbbf24" stroke-width="1"/><text x="140" y="58" font-family="serif" font-size="26" font-weight="700" text-anchor="middle" fill="#fef3c7">沁园春</text><text x="140" y="80" font-size="10" letter-spacing="3" text-anchor="middle" fill="#fde68a">XINYUANCHUN · 新中式珠宝</text><circle cx="140" cy="195" r="62" fill="#fbbf24" opacity="0.18"/><text x="140" y="218" font-size="76" text-anchor="middle">🐎</text><text x="140" y="295" font-family="serif" font-size="30" font-weight="800" text-anchor="middle" fill="#fef3c7">马年生肖</text><text x="140" y="324" font-size="14" letter-spacing="3" text-anchor="middle" fill="#fde68a">立春新作 · 限量发售</text><text x="140" y="358" font-size="9" letter-spacing="2" text-anchor="middle" fill="#fbbf24">2026 SPRING · LIMITED</text></svg>`,
+    M1: `<svg viewBox="0 0 400 280" xmlns="http://www.w3.org/2000/svg"><rect width="400" height="280" fill="#fef3e2" rx="4"/><rect x="0" y="0" width="400" height="60" fill="#7f1d1d"/><text x="200" y="38" font-family="serif" font-size="22" font-weight="700" text-anchor="middle" fill="#fef3c7">沁园春 · 马年生肖系列</text><text x="200" y="80" font-family="serif" font-size="13" text-anchor="middle" fill="#7f1d1d">立春新作 · 中岛柜陈列</text><g transform="translate(40, 105)"><rect width="100" height="125" fill="#fff" stroke="#a8a29e"/><circle cx="50" cy="50" r="22" fill="#fbbf24" opacity="0.4"/><text x="50" y="55" font-size="18" text-anchor="middle">🐴</text><text x="50" y="95" font-size="10" text-anchor="middle" fill="#78716c">奔月吊坠</text><text x="50" y="112" font-size="12" font-weight="700" text-anchor="middle" fill="#7f1d1d">¥ 1,880</text></g><g transform="translate(150, 105)"><rect width="100" height="125" fill="#fff" stroke="#a8a29e"/><circle cx="50" cy="50" r="22" fill="#fbbf24" opacity="0.4"/><text x="50" y="55" font-size="18" text-anchor="middle">✨</text><text x="50" y="95" font-size="10" text-anchor="middle" fill="#78716c">驰骋手链</text><text x="50" y="112" font-size="12" font-weight="700" text-anchor="middle" fill="#7f1d1d">¥ 2,680</text></g><g transform="translate(260, 105)"><rect width="100" height="125" fill="#fff" stroke="#a8a29e"/><circle cx="50" cy="50" r="22" fill="#fbbf24" opacity="0.4"/><text x="50" y="55" font-size="18" text-anchor="middle">💎</text><text x="50" y="95" font-size="10" text-anchor="middle" fill="#78716c">天马耳坠</text><text x="50" y="112" font-size="12" font-weight="700" text-anchor="middle" fill="#7f1d1d">¥ 1,280</text></g></svg>`,
+    Z9: `<svg viewBox="0 0 320 320" xmlns="http://www.w3.org/2000/svg"><rect width="320" height="320" fill="#fffbf5" rx="4"/><g transform="translate(40, 30)"><rect width="80" height="120" fill="#7f1d1d" rx="2"/><text x="40" y="58" font-family="serif" font-size="17" font-weight="700" text-anchor="middle" fill="#fef3c7">沁园春</text><text x="40" y="100" font-size="38" text-anchor="middle">🐎</text><text x="40" y="116" font-size="9" letter-spacing="1" text-anchor="middle" fill="#fde68a">马年生肖</text></g><g transform="translate(200, 30)"><rect width="80" height="120" fill="#7f1d1d" rx="2"/><text x="40" y="60" font-family="serif" font-size="17" font-weight="700" text-anchor="middle" fill="#fef3c7">立春新作</text><text x="40" y="80" font-size="9" text-anchor="middle" fill="#fde68a">/ 限量发售 /</text><text x="40" y="115" font-size="34" text-anchor="middle">✨</text></g><ellipse cx="160" cy="220" rx="125" ry="22" fill="#a8a29e" opacity="0.3"/><ellipse cx="160" cy="218" rx="125" ry="22" fill="#fef3e2"/><circle cx="100" cy="218" r="18" fill="#fbbf24" opacity="0.7" stroke="#7f1d1d" stroke-width="0.8"/><circle cx="140" cy="218" r="18" fill="#fbbf24" opacity="0.7" stroke="#7f1d1d" stroke-width="0.8"/><circle cx="180" cy="218" r="18" fill="#fbbf24" opacity="0.7" stroke="#7f1d1d" stroke-width="0.8"/><circle cx="220" cy="218" r="18" fill="#fbbf24" opacity="0.7" stroke="#7f1d1d" stroke-width="0.8"/><circle cx="120" cy="194" r="18" fill="#fbbf24" opacity="0.7" stroke="#7f1d1d" stroke-width="0.8"/><circle cx="200" cy="194" r="18" fill="#fbbf24" opacity="0.7" stroke="#7f1d1d" stroke-width="0.8"/><text x="160" y="295" font-size="11" font-weight="600" text-anchor="middle" fill="#78716c">生肖特陈区 · A5 立牌 ×2 + 产品 5 款</text></svg>`,
+    K1: `<svg viewBox="0 0 460 280" xmlns="http://www.w3.org/2000/svg"><defs><linearGradient id="kGrad" x1="0" y1="0" x2="1" y2="0"><stop offset="0%" stop-color="#dc2626"/><stop offset="100%" stop-color="#ea580c"/></linearGradient></defs><rect width="460" height="280" fill="url(#kGrad)" rx="6"/><text x="230" y="52" font-family="serif" font-size="24" font-weight="700" text-anchor="middle" fill="#fef9c3">沁园春 · 五一专场团购</text><text x="230" y="76" font-size="11" letter-spacing="3" text-anchor="middle" fill="#fef3c7">2026 · MAY GROUP BUY</text><rect x="80" y="100" width="300" height="80" fill="#fef9c3" rx="6"/><text x="230" y="138" font-family="serif" font-size="32" font-weight="800" text-anchor="middle" fill="#7f1d1d">最高直降 30%</text><text x="230" y="166" font-size="12" text-anchor="middle" fill="#dc2626">5 月 1 日 — 5 月 5 日 · 凭团购码到店核销</text><text x="230" y="220" font-size="11" letter-spacing="2" text-anchor="middle" fill="#fef9c3">扫码加入沁园春 VIP 群 · 锁定优惠</text><circle cx="60" cy="240" r="22" fill="#fef9c3"/><text x="60" y="245" font-size="11" text-anchor="middle" fill="#dc2626">QR</text><circle cx="400" cy="240" r="22" fill="#fef9c3"/><text x="400" y="245" font-size="11" text-anchor="middle" fill="#dc2626">QR</text></svg>`,
+    D1: `<svg viewBox="0 0 240 320" xmlns="http://www.w3.org/2000/svg"><rect width="240" height="320" fill="#fef3e2" rx="4"/><rect x="0" y="0" width="240" height="50" fill="#7f1d1d"/><text x="120" y="32" font-family="serif" font-size="17" font-weight="700" text-anchor="middle" fill="#fef3c7">五一团购 · 吊坠专场</text><circle cx="120" cy="138" r="58" fill="#fbbf24" opacity="0.20"/><text x="120" y="160" font-size="60" text-anchor="middle">💎</text><text x="120" y="222" font-family="serif" font-size="22" font-weight="800" text-anchor="middle" fill="#7f1d1d">直降 ¥600 起</text><text x="120" y="248" font-size="11" letter-spacing="2" text-anchor="middle" fill="#dc2626">仅限五一假期 · 数量有限</text><text x="120" y="290" font-size="10" letter-spacing="2" text-anchor="middle" fill="#78716c">沁园春 · 杭州一店</text><text x="120" y="178" font-size="42" font-weight="800" text-anchor="middle" fill="#dc2626" opacity="0.20" transform="rotate(-15, 120, 178)">退回重做</text></svg>`
+  };
+
+  const stage = document.querySelector('.floorplan-stage');
+  const pop = document.getElementById('fp-popover');
+  if (!stage || !pop) return;
+
+  function getActiveSvg() {
+    return document.getElementById('fp-svg-' + (stage.dataset.store || 'sz1'));
+  }
+
+  const hotspots = stage.querySelectorAll('.fp-hotspot');
+  hotspots.forEach(h => {
+    h.addEventListener('mouseenter', () => showPop(h));
+    h.addEventListener('mouseleave', () => hidePop());
+    h.addEventListener('focus', () => showPop(h));
+    h.addEventListener('blur', () => hidePop());
+    h.addEventListener('click', e => { e.preventDefault(); hidePop(); openLightbox(h.dataset.spot); });
+    h.addEventListener('keydown', e => {
+      if (e.key === 'Enter' || e.key === ' ') { e.preventDefault(); openLightbox(h.dataset.spot); }
+    });
+  });
+
+  // Lightbox
+  const lb = document.getElementById('fp-lightbox');
+  function openLightbox(key) {
+    const spot = SPOTS[key];
+    if (!spot || !lb) return;
+    lb.querySelector('.lb-art').innerHTML = ARTWORK[key] || '<div style="color:#78716c">— 暂无示意图 —</div>';
+    const slots = PHOTO_SLOTS[key] || [];
+    lb.querySelector('.lb-photo-slots').innerHTML = slots.map(s =>
+      `<div class="lb-slot">
+        <div class="lb-slot-icon">📸</div>
+        <div class="lb-slot-label">${s.label}</div>
+        <div class="lb-slot-hint">${s.hint}</div>
+        <div class="lb-slot-upload">↑ 企微发图</div>
+      </div>`
+    ).join('');
+    lb.querySelector('.lb-spot-id').textContent = '点位 ' + key;
+    const titleParts = spot.label.split(' · ');
+    lb.querySelector('.lb-title').textContent = titleParts[1] || spot.label;
+    lb.querySelector('.lb-type').textContent = spot.type;
+    lb.querySelector('.lb-size').textContent = spot.size;
+    lb.querySelector('.lb-activity').textContent = spot.activity;
+    lb.querySelector('.lb-returned').textContent = spot.returned;
+    lb.querySelector('.lb-quality').textContent = spot.quality || '—';
+    const statusEl = lb.querySelector('.lb-status');
+    statusEl.className = 'lb-status st-' + spot.status;
+    statusEl.textContent = STATUS_LABEL[spot.status];
+
+    const histList = lb.querySelector('.lb-history-list');
+    histList.innerHTML = (spot.history || []).map(rec =>
+      `<li><span class="ht">${rec.t}</span><span class="hi">${rec.i}</span><span class="hs st-${rec.s}">${STATUS_LABEL[rec.s].replace(/^[✓✗⏳○] /, '')}</span></li>`
+    ).join('');
+
+    lb.hidden = false;
+    document.body.style.overflow = 'hidden';
+  }
+  function closeLightbox() {
+    if (!lb) return;
+    lb.hidden = true;
+    document.body.style.overflow = '';
+  }
+  if (lb) {
+    lb.querySelectorAll('[data-close]').forEach(el => el.addEventListener('click', closeLightbox));
+    document.addEventListener('keydown', e => { if (e.key === 'Escape' && !lb.hidden) closeLightbox(); });
+  }
+
+
+
+  document.querySelectorAll('.fp-layer-btn').forEach(btn => {
+    btn.addEventListener('click', () => {
+      document.querySelectorAll('.fp-layer-btn').forEach(b => b.classList.remove('active'));
+      btn.classList.add('active');
+      stage.dataset.layer = btn.dataset.layer;
+      hidePop();
+    });
+  });
+  // ── 完整 58 门店 × 10 区域（来自客户实际清单） ──
+  const STORE_TREE = {
+    '华南':     ['珠海一店','珠海二店','深圳一店','深圳二店','揭阳一店'],
+    '广州':     ['广州一店','广州二店','广州三店','广州四店'],
+    '杭州区域': ['杭州一店','杭州二店','杭州三店','杭州四店','杭州五店'],
+    '华东一区': ['厦门一店','福州一店','南昌一店','南昌二店','无锡一店'],
+    '华东二区': ['青岛一店','青岛二店','青岛三店','宁波一店','宁波二店','温州一店','温州二店','石家庄一店','太原一店'],
+    '华中':     ['武汉一店','武汉二店','郑州一店','郑州二店','郑州三店'],
+    '华北':     ['呼和浩特一店','长春一店','哈尔滨一店','哈尔滨二店','北京一店','北京二店','北京三店','北京四店','天津一店'],
+    '西北':     ['西安一店','西安二店','西安三店','西安四店','西安五店','西宁一店','银川一店'],
+    '西南':     ['成都一店','成都二店','成都三店','成都四店','成都五店','重庆一店（新）'],
+    '贵阳':     ['贵阳一店（新）','贵阳二店','贵阳三店','贵阳四店']
+  };
+  // 只有这两店配置了真实 SVG，其余选中后显示占位
+  const STORE_SVG = { '深圳一店': 'sz1', '深圳二店': 'sz2' };
+
+  const regionSel = document.getElementById('fp-region-sel');
+  const storeSel  = document.getElementById('fp-store-sel');
+  const placeholderEl = document.getElementById('fp-placeholder');
+
+  // 初始化 region 选项
+  regionSel.innerHTML = Object.keys(STORE_TREE).map(r => `<option value="${r}">${r}</option>`).join('');
+
+  function fillStores(region) {
+    const list = STORE_TREE[region] || [];
+    storeSel.innerHTML = list.map(s => `<option value="${s}">${s}</option>`).join('');
+  }
+
+  function switchStore(name) {
+    const svgKey = STORE_SVG[name];
+    document.querySelectorAll('.floorplan-svg').forEach(s => s.style.display = 'none');
+    if (svgKey) {
+      document.getElementById('fp-svg-' + svgKey).style.display = '';
+      stage.dataset.store = svgKey;
+      placeholderEl.style.display = 'none';
+    } else {
+      placeholderEl.style.display = 'flex';
+      placeholderEl.querySelector('.fp-ph-name').textContent = name;
+    }
+    hidePop();
+  }
+
+  regionSel.addEventListener('change', () => {
+    fillStores(regionSel.value);
+    switchStore(storeSel.value);
+  });
+  storeSel.addEventListener('change', () => switchStore(storeSel.value));
+
+  // 启动：默认 华南 → 深圳一店
+  regionSel.value = '华南';
+  fillStores('华南');
+  storeSel.value = '深圳一店';
+
+  function showPop(h) {
+    const key = h.dataset.spot;
+    const spot = SPOTS[key];
+    if (!spot) return;
+    const mode = stage.dataset.mode;
+    const status = mode === 'before' ? 'before' : spot.status;
+
+    pop.querySelector('.pop-title').textContent = spot.label;
+    pop.querySelector('.pop-type').textContent = spot.type;
+    pop.querySelector('.pop-size').textContent = spot.size;
+    pop.querySelector('.pop-activity').textContent = mode === 'before' ? '— 未派发 —' : spot.activity;
+    pop.querySelector('.pop-returned').textContent = mode === 'before' ? '— —' : spot.returned;
+    const statusEl = pop.querySelector('.pop-status');
+    statusEl.className = 'pop-status st-' + status;
+    statusEl.textContent = STATUS_LABEL[status];
+
+    const svg = getActiveSvg();
+    const stageRect = stage.getBoundingClientRect();
+    const svgRect = svg.getBoundingClientRect();
+    const m = h.transform.baseVal.consolidate();
+    const cx = m ? m.matrix.e : 0;
+    const cy = m ? m.matrix.f : 0;
+    const vb = svg.viewBox.baseVal;
+    const scaleX = svgRect.width / vb.width;
+    const scaleY = svgRect.height / vb.height;
+    const hotspotTop = (svgRect.top - stageRect.top) + cy * scaleY;
+    let px = (svgRect.left - stageRect.left) + cx * scaleX;
+    let py;
+    if (hotspotTop < 110) {
+      py = hotspotTop + 28;
+      pop.classList.add('below');
+    } else {
+      py = hotspotTop - 22;
+      pop.classList.remove('below');
+    }
+    const popWidth = 280;
+    if (px - popWidth/2 < 12) px = popWidth/2 + 12;
+    else if (px + popWidth/2 > stageRect.width - 12) px = stageRect.width - popWidth/2 - 12;
+
+    pop.style.left = px + 'px';
+    pop.style.top = py + 'px';
+    pop.classList.add('visible');
+  }
+
+  function hidePop() { pop.classList.remove('visible'); }
+})();
+
 </script>
 
 </body>
