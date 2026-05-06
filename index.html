@@ -2065,13 +2065,21 @@ body {
       `<li><span class="ht">${rec.t}</span><span class="hi">${rec.i}</span><span class="hs st-${rec.s}">${STATUS_LABEL[rec.s].replace(/^[✓✗⏳○] /, '')}</span></li>`
     ).join('');
 
+    // 保存当前 scroll 位置，关闭后恢复（BP 用了 scroll-snap-y mandatory，
+    // 切换 body.overflow 会让 scroll-snap 失去焦点点回 S1）
+    lb.dataset.savedScroll = String(window.scrollY);
     lb.hidden = false;
-    document.body.style.overflow = 'hidden';
+    // 不再用 body.style.overflow='hidden' — lightbox 是 position:fixed
+    // 全屏 overlay + backdrop，已经能挡住背后操作，不需要锁 body
   }
   function closeLightbox() {
     if (!lb) return;
     lb.hidden = true;
-    document.body.style.overflow = '';
+    const saved = parseInt(lb.dataset.savedScroll || '0', 10);
+    if (saved > 0) {
+      // 用 instant 而不是 smooth，避免与 scroll-snap 互相争抢
+      window.scrollTo({ top: saved, behavior: 'instant' });
+    }
   }
   if (lb) {
     lb.querySelectorAll('[data-close]').forEach(el => el.addEventListener('click', closeLightbox));
