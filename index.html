@@ -1314,14 +1314,16 @@ body {
   background: #fafaf9;
   border-radius: 8px;
 }
-/* 广州/银川店：layer=floor/space 时藏 SVG 显 CAD；layer=hotspot 时藏 CAD 显 SVG */
+/* gz4/yc2 layer 控制：floor→CAD；space/hotspot→SVG */
 .floorplan-stage[data-store="gz4"][data-layer="floor"] .floorplan-svg,
-.floorplan-stage[data-store="gz4"][data-layer="space"] .floorplan-svg,
-.floorplan-stage[data-store="yc2"][data-layer="floor"] .floorplan-svg,
-.floorplan-stage[data-store="yc2"][data-layer="space"] .floorplan-svg {
-  display: none !important;
-}
-/* layer=hotspot 时 CAD 不隐藏，hotspots 叠加显示 */
+.floorplan-stage[data-store="yc2"][data-layer="floor"] .floorplan-svg { display: none !important; }
+.floorplan-stage[data-store="gz4"][data-layer="space"] .fp-cad-wrap,
+.floorplan-stage[data-store="gz4"][data-layer="hotspot"] .fp-cad-wrap,
+.floorplan-stage[data-store="yc2"][data-layer="space"] .fp-cad-wrap,
+.floorplan-stage[data-store="yc2"][data-layer="hotspot"] .fp-cad-wrap { display: none !important; }
+/* space layer 时 SVG 内 hotspot g 不显示 */
+.floorplan-stage[data-store="gz4"][data-layer="space"] .fp-layer-hotspot,
+.floorplan-stage[data-store="yc2"][data-layer="space"] .fp-layer-hotspot { display: none; }
 
 
 /* === CAD 工程图 hotspot overlay === */
@@ -1366,11 +1368,6 @@ body {
 @keyframes fp-cad-pulse {
   0%, 100% { box-shadow: 0 0 0 6px rgba(220,38,38,0.25), 0 4px 12px rgba(0,0,0,0.3); }
   50%      { box-shadow: 0 0 0 12px rgba(220,38,38,0.10), 0 4px 12px rgba(0,0,0,0.3); }
-}
-/* layer=hotspot 时显示 cad hotspots overlay */
-.floorplan-stage[data-store="gz4"][data-layer="hotspot"] .fp-cad-hotspots,
-.floorplan-stage[data-store="yc2"][data-layer="hotspot"] .fp-cad-hotspots {
-  display: block;
 }
 
 </style>
@@ -1923,6 +1920,209 @@ body {
               <text class="fp-label" y="2.5">K1</text>
             </g>
             <g class="fp-hotspot" data-spot="D1" data-status="reject" transform="translate(691,33)" tabindex="0">
+              <circle class="fp-pulse" r="11"/><circle class="fp-dot" r="7"/>
+              <text class="fp-label" y="2.5">D1</text>
+            </g>
+          </g>
+        </svg>
+
+        <!-- ===== 广州四店 简化 SVG · 三层结构 (720×396) ===== -->
+        <svg id="fp-svg-gz4" viewBox="0 0 720 396" class="floorplan-svg" xmlns="http://www.w3.org/2000/svg" style="display:none">
+          <defs>
+            <pattern id="hatch-gz4" width="6" height="6" patternUnits="userSpaceOnUse" patternTransform="rotate(45)">
+              <line x1="0" y1="0" x2="0" y2="6" stroke="#c8c4bc" stroke-width="1"/>
+            </pattern>
+          </defs>
+          <g class="fp-layer-floor">
+            <rect x="4" y="4" width="712" height="358" fill="#fafaf9" stroke="#44403c" stroke-width="2.5" rx="3"/>
+            <rect x="4" y="4" width="712" height="48" fill="url(#hatch-gz4)" stroke="#a8a29e" stroke-width="1"/>
+            <line x1="92" y1="4" x2="92" y2="52" stroke="#a8a29e" stroke-width="0.6"/>
+            <line x1="180" y1="4" x2="180" y2="52" stroke="#a8a29e" stroke-width="0.6"/>
+            <line x1="268" y1="4" x2="268" y2="52" stroke="#a8a29e" stroke-width="0.6"/>
+            <line x1="356" y1="4" x2="356" y2="52" stroke="#a8a29e" stroke-width="0.6"/>
+            <line x1="444" y1="4" x2="444" y2="52" stroke="#a8a29e" stroke-width="0.6"/>
+            <line x1="532" y1="4" x2="532" y2="52" stroke="#a8a29e" stroke-width="0.6"/>
+            <line x1="620" y1="4" x2="620" y2="52" stroke="#a8a29e" stroke-width="0.6"/>
+            <rect x="4" y="4" width="50" height="358" fill="#f0ede8" stroke="#a8a29e" stroke-width="1"/>
+            <rect x="666" y="4" width="50" height="358" fill="#f0ede8" stroke="#a8a29e" stroke-width="1"/>
+            <line x1="4" y1="74" x2="54" y2="74" stroke="#a8a29e" stroke-width="0.6"/>
+            <line x1="4" y1="129" x2="54" y2="129" stroke="#a8a29e" stroke-width="0.6"/>
+            <line x1="4" y1="184" x2="54" y2="184" stroke="#a8a29e" stroke-width="0.6"/>
+            <line x1="4" y1="239" x2="54" y2="239" stroke="#a8a29e" stroke-width="0.6"/>
+            <line x1="4" y1="294" x2="54" y2="294" stroke="#a8a29e" stroke-width="0.6"/>
+            <line x1="666" y1="74" x2="716" y2="74" stroke="#a8a29e" stroke-width="0.6"/>
+            <line x1="666" y1="129" x2="716" y2="129" stroke="#a8a29e" stroke-width="0.6"/>
+            <line x1="666" y1="184" x2="716" y2="184" stroke="#a8a29e" stroke-width="0.6"/>
+            <line x1="666" y1="239" x2="716" y2="239" stroke="#a8a29e" stroke-width="0.6"/>
+            <line x1="666" y1="294" x2="716" y2="294" stroke="#a8a29e" stroke-width="0.6"/>
+            <rect x="4" y="312" width="60" height="50" fill="#e7e5e4" stroke="#a8a29e" stroke-width="1" rx="2"/>
+            <text x="34" y="338" font-size="7" text-anchor="middle" fill="#78716c" font-family="-apple-system,sans-serif">收银台</text>
+            <rect x="4" y="4" width="60" height="48" fill="#fef3e2" stroke="#ea580c" stroke-width="1.5" rx="2"/>
+            <text x="34" y="32" font-size="6" text-anchor="middle" fill="#b45309" font-family="monospace" font-weight="700">B立面</text>
+            <line x1="280" y1="362" x2="440" y2="362" stroke="#fafaf9" stroke-width="3"/>
+            <text x="360" y="378" font-size="8" text-anchor="middle" fill="#78716c" font-family="-apple-system,sans-serif">▽ A立面 入口（主客流方向 →）</text>
+            <text x="360" y="394" font-size="8" text-anchor="middle" fill="#a8a29e" font-family="monospace" font-weight="700" letter-spacing="2">广州四店</text>
+          </g>
+          <g class="fp-layer-space">
+            <text x="48" y="32" font-size="7" text-anchor="middle" fill="#b45309" font-family="monospace" font-weight="700">L1</text>
+            <text x="136" y="32" font-size="7" text-anchor="middle" fill="#b45309" font-family="monospace" font-weight="700">L2</text>
+            <text x="224" y="32" font-size="7" text-anchor="middle" fill="#b45309" font-family="monospace" font-weight="700">L3</text>
+            <text x="312" y="32" font-size="7" text-anchor="middle" fill="#b45309" font-family="monospace" font-weight="700">L4</text>
+            <text x="400" y="32" font-size="7" text-anchor="middle" fill="#b45309" font-family="monospace" font-weight="700">L5</text>
+            <text x="488" y="32" font-size="7" text-anchor="middle" fill="#b45309" font-family="monospace" font-weight="700">L6</text>
+            <text x="576" y="32" font-size="7" text-anchor="middle" fill="#b45309" font-family="monospace" font-weight="700">L7</text>
+            <text x="668" y="32" font-size="7" text-anchor="middle" fill="#b45309" font-family="monospace" font-weight="700">L8</text>
+            <text x="29" y="180" font-size="8" text-anchor="middle" fill="#78716c" font-family="-apple-system,sans-serif" transform="rotate(-90,29,180)">D立面 · 手串柜</text>
+            <text x="691" y="180" font-size="8" text-anchor="middle" fill="#78716c" font-family="-apple-system,sans-serif" transform="rotate(90,691,180)">B立面 · 吊坠柜</text>
+            <text x="14" y="106" font-size="7.5" fill="#b45309" font-family="monospace" font-weight="700">D6</text>
+            <text x="14" y="161" font-size="7.5" fill="#b45309" font-family="monospace" font-weight="700">D5</text>
+            <text x="14" y="216" font-size="7.5" fill="#b45309" font-family="monospace" font-weight="700">D4</text>
+            <text x="14" y="271" font-size="7.5" fill="#b45309" font-family="monospace" font-weight="700">D3</text>
+            <text x="14" y="326" font-size="7.5" fill="#b45309" font-family="monospace" font-weight="700">D2</text>
+            <text x="691" y="46" font-size="7.5" fill="#b45309" font-family="monospace" font-weight="700">B1</text>
+            <text x="691" y="106" font-size="7.5" fill="#b45309" font-family="monospace" font-weight="700">B2</text>
+            <text x="691" y="161" font-size="7.5" fill="#b45309" font-family="monospace" font-weight="700">B3</text>
+            <text x="691" y="216" font-size="7.5" fill="#b45309" font-family="monospace" font-weight="700">B4</text>
+            <text x="691" y="271" font-size="7.5" fill="#b45309" font-family="monospace" font-weight="700">B5</text>
+            <text x="691" y="326" font-size="7.5" fill="#b45309" font-family="monospace" font-weight="700">B6</text>
+            <rect x="80" y="74" width="180" height="100" fill="#fff" stroke="#78716c" stroke-width="1.2" rx="3"/>
+            <text x="170" y="130" font-size="9" text-anchor="middle" fill="#44403c" font-family="-apple-system,sans-serif">中岛1 · Z1</text>
+            <rect x="270" y="74" width="180" height="100" fill="#fff" stroke="#78716c" stroke-width="1.2" rx="3"/>
+            <text x="360" y="130" font-size="9" text-anchor="middle" fill="#44403c" font-family="-apple-system,sans-serif">中岛2 · Z2</text>
+            <rect x="460" y="74" width="180" height="100" fill="#fff" stroke="#78716c" stroke-width="1.2" rx="3"/>
+            <text x="550" y="130" font-size="9" text-anchor="middle" fill="#44403c" font-family="-apple-system,sans-serif">中岛3 · Z3</text>
+            <rect x="80" y="186" width="180" height="100" fill="#fff" stroke="#78716c" stroke-width="1.2" rx="3"/>
+            <text x="170" y="242" font-size="9" text-anchor="middle" fill="#44403c" font-family="-apple-system,sans-serif">中岛4 · Z4</text>
+            <rect x="270" y="186" width="180" height="100" fill="#fef3e2" stroke="#78716c" stroke-width="1.5" rx="4"/>
+            <text x="360" y="232" font-size="9" font-weight="600" text-anchor="middle" fill="#44403c" font-family="-apple-system,sans-serif">中岛5 · 生肖特陈台</text>
+            <text x="360" y="248" font-size="7" font-weight="700" text-anchor="middle" fill="#b45309" font-family="monospace">Z9</text>
+            <rect x="460" y="186" width="180" height="100" fill="#fff" stroke="#78716c" stroke-width="1.2" rx="3"/>
+            <text x="550" y="242" font-size="9" text-anchor="middle" fill="#44403c" font-family="-apple-system,sans-serif">中岛6 · Z6</text>
+          </g>
+          <g class="fp-layer-hotspot">
+            <g class="fp-hotspot" data-spot="A1" data-status="pass" transform="translate(360,27)" tabindex="0">
+              <circle class="fp-pulse" r="13"/><circle class="fp-dot" r="8"/>
+              <text class="fp-label" y="3">A1</text>
+            </g>
+            <g class="fp-hotspot" data-spot="M1" data-status="pass" transform="translate(170,124)" tabindex="0">
+              <circle class="fp-pulse" r="13"/><circle class="fp-dot" r="8"/>
+              <text class="fp-label" y="3">M1</text>
+            </g>
+            <g class="fp-hotspot" data-spot="Z9" data-status="pending" transform="translate(360,236)" tabindex="0">
+              <circle class="fp-pulse" r="13"/><circle class="fp-dot" r="8"/>
+              <text class="fp-label" y="3">Z9</text>
+            </g>
+            <g class="fp-hotspot" data-spot="K1" data-status="pass" transform="translate(360,378)" tabindex="0">
+              <circle class="fp-pulse" r="11"/><circle class="fp-dot" r="7"/>
+              <text class="fp-label" y="2.5">K1</text>
+            </g>
+            <g class="fp-hotspot" data-spot="D1" data-status="reject" transform="translate(691,46)" tabindex="0">
+              <circle class="fp-pulse" r="11"/><circle class="fp-dot" r="7"/>
+              <text class="fp-label" y="2.5">D1</text>
+            </g>
+          </g>
+        </svg>
+
+        <!-- ===== 银川二店 简化 SVG · 三层结构 (720×396) ===== -->
+        <svg id="fp-svg-yc2" viewBox="0 0 720 396" class="floorplan-svg" xmlns="http://www.w3.org/2000/svg" style="display:none">
+          <defs>
+            <pattern id="hatch-yc2" width="6" height="6" patternUnits="userSpaceOnUse" patternTransform="rotate(45)">
+              <line x1="0" y1="0" x2="0" y2="6" stroke="#c8c4bc" stroke-width="1"/>
+            </pattern>
+          </defs>
+          <g class="fp-layer-floor">
+            <!-- 主体长矩形 -->
+            <rect x="4" y="4" width="712" height="358" fill="#fafaf9" stroke="#44403c" stroke-width="2.5" rx="3"/>
+            <!-- 顶部展柜斜线区 -->
+            <rect x="4" y="4" width="712" height="48" fill="url(#hatch-yc2)" stroke="#a8a29e" stroke-width="1"/>
+            <!-- 顶部分格 -->
+            <line x1="120" y1="4" x2="120" y2="52" stroke="#a8a29e" stroke-width="0.6"/>
+            <line x1="240" y1="4" x2="240" y2="52" stroke="#a8a29e" stroke-width="0.6"/>
+            <line x1="360" y1="4" x2="360" y2="52" stroke="#a8a29e" stroke-width="0.6"/>
+            <line x1="480" y1="4" x2="480" y2="52" stroke="#a8a29e" stroke-width="0.6"/>
+            <line x1="600" y1="4" x2="600" y2="52" stroke="#a8a29e" stroke-width="0.6"/>
+            <!-- 左侧立面柜 -->
+            <rect x="4" y="4" width="46" height="358" fill="#f0ede8" stroke="#a8a29e" stroke-width="1"/>
+            <line x1="4" y1="74" x2="50" y2="74" stroke="#a8a29e" stroke-width="0.6"/>
+            <line x1="4" y1="144" x2="50" y2="144" stroke="#a8a29e" stroke-width="0.6"/>
+            <line x1="4" y1="214" x2="50" y2="214" stroke="#a8a29e" stroke-width="0.6"/>
+            <line x1="4" y1="284" x2="50" y2="284" stroke="#a8a29e" stroke-width="0.6"/>
+            <!-- 右侧立面柜 -->
+            <rect x="666" y="4" width="50" height="358" fill="#f0ede8" stroke="#a8a29e" stroke-width="1"/>
+            <line x1="666" y1="74" x2="716" y2="74" stroke="#a8a29e" stroke-width="0.6"/>
+            <line x1="666" y1="144" x2="716" y2="144" stroke="#a8a29e" stroke-width="0.6"/>
+            <line x1="666" y1="214" x2="716" y2="214" stroke="#a8a29e" stroke-width="0.6"/>
+            <line x1="666" y1="284" x2="716" y2="284" stroke="#a8a29e" stroke-width="0.6"/>
+            <!-- 右上独立小空间（仓库/收银后台）内嵌分隔 -->
+            <rect x="580" y="52" width="86" height="148" fill="#ede9e3" stroke="#78716c" stroke-width="1.5" rx="2"/>
+            <line x1="580" y1="52" x2="580" y2="362" stroke="#78716c" stroke-width="1.2"/>
+            <!-- 小空间门洞（进入主营业区） -->
+            <line x1="580" y1="200" x2="580" y2="228" stroke="#fafaf9" stroke-width="5"/>
+            <!-- 底部防火卷帘（红色虚线） -->
+            <line x1="110" y1="354" x2="450" y2="354" stroke="#dc2626" stroke-width="2.5" stroke-dasharray="8,5"/>
+            <text x="280" y="347" font-size="7" text-anchor="middle" fill="#dc2626" font-family="monospace" font-weight="700">▼ 防火卷帘</text>
+            <!-- 入口标注 -->
+            <line x1="280" y1="362" x2="440" y2="362" stroke="#fafaf9" stroke-width="3"/>
+            <text x="360" y="378" font-size="8" text-anchor="middle" fill="#78716c" font-family="-apple-system,sans-serif">▽ 入口（主客流方向 →）</text>
+            <text x="360" y="394" font-size="8" text-anchor="middle" fill="#a8a29e" font-family="monospace" font-weight="700" letter-spacing="2">银川二店</text>
+          </g>
+          <g class="fp-layer-space">
+            <!-- 左立面标签 -->
+            <text x="27" y="200" font-size="8" text-anchor="middle" fill="#78716c" font-family="-apple-system,sans-serif" transform="rotate(-90,27,200)">A立面 · 手串柜</text>
+            <!-- 左立面编号 -->
+            <text x="14" y="37" font-size="7.5" fill="#b45309" font-family="monospace" font-weight="700">A0</text>
+            <text x="14" y="109" font-size="7.5" fill="#b45309" font-family="monospace" font-weight="700">A1</text>
+            <text x="14" y="179" font-size="7.5" fill="#b45309" font-family="monospace" font-weight="700">A2</text>
+            <text x="14" y="249" font-size="7.5" fill="#b45309" font-family="monospace" font-weight="700">A3</text>
+            <text x="14" y="319" font-size="7.5" fill="#b45309" font-family="monospace" font-weight="700">A4</text>
+            <!-- 右立面标签 -->
+            <text x="691" y="200" font-size="8" text-anchor="middle" fill="#78716c" font-family="-apple-system,sans-serif" transform="rotate(90,691,200)">B立面 · 吊坠柜</text>
+            <text x="691" y="37" font-size="7.5" fill="#b45309" font-family="monospace" font-weight="700">B0</text>
+            <text x="691" y="109" font-size="7.5" fill="#b45309" font-family="monospace" font-weight="700">B1</text>
+            <text x="691" y="179" font-size="7.5" fill="#b45309" font-family="monospace" font-weight="700">B2</text>
+            <text x="691" y="249" font-size="7.5" fill="#b45309" font-family="monospace" font-weight="700">B3</text>
+            <text x="691" y="319" font-size="7.5" fill="#b45309" font-family="monospace" font-weight="700">B4</text>
+            <!-- 顶部展柜编号 -->
+            <text x="62" y="30" font-size="7" text-anchor="middle" fill="#b45309" font-family="monospace" font-weight="700">T1</text>
+            <text x="180" y="30" font-size="7" text-anchor="middle" fill="#b45309" font-family="monospace" font-weight="700">T2</text>
+            <text x="300" y="30" font-size="7" text-anchor="middle" fill="#b45309" font-family="monospace" font-weight="700">T3</text>
+            <text x="420" y="30" font-size="7" text-anchor="middle" fill="#b45309" font-family="monospace" font-weight="700">T4</text>
+            <text x="540" y="30" font-size="7" text-anchor="middle" fill="#b45309" font-family="monospace" font-weight="700">T5</text>
+            <!-- 右上独立空间标注 -->
+            <text x="623" y="120" font-size="8" text-anchor="middle" fill="#78716c" font-family="-apple-system,sans-serif">储藏室</text>
+            <text x="623" y="135" font-size="7" text-anchor="middle" fill="#a8a29e" font-family="monospace">收银后台</text>
+            <!-- 收银台（右下营业区） -->
+            <rect x="590" y="240" width="70" height="52" fill="#e7e5e4" stroke="#a8a29e" stroke-width="1" rx="2"/>
+            <text x="625" y="270" font-size="8" text-anchor="middle" fill="#78716c" font-family="-apple-system,sans-serif">收银台</text>
+            <!-- 中岛（2×2布局） -->
+            <rect x="66" y="70" width="220" height="118" fill="#fff" stroke="#78716c" stroke-width="1.2" rx="3"/>
+            <text x="176" y="133" font-size="9" text-anchor="middle" fill="#44403c" font-family="-apple-system,sans-serif">中岛1 · Z1</text>
+            <rect x="296" y="70" width="270" height="118" fill="#fff" stroke="#78716c" stroke-width="1.2" rx="3"/>
+            <text x="431" y="133" font-size="9" text-anchor="middle" fill="#44403c" font-family="-apple-system,sans-serif">中岛2 · Z2</text>
+            <rect x="66" y="200" width="220" height="130" fill="#fef3e2" stroke="#78716c" stroke-width="1.5" rx="4"/>
+            <text x="176" y="258" font-size="9" font-weight="600" text-anchor="middle" fill="#44403c" font-family="-apple-system,sans-serif">中岛3 · 生肖特陈台</text>
+            <text x="176" y="275" font-size="7" font-weight="700" text-anchor="middle" fill="#b45309" font-family="monospace">Z9</text>
+            <rect x="296" y="200" width="270" height="130" fill="#fff" stroke="#78716c" stroke-width="1.2" rx="3"/>
+            <text x="431" y="268" font-size="9" text-anchor="middle" fill="#44403c" font-family="-apple-system,sans-serif">中岛4 · Z4</text>
+          </g>
+          <g class="fp-layer-hotspot">
+            <g class="fp-hotspot" data-spot="A1" data-status="pass" transform="translate(346,27)" tabindex="0">
+              <circle class="fp-pulse" r="13"/><circle class="fp-dot" r="8"/>
+              <text class="fp-label" y="3">A1</text>
+            </g>
+            <g class="fp-hotspot" data-spot="M1" data-status="pass" transform="translate(176,129)" tabindex="0">
+              <circle class="fp-pulse" r="13"/><circle class="fp-dot" r="8"/>
+              <text class="fp-label" y="3">M1</text>
+            </g>
+            <g class="fp-hotspot" data-spot="Z9" data-status="pending" transform="translate(176,258)" tabindex="0">
+              <circle class="fp-pulse" r="13"/><circle class="fp-dot" r="8"/>
+              <text class="fp-label" y="3">Z9</text>
+            </g>
+            <g class="fp-hotspot" data-spot="K1" data-status="pass" transform="translate(360,378)" tabindex="0">
+              <circle class="fp-pulse" r="11"/><circle class="fp-dot" r="7"/>
+              <text class="fp-label" y="2.5">K1</text>
+            </g>
+            <g class="fp-hotspot" data-spot="D1" data-status="reject" transform="translate(691,46)" tabindex="0">
               <circle class="fp-pulse" r="11"/><circle class="fp-dot" r="7"/>
               <text class="fp-label" y="2.5">D1</text>
             </g>
@@ -2665,15 +2865,15 @@ body {
       stage.dataset.store = svgKey;
       placeholderEl.style.display = 'none';
     } else if (cadKey) {
-      // 不再 fallback sz1 SVG，CAD wrap 自带 hotspots overlay
+      document.getElementById('fp-svg-' + cadKey).style.display = '';
       document.getElementById('fp-cad-wrap-' + cadKey).style.display = '';
       stage.dataset.store = cadKey;
       placeholderEl.style.display = 'none';
-      // 选 CAD store 时默认显"平面图"layer（layer=floor 隐藏 hotspots）
+      // 默认显广告点位 layer
       document.querySelectorAll('.fp-layer-btn').forEach(b => b.classList.remove('active'));
-      const fb = document.querySelector('.fp-layer-btn[data-layer="floor"]');
-      if (fb) fb.classList.add('active');
-      stage.dataset.layer = 'floor';
+      const hb = document.querySelector('.fp-layer-btn[data-layer="hotspot"]');
+      if (hb) hb.classList.add('active');
+      stage.dataset.layer = 'hotspot';
     } else {
       placeholderEl.style.display = 'flex';
       placeholderEl.querySelector('.fp-ph-name').textContent = name;
