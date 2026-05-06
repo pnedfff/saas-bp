@@ -1303,6 +1303,29 @@ body {
   .cad-grid { grid-template-columns: 1fr; }
 }
 
+
+/* === floorplan-stage CAD 图（gz4/yc2） === */
+.fp-cad-img {
+  width: 100%;
+  height: auto;
+  max-width: 900px;
+  display: block;
+  margin: 0 auto;
+  background: #fafaf9;
+  border-radius: 8px;
+}
+/* 广州/银川店：layer=floor/space 时藏 SVG 显 CAD；layer=hotspot 时藏 CAD 显 SVG */
+.floorplan-stage[data-store="gz4"][data-layer="floor"] .floorplan-svg,
+.floorplan-stage[data-store="gz4"][data-layer="space"] .floorplan-svg,
+.floorplan-stage[data-store="yc2"][data-layer="floor"] .floorplan-svg,
+.floorplan-stage[data-store="yc2"][data-layer="space"] .floorplan-svg {
+  display: none !important;
+}
+.floorplan-stage[data-store="gz4"][data-layer="hotspot"] .fp-cad-img,
+.floorplan-stage[data-store="yc2"][data-layer="hotspot"] .fp-cad-img {
+  display: none !important;
+}
+
 </style>
 </head>
 <body>
@@ -1859,6 +1882,8 @@ body {
           </g>
         </svg>
 
+        <img id="fp-cad-gz4" class="fp-cad-img" src="photos/cad-gz4.jpg" alt="广州四店 CAD 工程图" style="display:none;"/>
+        <img id="fp-cad-yc2" class="fp-cad-img" src="photos/cad-yc2.jpg" alt="银川二店 CAD 工程图" style="display:none;"/>
         <div id="fp-placeholder" style="display:none; flex-direction:column; align-items:center; justify-content:center; min-height:380px; padding:40px; text-align:center;">
           <div style="font-size:42px; margin-bottom:16px; opacity:0.4;">📐</div>
           <div style="font-size:16px; font-weight:700; color:var(--text-primary); margin-bottom:8px;"><span class="fp-ph-name">—</span></div>
@@ -2421,27 +2446,32 @@ body {
     before: '○ 待派发上画'
   };
 
+  // PHOTO_SLOTS: spot 维度；广州/银川店有真实实拍，其他店 fallback "企微发图"占位
   const PHOTO_SLOTS = {
     A1: [
-      { label: '远景', hint: '完整门头', img: 'photos/A1-wide.jpg', source: '广州四店 · 真实门头' },
-      { label: '近景', hint: '完整灯箱', img: 'photos/A1-close.jpg', source: '银川二店 · 机场店' }
+      { label: '远景', hint: '完整门头' },
+      { label: '近景', hint: '完整灯箱' }
     ],
     M1: [
-      { label: '远景', hint: '整排柜效', img: 'photos/M1-wide.jpg', source: '广州四店 · 爆款专区' },
-      { label: '近景', hint: '完整柜贴', img: 'photos/M1-close.jpg', source: '银川二店 · 金玉满堂系列' }
+      { label: '远景', hint: '整排柜效' },
+      { label: '近景', hint: '完整柜贴' }
     ],
     Z9: [
-      { label: '顾客视角', hint: '站立拍摄', img: 'photos/Z9-wide.jpg', source: '广州四店 · 高品质陈列' },
-      { label: '平拍视角', hint: '镜头水平', img: 'photos/Z9-close.jpg', source: '银川二店 · 新品专区' }
+      { label: '顾客视角', hint: '站立拍摄' },
+      { label: '平拍视角', hint: '镜头水平' }
     ],
     K1: [
-      { label: '远景', hint: '完整门头', img: 'photos/K1-wide.jpg', source: '银川二店 · 机场店全景' },
-      { label: '近景', hint: '陈列细节', img: 'photos/K1-close.jpg', source: '广州四店 · 店内陈列' }
+      { label: '远景', hint: '完整门头' },
+      { label: '近景', hint: '陈列细节' }
     ],
     D1: [
-      { label: '远景', hint: '整排柜效', img: 'photos/D1-wide.jpg', source: '银川二店 · 中岛俯视' },
-      { label: '近景', hint: '完整柜贴', img: 'photos/D1-close.jpg', source: '银川二店 · 吊坠墙' }
+      { label: '远景', hint: '整排柜效' },
+      { label: '近景', hint: '完整柜贴' }
     ]
+  };
+  const STORE_PHOTOS = {
+    gz4: { name: '广州四店', src: 'photos/gz4' },
+    yc2: { name: '银川二店', src: 'photos/yc2' }
   };
 
   const ARTWORK = {
@@ -2479,22 +2509,26 @@ body {
     if (!spot || !lb) return;
     lb.querySelector('.lb-art').innerHTML = ARTWORK[key] || '<div style="color:#78716c">— 暂无示意图 —</div>';
     const slots = PHOTO_SLOTS[key] || [];
-    lb.querySelector('.lb-photo-slots').innerHTML = slots.map(s =>
-      s.img
-        ? `<div class="lb-slot lb-slot-photo">
-            <img src="${s.img}" alt="${s.label}" loading="lazy"/>
-            <div class="lb-slot-meta">
-              <div class="lb-slot-label">${s.label} · <span class="lb-slot-hint-inline">${s.hint}</span></div>
-              <div class="lb-slot-source">▸ ${s.source}</div>
-            </div>
-          </div>`
-        : `<div class="lb-slot">
-            <div class="lb-slot-icon">📸</div>
-            <div class="lb-slot-label">${s.label}</div>
-            <div class="lb-slot-hint">${s.hint}</div>
-            <div class="lb-slot-upload">↑ 企微发图</div>
-          </div>`
-    ).join('');
+    const storeKey = stage.dataset.store;
+    const storePhoto = STORE_PHOTOS[storeKey];
+    lb.querySelector('.lb-photo-slots').innerHTML = slots.map((s, i) => {
+      if (storePhoto) {
+        const variant = i === 0 ? 'wide' : 'close';
+        return `<div class="lb-slot lb-slot-photo">
+          <img src="${storePhoto.src}/${key}-${variant}.jpg" alt="${s.label}" loading="lazy"/>
+          <div class="lb-slot-meta">
+            <div class="lb-slot-label">${s.label} · <span class="lb-slot-hint-inline">${s.hint}</span></div>
+            <div class="lb-slot-source">▸ ${storePhoto.name} · 真实实拍</div>
+          </div>
+        </div>`;
+      }
+      return `<div class="lb-slot">
+        <div class="lb-slot-icon">📸</div>
+        <div class="lb-slot-label">${s.label}</div>
+        <div class="lb-slot-hint">${s.hint}</div>
+        <div class="lb-slot-upload">↑ 企微发图</div>
+      </div>`;
+    }).join('');
     lb.querySelector('.lb-spot-id').textContent = '点位 ' + key;
     const titleParts = spot.label.split(' · ');
     lb.querySelector('.lb-title').textContent = titleParts[1] || spot.label;
@@ -2552,12 +2586,13 @@ body {
     '华东二区': ['青岛一店','青岛二店','青岛三店','宁波一店','宁波二店','温州一店','温州二店','石家庄一店','太原一店'],
     '华中':     ['武汉一店','武汉二店','郑州一店','郑州二店','郑州三店'],
     '华北':     ['呼和浩特一店','长春一店','哈尔滨一店','哈尔滨二店','北京一店','北京二店','北京三店','北京四店','天津一店'],
-    '西北':     ['西安一店','西安二店','西安三店','西安四店','西安五店','西宁一店','银川一店'],
+    '西北':     ['西安一店','西安二店','西安三店','西安四店','西安五店','西宁一店','银川一店','银川二店'],
     '西南':     ['成都一店','成都二店','成都三店','成都四店','成都五店','重庆一店（新）'],
     '贵阳':     ['贵阳一店（新）','贵阳二店','贵阳三店','贵阳四店']
   };
   // 只有这两店配置了真实 SVG，其余选中后显示占位
   const STORE_SVG = { '深圳一店': 'sz1', '深圳二店': 'sz2' };
+  const STORE_CAD = { '广州四店': 'gz4', '银川二店': 'yc2' };
 
   const regionSel = document.getElementById('fp-region-sel');
   const storeSel  = document.getElementById('fp-store-sel');
@@ -2573,11 +2608,23 @@ body {
 
   function switchStore(name) {
     const svgKey = STORE_SVG[name];
+    const cadKey = STORE_CAD[name];
     document.querySelectorAll('.floorplan-svg').forEach(s => s.style.display = 'none');
+    document.querySelectorAll('.fp-cad-img').forEach(c => c.style.display = 'none');
     if (svgKey) {
       document.getElementById('fp-svg-' + svgKey).style.display = '';
       stage.dataset.store = svgKey;
       placeholderEl.style.display = 'none';
+    } else if (cadKey) {
+      document.getElementById('fp-svg-sz1').style.display = '';
+      document.getElementById('fp-cad-' + cadKey).style.display = '';
+      stage.dataset.store = cadKey;
+      placeholderEl.style.display = 'none';
+      // 选 CAD store 时默认显"平面图"layer
+      document.querySelectorAll('.fp-layer-btn').forEach(b => b.classList.remove('active'));
+      const fb = document.querySelector('.fp-layer-btn[data-layer="floor"]');
+      if (fb) fb.classList.add('active');
+      stage.dataset.layer = 'floor';
     } else {
       placeholderEl.style.display = 'flex';
       placeholderEl.querySelector('.fp-ph-name').textContent = name;
