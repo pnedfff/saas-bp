@@ -1926,97 +1926,119 @@ body {
           </g>
         </svg>
 
-        <!-- ===== 广州四店 简化 SVG · 三层结构 (720×396) ===== -->
-        <svg id="fp-svg-gz4" viewBox="0 0 720 396" class="floorplan-svg" xmlns="http://www.w3.org/2000/svg" style="display:none">
+        <!-- ===== 广州四店 简化 SVG · 三层结构 (720×540) · 2列×3行中岛 ===== -->
+        <svg id="fp-svg-gz4" viewBox="0 0 720 540" class="floorplan-svg" xmlns="http://www.w3.org/2000/svg" style="display:none">
           <defs>
             <pattern id="hatch-gz4" width="6" height="6" patternUnits="userSpaceOnUse" patternTransform="rotate(45)">
               <line x1="0" y1="0" x2="0" y2="6" stroke="#c8c4bc" stroke-width="1"/>
             </pattern>
           </defs>
           <g class="fp-layer-floor">
-            <rect x="4" y="4" width="712" height="358" fill="#fafaf9" stroke="#44403c" stroke-width="2.5" rx="3"/>
-            <rect x="4" y="4" width="712" height="48" fill="url(#hatch-gz4)" stroke="#a8a29e" stroke-width="1"/>
-            <line x1="92" y1="4" x2="92" y2="52" stroke="#a8a29e" stroke-width="0.6"/>
-            <line x1="180" y1="4" x2="180" y2="52" stroke="#a8a29e" stroke-width="0.6"/>
-            <line x1="268" y1="4" x2="268" y2="52" stroke="#a8a29e" stroke-width="0.6"/>
-            <line x1="356" y1="4" x2="356" y2="52" stroke="#a8a29e" stroke-width="0.6"/>
-            <line x1="444" y1="4" x2="444" y2="52" stroke="#a8a29e" stroke-width="0.6"/>
-            <line x1="532" y1="4" x2="532" y2="52" stroke="#a8a29e" stroke-width="0.6"/>
-            <line x1="620" y1="4" x2="620" y2="52" stroke="#a8a29e" stroke-width="0.6"/>
-            <rect x="4" y="4" width="50" height="358" fill="#f0ede8" stroke="#a8a29e" stroke-width="1"/>
-            <rect x="666" y="4" width="50" height="358" fill="#f0ede8" stroke="#a8a29e" stroke-width="1"/>
-            <line x1="4" y1="74" x2="54" y2="74" stroke="#a8a29e" stroke-width="0.6"/>
-            <line x1="4" y1="129" x2="54" y2="129" stroke="#a8a29e" stroke-width="0.6"/>
-            <line x1="4" y1="184" x2="54" y2="184" stroke="#a8a29e" stroke-width="0.6"/>
-            <line x1="4" y1="239" x2="54" y2="239" stroke="#a8a29e" stroke-width="0.6"/>
-            <line x1="4" y1="294" x2="54" y2="294" stroke="#a8a29e" stroke-width="0.6"/>
-            <line x1="666" y1="74" x2="716" y2="74" stroke="#a8a29e" stroke-width="0.6"/>
-            <line x1="666" y1="129" x2="716" y2="129" stroke="#a8a29e" stroke-width="0.6"/>
-            <line x1="666" y1="184" x2="716" y2="184" stroke="#a8a29e" stroke-width="0.6"/>
-            <line x1="666" y1="239" x2="716" y2="239" stroke="#a8a29e" stroke-width="0.6"/>
-            <line x1="666" y1="294" x2="716" y2="294" stroke="#a8a29e" stroke-width="0.6"/>
-            <rect x="4" y="312" width="60" height="50" fill="#e7e5e4" stroke="#a8a29e" stroke-width="1" rx="2"/>
-            <text x="34" y="338" font-size="7" text-anchor="middle" fill="#78716c" font-family="-apple-system,sans-serif">收银台</text>
-            <rect x="4" y="4" width="60" height="48" fill="#fef3e2" stroke="#ea580c" stroke-width="1.5" rx="2"/>
-            <text x="34" y="32" font-size="6" text-anchor="middle" fill="#b45309" font-family="monospace" font-weight="700">B立面</text>
-            <line x1="280" y1="362" x2="440" y2="362" stroke="#fafaf9" stroke-width="3"/>
-            <text x="360" y="378" font-size="8" text-anchor="middle" fill="#78716c" font-family="-apple-system,sans-serif">▽ A立面 入口（主客流方向 →）</text>
-            <text x="360" y="394" font-size="8" text-anchor="middle" fill="#a8a29e" font-family="monospace" font-weight="700" letter-spacing="2">广州四店</text>
+            <!-- 主体矩形（近正方形：8910×9500mm，viewBox 720×540） -->
+            <rect x="4" y="4" width="712" height="532" fill="#fafaf9" stroke="#44403c" stroke-width="2.5" rx="3"/>
+            <!-- 顶部背景展柜（斜线区，约 900mm 高） -->
+            <rect x="4" y="4" width="712" height="54" fill="url(#hatch-gz4)" stroke="#a8a29e" stroke-width="1"/>
+            <!-- 顶部分格（L1-L6） -->
+            <line x1="120" y1="4" x2="120" y2="58" stroke="#a8a29e" stroke-width="0.6"/>
+            <line x1="240" y1="4" x2="240" y2="58" stroke="#a8a29e" stroke-width="0.6"/>
+            <line x1="360" y1="4" x2="360" y2="58" stroke="#a8a29e" stroke-width="0.6"/>
+            <line x1="480" y1="4" x2="480" y2="58" stroke="#a8a29e" stroke-width="0.6"/>
+            <line x1="600" y1="4" x2="600" y2="58" stroke="#a8a29e" stroke-width="0.6"/>
+            <!-- 左侧 D 立面柜（约 1300mm 宽） -->
+            <rect x="4" y="4" width="62" height="532" fill="#f0ede8" stroke="#a8a29e" stroke-width="1"/>
+            <line x1="4" y1="116" x2="66" y2="116" stroke="#a8a29e" stroke-width="0.6"/>
+            <line x1="4" y1="210" x2="66" y2="210" stroke="#a8a29e" stroke-width="0.6"/>
+            <line x1="4" y1="304" x2="66" y2="304" stroke="#a8a29e" stroke-width="0.6"/>
+            <line x1="4" y1="398" x2="66" y2="398" stroke="#a8a29e" stroke-width="0.6"/>
+            <!-- 右侧 B 立面柜（约 1000mm 宽） -->
+            <rect x="654" y="4" width="62" height="532" fill="#f0ede8" stroke="#a8a29e" stroke-width="1"/>
+            <line x1="654" y1="116" x2="716" y2="116" stroke="#a8a29e" stroke-width="0.6"/>
+            <line x1="654" y1="210" x2="716" y2="210" stroke="#a8a29e" stroke-width="0.6"/>
+            <line x1="654" y1="304" x2="716" y2="304" stroke="#a8a29e" stroke-width="0.6"/>
+            <line x1="654" y1="398" x2="716" y2="398" stroke="#a8a29e" stroke-width="0.6"/>
+            <!-- 左上角立柱（圆形） -->
+            <circle cx="35" cy="35" r="20" fill="#d6d3d1" stroke="#78716c" stroke-width="1.5"/>
+            <!-- 左下角立柱（圆形） -->
+            <circle cx="35" cy="480" r="20" fill="#d6d3d1" stroke="#78716c" stroke-width="1.5"/>
+            <!-- 收银台（底部左侧，紧靠 D 立面柜） -->
+            <rect x="66" y="458" width="90" height="52" fill="#e7e5e4" stroke="#a8a29e" stroke-width="1" rx="2"/>
+            <!-- 右下角独立区域（相邻铺面/公共通道） -->
+            <rect x="540" y="464" width="172" height="72" fill="#ede9e3" stroke="#78716c" stroke-width="1.5" rx="2"/>
+            <!-- 入口（底部中间，主客流方向） -->
+            <line x1="200" y1="536" x2="420" y2="536" stroke="#fafaf9" stroke-width="4"/>
+            <text x="310" y="526" font-size="8" text-anchor="middle" fill="#78716c" font-family="-apple-system,sans-serif">▽ 入口 · 主客流方向 →</text>
+            <text x="360" y="540" font-size="7" text-anchor="middle" fill="#a8a29e" font-family="monospace" font-weight="700" letter-spacing="2">广州四店</text>
           </g>
           <g class="fp-layer-space">
-            <text x="48" y="32" font-size="7" text-anchor="middle" fill="#b45309" font-family="monospace" font-weight="700">L1</text>
-            <text x="136" y="32" font-size="7" text-anchor="middle" fill="#b45309" font-family="monospace" font-weight="700">L2</text>
-            <text x="224" y="32" font-size="7" text-anchor="middle" fill="#b45309" font-family="monospace" font-weight="700">L3</text>
-            <text x="312" y="32" font-size="7" text-anchor="middle" fill="#b45309" font-family="monospace" font-weight="700">L4</text>
-            <text x="400" y="32" font-size="7" text-anchor="middle" fill="#b45309" font-family="monospace" font-weight="700">L5</text>
-            <text x="488" y="32" font-size="7" text-anchor="middle" fill="#b45309" font-family="monospace" font-weight="700">L6</text>
-            <text x="576" y="32" font-size="7" text-anchor="middle" fill="#b45309" font-family="monospace" font-weight="700">L7</text>
-            <text x="668" y="32" font-size="7" text-anchor="middle" fill="#b45309" font-family="monospace" font-weight="700">L8</text>
-            <text x="29" y="180" font-size="8" text-anchor="middle" fill="#78716c" font-family="-apple-system,sans-serif" transform="rotate(-90,29,180)">D立面 · 手串柜</text>
-            <text x="691" y="180" font-size="8" text-anchor="middle" fill="#78716c" font-family="-apple-system,sans-serif" transform="rotate(90,691,180)">B立面 · 吊坠柜</text>
-            <text x="14" y="106" font-size="7.5" fill="#b45309" font-family="monospace" font-weight="700">D6</text>
-            <text x="14" y="161" font-size="7.5" fill="#b45309" font-family="monospace" font-weight="700">D5</text>
-            <text x="14" y="216" font-size="7.5" fill="#b45309" font-family="monospace" font-weight="700">D4</text>
-            <text x="14" y="271" font-size="7.5" fill="#b45309" font-family="monospace" font-weight="700">D3</text>
-            <text x="14" y="326" font-size="7.5" fill="#b45309" font-family="monospace" font-weight="700">D2</text>
-            <text x="691" y="46" font-size="7.5" fill="#b45309" font-family="monospace" font-weight="700">B1</text>
-            <text x="691" y="106" font-size="7.5" fill="#b45309" font-family="monospace" font-weight="700">B2</text>
-            <text x="691" y="161" font-size="7.5" fill="#b45309" font-family="monospace" font-weight="700">B3</text>
-            <text x="691" y="216" font-size="7.5" fill="#b45309" font-family="monospace" font-weight="700">B4</text>
-            <text x="691" y="271" font-size="7.5" fill="#b45309" font-family="monospace" font-weight="700">B5</text>
-            <text x="691" y="326" font-size="7.5" fill="#b45309" font-family="monospace" font-weight="700">B6</text>
-            <rect x="80" y="74" width="180" height="100" fill="#fff" stroke="#78716c" stroke-width="1.2" rx="3"/>
-            <text x="170" y="130" font-size="9" text-anchor="middle" fill="#44403c" font-family="-apple-system,sans-serif">中岛1 · Z1</text>
-            <rect x="270" y="74" width="180" height="100" fill="#fff" stroke="#78716c" stroke-width="1.2" rx="3"/>
-            <text x="360" y="130" font-size="9" text-anchor="middle" fill="#44403c" font-family="-apple-system,sans-serif">中岛2 · Z2</text>
-            <rect x="460" y="74" width="180" height="100" fill="#fff" stroke="#78716c" stroke-width="1.2" rx="3"/>
-            <text x="550" y="130" font-size="9" text-anchor="middle" fill="#44403c" font-family="-apple-system,sans-serif">中岛3 · Z3</text>
-            <rect x="80" y="186" width="180" height="100" fill="#fff" stroke="#78716c" stroke-width="1.2" rx="3"/>
-            <text x="170" y="242" font-size="9" text-anchor="middle" fill="#44403c" font-family="-apple-system,sans-serif">中岛4 · Z4</text>
-            <rect x="270" y="186" width="180" height="100" fill="#fef3e2" stroke="#78716c" stroke-width="1.5" rx="4"/>
-            <text x="360" y="232" font-size="9" font-weight="600" text-anchor="middle" fill="#44403c" font-family="-apple-system,sans-serif">中岛5 · 生肖特陈台</text>
-            <text x="360" y="248" font-size="7" font-weight="700" text-anchor="middle" fill="#b45309" font-family="monospace">Z9</text>
-            <rect x="460" y="186" width="180" height="100" fill="#fff" stroke="#78716c" stroke-width="1.2" rx="3"/>
-            <text x="550" y="242" font-size="9" text-anchor="middle" fill="#44403c" font-family="-apple-system,sans-serif">中岛6 · Z6</text>
+            <!-- 左立面标签 -->
+            <text x="35" y="290" font-size="8" text-anchor="middle" fill="#78716c" font-family="-apple-system,sans-serif" transform="rotate(-90,35,290)">D立面 · 手串柜</text>
+            <!-- 左立面编号 -->
+            <text x="14" y="90" font-size="7.5" fill="#b45309" font-family="monospace" font-weight="700">D1</text>
+            <text x="14" y="163" font-size="7.5" fill="#b45309" font-family="monospace" font-weight="700">D2</text>
+            <text x="14" y="257" font-size="7.5" fill="#b45309" font-family="monospace" font-weight="700">D3</text>
+            <text x="14" y="351" font-size="7.5" fill="#b45309" font-family="monospace" font-weight="700">D4</text>
+            <text x="14" y="445" font-size="7.5" fill="#b45309" font-family="monospace" font-weight="700">D5</text>
+            <!-- 右立面标签 -->
+            <text x="685" y="290" font-size="8" text-anchor="middle" fill="#78716c" font-family="-apple-system,sans-serif" transform="rotate(90,685,290)">B立面 · 吊坠柜</text>
+            <!-- 右立面编号 -->
+            <text x="666" y="90" font-size="7.5" fill="#b45309" font-family="monospace" font-weight="700">B1</text>
+            <text x="666" y="163" font-size="7.5" fill="#b45309" font-family="monospace" font-weight="700">B2</text>
+            <text x="666" y="257" font-size="7.5" fill="#b45309" font-family="monospace" font-weight="700">B3</text>
+            <text x="666" y="351" font-size="7.5" fill="#b45309" font-family="monospace" font-weight="700">B4</text>
+            <text x="666" y="445" font-size="7.5" fill="#b45309" font-family="monospace" font-weight="700">B5</text>
+            <!-- 顶部展柜编号 -->
+            <text x="62" y="36" font-size="7" text-anchor="middle" fill="#b45309" font-family="monospace" font-weight="700">L1</text>
+            <text x="180" y="36" font-size="7" text-anchor="middle" fill="#b45309" font-family="monospace" font-weight="700">L2</text>
+            <text x="300" y="36" font-size="7" text-anchor="middle" fill="#b45309" font-family="monospace" font-weight="700">L3</text>
+            <text x="420" y="36" font-size="7" text-anchor="middle" fill="#b45309" font-family="monospace" font-weight="700">L4</text>
+            <text x="540" y="36" font-size="7" text-anchor="middle" fill="#b45309" font-family="monospace" font-weight="700">L5</text>
+            <text x="657" y="36" font-size="7" text-anchor="middle" fill="#b45309" font-family="monospace" font-weight="700">L6</text>
+            <!-- 竖向过道分隔（1100mm，位于中央） -->
+            <line x1="360" y1="58" x2="360" y2="460" stroke="#c8c4bc" stroke-width="1.5" stroke-dasharray="5,4"/>
+            <!-- ── 左列 3 个中岛（Z1/Z2/Z3） ── -->
+            <rect x="74" y="66" width="276" height="106" fill="#fff" stroke="#78716c" stroke-width="1.2" rx="3"/>
+            <text x="212" y="122" font-size="9" text-anchor="middle" fill="#44403c" font-family="-apple-system,sans-serif">中岛1 · Z1</text>
+            <rect x="74" y="184" width="276" height="106" fill="#fff" stroke="#78716c" stroke-width="1.2" rx="3"/>
+            <text x="212" y="240" font-size="9" text-anchor="middle" fill="#44403c" font-family="-apple-system,sans-serif">中岛2 · Z2</text>
+            <rect x="74" y="302" width="276" height="106" fill="#fff" stroke="#78716c" stroke-width="1.2" rx="3"/>
+            <text x="212" y="358" font-size="9" text-anchor="middle" fill="#44403c" font-family="-apple-system,sans-serif">中岛3 · Z3</text>
+            <!-- ── 右列 3 个中岛（Z4/Z9/Z6） ── -->
+            <rect x="370" y="66" width="276" height="106" fill="#fff" stroke="#78716c" stroke-width="1.2" rx="3"/>
+            <text x="508" y="122" font-size="9" text-anchor="middle" fill="#44403c" font-family="-apple-system,sans-serif">中岛4 · Z4</text>
+            <!-- Z9 生肖特陈台（右列中间） -->
+            <rect x="370" y="184" width="276" height="106" fill="#fef3e2" stroke="#78716c" stroke-width="1.5" rx="4"/>
+            <text x="508" y="233" font-size="9" font-weight="600" text-anchor="middle" fill="#44403c" font-family="-apple-system,sans-serif">中岛5 · 生肖特陈台</text>
+            <text x="508" y="250" font-size="7" font-weight="700" text-anchor="middle" fill="#b45309" font-family="monospace">Z9</text>
+            <rect x="370" y="302" width="276" height="106" fill="#fff" stroke="#78716c" stroke-width="1.2" rx="3"/>
+            <text x="508" y="358" font-size="9" text-anchor="middle" fill="#44403c" font-family="-apple-system,sans-serif">中岛6 · Z6</text>
+            <!-- 收银台标注 -->
+            <text x="111" y="488" font-size="8" text-anchor="middle" fill="#78716c" font-family="-apple-system,sans-serif">收银台</text>
+            <!-- 右下区域标注 -->
+            <text x="626" y="504" font-size="8" text-anchor="middle" fill="#78716c" font-family="-apple-system,sans-serif">公共通道</text>
           </g>
           <g class="fp-layer-hotspot">
-            <g class="fp-hotspot" data-spot="A1" data-status="pass" transform="translate(360,27)" tabindex="0">
+            <!-- A1: 门头展柜中央（top:7% left:50%） -->
+            <g class="fp-hotspot" data-spot="A1" data-status="pass" transform="translate(360,31)" tabindex="0">
               <circle class="fp-pulse" r="13"/><circle class="fp-dot" r="8"/>
               <text class="fp-label" y="3">A1</text>
             </g>
-            <g class="fp-hotspot" data-spot="M1" data-status="pass" transform="translate(170,124)" tabindex="0">
+            <!-- M1: 左列第2个中岛·中岛柜贴（top:42% left:38%） -->
+            <g class="fp-hotspot" data-spot="M1" data-status="pass" transform="translate(212,237)" tabindex="0">
               <circle class="fp-pulse" r="13"/><circle class="fp-dot" r="8"/>
               <text class="fp-label" y="3">M1</text>
             </g>
-            <g class="fp-hotspot" data-spot="Z9" data-status="pending" transform="translate(360,236)" tabindex="0">
+            <!-- Z9: 右列第2个中岛·生肖特陈（top:58% left:62%） -->
+            <g class="fp-hotspot" data-spot="Z9" data-status="pending" transform="translate(508,237)" tabindex="0">
               <circle class="fp-pulse" r="13"/><circle class="fp-dot" r="8"/>
               <text class="fp-label" y="3">Z9</text>
             </g>
-            <g class="fp-hotspot" data-spot="K1" data-status="pass" transform="translate(360,378)" tabindex="0">
+            <!-- K1: 底部入口店外 KT（top:85% left:50%） -->
+            <g class="fp-hotspot" data-spot="K1" data-status="pass" transform="translate(310,528)" tabindex="0">
               <circle class="fp-pulse" r="11"/><circle class="fp-dot" r="7"/>
               <text class="fp-label" y="2.5">K1</text>
             </g>
-            <g class="fp-hotspot" data-spot="D1" data-status="reject" transform="translate(691,46)" tabindex="0">
+            <!-- D1: 右侧 B 立面吊坠柜（top:50% left:91%） -->
+            <g class="fp-hotspot" data-spot="D1" data-status="reject" transform="translate(685,237)" tabindex="0">
               <circle class="fp-pulse" r="11"/><circle class="fp-dot" r="7"/>
               <text class="fp-label" y="2.5">D1</text>
             </g>
