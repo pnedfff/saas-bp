@@ -1235,6 +1235,74 @@ body {
   letter-spacing: 0.3px;
 }
 
+
+/* === 真实 CAD 工程图（客户原始平面） === */
+.floorplan-cad {
+  margin-top: 22px;
+  padding: 22px 24px;
+  background: var(--bg-card);
+  border: 1px solid var(--border);
+  border-radius: 14px;
+  border-left: 3px solid var(--gold);
+}
+.cad-head {
+  display: flex; align-items: baseline; gap: 14px;
+  margin-bottom: 16px;
+  flex-wrap: wrap;
+}
+.cad-tag {
+  font-family: var(--mono); font-size: 13px; font-weight: 700;
+  color: var(--gold); letter-spacing: 0.8px;
+}
+.cad-sub {
+  font-size: 13px; color: var(--text-muted);
+  flex: 1;
+}
+.cad-grid {
+  display: grid; grid-template-columns: 1fr 1fr;
+  gap: 16px;
+}
+.cad-item {
+  display: block;
+  background: #fafaf9;
+  border: 1px solid var(--border);
+  border-radius: 10px;
+  overflow: hidden;
+  text-decoration: none;
+  transition: all 0.25s;
+  cursor: zoom-in;
+}
+.cad-item:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 12px 32px rgba(245, 158, 11, 0.18);
+  border-color: var(--gold);
+}
+.cad-item img {
+  width: 100%;
+  aspect-ratio: 4 / 3;
+  object-fit: contain;
+  display: block;
+  background: #fafaf9;
+}
+.cad-meta {
+  padding: 12px 14px;
+  background: var(--bg-elevated);
+  border-top: 1px solid var(--border);
+}
+.cad-name {
+  font-size: 14px; font-weight: 700;
+  color: var(--text-primary);
+  margin-bottom: 2px;
+}
+.cad-spec {
+  font-family: var(--mono); font-size: 11px;
+  color: var(--text-muted);
+}
+
+@media (max-width: 880px) {
+  .cad-grid { grid-template-columns: 1fr; }
+}
+
 </style>
 </head>
 <body>
@@ -1808,6 +1876,30 @@ body {
 
       <div class="floorplan-foot">
         ▢ 真实平面图 · 系统按空间设施 → 广告点位三级结构标注 · <strong style="color: var(--accent);">点击任意圆点查看效果图 / 实拍对比</strong>
+      </div>
+    </div>
+
+    <!-- 真实 CAD 工程图（客户原始平面） -->
+    <div class="floorplan-cad">
+      <div class="cad-head">
+        <span class="cad-tag">📐 客户原始 CAD 工程图</span>
+        <span class="cad-sub">沁园春提供的真实门店 1:1 工程图（不是我们画的简化示意）</span>
+      </div>
+      <div class="cad-grid">
+        <a class="cad-item" href="photos/cad-gz4.jpg" target="_blank">
+          <img src="photos/cad-gz4.jpg" alt="广州四店 CAD 工程图" loading="lazy"/>
+          <div class="cad-meta">
+            <div class="cad-name">广州四店</div>
+            <div class="cad-spec">8910 × 9500 mm · 6 中岛 + 2 立面柜 + 8 灯箱位</div>
+          </div>
+        </a>
+        <a class="cad-item" href="photos/cad-yc2.jpg" target="_blank">
+          <img src="photos/cad-yc2.jpg" alt="银川二店 CAD 工程图" loading="lazy"/>
+          <div class="cad-meta">
+            <div class="cad-name">银川二店（机场店）</div>
+            <div class="cad-spec">11800 mm 长面 · 6 中岛 + 6 网格特陈区 + 仓库</div>
+          </div>
+        </a>
       </div>
     </div>
 
