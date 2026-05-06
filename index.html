@@ -867,7 +867,7 @@ body {
   position: relative;
   background: var(--bg-card);
   border-radius: 16px;
-  width: 100%; max-width: 900px;
+  width: 100%; max-width: 1200px;
   max-height: calc(100vh - 64px);
   overflow: auto;
   box-shadow: 0 20px 60px rgba(0,0,0,0.4);
@@ -886,7 +886,7 @@ body {
 .lb-close:hover { background: var(--accent); color: #fff; transform: rotate(90deg); }
 .lb-grid {
   display: grid;
-  grid-template-columns: 1fr 1fr 1.1fr;
+  grid-template-columns: 0.95fr 1.1fr 1fr;
   gap: 0;
 }
 .lb-art-wrap {
@@ -911,11 +911,13 @@ body {
   color: var(--text-muted); letter-spacing: 1px;
 }
 .lb-photo-slots {
-  width: 100%; display: flex; gap: 10px;
-  justify-content: center; flex-wrap: wrap;
+  width: 100%;
+  display: flex; flex-direction: column;
+  gap: 14px;
+  justify-content: center;
 }
 .lb-slot {
-  flex: 1; min-width: 110px; max-width: 175px;
+  width: 100%;
   aspect-ratio: 3/4;
   border: 2px dashed var(--border); border-radius: 10px;
   display: flex; flex-direction: column;
