@@ -2638,10 +2638,11 @@ body {
   });
   storeSel.addEventListener('change', () => switchStore(storeSel.value));
 
-  // 启动：默认 华南 → 深圳一店
-  regionSel.value = '华南';
-  fillStores('华南');
-  storeSel.value = '深圳一店';
+  // 启动：默认 广州 → 广州四店（CAD 工程图最强证据）
+  regionSel.value = '广州';
+  fillStores('广州');
+  storeSel.value = '广州四店';
+  switchStore('广州四店');
 
   function showPop(h) {
     const key = h.dataset.spot;
