@@ -63,8 +63,9 @@
   <!-- 分隔线 -->
   <line x1="80" y1="355" x2="640" y2="355" stroke="#e2e8f0" stroke-width="1"/>
 
-  <!-- 副句 -->
-  <text x="80" y="410" font-family="system-ui,-apple-system" font-size="16" fill="#64748b">分众管理广告主的 <tspan fill="#dc2626" font-weight="700">300 万</tspan>个点位，我们帮品牌管好自己的 <tspan fill="#dc2626" font-weight="700">300</tspan> 个点位</text>
+  <!-- 副句：两行，后半句突出 -->
+  <text x="80" y="395" font-family="system-ui,-apple-system" font-size="14" fill="#94a3b8">分众管理广告主的 300 万个点位，</text>
+  <text x="80" y="438" font-family="system-ui,-apple-system" font-size="22" font-weight="700" fill="#0f172a">我们帮品牌管好自己的 <tspan fill="#dc2626">300</tspan> 个点位</text>
 
   <!-- 底部标签行 -->
   <rect x="80" y="500" width="160" height="36" rx="18" fill="#dc2626" opacity="0.15"/>
