@@ -3000,5 +3000,19 @@ body {
 
 </script>
 
+
+<!-- ── 仅展示 s10 · 广州四店真实产品演示 ── -->
+<style>
+  section.slide:not(#s10) { display: none !important; }
+  .page-nav { display: none !important; }
+  .slide-foot { display: none !important; }
+  body { overflow: auto; }
+  #s10 { min-height: 100vh; }
+</style>
+<script>
+  window.addEventListener('DOMContentLoaded', function() {
+    document.querySelector('#s10').scrollIntoView({ behavior: 'instant' });
+  });
+</script>
 </body>
 </html>
