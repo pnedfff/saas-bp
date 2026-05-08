@@ -95,7 +95,7 @@
   <text x="952" y="526" font-family="system-ui,-apple-system" font-size="12" fill="#64748b">护城河越用越深</text>
 
   <!-- 底部差异化总结 -->
-  <rect x="40" y="568" width="1200" height="112" rx="8" fill="#ffffff"/>
+  <rect x="40" y="568" width="1200" height="150" rx="8" fill="#ffffff"/>
   <rect x="40" y="568" width="1200" height="4" rx="2" fill="#0284c7"/>
 
   <text x="72" y="600" font-family="system-ui,-apple-system" font-size="14" fill="#0284c7" font-weight="700">核心差异化定位</text>
@@ -106,7 +106,9 @@
   <text x="432" y="630" font-family="system-ui,-apple-system" font-size="15" fill="#0284c7" font-weight="700">"管更好、花更少"</text>
   <text x="650" y="630" font-family="system-ui,-apple-system" font-size="15" fill="#0f172a">— 两者互补，不形成竞争</text>
 
-  <text x="72" y="658" font-family="system-ui,-apple-system" font-size="13" fill="#6b7280">我们是唯一专注 连锁门店线下营销点位执行闭环 的垂直AI SaaS</text>
+  <text x="72" y="652" font-family="system-ui,-apple-system" font-size="13" fill="#6b7280">我们是唯一专注 连锁门店线下营销点位执行闭环 的垂直AI SaaS</text>
+  <rect x="72" y="666" width="1148" height="1" fill="#e2e8f0"/>
+  <text x="72" y="690" font-family="system-ui,-apple-system" font-size="13" fill="#0284c7" font-weight="600">护城河：</text><text x="144" y="690" font-family="system-ui,-apple-system" font-size="13" fill="#475569">客户的点位、SKU、执行历史沉淀在系统里 — 数据越积越重，替换成本越来越高，续费率 &gt;85%</text>
 
   <text x="1200" y="695" font-family="system-ui,-apple-system" font-size="12" fill="#64748b" text-anchor="middle">9 / 12</text>
 
