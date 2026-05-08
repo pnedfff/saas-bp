@@ -38,7 +38,7 @@
   <text x="942" y="192" font-family="system-ui,-apple-system" font-size="18" font-weight="900" fill="#ffffff" text-anchor="middle">原来10人团队的执行力</text>
 
   <!-- 左侧ROI明细 -->
-  <rect x="40" y="232" width="580" height="370" rx="10" fill="#ffffff"/>
+  <rect x="40" y="232" width="580" height="385" rx="10" fill="#ffffff"/>
   <rect x="40" y="232" width="580" height="5" rx="3" fill="#16a34a"/>
   <text x="330" y="270" font-family="system-ui,-apple-system" font-size="15" font-weight="700" fill="#0f172a" text-anchor="middle">60家门店专业版 · ROI明细</text>
   <text x="330" y="290" font-family="system-ui,-apple-system" font-size="12" fill="#6b7280" text-anchor="middle">年费 20,000元</text>
@@ -71,20 +71,20 @@
   <line x1="60" y1="485" x2="600" y2="485" stroke="#e2e8f0" stroke-width="1"/>
 
   <!-- 合计 -->
-  <rect x="60" y="495" width="540" height="46" rx="6" fill="#16a34a" opacity="0.1"/>
-  <text x="82" y="524" font-family="system-ui,-apple-system" font-size="15" font-weight="700" fill="#0f172a">合计节省</text>
-  <text x="590" y="524" font-family="system-ui,-apple-system" font-size="22" font-weight="900" fill="#16a34a" text-anchor="end">33万/年</text>
+  <rect x="60" y="480" width="540" height="46" rx="6" fill="#16a34a" opacity="0.1"/>
+  <text x="82" y="509" font-family="system-ui,-apple-system" font-size="15" font-weight="700" fill="#0f172a">合计节省</text>
+  <text x="590" y="509" font-family="system-ui,-apple-system" font-size="22" font-weight="900" fill="#16a34a" text-anchor="end">33万/年</text>
 
   <!-- 系统费 -->
-  <rect x="60" y="555" width="10" height="36" rx="2" fill="#dc2626"/>
-  <text x="82" y="577" font-family="system-ui,-apple-system" font-size="13" fill="#64748b">系统年费</text>
-  <text x="590" y="577" font-family="system-ui,-apple-system" font-size="16" font-weight="700" fill="#dc2626" text-anchor="end">-2.8万</text>
+  <rect x="60" y="533" width="10" height="36" rx="2" fill="#dc2626"/>
+  <text x="82" y="555" font-family="system-ui,-apple-system" font-size="13" fill="#64748b">系统年费</text>
+  <text x="590" y="555" font-family="system-ui,-apple-system" font-size="16" font-weight="700" fill="#dc2626" text-anchor="end">-2.8万</text>
 
   <!-- 净节省 -->
-  <rect x="60" y="600" width="540" height="46" rx="6" fill="#16a34a" opacity="0.2"/>
-  <rect x="60" y="600" width="540" height="46" rx="6" fill="none" stroke="#16a34a" stroke-width="1"/>
-  <text x="82" y="629" font-family="system-ui,-apple-system" font-size="16" font-weight="700" fill="#0f172a">净节省</text>
-  <text x="590" y="629" font-family="system-ui,-apple-system" font-size="26" font-weight="900" fill="#16a34a" text-anchor="end">30.2万/年</text>
+  <rect x="60" y="576" width="540" height="38" rx="6" fill="#16a34a" opacity="0.2"/>
+  <rect x="60" y="576" width="540" height="38" rx="6" fill="none" stroke="#16a34a" stroke-width="1"/>
+  <text x="82" y="601" font-family="system-ui,-apple-system" font-size="16" font-weight="700" fill="#0f172a">净节省</text>
+  <text x="590" y="601" font-family="system-ui,-apple-system" font-size="26" font-weight="900" fill="#16a34a" text-anchor="end">30.2万/年</text>
 
   <!-- 右侧：大数字+对比 -->
   <rect x="640" y="232" width="580" height="200" rx="10" fill="#ffffff"/>
