@@ -45,10 +45,9 @@
   <!-- 逻辑说明 -->
   <rect x="60" y="465" width="330" height="120" rx="8" fill="#f0fdf4"/>
   <rect x="60" y="465" width="330" height="120" rx="8" fill="none" stroke="#16a34a" stroke-width="1" opacity="0.4"/>
-  <text x="80" y="492" font-family="system-ui,-apple-system" font-size="13" fill="#16a34a" font-weight="600">验证逻辑</text>
-  <text x="80" y="516" font-family="system-ui,-apple-system" font-size="13" fill="#475569">分众做到了让广告主管理</text>
-  <text x="80" y="536" font-family="system-ui,-apple-system" font-size="13" fill="#475569">数百万点位，我们帮品牌</text>
-  <text x="80" y="556" font-family="system-ui,-apple-system" font-size="13" fill="#475569">管理自己的数十至数百点位</text>
+  <text x="80" y="492" font-family="system-ui,-apple-system" font-size="13" fill="#16a34a" font-weight="600">我们的定位</text>
+  <text x="80" y="520" font-family="system-ui,-apple-system" font-size="14" font-weight="700" fill="#0f172a">分众管理广告主的 300 万个点位</text>
+  <text x="80" y="548" font-family="system-ui,-apple-system" font-size="14" font-weight="700" fill="#dc2626">我们帮品牌管好自己的 300 个点位</text>
 
   <!-- 中间：市场规模 -->
   <rect x="430" y="135" width="420" height="480" rx="10" fill="#ffffff"/>
