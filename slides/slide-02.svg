@@ -1,0 +1,105 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1280" height="720" viewBox="0 0 1280 720">
+  <defs>
+    <linearGradient id="bg2" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#f8fafc"/>
+      <stop offset="100%" style="stop-color:#f1f5f9"/>
+    </linearGradient>
+  </defs>
+
+  <rect width="1280" height="720" fill="url(#bg2)"/>
+  <rect x="0" y="0" width="6" height="720" fill="#dc2626"/>
+
+  <!-- 标题区 -->
+  <rect x="40" y="30" width="1200" height="80" rx="4" fill="#ffffff"/>
+  <rect x="40" y="30" width="4" height="80" fill="#dc2626"/>
+  <text x="72" y="65" font-family="system-ui,-apple-system" font-size="14" fill="#dc2626" font-weight="600">PAIN POINTS</text>
+  <text x="72" y="92" font-family="system-ui,-apple-system" font-size="22" font-weight="700" fill="#0f172a">痛点 — 我作为60家门店品牌总监的真实日常</text>
+
+  <!-- 痛点1卡片 -->
+  <rect x="40" y="135" width="380" height="430" rx="10" fill="#ffffff"/>
+  <rect x="40" y="135" width="380" height="5" rx="3" fill="#dc2626"/>
+  <!-- 序号大字 -->
+  <text x="60" y="215" font-family="system-ui,-apple-system" font-size="72" font-weight="900" fill="#dc2626" opacity="0.15">01</text>
+  <text x="60" y="200" font-family="system-ui,-apple-system" font-size="36" font-weight="900" fill="#dc2626">01</text>
+
+  <text x="60" y="240" font-family="system-ui,-apple-system" font-size="17" font-weight="700" fill="#0f172a">人力不足</text>
+  <text x="60" y="262" font-family="system-ui,-apple-system" font-size="15" fill="#64748b">活动执行顾此失彼</text>
+
+  <line x1="60" y1="278" x2="400" y2="278" stroke="#e2e8f0" stroke-width="1"/>
+
+  <!-- 子痛点 -->
+  <circle cx="68" cy="308" r="4" fill="#dc2626"/>
+  <text x="82" y="313" font-family="system-ui,-apple-system" font-size="14" fill="#475569">一个中秋活动同时跟进6件事</text>
+
+  <circle cx="68" cy="342" r="4" fill="#dc2626"/>
+  <text x="82" y="347" font-family="system-ui,-apple-system" font-size="14" fill="#475569">活动开始还有门店没收到物料</text>
+
+  <circle cx="68" cy="376" r="4" fill="#dc2626"/>
+  <text x="82" y="381" font-family="system-ui,-apple-system" font-size="14" fill="#475569">每次至少 <tspan fill="#f59e0b" font-weight="700">30%</tspan> 点位浪费</text>
+
+  <!-- 数据大字 -->
+  <rect x="60" y="410" width="345" height="70" rx="6" fill="#f1f5f9"/>
+  <text x="80" y="440" font-family="system-ui,-apple-system" font-size="11" fill="#6b7280">关键指标</text>
+  <text x="80" y="468" font-family="system-ui,-apple-system" font-size="28" font-weight="900" fill="#dc2626">30%<tspan font-size="14" fill="#64748b" font-weight="400"> 点位浪费</tspan></text>
+
+  <!-- 痛点2卡片 -->
+  <rect x="440" y="135" width="380" height="430" rx="10" fill="#ffffff"/>
+  <rect x="440" y="135" width="380" height="5" rx="3" fill="#f59e0b"/>
+  <text x="460" y="215" font-family="system-ui,-apple-system" font-size="72" font-weight="900" fill="#f59e0b" opacity="0.15">02</text>
+  <text x="460" y="200" font-family="system-ui,-apple-system" font-size="36" font-weight="900" fill="#f59e0b">02</text>
+
+  <text x="460" y="240" font-family="system-ui,-apple-system" font-size="17" font-weight="700" fill="#0f172a">复盘难</text>
+  <text x="460" y="262" font-family="system-ui,-apple-system" font-size="15" fill="#64748b">花了钱不知道花在哪</text>
+
+  <line x1="460" y1="278" x2="800" y2="278" stroke="#e2e8f0" stroke-width="1"/>
+
+  <circle cx="468" cy="308" r="4" fill="#f59e0b"/>
+  <text x="482" y="313" font-family="system-ui,-apple-system" font-size="14" fill="#475569">Excel填报回收率极低</text>
+
+  <circle cx="468" cy="342" r="4" fill="#f59e0b"/>
+  <text x="482" y="347" font-family="system-ui,-apple-system" font-size="14" fill="#475569">无法区分执行问题还是创意问题</text>
+
+  <circle cx="468" cy="376" r="4" fill="#f59e0b"/>
+  <text x="482" y="381" font-family="system-ui,-apple-system" font-size="14" fill="#475569">决策全靠"感觉"，无数据支撑</text>
+
+  <rect x="460" y="410" width="345" height="70" rx="6" fill="#f1f5f9"/>
+  <text x="480" y="440" font-family="system-ui,-apple-system" font-size="11" fill="#6b7280">关键指标</text>
+  <text x="480" y="468" font-family="system-ui,-apple-system" font-size="28" font-weight="900" fill="#f59e0b">0%<tspan font-size="14" fill="#64748b" font-weight="400"> 数据可追溯</tspan></text>
+
+  <!-- 痛点3卡片（最痛，略大） -->
+  <rect x="840" y="135" width="380" height="430" rx="10" fill="#ffffff"/>
+  <rect x="840" y="135" width="380" height="5" rx="3" fill="#6b21a8"/>
+  <!-- 火焰标签 -->
+  <rect x="944" y="148" width="80" height="24" rx="12" fill="#7c3aed" opacity="0.8"/>
+  <text x="984" y="164" font-family="system-ui,-apple-system" font-size="11" fill="#0f172a" text-anchor="middle" font-weight="600">最痛！</text>
+
+  <text x="860" y="215" font-family="system-ui,-apple-system" font-size="72" font-weight="900" fill="#7c3aed" opacity="0.15">03</text>
+  <text x="860" y="200" font-family="system-ui,-apple-system" font-size="36" font-weight="900" fill="#a78bfa">03</text>
+
+  <text x="860" y="240" font-family="system-ui,-apple-system" font-size="17" font-weight="700" fill="#0f172a">点位×尺寸×SKU三维混乱</text>
+  <text x="860" y="262" font-family="system-ui,-apple-system" font-size="15" fill="#64748b">最难管，也最容易出错</text>
+
+  <line x1="860" y1="278" x2="1200" y2="278" stroke="#e2e8f0" stroke-width="1"/>
+
+  <circle cx="868" cy="308" r="4" fill="#a78bfa"/>
+  <text x="882" y="313" font-family="system-ui,-apple-system" font-size="14" fill="#475569">1家门店5个点位同时推3个SKU</text>
+
+  <circle cx="868" cy="342" r="4" fill="#a78bfa"/>
+  <text x="882" y="347" font-family="system-ui,-apple-system" font-size="14" fill="#475569">人工核对耗时 <tspan fill="#f59e0b" font-weight="700">2-3天</tspan></text>
+
+  <circle cx="868" cy="376" r="4" fill="#a78bfa"/>
+  <text x="882" y="381" font-family="system-ui,-apple-system" font-size="14" fill="#475569">出错率超 <tspan fill="#dc2626" font-weight="700">20%</tspan></text>
+
+  <rect x="860" y="410" width="345" height="70" rx="6" fill="#f1f5f9"/>
+  <text x="880" y="440" font-family="system-ui,-apple-system" font-size="11" fill="#6b7280">关键指标</text>
+  <text x="880" y="468" font-family="system-ui,-apple-system" font-size="28" font-weight="900" fill="#a78bfa">20%<tspan font-size="14" fill="#64748b" font-weight="400"> 出错率</tspan></text>
+
+  <!-- 底部结论 -->
+  <rect x="40" y="584" width="1200" height="106" rx="8" fill="#fff1f2"/>
+  <rect x="40" y="584" width="1200" height="106" rx="8" fill="none" stroke="#dc2626" stroke-width="1" opacity="0.5"/>
+  <text x="640" y="620" font-family="system-ui,-apple-system" font-size="13" fill="#dc2626" text-anchor="middle" font-weight="600">— 核心结论 —</text>
+  <text x="640" y="654" font-family="system-ui,-apple-system" font-size="18" font-weight="700" fill="#0f172a" text-anchor="middle">不是不想管，是根本管不过来，只能"战略性放弃"</text>
+  <text x="1200" y="695" font-family="system-ui,-apple-system" font-size="12" fill="#64748b" text-anchor="middle">2 / 12</text>
+  <!-- 店盈AI Logo 标题栏右侧 -->
+  <image x="1004" y="41" width="220" height="58" href="data:image/jpeg;base64,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" preserveAspectRatio="xMidYMid meet"/>
+</svg>
