@@ -43,33 +43,29 @@
   <circle cx="186" cy="336" r="4" fill="#dc2626"/>
   <text x="200" y="341" font-family="system-ui,-apple-system" font-size="13" fill="#f59e0b" font-weight="600">自己是0号客户</text>
 
-  <!-- 成员卡片 2: CTO -->
+  <!-- 成员卡片 2: CTO / Kevin -->
   <rect x="660" y="135" width="580" height="240" rx="12" fill="#ffffff"/>
   <rect x="660" y="135" width="580" height="5" rx="3" fill="#6b21a8"/>
 
-  <circle cx="730" cy="232" r="52" fill="#6b21a8" opacity="0.1"/>
-  <circle cx="730" cy="232" r="52" fill="none" stroke="#6b21a8" stroke-width="1.5" stroke-dasharray="6 4"/>
-
-  <!-- 招募中标志 -->
-  <rect x="686" y="204" width="88" height="56" rx="8" fill="#eef2ff" opacity="0.9"/>
-  <text x="730" y="232" font-family="system-ui,-apple-system" font-size="11" fill="#a78bfa" text-anchor="middle">招募</text>
-  <text x="730" y="248" font-family="system-ui,-apple-system" font-size="11" fill="#a78bfa" text-anchor="middle">中...</text>
+  <circle cx="730" cy="232" r="52" fill="#6b21a8" opacity="0.15"/>
+  <circle cx="730" cy="232" r="52" fill="none" stroke="#6b21a8" stroke-width="2"/>
+  <text x="730" y="240" font-family="system-ui,-apple-system" font-size="36" font-weight="900" fill="#6b21a8" text-anchor="middle">K</text>
 
   <rect x="676" y="152" width="80" height="24" rx="4" fill="#6b21a8" opacity="0.2"/>
   <rect x="676" y="152" width="80" height="24" rx="4" fill="none" stroke="#6b21a8" stroke-width="1"/>
   <text x="716" y="168" font-family="system-ui,-apple-system" font-size="11" fill="#a78bfa" text-anchor="middle" font-weight="600">CTO</text>
 
-  <text x="798" y="218" font-family="system-ui,-apple-system" font-size="20" font-weight="700" fill="#0f172a">技术负责人</text>
-  <text x="798" y="244" font-family="system-ui,-apple-system" font-size="14" fill="#a78bfa">招募中</text>
+  <text x="798" y="218" font-family="system-ui,-apple-system" font-size="20" font-weight="700" fill="#0f172a">Kevin</text>
+  <text x="798" y="244" font-family="system-ui,-apple-system" font-size="14" fill="#a78bfa">创始人兼任 · 技术负责人</text>
 
   <line x1="798" y1="262" x2="1220" y2="262" stroke="#e2e8f0" stroke-width="1"/>
 
   <circle cx="806" cy="284" r="4" fill="#6b21a8"/>
-  <text x="820" y="289" font-family="system-ui,-apple-system" font-size="13" fill="#64748b">SaaS产品全栈开发经验</text>
+  <text x="820" y="289" font-family="system-ui,-apple-system" font-size="13" fill="#64748b">全栈工程师，SaaS系统架构经验</text>
   <circle cx="806" cy="310" r="4" fill="#6b21a8"/>
-  <text x="820" y="315" font-family="system-ui,-apple-system" font-size="13" fill="#64748b">AI/ML工程落地经验</text>
+  <text x="820" y="315" font-family="system-ui,-apple-system" font-size="13" fill="#64748b">AI工程落地与产品化实践</text>
   <circle cx="806" cy="336" r="4" fill="#6b21a8"/>
-  <text x="820" y="341" font-family="system-ui,-apple-system" font-size="13" fill="#64748b">B端产品架构设计能力</text>
+  <text x="820" y="341" font-family="system-ui,-apple-system" font-size="13" fill="#f59e0b" font-weight="600">自己搭建了这套系统原型</text>
 
   <!-- 成员卡片 3: 产品负责人 -->
   <rect x="40" y="400" width="580" height="240" rx="12" fill="#ffffff"/>
@@ -78,16 +74,17 @@
   <circle cx="110" cy="497" r="52" fill="#0284c7" opacity="0.1"/>
   <circle cx="110" cy="497" r="52" fill="none" stroke="#0284c7" stroke-width="1.5" stroke-dasharray="6 4"/>
 
+  <!-- Kevin 兼任头像 -->
   <rect x="66" y="469" width="88" height="56" rx="8" fill="#eff6ff" opacity="0.9"/>
-  <text x="110" y="497" font-family="system-ui,-apple-system" font-size="11" fill="#38bdf8" text-anchor="middle">招募</text>
-  <text x="110" y="513" font-family="system-ui,-apple-system" font-size="11" fill="#38bdf8" text-anchor="middle">中...</text>
+  <text x="110" y="497" font-family="system-ui,-apple-system" font-size="20" font-weight="900" fill="#0284c7" text-anchor="middle">K</text>
+  <text x="110" y="515" font-family="system-ui,-apple-system" font-size="9" fill="#38bdf8" text-anchor="middle">兼任</text>
 
   <rect x="56" y="418" width="110" height="24" rx="4" fill="#0284c7" opacity="0.2"/>
   <rect x="56" y="418" width="110" height="24" rx="4" fill="none" stroke="#0284c7" stroke-width="1"/>
   <text x="111" y="434" font-family="system-ui,-apple-system" font-size="11" fill="#38bdf8" text-anchor="middle" font-weight="600">产品负责人</text>
 
   <text x="178" y="483" font-family="system-ui,-apple-system" font-size="20" font-weight="700" fill="#0f172a">产品设计负责人</text>
-  <text x="178" y="509" font-family="system-ui,-apple-system" font-size="14" fill="#38bdf8">招募中</text>
+  <text x="178" y="509" font-family="system-ui,-apple-system" font-size="14" fill="#38bdf8">Kevin 兼任 · 招募中</text>
 
   <line x1="178" y1="527" x2="600" y2="527" stroke="#e2e8f0" stroke-width="1"/>
 
