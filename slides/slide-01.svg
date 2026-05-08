@@ -86,7 +86,7 @@
   <rect x="860" y="580" width="380" height="90" rx="8" fill="#ffffff"/>
   <rect x="860" y="580" width="4" height="90" rx="2" fill="#f59e0b"/>
   <text x="878" y="617" font-family="system-ui,-apple-system" font-size="14" fill="#f59e0b" font-weight="600">— 产品理念</text>
-  <text x="878" y="648" font-family="system-ui,-apple-system" font-size="17" fill="#0f172a" font-weight="500">让门店营销像发朋友圈一样简单</text>
+  <text x="878" y="648" font-family="system-ui,-apple-system" font-size="17" fill="#0f172a" font-weight="500">每家连锁店，因 AI 而盈利</text>
 
   <!-- 底部版本号 -->
   <text x="80" y="695" font-family="system-ui,-apple-system" font-size="12" fill="#64748b">店盈AI · 商业计划书 2024</text>
