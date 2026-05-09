@@ -65,13 +65,13 @@
   <!-- 12个月 -->
   <rect x="390" y="422" width="140" height="112" rx="8" fill="#fff" stroke="#e2e8f0" stroke-width="1"/>
   <text x="460" y="447" font-family="system-ui,-apple-system" font-size="11" fill="#64748b" text-anchor="middle">12个月</text>
-  <text x="460" y="472" font-family="system-ui,-apple-system" font-size="20" font-weight="800" fill="#dc2626" text-anchor="middle">ARR 170万</text>
+  <text x="460" y="472" font-family="system-ui,-apple-system" font-size="20" font-weight="800" fill="#dc2626" text-anchor="middle">年收入 170万</text>
   <text x="460" y="492" font-family="system-ui,-apple-system" font-size="11" fill="#94a3b8" text-anchor="middle">100家付费客户</text>
   <text x="460" y="510" font-family="system-ui,-apple-system" font-size="11" fill="#94a3b8" text-anchor="middle">完成产品验证</text>
   <!-- 24个月 -->
   <rect x="548" y="422" width="140" height="112" rx="8" fill="#fff" stroke="#e2e8f0" stroke-width="1"/>
   <text x="618" y="447" font-family="system-ui,-apple-system" font-size="11" fill="#64748b" text-anchor="middle">24个月</text>
-  <text x="618" y="472" font-family="system-ui,-apple-system" font-size="20" font-weight="800" fill="#dc2626" text-anchor="middle">ARR 1,000万</text>
+  <text x="618" y="472" font-family="system-ui,-apple-system" font-size="20" font-weight="800" fill="#dc2626" text-anchor="middle">年收入 1,000万</text>
   <text x="618" y="492" font-family="system-ui,-apple-system" font-size="11" fill="#94a3b8" text-anchor="middle">500家客户</text>
   <text x="618" y="510" font-family="system-ui,-apple-system" font-size="11" fill="#94a3b8" text-anchor="middle">华南市场领先</text>
   <!-- 36个月 -->
@@ -84,8 +84,8 @@
   <!-- 投资回报 -->
   <rect x="892" y="382" width="380" height="168" rx="10" fill="#f0fdf4" stroke="#bbf7d0" stroke-width="1.5"/>
   <text x="1082" y="410" font-family="system-ui,-apple-system" font-size="13" fill="#16a34a" font-weight="700" text-anchor="middle">投资人预期回报</text>
-  <text x="908" y="440" font-family="system-ui,-apple-system" font-size="12" fill="#374151">第3年 ARR ≈ <tspan font-weight="700">1,000万</tspan></text>
-  <text x="908" y="462" font-family="system-ui,-apple-system" font-size="12" fill="#374151">按 5-8x ARR 估值：<tspan font-weight="700">5,000-8,000万</tspan></text>
+  <text x="908" y="440" font-family="system-ui,-apple-system" font-size="12" fill="#374151">第3年年收入 ≈ <tspan font-weight="700">1,000万</tspan></text>
+  <text x="908" y="462" font-family="system-ui,-apple-system" font-size="12" fill="#374151">按 5-8倍年收入估值：<tspan font-weight="700">5,000-8,000万</tspan></text>
   <text x="908" y="484" font-family="system-ui,-apple-system" font-size="12" fill="#374151">持股比例：<tspan font-weight="700">10%-15%</tspan></text>
   <line x1="908" y1="494" x2="1258" y2="494" stroke="#bbf7d0" stroke-width="1"/>
   <text x="908" y="518" font-family="system-ui,-apple-system" font-size="13" fill="#15803d" font-weight="700">股份价值：500万 - 1,200万</text>

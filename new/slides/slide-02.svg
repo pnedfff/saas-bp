@@ -11,7 +11,7 @@
   <text x="56" y="32" font-family="system-ui,-apple-system,PingFang SC,Microsoft YaHei,sans-serif" font-size="14" fill="#dc2626" font-weight="600">PAIN POINT STORY</text>
   <text x="56" y="56" font-family="system-ui,-apple-system,PingFang SC,Microsoft YaHei,sans-serif" font-size="20" font-weight="700" fill="#0f172a">一个60家门店品牌总监的日常崩溃</text>
   <!-- 底部页码 -->
-  <text x="640" y="712" font-family="system-ui,-apple-system,PingFang SC,Microsoft YaHei,sans-serif" font-size="14" fill="#94a3b8" text-anchor="middle">店盈AI · 商业计划书 2026 · 第2页</text>
+  <text x="640" y="700" font-family="system-ui,-apple-system,PingFang SC,Microsoft YaHei,sans-serif" font-size="14" fill="#94a3b8" text-anchor="middle">店盈AI · 商业计划书 2026 · 第2页</text>
 
   <!-- 时间轴竖线 -->
   <line x1="200" y1="90" x2="200" y2="650" stroke="#e2e8f0" stroke-width="2" stroke-dasharray="6,4"/>

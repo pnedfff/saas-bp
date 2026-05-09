@@ -11,7 +11,7 @@
   <text x="56" y="32" font-family="system-ui,-apple-system,PingFang SC,Microsoft YaHei,sans-serif" font-size="14" fill="#dc2626" font-weight="600">MARKET VALIDATION</text>
   <text x="56" y="56" font-family="system-ui,-apple-system,PingFang SC,Microsoft YaHei,sans-serif" font-size="20" font-weight="700" fill="#0f172a">大企业有系统，中小企业只能“用爱管理”</text>
   <!-- 底部页码 -->
-  <text x="640" y="712" font-family="system-ui,-apple-system,PingFang SC,Microsoft YaHei,sans-serif" font-size="14" fill="#94a3b8" text-anchor="middle">店盈AI · 商业计划书 2026 · 第4页</text>
+  <text x="640" y="700" font-family="system-ui,-apple-system,PingFang SC,Microsoft YaHei,sans-serif" font-size="14" fill="#94a3b8" text-anchor="middle">店盈AI · 商业计划书 2026 · 第4页</text>
 
   <!-- 左列 — 大企业 x=40-420 -->
   <rect x="40" y="90" width="380" height="440" rx="10" fill="#ffffff"/>
