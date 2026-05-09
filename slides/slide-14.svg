@@ -12,52 +12,52 @@
 
   <!-- 标题 -->
   <text x="640" y="88" font-family="system-ui,-apple-system,PingFang SC,Microsoft YaHei,sans-serif" font-size="15" fill="#64748b" text-anchor="middle">VISION · 三年愿景</text>
-  <text x="640" y="126" font-family="system-ui,-apple-system,PingFang SC,Microsoft YaHei,sans-serif" font-size="26" font-weight="900" fill="#ffffff" text-anchor="middle">让每一家小店</text>
-  <text x="640" y="160" font-family="system-ui,-apple-system,PingFang SC,Microsoft YaHei,sans-serif" font-size="26" font-weight="900" fill="#f59e0b" text-anchor="middle">都拥有大企业的营销能力</text>
+  <text x="640" y="191" font-family="system-ui,-apple-system,PingFang SC,Microsoft YaHei,sans-serif" font-size="26" font-weight="900" fill="#ffffff" text-anchor="middle">让每一家小店</text>
+  <text x="640" y="225" font-family="system-ui,-apple-system,PingFang SC,Microsoft YaHei,sans-serif" font-size="26" font-weight="900" fill="#f59e0b" text-anchor="middle">都拥有大企业的营销能力</text>
 
   <!-- 三年目标 — 三个大数字 -->
-  <line x1="160" y1="188" x2="1120" y2="188" stroke="#1e293b" stroke-width="1"/>
+  <line x1="160" y1="253" x2="1120" y2="253" stroke="#1e293b" stroke-width="1"/>
 
-  <rect x="120" y="200" width="300" height="130" rx="10" fill="#1e293b"/>
-  <text x="270" y="248" font-family="system-ui,-apple-system,PingFang SC,Microsoft YaHei,sans-serif" font-size="48" font-weight="900" fill="#dc2626" text-anchor="middle">500</text>
-  <text x="270" y="278" font-family="system-ui,-apple-system,PingFang SC,Microsoft YaHei,sans-serif" font-size="14" fill="#94a3b8" text-anchor="middle">家</text>
-  <text x="270" y="314" font-family="system-ui,-apple-system,PingFang SC,Microsoft YaHei,sans-serif" font-size="13" fill="#f8fafc" text-anchor="middle">付费连锁品牌</text>
+  <rect x="120" y="265" width="300" height="130" rx="10" fill="#1e293b"/>
+  <text x="270" y="313" font-family="system-ui,-apple-system,PingFang SC,Microsoft YaHei,sans-serif" font-size="48" font-weight="900" fill="#dc2626" text-anchor="middle">500</text>
+  <text x="270" y="343" font-family="system-ui,-apple-system,PingFang SC,Microsoft YaHei,sans-serif" font-size="14" fill="#94a3b8" text-anchor="middle">家</text>
+  <text x="270" y="379" font-family="system-ui,-apple-system,PingFang SC,Microsoft YaHei,sans-serif" font-size="13" fill="#f8fafc" text-anchor="middle">付费连锁品牌</text>
 
-  <rect x="490" y="200" width="300" height="130" rx="10" fill="#1e293b"/>
-  <text x="640" y="248" font-family="system-ui,-apple-system,PingFang SC,Microsoft YaHei,sans-serif" font-size="36" font-weight="900" fill="#f59e0b" text-anchor="middle">100万</text>
-  <text x="640" y="278" font-family="system-ui,-apple-system,PingFang SC,Microsoft YaHei,sans-serif" font-size="14" fill="#94a3b8" text-anchor="middle">个</text>
-  <text x="640" y="314" font-family="system-ui,-apple-system,PingFang SC,Microsoft YaHei,sans-serif" font-size="13" fill="#f8fafc" text-anchor="middle">门店广告点位纳管</text>
+  <rect x="490" y="265" width="300" height="130" rx="10" fill="#1e293b"/>
+  <text x="640" y="313" font-family="system-ui,-apple-system,PingFang SC,Microsoft YaHei,sans-serif" font-size="36" font-weight="900" fill="#f59e0b" text-anchor="middle">100万</text>
+  <text x="640" y="343" font-family="system-ui,-apple-system,PingFang SC,Microsoft YaHei,sans-serif" font-size="14" fill="#94a3b8" text-anchor="middle">个</text>
+  <text x="640" y="379" font-family="system-ui,-apple-system,PingFang SC,Microsoft YaHei,sans-serif" font-size="13" fill="#f8fafc" text-anchor="middle">门店广告点位纳管</text>
 
-  <rect x="860" y="200" width="300" height="130" rx="10" fill="#1e293b"/>
-  <text x="1010" y="248" font-family="system-ui,-apple-system,PingFang SC,Microsoft YaHei,sans-serif" font-size="36" font-weight="900" fill="#16a34a" text-anchor="middle">1,000万</text>
-  <text x="1010" y="278" font-family="system-ui,-apple-system,PingFang SC,Microsoft YaHei,sans-serif" font-size="14" fill="#94a3b8" text-anchor="middle">元</text>
-  <text x="1010" y="314" font-family="system-ui,-apple-system,PingFang SC,Microsoft YaHei,sans-serif" font-size="13" fill="#f8fafc" text-anchor="middle">ARR 年度经常性收入</text>
+  <rect x="860" y="265" width="300" height="130" rx="10" fill="#1e293b"/>
+  <text x="1010" y="313" font-family="system-ui,-apple-system,PingFang SC,Microsoft YaHei,sans-serif" font-size="36" font-weight="900" fill="#16a34a" text-anchor="middle">1,000万</text>
+  <text x="1010" y="343" font-family="system-ui,-apple-system,PingFang SC,Microsoft YaHei,sans-serif" font-size="14" fill="#94a3b8" text-anchor="middle">元</text>
+  <text x="1010" y="379" font-family="system-ui,-apple-system,PingFang SC,Microsoft YaHei,sans-serif" font-size="13" fill="#f8fafc" text-anchor="middle">年收入 年度经常性收入</text>
 
   <!-- 对标三家 -->
-  <line x1="160" y1="348" x2="1120" y2="348" stroke="#1e293b" stroke-width="1"/>
+  <line x1="160" y1="413" x2="1120" y2="413" stroke="#1e293b" stroke-width="1"/>
 
-  <rect x="120" y="390" width="240" height="72" rx="8" fill="#1e293b"/>
-  <text x="240" y="420" font-family="system-ui,-apple-system,PingFang SC,Microsoft YaHei,sans-serif" font-size="14" font-weight="700" fill="#dc2626" text-anchor="middle">分众传媒</text>
+  <rect x="120" y="455" width="240" height="72" rx="8" fill="#1e293b"/>
+  <text x="240" y="485" font-family="system-ui,-apple-system,PingFang SC,Microsoft YaHei,sans-serif" font-size="14" font-weight="700" fill="#dc2626" text-anchor="middle">分众传媒</text>
 
-  <text x="420" y="430" font-family="system-ui,-apple-system,PingFang SC,Microsoft YaHei,sans-serif" font-size="24" fill="#334155" text-anchor="middle">+</text>
+  <text x="420" y="495" font-family="system-ui,-apple-system,PingFang SC,Microsoft YaHei,sans-serif" font-size="24" fill="#334155" text-anchor="middle">+</text>
 
-  <rect x="490" y="390" width="300" height="72" rx="8" fill="#1e293b"/>
-  <text x="640" y="420" font-family="system-ui,-apple-system,PingFang SC,Microsoft YaHei,sans-serif" font-size="14" font-weight="700" fill="#f59e0b" text-anchor="middle">有赞 · 微盟</text>
+  <rect x="490" y="455" width="300" height="72" rx="8" fill="#1e293b"/>
+  <text x="640" y="485" font-family="system-ui,-apple-system,PingFang SC,Microsoft YaHei,sans-serif" font-size="14" font-weight="700" fill="#f59e0b" text-anchor="middle">有赞 · 微盟</text>
 
-  <text x="860" y="430" font-family="system-ui,-apple-system,PingFang SC,Microsoft YaHei,sans-serif" font-size="24" fill="#334155" text-anchor="middle">+</text>
+  <text x="860" y="495" font-family="system-ui,-apple-system,PingFang SC,Microsoft YaHei,sans-serif" font-size="24" fill="#334155" text-anchor="middle">+</text>
 
-  <rect x="920" y="390" width="240" height="72" rx="8" fill="#1e293b"/>
-  <text x="1040" y="420" font-family="system-ui,-apple-system,PingFang SC,Microsoft YaHei,sans-serif" font-size="14" font-weight="700" fill="#16a34a" text-anchor="middle">AI设计工具</text>
+  <rect x="920" y="455" width="240" height="72" rx="8" fill="#1e293b"/>
+  <text x="1040" y="485" font-family="system-ui,-apple-system,PingFang SC,Microsoft YaHei,sans-serif" font-size="14" font-weight="700" fill="#16a34a" text-anchor="middle">AI设计工具</text>
 
   <!-- 等号和结论 -->
-  <text x="640" y="498" font-family="system-ui,-apple-system,PingFang SC,Microsoft YaHei,sans-serif" font-size="22" fill="#334155" text-anchor="middle">= 店盈AI</text>
+  <text x="640" y="563" font-family="system-ui,-apple-system,PingFang SC,Microsoft YaHei,sans-serif" font-size="22" fill="#334155" text-anchor="middle">= 店盈AI</text>
 
   <!-- 大Slogan -->
-  <line x1="160" y1="516" x2="1120" y2="516" stroke="#1e293b" stroke-width="1"/>
-  <text x="640" y="584" font-family="system-ui,-apple-system,PingFang SC,Microsoft YaHei,sans-serif" font-size="22" font-weight="700" fill="#64748b" text-anchor="middle">1个人，管好100家店的营销</text>
+  <line x1="160" y1="581" x2="1120" y2="581" stroke="#1e293b" stroke-width="1"/>
+  <text x="640" y="649" font-family="system-ui,-apple-system,PingFang SC,Microsoft YaHei,sans-serif" font-size="22" font-weight="700" fill="#64748b" text-anchor="middle">1个人，管好100家店的营销</text>
 
   <!-- 联系方式 -->
-  <line x1="160" y1="584" x2="1120" y2="584" stroke="#1e293b" stroke-width="1"/>
+  <line x1="160" y1="649" x2="1120" y2="649" stroke="#1e293b" stroke-width="1"/>
   <text x="640" y="614" font-family="system-ui,-apple-system,PingFang SC,Microsoft YaHei,sans-serif" font-size="13" fill="#64748b" text-anchor="middle">联系我们</text>
 
   <text x="300" y="648" font-family="system-ui,-apple-system,PingFang SC,Microsoft YaHei,sans-serif" font-size="13" fill="#94a3b8" text-anchor="middle">姓名：[创始人姓名]</text>

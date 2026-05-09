@@ -69,7 +69,7 @@
 
   <text x="936" y="320" font-family="system-ui,-apple-system,PingFang SC,Microsoft YaHei,sans-serif" font-size="13" fill="#f8fafc">✓  专业版全部功能</text>
   <text x="936" y="344" font-family="system-ui,-apple-system,PingFang SC,Microsoft YaHei,sans-serif" font-size="13" fill="#f8fafc">✓  定制功能开发</text>
-  <text x="936" y="368" font-family="system-ui,-apple-system,PingFang SC,Microsoft YaHei,sans-serif" font-size="13" fill="#f8fafc">✓  API对接（ERP/CRM等）</text>
+  <text x="936" y="368" font-family="system-ui,-apple-system,PingFang SC,Microsoft YaHei,sans-serif" font-size="13" fill="#f8fafc">✓  API对接（第三方管理系统/CRM等）</text>
 
   <rect x="920" y="492" width="260" height="44" rx="8" fill="#1e293b"/>
   <text x="1050" y="519" font-family="system-ui,-apple-system,PingFang SC,Microsoft YaHei,sans-serif" font-size="13" fill="#94a3b8" text-anchor="middle">可定制，价格面议</text>

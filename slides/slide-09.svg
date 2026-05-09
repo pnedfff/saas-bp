@@ -17,7 +17,7 @@
   <text x="180" y="132" font-family="system-ui,-apple-system,PingFang SC,Microsoft YaHei,sans-serif" font-size="13" font-weight="700" fill="#dc2626" text-anchor="middle">SaaS年费</text>
   <rect x="60" y="140" width="80" height="28" rx="14" fill="#fee2e2"/>
   <text x="100" y="158" font-family="system-ui,-apple-system,PingFang SC,Microsoft YaHei,sans-serif" font-size="14" fill="#dc2626" text-anchor="middle" font-weight="600">主要收入</text>
-  <text x="180" y="190" font-family="system-ui,-apple-system,PingFang SC,Microsoft YaHei,sans-serif" font-size="36" font-weight="900" fill="#dc2626" text-anchor="middle">70%</text>
+  <text x="180" y="208" font-family="system-ui,-apple-system,PingFang SC,Microsoft YaHei,sans-serif" font-size="36" font-weight="900" fill="#dc2626" text-anchor="middle">70%</text>
   <text x="180" y="210" font-family="system-ui,-apple-system,PingFang SC,Microsoft YaHei,sans-serif" font-size="14" fill="#64748b" text-anchor="middle">占收入比例</text>
   <line x1="60" y1="224" x2="300" y2="224" stroke="#e2e8f0" stroke-width="1"/>
   <text x="60" y="248" font-family="system-ui,-apple-system,PingFang SC,Microsoft YaHei,sans-serif" font-size="14" fill="#475569">持续性强，可预测</text>
@@ -29,7 +29,7 @@
   <text x="480" y="132" font-family="system-ui,-apple-system,PingFang SC,Microsoft YaHei,sans-serif" font-size="13" font-weight="700" fill="#d97706" text-anchor="middle">AI服务费</text>
   <rect x="360" y="140" width="80" height="28" rx="14" fill="#fef3c7"/>
   <text x="400" y="158" font-family="system-ui,-apple-system,PingFang SC,Microsoft YaHei,sans-serif" font-size="14" fill="#d97706" text-anchor="middle" font-weight="600">高毛利</text>
-  <text x="480" y="190" font-family="system-ui,-apple-system,PingFang SC,Microsoft YaHei,sans-serif" font-size="36" font-weight="900" fill="#f59e0b" text-anchor="middle">按量</text>
+  <text x="480" y="208" font-family="system-ui,-apple-system,PingFang SC,Microsoft YaHei,sans-serif" font-size="36" font-weight="900" fill="#f59e0b" text-anchor="middle">按量</text>
   <text x="480" y="210" font-family="system-ui,-apple-system,PingFang SC,Microsoft YaHei,sans-serif" font-size="14" fill="#64748b" text-anchor="middle">超额部分计费</text>
   <line x1="360" y1="224" x2="600" y2="224" stroke="#e2e8f0" stroke-width="1"/>
   <text x="360" y="248" font-family="system-ui,-apple-system,PingFang SC,Microsoft YaHei,sans-serif" font-size="14" fill="#475569">海报生成 0.2元/张</text>
@@ -41,7 +41,7 @@
   <text x="780" y="132" font-family="system-ui,-apple-system,PingFang SC,Microsoft YaHei,sans-serif" font-size="13" font-weight="700" fill="#0284c7" text-anchor="middle">增值服务</text>
   <rect x="660" y="140" width="80" height="28" rx="14" fill="#e0f2fe"/>
   <text x="700" y="158" font-family="system-ui,-apple-system,PingFang SC,Microsoft YaHei,sans-serif" font-size="14" fill="#0284c7" text-anchor="middle" font-weight="600">扩展收入</text>
-  <text x="780" y="190" font-family="system-ui,-apple-system,PingFang SC,Microsoft YaHei,sans-serif" font-size="36" font-weight="900" fill="#0284c7" text-anchor="middle">项目制</text>
+  <text x="780" y="208" font-family="system-ui,-apple-system,PingFang SC,Microsoft YaHei,sans-serif" font-size="36" font-weight="900" fill="#0284c7" text-anchor="middle">项目制</text>
   <text x="780" y="210" font-family="system-ui,-apple-system,PingFang SC,Microsoft YaHei,sans-serif" font-size="14" fill="#64748b" text-anchor="middle">按项/按月收费</text>
   <line x1="660" y1="224" x2="900" y2="224" stroke="#e2e8f0" stroke-width="1"/>
   <text x="660" y="248" font-family="system-ui,-apple-system,PingFang SC,Microsoft YaHei,sans-serif" font-size="14" fill="#475569">代制作物料（外包）</text>
@@ -53,7 +53,7 @@
   <text x="1090" y="132" font-family="system-ui,-apple-system,PingFang SC,Microsoft YaHei,sans-serif" font-size="13" font-weight="700" fill="#6b21a8" text-anchor="middle">平台佣金（未来）</text>
   <rect x="960" y="140" width="80" height="28" rx="14" fill="#f3e8ff"/>
   <text x="1000" y="158" font-family="system-ui,-apple-system,PingFang SC,Microsoft YaHei,sans-serif" font-size="14" fill="#6b21a8" text-anchor="middle" font-weight="600">长期飞轮</text>
-  <text x="1090" y="190" font-family="system-ui,-apple-system,PingFang SC,Microsoft YaHei,sans-serif" font-size="36" font-weight="900" fill="#6b21a8" text-anchor="middle">10-20%</text>
+  <text x="1090" y="208" font-family="system-ui,-apple-system,PingFang SC,Microsoft YaHei,sans-serif" font-size="36" font-weight="900" fill="#6b21a8" text-anchor="middle">10-20%</text>
   <text x="1090" y="210" font-family="system-ui,-apple-system,PingFang SC,Microsoft YaHei,sans-serif" font-size="14" fill="#64748b" text-anchor="middle">点位交易抽佣</text>
   <line x1="960" y1="224" x2="1220" y2="224" stroke="#e2e8f0" stroke-width="1"/>
   <text x="960" y="248" font-family="system-ui,-apple-system,PingFang SC,Microsoft YaHei,sans-serif" font-size="14" fill="#475569">点位交易市场</text>
@@ -61,8 +61,8 @@
 
   <!-- ARR公式 -->
   <rect x="40" y="326" width="1200" height="64" rx="10" fill="#0f172a"/>
-  <text x="640" y="350" font-family="system-ui,-apple-system,PingFang SC,Microsoft YaHei,sans-serif" font-size="14" fill="#94a3b8" text-anchor="middle">ARR 公式</text>
-  <text x="640" y="378" font-family="system-ui,-apple-system,PingFang SC,Microsoft YaHei,sans-serif" font-size="16" font-weight="700" fill="#f8fafc" text-anchor="middle">ARR = 客户数 × (年费 + AI月均消耗×12) + 增值服务</text>
+  <text x="640" y="350" font-family="system-ui,-apple-system,PingFang SC,Microsoft YaHei,sans-serif" font-size="14" fill="#94a3b8" text-anchor="middle">年收入 公式</text>
+  <text x="640" y="378" font-family="system-ui,-apple-system,PingFang SC,Microsoft YaHei,sans-serif" font-size="16" font-weight="700" fill="#f8fafc" text-anchor="middle">年收入 = 客户数 × (年费 + AI月均消耗×12) + 增值服务</text>
 
   <!-- 算账示例 -->
   <rect x="40" y="408" width="570" height="255" rx="10" fill="#ffffff"/>
@@ -71,9 +71,9 @@
 
   <line x1="60" y1="528" x2="590" y2="528" stroke="#e2e8f0" stroke-width="1.5"/>
   <text x="60" y="552" font-family="system-ui,-apple-system,PingFang SC,Microsoft YaHei,sans-serif" font-size="15" font-weight="700" fill="#0f172a">第1年ARR合计</text>
-  <text x="500" y="552" font-family="system-ui,-apple-system,PingFang SC,Microsoft YaHei,sans-serif" font-size="22" font-weight="900" fill="#dc2626" text-anchor="end">≈150万</text>
-  <text x="60" y="576" font-family="system-ui,-apple-system,PingFang SC,Microsoft YaHei,sans-serif" font-size="14" fill="#64748b">第2年续费率85% + 新增客户 → ARR 300万+</text>
-  <text x="60" y="596" font-family="system-ui,-apple-system,PingFang SC,Microsoft YaHei,sans-serif" font-size="14" fill="#64748b">第3年增长至 500家客户 → ARR 1000万+</text>
+  <text x="500" y="562" font-family="system-ui,-apple-system,PingFang SC,Microsoft YaHei,sans-serif" font-size="22" font-weight="900" fill="#dc2626" text-anchor="end">≈150万</text>
+  <text x="60" y="576" font-family="system-ui,-apple-system,PingFang SC,Microsoft YaHei,sans-serif" font-size="14" fill="#64748b">第2年续费率85% + 新增客户 → 年收入 300万+</text>
+  <text x="60" y="596" font-family="system-ui,-apple-system,PingFang SC,Microsoft YaHei,sans-serif" font-size="14" fill="#64748b">第3年增长至 500家客户 → 年收入 1000万+</text>
 
   <!-- 续费飞轮 -->
   <rect x="630" y="408" width="610" height="255" rx="10" fill="#ffffff"/>

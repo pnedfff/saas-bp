@@ -87,6 +87,6 @@
 
   <!-- 护城河 -->
   <rect x="60" y="648" width="1160" height="24" rx="4" fill="#fef3c7"/>
-  <text x="640" y="664" font-family="system-ui,-apple-system,PingFang SC,Microsoft YaHei,sans-serif" font-size="14" font-weight="700" fill="#d97706" text-anchor="middle">护城河：客户数据越积越重（点位、SKU、执行历史），替换成本越来越高，续费率 &gt;85%</text>
+  <text x="640" y="664" font-family="system-ui,-apple-system,PingFang SC,Microsoft YaHei,sans-serif" font-size="14" font-weight="700" fill="#d97706" text-anchor="middle">护城河：客户数据越积越重（点位、商品档案、执行历史），替换成本越来越高，续费率 &gt;85%</text>
 
 </svg>

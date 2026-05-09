@@ -12,17 +12,17 @@
 
   <!-- 架构层 1: 总店 -->
   <rect x="280" y="190" width="260" height="56" rx="8" fill="#0f172a"/>
-  <text x="410" y="215" font-family="system-ui,-apple-system,PingFang SC,Microsoft YaHei,sans-serif" font-size="12" fill="#94a3b8" text-anchor="middle">HEADQUARTERS · 总部</text>
+  <text x="410" y="215" font-family="system-ui,-apple-system,PingFang SC,Microsoft YaHei,sans-serif" font-size="12" fill="#94a3b8" text-anchor="middle">总部 · 总部</text>
   <text x="410" y="235" font-family="system-ui,-apple-system,PingFang SC,Microsoft YaHei,sans-serif" font-size="14" font-weight="700" fill="#ffffff" text-anchor="middle">总店运营 / 老板</text>
 
   <!-- 箭头 1 -->
   <line x1="410" y1="246" x2="410" y2="276" stroke="#64748b" stroke-width="1.5"/>
   <polygon points="410,282 405,272 415,272" fill="#64748b"/>
-  <text x="420" y="266" font-family="system-ui,-apple-system,PingFang SC,Microsoft YaHei,sans-serif" font-size="10" fill="#64748b">派任务 / 看报表</text>
+  <text x="420" y="266" font-family="system-ui,-apple-system,PingFang SC,Microsoft YaHei,sans-serif" font-size="12" fill="#64748b">派任务 / 看报表</text>
 
   <!-- 架构层 2: 总店 WeChat Bot -->
   <rect x="240" y="285" width="340" height="56" rx="8" fill="#dcfce7" stroke="#16a34a" stroke-width="1.5"/>
-  <text x="410" y="308" font-family="system-ui,-apple-system,PingFang SC,Microsoft YaHei,sans-serif" font-size="11" fill="#16a34a" text-anchor="middle" font-weight="700">WECHAT 官方 BOT · 合规零封号</text>
+  <text x="410" y="308" font-family="system-ui,-apple-system,PingFang SC,Microsoft YaHei,sans-serif" font-size="12" fill="#16a34a" text-anchor="middle" font-weight="700">WECHAT 官方 BOT · 合规零封号</text>
   <text x="410" y="328" font-family="system-ui,-apple-system,PingFang SC,Microsoft YaHei,sans-serif" font-size="13" font-weight="700" fill="#0f172a" text-anchor="middle">总店 WeChat Bot（命令中心）</text>
 
   <!-- 双向箭头 -->
@@ -32,9 +32,9 @@
 
   <!-- 架构层 3: Hermes Agent (大脑) -->
   <rect x="200" y="384" width="420" height="80" rx="8" fill="#fee2e2" stroke="#dc2626" stroke-width="2"/>
-  <text x="410" y="408" font-family="system-ui,-apple-system,PingFang SC,Microsoft YaHei,sans-serif" font-size="11" fill="#dc2626" text-anchor="middle" font-weight="700">HERMES AGENT · AI 大脑</text>
+  <text x="410" y="408" font-family="system-ui,-apple-system,PingFang SC,Microsoft YaHei,sans-serif" font-size="12" fill="#dc2626" text-anchor="middle" font-weight="700">HERMES AGENT · AI 大脑</text>
   <text x="410" y="428" font-family="system-ui,-apple-system,PingFang SC,Microsoft YaHei,sans-serif" font-size="14" font-weight="700" fill="#0f172a" text-anchor="middle">多店长状态管理 · 任务编排 · AI 审核 · 数据沉淀</text>
-  <text x="410" y="450" font-family="system-ui,-apple-system,PingFang SC,Microsoft YaHei,sans-serif" font-size="11" fill="#64748b" text-anchor="middle">Claude（推理）+ Gemini（批量）+ 国产模型（隐私）</text>
+  <text x="410" y="450" font-family="system-ui,-apple-system,PingFang SC,Microsoft YaHei,sans-serif" font-size="12" fill="#64748b" text-anchor="middle">Claude（推理）+ Gemini（批量）+ 国产模型（隐私）</text>
 
   <!-- 多个箭头到店长 -->
   <line x1="280" y1="464" x2="180" y2="510" stroke="#94a3b8" stroke-width="1.5"/>
@@ -45,49 +45,49 @@
 
   <!-- 架构层 4: 店长们的 WeChat -->
   <rect x="100" y="510" width="120" height="50" rx="6" fill="#e0f2fe" stroke="#0284c7" stroke-width="1"/>
-  <text x="160" y="530" font-family="system-ui,-apple-system,PingFang SC,Microsoft YaHei,sans-serif" font-size="11" fill="#0284c7" text-anchor="middle">店长 1 微信</text>
-  <text x="160" y="548" font-family="system-ui,-apple-system,PingFang SC,Microsoft YaHei,sans-serif" font-size="10" fill="#64748b" text-anchor="middle">扫码即绑定</text>
+  <text x="160" y="530" font-family="system-ui,-apple-system,PingFang SC,Microsoft YaHei,sans-serif" font-size="12" fill="#0284c7" text-anchor="middle">店长 1 微信</text>
+  <text x="160" y="548" font-family="system-ui,-apple-system,PingFang SC,Microsoft YaHei,sans-serif" font-size="12" fill="#64748b" text-anchor="middle">扫码即绑定</text>
 
   <rect x="240" y="510" width="120" height="50" rx="6" fill="#e0f2fe" stroke="#0284c7" stroke-width="1"/>
-  <text x="300" y="530" font-family="system-ui,-apple-system,PingFang SC,Microsoft YaHei,sans-serif" font-size="11" fill="#0284c7" text-anchor="middle">店长 2 微信</text>
-  <text x="300" y="548" font-family="system-ui,-apple-system,PingFang SC,Microsoft YaHei,sans-serif" font-size="10" fill="#64748b" text-anchor="middle">扫码即绑定</text>
+  <text x="300" y="530" font-family="system-ui,-apple-system,PingFang SC,Microsoft YaHei,sans-serif" font-size="12" fill="#0284c7" text-anchor="middle">店长 2 微信</text>
+  <text x="300" y="548" font-family="system-ui,-apple-system,PingFang SC,Microsoft YaHei,sans-serif" font-size="12" fill="#64748b" text-anchor="middle">扫码即绑定</text>
 
   <rect x="380" y="510" width="60" height="50" rx="6" fill="#e0f2fe" stroke="#0284c7" stroke-width="1"/>
   <text x="410" y="540" font-family="system-ui,-apple-system,PingFang SC,Microsoft YaHei,sans-serif" font-size="14" fill="#0284c7" text-anchor="middle" font-weight="700">···</text>
 
   <rect x="460" y="510" width="120" height="50" rx="6" fill="#e0f2fe" stroke="#0284c7" stroke-width="1"/>
-  <text x="520" y="530" font-family="system-ui,-apple-system,PingFang SC,Microsoft YaHei,sans-serif" font-size="11" fill="#0284c7" text-anchor="middle">店长 N 微信</text>
-  <text x="520" y="548" font-family="system-ui,-apple-system,PingFang SC,Microsoft YaHei,sans-serif" font-size="10" fill="#64748b" text-anchor="middle">扫码即绑定</text>
+  <text x="520" y="530" font-family="system-ui,-apple-system,PingFang SC,Microsoft YaHei,sans-serif" font-size="12" fill="#0284c7" text-anchor="middle">店长 N 微信</text>
+  <text x="520" y="548" font-family="system-ui,-apple-system,PingFang SC,Microsoft YaHei,sans-serif" font-size="12" fill="#64748b" text-anchor="middle">扫码即绑定</text>
 
   <rect x="600" y="510" width="120" height="50" rx="6" fill="#fffbeb" stroke="#f59e0b" stroke-width="1.5"/>
-  <text x="660" y="530" font-family="system-ui,-apple-system,PingFang SC,Microsoft YaHei,sans-serif" font-size="11" fill="#f59e0b" text-anchor="middle" font-weight="700">100 家门店现场</text>
-  <text x="660" y="548" font-family="system-ui,-apple-system,PingFang SC,Microsoft YaHei,sans-serif" font-size="10" fill="#64748b" text-anchor="middle">拍照 / 汇报</text>
+  <text x="660" y="530" font-family="system-ui,-apple-system,PingFang SC,Microsoft YaHei,sans-serif" font-size="12" fill="#f59e0b" text-anchor="middle" font-weight="700">100 家门店现场</text>
+  <text x="660" y="548" font-family="system-ui,-apple-system,PingFang SC,Microsoft YaHei,sans-serif" font-size="12" fill="#64748b" text-anchor="middle">拍照 / 汇报</text>
 
   <!-- 闭环回路 -->
   <path d="M 660 510 Q 730 350 720 240 Q 700 180 540 198" fill="none" stroke="#16a34a" stroke-width="1.5" stroke-dasharray="5,3"/>
   <polygon points="540,198 552,194 552,202" fill="#16a34a"/>
-  <text x="730" y="430" font-family="system-ui,-apple-system,PingFang SC,Microsoft YaHei,sans-serif" font-size="10" fill="#16a34a" font-weight="700">审核通过</text>
-  <text x="730" y="445" font-family="system-ui,-apple-system,PingFang SC,Microsoft YaHei,sans-serif" font-size="10" fill="#16a34a">→ 自动推送总店</text>
+  <text x="730" y="430" font-family="system-ui,-apple-system,PingFang SC,Microsoft YaHei,sans-serif" font-size="12" fill="#16a34a" font-weight="700">审核通过</text>
+  <text x="730" y="445" font-family="system-ui,-apple-system,PingFang SC,Microsoft YaHei,sans-serif" font-size="12" fill="#16a34a">→ 自动推送总店</text>
 
-  <text x="410" y="617" font-family="system-ui,-apple-system,PingFang SC,Microsoft YaHei,sans-serif" font-size="11" fill="#64748b" text-anchor="middle">店长拍照 → AI 实时审核（角度/光线/陈列）→ 合规自动推总店 / 不合规反馈让店长重拍</text>
+  <text x="410" y="617" font-family="system-ui,-apple-system,PingFang SC,Microsoft YaHei,sans-serif" font-size="12" fill="#64748b" text-anchor="middle">店长拍照 → AI 实时审核（角度/光线/陈列）→ 合规自动推总店 / 不合规反馈让店长重拍</text>
 
   <!-- 右侧：交互示例 + 护城河 -->
   <rect x="780" y="160" width="440" height="240" rx="12" fill="#ffffff" stroke="#e2e8f0" stroke-width="1"/>
   <text x="800" y="190" font-family="system-ui,-apple-system,PingFang SC,Microsoft YaHei,sans-serif" font-size="13" font-weight="700" fill="#0f172a">店长侧 · 对话式工作（个人微信）</text>
 
   <rect x="800" y="208" width="400" height="32" rx="6" fill="#f1f5f9"/>
-  <text x="812" y="228" font-family="system-ui,-apple-system,PingFang SC,Microsoft YaHei,sans-serif" font-size="11" fill="#475569">📥 张店长，本周朋友圈素材已生成，请周三前发 5 条 👇</text>
+  <text x="812" y="228" font-family="system-ui,-apple-system,PingFang SC,Microsoft YaHei,sans-serif" font-size="12" fill="#475569">📥 张店长，本周朋友圈素材已生成，请周三前发 5 条 👇</text>
 
   <rect x="800" y="248" width="400" height="32" rx="6" fill="#f1f5f9"/>
-  <text x="812" y="268" font-family="system-ui,-apple-system,PingFang SC,Microsoft YaHei,sans-serif" font-size="11" fill="#475569">📸 [店长直接发图] · AI：「角度偏了，正面再来一张～」</text>
+  <text x="812" y="268" font-family="system-ui,-apple-system,PingFang SC,Microsoft YaHei,sans-serif" font-size="12" fill="#475569">📸 [店长直接发图] · AI：「角度偏了，正面再来一张～」</text>
 
   <rect x="800" y="288" width="400" height="32" rx="6" fill="#f1f5f9"/>
-  <text x="812" y="308" font-family="system-ui,-apple-system,PingFang SC,Microsoft YaHei,sans-serif" font-size="11" fill="#475569">✅ 已通过，本周完成 3/5</text>
+  <text x="812" y="308" font-family="system-ui,-apple-system,PingFang SC,Microsoft YaHei,sans-serif" font-size="12" fill="#475569">✅ 已通过，本周完成 3/5</text>
 
   <rect x="800" y="328" width="400" height="32" rx="6" fill="#f1f5f9"/>
-  <text x="812" y="348" font-family="system-ui,-apple-system,PingFang SC,Microsoft YaHei,sans-serif" font-size="11" fill="#475569">❓ 「这周还剩几个任务？」「上周销量？」</text>
+  <text x="812" y="348" font-family="system-ui,-apple-system,PingFang SC,Microsoft YaHei,sans-serif" font-size="12" fill="#475569">❓ 「这周还剩几个任务？」「上周销量？」</text>
 
-  <text x="800" y="385" font-family="system-ui,-apple-system,PingFang SC,Microsoft YaHei,sans-serif" font-size="11" fill="#94a3b8">无 app · 无注册 · 无学习成本</text>
+  <text x="800" y="385" font-family="system-ui,-apple-system,PingFang SC,Microsoft YaHei,sans-serif" font-size="12" fill="#94a3b8">无 app · 无注册 · 无学习成本</text>
 
   <!-- 护城河卡片 -->
   <rect x="780" y="420" width="440" height="230" rx="12" fill="#0f172a"/>

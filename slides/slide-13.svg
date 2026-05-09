@@ -64,12 +64,12 @@
   <rect x="680" y="136" width="540" height="80" rx="8" fill="#fefce8"/>
   <rect x="680" y="136" width="4" height="80" rx="2" fill="#f59e0b"/>
   <text x="700" y="160" font-family="system-ui,-apple-system,PingFang SC,Microsoft YaHei,sans-serif" font-size="14" font-weight="700" fill="#d97706">12个月目标</text>
-  <text x="700" y="182" font-family="system-ui,-apple-system,PingFang SC,Microsoft YaHei,sans-serif" font-size="14" fill="#0f172a">100家付费客户，ARR 170万</text>
+  <text x="700" y="182" font-family="system-ui,-apple-system,PingFang SC,Microsoft YaHei,sans-serif" font-size="14" fill="#0f172a">100家付费客户，年收入 170万</text>
 
   <rect x="680" y="228" width="540" height="80" rx="8" fill="#fefce8"/>
   <rect x="680" y="228" width="4" height="80" rx="2" fill="#f59e0b"/>
   <text x="700" y="252" font-family="system-ui,-apple-system,PingFang SC,Microsoft YaHei,sans-serif" font-size="14" font-weight="700" fill="#d97706">24个月目标</text>
-  <text x="700" y="274" font-family="system-ui,-apple-system,PingFang SC,Microsoft YaHei,sans-serif" font-size="14" fill="#0f172a">500家客户，ARR 1,000万</text>
+  <text x="700" y="274" font-family="system-ui,-apple-system,PingFang SC,Microsoft YaHei,sans-serif" font-size="14" fill="#0f172a">500家客户，年收入 1,000万</text>
 
   <rect x="680" y="320" width="540" height="80" rx="8" fill="#fefce8"/>
   <rect x="680" y="320" width="4" height="80" rx="2" fill="#f59e0b"/>
