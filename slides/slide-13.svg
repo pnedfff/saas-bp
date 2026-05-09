@@ -5,9 +5,9 @@
   <rect x="0" y="0" width="1280" height="72" fill="#ffffff" opacity="0.95"/>
   <rect width="1280" height="4" fill="#dc2626"/>
   <rect x="40" y="16" width="4" height="40" fill="#dc2626"/>
-  <text x="56" y="32" font-family="system-ui,-apple-system,PingFang SC,Microsoft YaHei,sans-serif" font-size="11" fill="#dc2626" font-weight="600">FINANCING PLAN</text>
+  <text x="56" y="32" font-family="system-ui,-apple-system,PingFang SC,Microsoft YaHei,sans-serif" font-size="14" fill="#dc2626" font-weight="600">FINANCING PLAN</text>
   <text x="56" y="56" font-family="system-ui,-apple-system,PingFang SC,Microsoft YaHei,sans-serif" font-size="20" font-weight="700" fill="#0f172a">我们需要一笔钱，加速成为第一</text>
-  <text x="640" y="712" font-family="system-ui,-apple-system,PingFang SC,Microsoft YaHei,sans-serif" font-size="11" fill="#94a3b8" text-anchor="middle">店盈AI · 商业计划书 2026 · 第13页</text>
+  <text x="640" y="712" font-family="system-ui,-apple-system,PingFang SC,Microsoft YaHei,sans-serif" font-size="14" fill="#94a3b8" text-anchor="middle">店盈AI · 商业计划书 2026 · 第13页</text>
 
   <!-- 左栏 融资方案 x=40-600 -->
   <rect x="40" y="90" width="560" height="580" rx="10" fill="#ffffff"/>
@@ -20,15 +20,15 @@
   <text x="320" y="212" font-family="system-ui,-apple-system,PingFang SC,Microsoft YaHei,sans-serif" font-size="44" font-weight="900" fill="#dc2626" text-anchor="middle">200万元</text>
 
   <rect x="60" y="248" width="248" height="72" rx="8" fill="#f8fafc"/>
-  <text x="184" y="272" font-family="system-ui,-apple-system,PingFang SC,Microsoft YaHei,sans-serif" font-size="12" fill="#94a3b8" text-anchor="middle">可调整区间</text>
+  <text x="184" y="272" font-family="system-ui,-apple-system,PingFang SC,Microsoft YaHei,sans-serif" font-size="14" fill="#94a3b8" text-anchor="middle">可调整区间</text>
   <text x="184" y="300" font-family="system-ui,-apple-system,PingFang SC,Microsoft YaHei,sans-serif" font-size="18" font-weight="700" fill="#0f172a" text-anchor="middle">150-300万</text>
 
   <rect x="332" y="248" width="248" height="72" rx="8" fill="#f8fafc"/>
-  <text x="456" y="272" font-family="system-ui,-apple-system,PingFang SC,Microsoft YaHei,sans-serif" font-size="12" fill="#94a3b8" text-anchor="middle">出让股份</text>
+  <text x="456" y="272" font-family="system-ui,-apple-system,PingFang SC,Microsoft YaHei,sans-serif" font-size="14" fill="#94a3b8" text-anchor="middle">出让股份</text>
   <text x="456" y="300" font-family="system-ui,-apple-system,PingFang SC,Microsoft YaHei,sans-serif" font-size="18" font-weight="700" fill="#0f172a" text-anchor="middle">10%-15%</text>
 
   <rect x="60" y="332" width="520" height="48" rx="8" fill="#fef3c7"/>
-  <text x="320" y="350" font-family="system-ui,-apple-system,PingFang SC,Microsoft YaHei,sans-serif" font-size="12" fill="#d97706" text-anchor="middle">投后估值</text>
+  <text x="320" y="350" font-family="system-ui,-apple-system,PingFang SC,Microsoft YaHei,sans-serif" font-size="14" fill="#d97706" text-anchor="middle">投后估值</text>
   <text x="320" y="370" font-family="system-ui,-apple-system,PingFang SC,Microsoft YaHei,sans-serif" font-size="18" font-weight="700" fill="#d97706" text-anchor="middle">约 1,500万元</text>
 
   <!-- 资金用途饼图（SVG几何示意） -->
@@ -43,7 +43,7 @@
   <!-- 10% 运营备用（蓝色）-->
   <path d="M200,510 L200,590 A80,80 0 0,1 200,430 Z" fill="#0284c7" opacity="0.85"/>
   <circle cx="200" cy="510" r="40" fill="#ffffff"/>
-  <text x="200" y="515" font-family="system-ui,-apple-system,PingFang SC,Microsoft YaHei,sans-serif" font-size="11" fill="#64748b" text-anchor="middle">用途</text>
+  <text x="200" y="515" font-family="system-ui,-apple-system,PingFang SC,Microsoft YaHei,sans-serif" font-size="14" fill="#64748b" text-anchor="middle">用途</text>
 
   <!-- 图例 -->
   <rect x="310" y="452" width="12" height="12" rx="2" fill="#dc2626" opacity="0.85"/>
@@ -63,17 +63,17 @@
   <!-- 里程碑 -->
   <rect x="680" y="136" width="540" height="80" rx="8" fill="#fefce8"/>
   <rect x="680" y="136" width="4" height="80" rx="2" fill="#f59e0b"/>
-  <text x="700" y="160" font-family="system-ui,-apple-system,PingFang SC,Microsoft YaHei,sans-serif" font-size="12" font-weight="700" fill="#d97706">12个月目标</text>
+  <text x="700" y="160" font-family="system-ui,-apple-system,PingFang SC,Microsoft YaHei,sans-serif" font-size="14" font-weight="700" fill="#d97706">12个月目标</text>
   <text x="700" y="182" font-family="system-ui,-apple-system,PingFang SC,Microsoft YaHei,sans-serif" font-size="14" fill="#0f172a">100家付费客户，ARR 170万</text>
 
   <rect x="680" y="228" width="540" height="80" rx="8" fill="#fefce8"/>
   <rect x="680" y="228" width="4" height="80" rx="2" fill="#f59e0b"/>
-  <text x="700" y="252" font-family="system-ui,-apple-system,PingFang SC,Microsoft YaHei,sans-serif" font-size="12" font-weight="700" fill="#d97706">24个月目标</text>
+  <text x="700" y="252" font-family="system-ui,-apple-system,PingFang SC,Microsoft YaHei,sans-serif" font-size="14" font-weight="700" fill="#d97706">24个月目标</text>
   <text x="700" y="274" font-family="system-ui,-apple-system,PingFang SC,Microsoft YaHei,sans-serif" font-size="14" fill="#0f172a">500家客户，ARR 1,000万</text>
 
   <rect x="680" y="320" width="540" height="80" rx="8" fill="#fefce8"/>
   <rect x="680" y="320" width="4" height="80" rx="2" fill="#f59e0b"/>
-  <text x="700" y="344" font-family="system-ui,-apple-system,PingFang SC,Microsoft YaHei,sans-serif" font-size="12" font-weight="700" fill="#d97706">36个月目标</text>
+  <text x="700" y="344" font-family="system-ui,-apple-system,PingFang SC,Microsoft YaHei,sans-serif" font-size="14" font-weight="700" fill="#d97706">36个月目标</text>
   <text x="700" y="366" font-family="system-ui,-apple-system,PingFang SC,Microsoft YaHei,sans-serif" font-size="14" fill="#0f172a">市场领导地位，准备A轮融资</text>
 
   <!-- 投资人预期回报 -->

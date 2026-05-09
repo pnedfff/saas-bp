@@ -8,11 +8,11 @@
   <rect x="0" y="0" width="1280" height="72" fill="#ffffff" opacity="0.95"/>
   <rect width="1280" height="4" fill="#dc2626"/>
   <rect x="40" y="16" width="4" height="40" fill="#dc2626"/>
-  <text x="56" y="32" font-family="system-ui,-apple-system,PingFang SC,Microsoft YaHei,sans-serif" font-size="11" fill="#dc2626" font-weight="600">PRODUCT POSITIONING</text>
+  <text x="56" y="32" font-family="system-ui,-apple-system,PingFang SC,Microsoft YaHei,sans-serif" font-size="14" fill="#dc2626" font-weight="600">PRODUCT POSITIONING</text>
   <text x="56" y="56" font-family="system-ui,-apple-system,PingFang SC,Microsoft YaHei,sans-serif" font-size="20" font-weight="700" fill="#0f172a">店盈AI · 产品定位</text>
   <text x="56" y="80" font-family="system-ui,-apple-system,PingFang SC,Microsoft YaHei,sans-serif" font-size="14" fill="#64748b">定位：面向中小企业连锁门店的AI营销管理系统</text>
   <!-- 底部页码 -->
-  <text x="640" y="712" font-family="system-ui,-apple-system,PingFang SC,Microsoft YaHei,sans-serif" font-size="11" fill="#94a3b8" text-anchor="middle">店盈AI · 商业计划书 2026 · 第2页</text>
+  <text x="640" y="712" font-family="system-ui,-apple-system,PingFang SC,Microsoft YaHei,sans-serif" font-size="14" fill="#94a3b8" text-anchor="middle">店盈AI · 商业计划书 2026 · 第2页</text>
 
   <!-- 左栏背景 x=40-620 -->
   <rect x="40" y="90" width="580" height="600" rx="10" fill="#ffffff"/>
@@ -35,22 +35,22 @@
 
   <!-- 功能4项 -->
   <circle cx="76" cy="398" r="8" fill="#dc2626" opacity="0.15"/>
-  <text x="72" y="402" font-family="system-ui,-apple-system,PingFang SC,Microsoft YaHei,sans-serif" font-size="12" text-anchor="middle" fill="#dc2626">◉</text>
+  <text x="72" y="402" font-family="system-ui,-apple-system,PingFang SC,Microsoft YaHei,sans-serif" font-size="14" text-anchor="middle" fill="#dc2626">◉</text>
   <text x="96" y="401" font-family="system-ui,-apple-system,PingFang SC,Microsoft YaHei,sans-serif" font-size="14" font-weight="700" fill="#0f172a">广告点位管理</text>
   <text x="96" y="418" font-family="system-ui,-apple-system,PingFang SC,Microsoft YaHei,sans-serif" font-size="14" fill="#64748b">可视化管理、实时状态、可追溯</text>
 
   <circle cx="76" cy="448" r="8" fill="#f59e0b" opacity="0.15"/>
-  <text x="72" y="452" font-family="system-ui,-apple-system,PingFang SC,Microsoft YaHei,sans-serif" font-size="12" text-anchor="middle" fill="#f59e0b">◉</text>
+  <text x="72" y="452" font-family="system-ui,-apple-system,PingFang SC,Microsoft YaHei,sans-serif" font-size="14" text-anchor="middle" fill="#f59e0b">◉</text>
   <text x="96" y="451" font-family="system-ui,-apple-system,PingFang SC,Microsoft YaHei,sans-serif" font-size="14" font-weight="700" fill="#0f172a">素材库管理</text>
   <text x="96" y="468" font-family="system-ui,-apple-system,PingFang SC,Microsoft YaHei,sans-serif" font-size="14" fill="#64748b">企业级共享素材库，永远用最新版</text>
 
   <circle cx="76" cy="498" r="8" fill="#0284c7" opacity="0.15"/>
-  <text x="72" y="502" font-family="system-ui,-apple-system,PingFang SC,Microsoft YaHei,sans-serif" font-size="12" text-anchor="middle" fill="#0284c7">◉</text>
+  <text x="72" y="502" font-family="system-ui,-apple-system,PingFang SC,Microsoft YaHei,sans-serif" font-size="14" text-anchor="middle" fill="#0284c7">◉</text>
   <text x="96" y="501" font-family="system-ui,-apple-system,PingFang SC,Microsoft YaHei,sans-serif" font-size="14" font-weight="700" fill="#0f172a">全链路任务管理</text>
   <text x="96" y="518" font-family="system-ui,-apple-system,PingFang SC,Microsoft YaHei,sans-serif" font-size="14" fill="#64748b">策划 → 执行 → 复盘，全程可追溯</text>
 
   <circle cx="76" cy="548" r="8" fill="#7c3aed" opacity="0.15"/>
-  <text x="72" y="552" font-family="system-ui,-apple-system,PingFang SC,Microsoft YaHei,sans-serif" font-size="12" text-anchor="middle" fill="#7c3aed">◉</text>
+  <text x="72" y="552" font-family="system-ui,-apple-system,PingFang SC,Microsoft YaHei,sans-serif" font-size="14" text-anchor="middle" fill="#7c3aed">◉</text>
   <text x="96" y="551" font-family="system-ui,-apple-system,PingFang SC,Microsoft YaHei,sans-serif" font-size="14" font-weight="700" fill="#0f172a">AI辅助</text>
   <text x="96" y="568" font-family="system-ui,-apple-system,PingFang SC,Microsoft YaHei,sans-serif" font-size="14" fill="#64748b">策划、内容生成、审核提醒一体化</text>
 

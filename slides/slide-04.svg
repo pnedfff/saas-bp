@@ -8,10 +8,10 @@
   <rect x="0" y="0" width="1280" height="72" fill="#ffffff" opacity="0.95"/>
   <rect width="1280" height="4" fill="#dc2626"/>
   <rect x="40" y="16" width="4" height="40" fill="#dc2626"/>
-  <text x="56" y="32" font-family="system-ui,-apple-system,PingFang SC,Microsoft YaHei,sans-serif" font-size="11" fill="#dc2626" font-weight="600">MARKET VALIDATION</text>
+  <text x="56" y="32" font-family="system-ui,-apple-system,PingFang SC,Microsoft YaHei,sans-serif" font-size="14" fill="#dc2626" font-weight="600">MARKET VALIDATION</text>
   <text x="56" y="56" font-family="system-ui,-apple-system,PingFang SC,Microsoft YaHei,sans-serif" font-size="20" font-weight="700" fill="#0f172a">大企业有系统，中小企业只能“用爱管理”</text>
   <!-- 底部页码 -->
-  <text x="640" y="712" font-family="system-ui,-apple-system,PingFang SC,Microsoft YaHei,sans-serif" font-size="11" fill="#94a3b8" text-anchor="middle">店盈AI · 商业计划书 2026 · 第4页</text>
+  <text x="640" y="712" font-family="system-ui,-apple-system,PingFang SC,Microsoft YaHei,sans-serif" font-size="14" fill="#94a3b8" text-anchor="middle">店盈AI · 商业计划书 2026 · 第4页</text>
 
   <!-- 左列 — 大企业 x=40-420 -->
   <rect x="40" y="90" width="380" height="440" rx="10" fill="#ffffff"/>
@@ -50,8 +50,8 @@
   <!-- 数据佐证 -->
   <rect x="460" y="332" width="340" height="130" rx="8" fill="#fff7ed"/>
   <rect x="460" y="332" width="4" height="130" rx="2" fill="#f59e0b"/>
-  <text x="480" y="356" font-family="system-ui,-apple-system,PingFang SC,Microsoft YaHei,sans-serif" font-size="12" font-weight="700" fill="#d97706">数据佐证：</text>
-  <text x="480" y="376" font-family="system-ui,-apple-system,PingFang SC,Microsoft YaHei,sans-serif" font-size="12" fill="#475569">有赞付费商家 4年内下滑 42%</text>
+  <text x="480" y="356" font-family="system-ui,-apple-system,PingFang SC,Microsoft YaHei,sans-serif" font-size="14" font-weight="700" fill="#d97706">数据佐证：</text>
+  <text x="480" y="376" font-family="system-ui,-apple-system,PingFang SC,Microsoft YaHei,sans-serif" font-size="14" fill="#475569">有赞付费商家 4年内下滑 42%</text>
   <text x="480" y="396" font-family="system-ui,-apple-system,PingFang SC,Microsoft YaHei,sans-serif" font-size="20" font-weight="900" fill="#dc2626">9.7万 → 5.6万</text>
 
   <!-- 右列 — 市场机会 x=840-1240 -->
