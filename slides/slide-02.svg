@@ -20,7 +20,7 @@
   <!-- 左栏：大标题 -->
   <text x="60" y="140" font-family="system-ui,-apple-system,PingFang SC,Microsoft YaHei,sans-serif" font-size="13" fill="#94a3b8" font-weight="600">面向</text>
   <text x="60" y="170" font-family="system-ui,-apple-system,PingFang SC,Microsoft YaHei,sans-serif" font-size="26" font-weight="900" fill="#0f172a">中小连锁门店的</text>
-  <text x="60" y="204" font-family="system-ui,-apple-system,PingFang SC,Microsoft YaHei,sans-serif" font-size="26" font-weight="900" fill="#dc2626">营销管理系统</text>
+  <text x="60" y="204" font-family="system-ui,-apple-system,PingFang SC,Microsoft YaHei,sans-serif" font-size="26" font-weight="900" fill="#dc2626">AI营销管理系统</text>
 
   <!-- 目标人群卡片 -->
   <rect x="60" y="220" width="540" height="110" rx="8" fill="#eff6ff"/>
@@ -66,8 +66,8 @@
   <!-- 价值1 -->
   <rect x="680" y="152" width="540" height="100" rx="8" fill="#fefce8"/>
   <rect x="680" y="152" width="4" height="100" rx="2" fill="#f59e0b"/>
-  <text x="700" y="178" font-family="system-ui,-apple-system,PingFang SC,Microsoft YaHei,sans-serif" font-size="28" font-weight="900" fill="#f59e0b">1/3</text>
-  <text x="700" y="198" font-family="system-ui,-apple-system,PingFang SC,Microsoft YaHei,sans-serif" font-size="13" font-weight="700" fill="#0f172a">的人力，管好 3倍 的营销活动</text>
+  <text x="700" y="178" font-family="system-ui,-apple-system,PingFang SC,Microsoft YaHei,sans-serif" font-size="28" font-weight="900" fill="#f59e0b">1人</text>
+  <text x="700" y="198" font-family="system-ui,-apple-system,PingFang SC,Microsoft YaHei,sans-serif" font-size="13" font-weight="700" fill="#0f172a">管好 100家 店的营销</text>
   <text x="700" y="216" font-family="system-ui,-apple-system,PingFang SC,Microsoft YaHei,sans-serif" font-size="12" fill="#64748b">用系统替代重复劳动，让团队专注创意</text>
   <text x="700" y="234" font-family="system-ui,-apple-system,PingFang SC,Microsoft YaHei,sans-serif" font-size="12" fill="#64748b">AI辅助内容生成，执行效率飞跃</text>
 
@@ -89,7 +89,7 @@
 
   <!-- 底部一句话 -->
   <rect x="660" y="504" width="580" height="170" rx="10" fill="#0f172a"/>
-  <text x="950" y="560" font-family="system-ui,-apple-system,PingFang SC,Microsoft YaHei,sans-serif" font-size="13" fill="#94a3b8" text-anchor="middle">核心定位</text>
+  <text x="950" y="560" font-family="system-ui,-apple-system,PingFang SC,Microsoft YaHei,sans-serif" font-size="13" fill="#94a3b8" text-anchor="middle">口号  SLOGAN</text>
   <text x="950" y="592" font-family="system-ui,-apple-system,PingFang SC,Microsoft YaHei,sans-serif" font-size="18" font-weight="900" fill="#f59e0b" text-anchor="middle">让每一家小店</text>
   <text x="950" y="618" font-family="system-ui,-apple-system,PingFang SC,Microsoft YaHei,sans-serif" font-size="18" font-weight="900" fill="#ffffff" text-anchor="middle">都拥有大企业的营销能力</text>
   <text x="950" y="648" font-family="system-ui,-apple-system,PingFang SC,Microsoft YaHei,sans-serif" font-size="12" fill="#64748b" text-anchor="middle">低门槛 · 轻量化 · AI驱动</text>
