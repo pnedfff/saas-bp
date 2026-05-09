@@ -50,14 +50,14 @@
   <text x="72" y="370" font-family="system-ui,-apple-system" font-size="13" fill="#64748b" font-weight="600" letter-spacing="1">FUNDING ASK</text>
 
   <!-- 融资方案 -->
-  <rect x="72" y="382" width="280" height="168" rx="10" fill="#fef2f2" stroke="#fecaca" stroke-width="1.5"/>
+  <rect x="72" y="382" width="280" height="180" rx="10" fill="#fef2f2" stroke="#fecaca" stroke-width="1.5"/>
   <text x="212" y="410" font-family="system-ui,-apple-system" font-size="13" fill="#dc2626" font-weight="700" text-anchor="middle">本轮融资方案</text>
-  <text x="212" y="434" font-family="system-ui,-apple-system" font-size="30" font-weight="900" fill="#dc2626" text-anchor="middle">200万元</text>
-  <text x="212" y="456" font-family="system-ui,-apple-system" font-size="12" fill="#94a3b8" text-anchor="middle">天使轮（可调：150-300万）</text>
-  <line x1="90" y1="466" x2="342" y2="466" stroke="#fecaca" stroke-width="1"/>
-  <text x="212" y="486" font-family="system-ui,-apple-system" font-size="12" fill="#64748b" text-anchor="middle">出让股份 <tspan font-weight="700" fill="#0f172a">10%-15%</tspan></text>
-  <text x="212" y="505" font-family="system-ui,-apple-system" font-size="12" fill="#64748b" text-anchor="middle">投后估值 <tspan font-weight="700" fill="#0f172a">约1,500万</tspan></text>
-  <text x="212" y="524" font-family="system-ui,-apple-system" font-size="12" fill="#64748b" text-anchor="middle">60%研发 · 30%市场 · 10%运营</text>
+  <text x="212" y="460" font-family="system-ui,-apple-system" font-size="30" font-weight="900" fill="#dc2626" text-anchor="middle">200万元</text>
+  <text x="212" y="486" font-family="system-ui,-apple-system" font-size="12" fill="#94a3b8" text-anchor="middle">天使轮（可调：150-300万）</text>
+  <line x1="90" y1="496" x2="342" y2="496" stroke="#fecaca" stroke-width="1"/>
+  <text x="212" y="508" font-family="system-ui,-apple-system" font-size="12" fill="#64748b" text-anchor="middle">出让股份 <tspan font-weight="700" fill="#0f172a">10%-15%</tspan></text>
+  <text x="212" y="526" font-family="system-ui,-apple-system" font-size="12" fill="#64748b" text-anchor="middle">投后估值 <tspan font-weight="700" fill="#0f172a">约1,500万</tspan></text>
+  <text x="212" y="544" font-family="system-ui,-apple-system" font-size="12" fill="#64748b" text-anchor="middle">60%研发 · 30%市场 · 10%运营</text>
 
   <!-- 里程碑 -->
   <rect x="372" y="382" width="500" height="168" rx="10" fill="#f8fafc" stroke="#e2e8f0" stroke-width="1.5"/>

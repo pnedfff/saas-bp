@@ -37,31 +37,21 @@
   <!-- 分隔线 -->
   <line x1="480" y1="368" x2="800" y2="368" stroke="#e2e8f0" stroke-width="1"/>
 
-  <!-- 三个亮点数字 -->
-  <text x="380" y="420" font-family="system-ui,-apple-system" font-size="32" font-weight="900" fill="#dc2626" text-anchor="middle">3个月</text>
-  <text x="380" y="448" font-family="system-ui,-apple-system" font-size="14" fill="#64748b" text-anchor="middle">快速上线</text>
-  <line x1="480" y1="405" x2="480" y2="460" stroke="#e2e8f0" stroke-width="1"/>
-  <text x="640" y="420" font-family="system-ui,-apple-system" font-size="32" font-weight="900" fill="#dc2626" text-anchor="middle">100%</text>
-  <text x="640" y="448" font-family="system-ui,-apple-system" font-size="14" fill="#64748b" text-anchor="middle">店长落地率</text>
-  <line x1="800" y1="405" x2="800" y2="460" stroke="#e2e8f0" stroke-width="1"/>
-  <text x="900" y="420" font-family="system-ui,-apple-system" font-size="32" font-weight="900" fill="#dc2626" text-anchor="middle">85%</text>
-  <text x="900" y="448" font-family="system-ui,-apple-system" font-size="14" fill="#64748b" text-anchor="middle">续费率</text>
-
   <!-- 三个标签 -->
-  <rect x="370" y="488" width="150" height="40" rx="20" fill="#dc2626" opacity="0.12"/>
-  <rect x="370" y="488" width="150" height="40" rx="20" fill="none" stroke="#dc2626" stroke-width="1"/>
-  <text x="445" y="513" font-family="system-ui,-apple-system" font-size="15" fill="#dc2626" text-anchor="middle" font-weight="600">连锁门店</text>
+  <rect x="370" y="400" width="150" height="40" rx="20" fill="#dc2626" opacity="0.12"/>
+  <rect x="370" y="400" width="150" height="40" rx="20" fill="none" stroke="#dc2626" stroke-width="1"/>
+  <text x="445" y="425" font-family="system-ui,-apple-system" font-size="15" fill="#dc2626" text-anchor="middle" font-weight="600">连锁门店</text>
 
-  <rect x="540" y="488" width="200" height="40" rx="20" fill="#f59e0b" opacity="0.1"/>
-  <rect x="540" y="488" width="200" height="40" rx="20" fill="none" stroke="#f59e0b" stroke-width="1"/>
-  <text x="640" y="513" font-family="system-ui,-apple-system" font-size="15" fill="#d97706" text-anchor="middle" font-weight="600">营销自动化</text>
+  <rect x="540" y="400" width="200" height="40" rx="20" fill="#f59e0b" opacity="0.1"/>
+  <rect x="540" y="400" width="200" height="40" rx="20" fill="none" stroke="#f59e0b" stroke-width="1"/>
+  <text x="640" y="425" font-family="system-ui,-apple-system" font-size="15" fill="#d97706" text-anchor="middle" font-weight="600">营销自动化</text>
 
-  <rect x="760" y="488" width="150" height="40" rx="20" fill="#0f172a" opacity="0.05"/>
-  <rect x="760" y="488" width="150" height="40" rx="20" fill="none" stroke="#e2e8f0" stroke-width="1"/>
-  <text x="835" y="513" font-family="system-ui,-apple-system" font-size="15" fill="#64748b" text-anchor="middle" font-weight="600">AI 驱动</text>
+  <rect x="760" y="400" width="150" height="40" rx="20" fill="#0f172a" opacity="0.05"/>
+  <rect x="760" y="400" width="150" height="40" rx="20" fill="none" stroke="#e2e8f0" stroke-width="1"/>
+  <text x="835" y="425" font-family="system-ui,-apple-system" font-size="15" fill="#64748b" text-anchor="middle" font-weight="600">AI 驱动</text>
 
   <!-- 底部信息 -->
-  <text x="640" y="590" font-family="system-ui,-apple-system" font-size="13" fill="#94a3b8" text-anchor="middle">天使轮融资中 · 2026 路演版</text>
+  <text x="640" y="490" font-family="system-ui,-apple-system" font-size="13" fill="#94a3b8" text-anchor="middle">天使轮融资中 · 2026 路演版</text>
 
   <!-- 底部页脚 -->
   <text x="80" y="695" font-family="system-ui,-apple-system" font-size="12" fill="#94a3b8">店盈AI · 商业计划书 2026</text>
