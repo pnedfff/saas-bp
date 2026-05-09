@@ -7,18 +7,18 @@
   <rect x="40" y="16" width="4" height="40" fill="#dc2626"/>
   <text x="56" y="32" font-family="system-ui,-apple-system,PingFang SC,Microsoft YaHei,sans-serif" font-size="21" fill="#dc2626" font-weight="600">PRODUCT DEMO</text>
   <text x="56" y="56" font-family="system-ui,-apple-system,PingFang SC,Microsoft YaHei,sans-serif" font-size="20" font-weight="700" fill="#0f172a">四大核心界面，让管理一目了然</text>
-  <text x="640" y="712" font-family="system-ui,-apple-system,PingFang SC,Microsoft YaHei,sans-serif" font-size="21" fill="#94a3b8" text-anchor="middle">店盈AI · 商业计划书 2026 · 第7页</text>
+
 
   <!-- 卡片1 — 总部驾驶舱 左上 x=40-640 y=90-390 -->
   <rect x="40" y="90" width="590" height="285" rx="10" fill="#ffffff"/>
   <rect x="40" y="90" width="590" height="4" rx="2" fill="#dc2626"/>
   <text x="80" y="120" font-family="system-ui,-apple-system,PingFang SC,Microsoft YaHei,sans-serif" font-size="20" font-weight="700" fill="#0f172a">总部驾驶舱</text>
   <rect x="288" y="106" width="56" height="22" rx="11" fill="#fee2e2"/>
-  <text x="316" y="121" font-family="system-ui,-apple-system,PingFang SC,Microsoft YaHei,sans-serif" font-size="21" fill="#dc2626" text-anchor="middle" font-weight="600">实时</text>
+  <text x="316" y="177.4" font-family="system-ui,-apple-system,PingFang SC,Microsoft YaHei,sans-serif" font-size="21" fill="#dc2626" text-anchor="middle" font-weight="600">实时</text>
 
   <!-- 模拟地图/点位 -->
   <rect x="60" y="132" width="550" height="160" rx="6" fill="#f1f5f9"/>
-  <text x="300" y="166" font-family="system-ui,-apple-system,PingFang SC,Microsoft YaHei,sans-serif" font-size="20" fill="#94a3b8" text-anchor="middle">门店点位地图（示意）</text>
+  <text x="300" y="348.2" font-family="system-ui,-apple-system,PingFang SC,Microsoft YaHei,sans-serif" font-size="20" fill="#94a3b8" text-anchor="middle">门店点位地图（示意）</text>
   <!-- 模拟点位 -->
   <circle cx="120" cy="200" r="8" fill="#16a34a"/>
   <circle cx="180" cy="180" r="8" fill="#16a34a"/>
@@ -30,51 +30,51 @@
   <circle cx="540" cy="190" r="8" fill="#dc2626"/>
   <!-- 图例 -->
   <circle cx="80" cy="264" r="5" fill="#16a34a"/>
-  <text x="92" y="269" font-family="system-ui,-apple-system,PingFang SC,Microsoft YaHei,sans-serif" font-size="21" fill="#475569">正常</text>
+  <text x="92" y="465.8" font-family="system-ui,-apple-system,PingFang SC,Microsoft YaHei,sans-serif" font-size="21" fill="#475569">正常</text>
   <circle cx="140" cy="264" r="5" fill="#dc2626"/>
-  <text x="152" y="269" font-family="system-ui,-apple-system,PingFang SC,Microsoft YaHei,sans-serif" font-size="21" fill="#475569">逾期</text>
+  <text x="152" y="495.2" font-family="system-ui,-apple-system,PingFang SC,Microsoft YaHei,sans-serif" font-size="21" fill="#475569">逾期</text>
   <circle cx="196" cy="264" r="5" fill="#f59e0b"/>
-  <text x="208" y="269" font-family="system-ui,-apple-system,PingFang SC,Microsoft YaHei,sans-serif" font-size="21" fill="#475569">待确认</text>
+  <text x="208" y="524.6" font-family="system-ui,-apple-system,PingFang SC,Microsoft YaHei,sans-serif" font-size="21" fill="#475569">待确认</text>
 
   <!-- 右侧数字 -->
-  <text x="440" y="256" font-family="system-ui,-apple-system,PingFang SC,Microsoft YaHei,sans-serif" font-size="28" font-weight="900" fill="#16a34a" text-anchor="middle">94%</text>
-  <text x="440" y="274" font-family="system-ui,-apple-system,PingFang SC,Microsoft YaHei,sans-serif" font-size="21" fill="#64748b" text-anchor="middle">活动执行率</text>
-  <text x="540" y="256" font-family="system-ui,-apple-system,PingFang SC,Microsoft YaHei,sans-serif" font-size="28" font-weight="900" fill="#0284c7" text-anchor="middle">287</text>
-  <text x="540" y="274" font-family="system-ui,-apple-system,PingFang SC,Microsoft YaHei,sans-serif" font-size="21" fill="#64748b" text-anchor="middle">在用点位</text>
+  <text x="440" y="387.4" font-family="system-ui,-apple-system,PingFang SC,Microsoft YaHei,sans-serif" font-size="28" font-weight="900" fill="#16a34a" text-anchor="middle">94%</text>
+  <text x="440" y="554" font-family="system-ui,-apple-system,PingFang SC,Microsoft YaHei,sans-serif" font-size="21" fill="#64748b" text-anchor="middle">活动执行率</text>
+  <text x="540" y="426.6" font-family="system-ui,-apple-system,PingFang SC,Microsoft YaHei,sans-serif" font-size="28" font-weight="900" fill="#0284c7" text-anchor="middle">287</text>
+  <text x="540" y="583.4" font-family="system-ui,-apple-system,PingFang SC,Microsoft YaHei,sans-serif" font-size="21" fill="#64748b" text-anchor="middle">在用点位</text>
 
 
   <!-- 卡片2 — 工作流可视化 右上 x=650-1240 y=90-390 -->
   <rect x="650" y="90" width="590" height="285" rx="10" fill="#ffffff"/>
   <rect x="650" y="90" width="590" height="4" rx="2" fill="#0284c7"/>
-  <text x="690" y="120" font-family="system-ui,-apple-system,PingFang SC,Microsoft YaHei,sans-serif" font-size="20" font-weight="700" fill="#0f172a">工作流可视化</text>
+  <text x="690" y="148" font-family="system-ui,-apple-system,PingFang SC,Microsoft YaHei,sans-serif" font-size="20" font-weight="700" fill="#0f172a">工作流可视化</text>
   <rect x="892" y="106" width="56" height="22" rx="11" fill="#e0f2fe"/>
-  <text x="920" y="121" font-family="system-ui,-apple-system,PingFang SC,Microsoft YaHei,sans-serif" font-size="21" fill="#0284c7" text-anchor="middle" font-weight="600">可追溯</text>
+  <text x="920" y="206.8" font-family="system-ui,-apple-system,PingFang SC,Microsoft YaHei,sans-serif" font-size="21" fill="#0284c7" text-anchor="middle" font-weight="600">可追溯</text>
 
   <!-- 工作流节点 -->
   <rect x="670" y="136" width="110" height="80" rx="8" fill="#f0fdf4"/>
   <rect x="670" y="136" width="4" height="80" rx="2" fill="#16a34a"/>
-  <text x="725" y="162" font-family="system-ui,-apple-system,PingFang SC,Microsoft YaHei,sans-serif" font-size="20" font-weight="700" fill="#16a34a" text-anchor="middle">策划创建</text>
+  <text x="725" y="236.2" font-family="system-ui,-apple-system,PingFang SC,Microsoft YaHei,sans-serif" font-size="20" font-weight="700" fill="#16a34a" text-anchor="middle">策划创建</text>
 
   <polygon points="782,176 798,169 798,183" fill="#16a34a"/>
   <line x1="780" y1="176" x2="798" y2="176" stroke="#16a34a" stroke-width="1.5"/>
 
   <rect x="800" y="136" width="110" height="80" rx="8" fill="#eff6ff"/>
   <rect x="800" y="136" width="4" height="80" rx="2" fill="#0284c7"/>
-  <text x="855" y="162" font-family="system-ui,-apple-system,PingFang SC,Microsoft YaHei,sans-serif" font-size="20" font-weight="700" fill="#0284c7" text-anchor="middle">任务下发</text>
+  <text x="855" y="264.2" font-family="system-ui,-apple-system,PingFang SC,Microsoft YaHei,sans-serif" font-size="20" font-weight="700" fill="#0284c7" text-anchor="middle">任务下发</text>
 
   <polygon points="912,176 928,169 928,183" fill="#0284c7"/>
   <line x1="910" y1="176" x2="928" y2="176" stroke="#0284c7" stroke-width="1.5"/>
 
   <rect x="930" y="136" width="110" height="80" rx="8" fill="#fef3c7"/>
   <rect x="930" y="136" width="4" height="80" rx="2" fill="#f59e0b"/>
-  <text x="985" y="162" font-family="system-ui,-apple-system,PingFang SC,Microsoft YaHei,sans-serif" font-size="20" font-weight="700" fill="#d97706" text-anchor="middle">执行中</text>
+  <text x="985" y="292.2" font-family="system-ui,-apple-system,PingFang SC,Microsoft YaHei,sans-serif" font-size="20" font-weight="700" fill="#d97706" text-anchor="middle">执行中</text>
 
   <polygon points="1042,176 1058,169 1058,183" fill="#e2e8f0"/>
   <line x1="1040" y1="176" x2="1058" y2="176" stroke="#e2e8f0" stroke-width="1.5"/>
 
   <rect x="1060" y="136" width="162" height="80" rx="8" fill="#f8fafc"/>
   <rect x="1060" y="136" width="4" height="80" rx="2" fill="#94a3b8"/>
-  <text x="1141" y="162" font-family="system-ui,-apple-system,PingFang SC,Microsoft YaHei,sans-serif" font-size="20" font-weight="700" fill="#94a3b8" text-anchor="middle">复盘报告</text>
+  <text x="1141" y="320.2" font-family="system-ui,-apple-system,PingFang SC,Microsoft YaHei,sans-serif" font-size="20" font-weight="700" fill="#94a3b8" text-anchor="middle">复盘报告</text>
 
   <!-- 操作记录 -->
   <rect x="670" y="232" width="550" height="60" rx="6" fill="#f8fafc"/>
@@ -83,30 +83,30 @@
   <!-- 卡片3 — 素材知识库 左下 x=40-640 y=405-680 -->
   <rect x="40" y="394" width="590" height="285" rx="10" fill="#ffffff"/>
   <rect x="40" y="394" width="590" height="4" rx="2" fill="#f59e0b"/>
-  <text x="80" y="424" font-family="system-ui,-apple-system,PingFang SC,Microsoft YaHei,sans-serif" font-size="20" font-weight="700" fill="#0f172a">素材知识库</text>
+  <text x="80" y="612.8" font-family="system-ui,-apple-system,PingFang SC,Microsoft YaHei,sans-serif" font-size="20" font-weight="700" fill="#0f172a">素材知识库</text>
   <rect x="270" y="410" width="72" height="22" rx="11" fill="#fef3c7"/>
-  <text x="306" y="425" font-family="system-ui,-apple-system,PingFang SC,Microsoft YaHei,sans-serif" font-size="21" fill="#d97706" text-anchor="middle" font-weight="600">云端共享</text>
+  <text x="306" y="670.2" font-family="system-ui,-apple-system,PingFang SC,Microsoft YaHei,sans-serif" font-size="21" fill="#d97706" text-anchor="middle" font-weight="600">云端共享</text>
 
   <!-- 素材卡片模拟 -->
   <rect x="60" y="436" width="120" height="90" rx="6" fill="#fef3c7"/>
-  <text x="120" y="476" font-family="system-ui,-apple-system,PingFang SC,Microsoft YaHei,sans-serif" font-size="21" fill="#d97706" text-anchor="middle">端午主海报</text>
-  <text x="120" y="494" font-family="system-ui,-apple-system,PingFang SC,Microsoft YaHei,sans-serif" font-size="21" fill="#94a3b8" text-anchor="middle">1280×720</text>
-  <text x="120" y="512" font-family="system-ui,-apple-system,PingFang SC,Microsoft YaHei,sans-serif" font-size="21" fill="#16a34a" text-anchor="middle">最新版 v3</text>
+
+
+
 
   <rect x="196" y="436" width="120" height="90" rx="6" fill="#e0f2fe"/>
-  <text x="256" y="476" font-family="system-ui,-apple-system,PingFang SC,Microsoft YaHei,sans-serif" font-size="21" fill="#0284c7" text-anchor="middle">门头贴纸</text>
-  <text x="256" y="494" font-family="system-ui,-apple-system,PingFang SC,Microsoft YaHei,sans-serif" font-size="21" fill="#94a3b8" text-anchor="middle">80×120cm</text>
-  <text x="256" y="512" font-family="system-ui,-apple-system,PingFang SC,Microsoft YaHei,sans-serif" font-size="21" fill="#16a34a" text-anchor="middle">最新版 v2</text>
+
+
+
 
   <rect x="332" y="436" width="120" height="90" rx="6" fill="#f3e8ff"/>
-  <text x="392" y="476" font-family="system-ui,-apple-system,PingFang SC,Microsoft YaHei,sans-serif" font-size="21" fill="#6b21a8" text-anchor="middle">收银台立牌</text>
-  <text x="392" y="494" font-family="system-ui,-apple-system,PingFang SC,Microsoft YaHei,sans-serif" font-size="21" fill="#94a3b8" text-anchor="middle">A5竖版</text>
-  <text x="392" y="512" font-family="system-ui,-apple-system,PingFang SC,Microsoft YaHei,sans-serif" font-size="21" fill="#16a34a" text-anchor="middle">最新版 v1</text>
+
+
+
 
   <rect x="468" y="436" width="120" height="90" rx="6" fill="#f0fdf4"/>
-  <text x="528" y="476" font-family="system-ui,-apple-system,PingFang SC,Microsoft YaHei,sans-serif" font-size="21" fill="#16a34a" text-anchor="middle">电子屏动图</text>
-  <text x="528" y="494" font-family="system-ui,-apple-system,PingFang SC,Microsoft YaHei,sans-serif" font-size="21" fill="#94a3b8" text-anchor="middle">1920×1080</text>
-  <text x="528" y="512" font-family="system-ui,-apple-system,PingFang SC,Microsoft YaHei,sans-serif" font-size="21" fill="#16a34a" text-anchor="middle">最新版 v2</text>
+
+
+
 
   <!-- 功能标注 -->
   <rect x="60" y="542" width="550" height="60" rx="6" fill="#f8fafc"/>
@@ -115,53 +115,53 @@
   <!-- 卡片4 — 点位管理矩阵 右下 x=650-1240 y=405-680 -->
   <rect x="650" y="394" width="590" height="285" rx="10" fill="#ffffff"/>
   <rect x="650" y="394" width="590" height="4" rx="2" fill="#6b21a8"/>
-  <text x="690" y="424" font-family="system-ui,-apple-system,PingFang SC,Microsoft YaHei,sans-serif" font-size="20" font-weight="700" fill="#0f172a">点位管理矩阵</text>
+  <text x="690" y="640.8" font-family="system-ui,-apple-system,PingFang SC,Microsoft YaHei,sans-serif" font-size="20" font-weight="700" fill="#0f172a">点位管理矩阵</text>
   <rect x="892" y="410" width="72" height="22" rx="11" fill="#f3e8ff"/>
-  <text x="928" y="425" font-family="system-ui,-apple-system,PingFang SC,Microsoft YaHei,sans-serif" font-size="21" fill="#6b21a8" text-anchor="middle" font-weight="600">全局视图</text>
+  <text x="928" y="699.6" font-family="system-ui,-apple-system,PingFang SC,Microsoft YaHei,sans-serif" font-size="21" fill="#6b21a8" text-anchor="middle" font-weight="600">全局视图</text>
 
   <!-- 矩阵表头 -->
   <rect x="670" y="436" width="550" height="28" rx="4" fill="#f1f5f9"/>
-  <text x="730" y="454" font-family="system-ui,-apple-system,PingFang SC,Microsoft YaHei,sans-serif" font-size="21" font-weight="700" fill="#0f172a" text-anchor="middle">门店</text>
-  <text x="840" y="454" font-family="system-ui,-apple-system,PingFang SC,Microsoft YaHei,sans-serif" font-size="21" font-weight="700" fill="#0f172a" text-anchor="middle">门头</text>
-  <text x="950" y="454" font-family="system-ui,-apple-system,PingFang SC,Microsoft YaHei,sans-serif" font-size="21" font-weight="700" fill="#0f172a" text-anchor="middle">橱窗</text>
-  <text x="1060" y="454" font-family="system-ui,-apple-system,PingFang SC,Microsoft YaHei,sans-serif" font-size="21" font-weight="700" fill="#0f172a" text-anchor="middle">收银台</text>
-  <text x="1170" y="454" font-family="system-ui,-apple-system,PingFang SC,Microsoft YaHei,sans-serif" font-size="21" font-weight="700" fill="#0f172a" text-anchor="middle">电子屏</text>
+
+
+
+
+
 
   <!-- 矩阵行1 -->
   <line x1="670" y1="464" x2="1220" y2="464" stroke="#e2e8f0" stroke-width="1"/>
-  <text x="730" y="482" font-family="system-ui,-apple-system,PingFang SC,Microsoft YaHei,sans-serif" font-size="21" fill="#0f172a" text-anchor="middle">朝阳旗舰</text>
+
   <rect x="800" y="470" width="80" height="20" rx="4" fill="#dcfce7"/>
-  <text x="840" y="484" font-family="system-ui,-apple-system,PingFang SC,Microsoft YaHei,sans-serif" font-size="21" fill="#16a34a" text-anchor="middle">端午主图 ✓</text>
+
   <rect x="910" y="470" width="80" height="20" rx="4" fill="#dcfce7"/>
-  <text x="950" y="484" font-family="system-ui,-apple-system,PingFang SC,Microsoft YaHei,sans-serif" font-size="21" fill="#16a34a" text-anchor="middle">活动贴纸 ✓</text>
+
   <rect x="1020" y="470" width="80" height="20" rx="4" fill="#dcfce7"/>
-  <text x="1060" y="484" font-family="system-ui,-apple-system,PingFang SC,Microsoft YaHei,sans-serif" font-size="21" fill="#16a34a" text-anchor="middle">立牌v2 ✓</text>
+
   <rect x="1130" y="470" width="80" height="20" rx="4" fill="#fef3c7"/>
-  <text x="1170" y="484" font-family="system-ui,-apple-system,PingFang SC,Microsoft YaHei,sans-serif" font-size="21" fill="#d97706" text-anchor="middle">待更新 ⚠</text>
+
 
   <!-- 矩阵行2 -->
   <line x1="670" y1="492" x2="1220" y2="492" stroke="#e2e8f0" stroke-width="1"/>
-  <text x="730" y="510" font-family="system-ui,-apple-system,PingFang SC,Microsoft YaHei,sans-serif" font-size="21" fill="#0f172a" text-anchor="middle">浦东分店</text>
+
   <rect x="800" y="498" width="80" height="20" rx="4" fill="#fee2e2"/>
-  <text x="840" y="512" font-family="system-ui,-apple-system,PingFang SC,Microsoft YaHei,sans-serif" font-size="21" fill="#dc2626" text-anchor="middle">逾期未换 ✗</text>
+
   <rect x="910" y="498" width="80" height="20" rx="4" fill="#dcfce7"/>
-  <text x="950" y="512" font-family="system-ui,-apple-system,PingFang SC,Microsoft YaHei,sans-serif" font-size="21" fill="#16a34a" text-anchor="middle">活动贴纸 ✓</text>
+
   <rect x="1020" y="498" width="80" height="20" rx="4" fill="#dcfce7"/>
-  <text x="1060" y="512" font-family="system-ui,-apple-system,PingFang SC,Microsoft YaHei,sans-serif" font-size="21" fill="#16a34a" text-anchor="middle">立牌v2 ✓</text>
+
   <rect x="1130" y="498" width="80" height="20" rx="4" fill="#dcfce7"/>
-  <text x="1170" y="512" font-family="system-ui,-apple-system,PingFang SC,Microsoft YaHei,sans-serif" font-size="21" fill="#16a34a" text-anchor="middle">动图v1 ✓</text>
+
 
   <!-- 矩阵行3 -->
   <line x1="670" y1="520" x2="1220" y2="520" stroke="#e2e8f0" stroke-width="1"/>
-  <text x="730" y="538" font-family="system-ui,-apple-system,PingFang SC,Microsoft YaHei,sans-serif" font-size="21" fill="#0f172a" text-anchor="middle">成都春熙</text>
+
   <rect x="800" y="526" width="80" height="20" rx="4" fill="#dcfce7"/>
-  <text x="840" y="540" font-family="system-ui,-apple-system,PingFang SC,Microsoft YaHei,sans-serif" font-size="21" fill="#16a34a" text-anchor="middle">端午主图 ✓</text>
+
   <rect x="910" y="526" width="80" height="20" rx="4" fill="#dcfce7"/>
-  <text x="950" y="540" font-family="system-ui,-apple-system,PingFang SC,Microsoft YaHei,sans-serif" font-size="21" fill="#16a34a" text-anchor="middle">活动贴纸 ✓</text>
+
   <rect x="1020" y="526" width="80" height="20" rx="4" fill="#fef3c7"/>
-  <text x="1060" y="540" font-family="system-ui,-apple-system,PingFang SC,Microsoft YaHei,sans-serif" font-size="21" fill="#d97706" text-anchor="middle">待确认 ●</text>
+
   <rect x="1130" y="526" width="80" height="20" rx="4" fill="#dcfce7"/>
-  <text x="1170" y="540" font-family="system-ui,-apple-system,PingFang SC,Microsoft YaHei,sans-serif" font-size="21" fill="#16a34a" text-anchor="middle">动图v1 ✓</text>
+
 
   <line x1="670" y1="548" x2="1220" y2="548" stroke="#e2e8f0" stroke-width="1"/>
 

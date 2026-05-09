@@ -7,7 +7,7 @@
   <rect x="40" y="16" width="4" height="40" fill="#dc2626"/>
   <text x="56" y="32" font-family="system-ui,-apple-system,PingFang SC,Microsoft YaHei,sans-serif" font-size="21" fill="#dc2626" font-weight="600">GROWTH ROADMAP</text>
   <text x="56" y="56" font-family="system-ui,-apple-system,PingFang SC,Microsoft YaHei,sans-serif" font-size="20" font-weight="700" fill="#0f172a">从0到1，再到1000</text>
-  <text x="640" y="712" font-family="system-ui,-apple-system,PingFang SC,Microsoft YaHei,sans-serif" font-size="21" fill="#94a3b8" text-anchor="middle">店盈AI · 商业计划书 2026 · 第11页</text>
+
 
   <!-- 阶段表格 -->
   <rect x="40" y="90" width="1200" height="440" rx="10" fill="#ffffff"/>
@@ -16,60 +16,60 @@
   <!-- 表头 -->
   <rect x="40" y="94" width="1200" height="44" rx="0" fill="#f1f5f9"/>
   <text x="160" y="120" font-family="system-ui,-apple-system,PingFang SC,Microsoft YaHei,sans-serif" font-size="20" font-weight="700" fill="#64748b" text-anchor="middle">阶段</text>
-  <text x="340" y="120" font-family="system-ui,-apple-system,PingFang SC,Microsoft YaHei,sans-serif" font-size="20" font-weight="700" fill="#64748b" text-anchor="middle">时间</text>
-  <text x="520" y="120" font-family="system-ui,-apple-system,PingFang SC,Microsoft YaHei,sans-serif" font-size="20" font-weight="700" fill="#64748b" text-anchor="middle">客户数</text>
-  <text x="700" y="120" font-family="system-ui,-apple-system,PingFang SC,Microsoft YaHei,sans-serif" font-size="20" font-weight="700" fill="#64748b" text-anchor="middle">ARR</text>
-  <text x="880" y="120" font-family="system-ui,-apple-system,PingFang SC,Microsoft YaHei,sans-serif" font-size="20" font-weight="700" fill="#64748b" text-anchor="middle">估算成本</text>
-  <text x="1100" y="120" font-family="system-ui,-apple-system,PingFang SC,Microsoft YaHei,sans-serif" font-size="20" font-weight="700" fill="#64748b" text-anchor="middle">利润/亏损</text>
+  <text x="340" y="148" font-family="system-ui,-apple-system,PingFang SC,Microsoft YaHei,sans-serif" font-size="20" font-weight="700" fill="#64748b" text-anchor="middle">时间</text>
+  <text x="520" y="176" font-family="system-ui,-apple-system,PingFang SC,Microsoft YaHei,sans-serif" font-size="20" font-weight="700" fill="#64748b" text-anchor="middle">客户数</text>
+  <text x="700" y="204" font-family="system-ui,-apple-system,PingFang SC,Microsoft YaHei,sans-serif" font-size="20" font-weight="700" fill="#64748b" text-anchor="middle">ARR</text>
+  <text x="880" y="232" font-family="system-ui,-apple-system,PingFang SC,Microsoft YaHei,sans-serif" font-size="20" font-weight="700" fill="#64748b" text-anchor="middle">估算成本</text>
+  <text x="1100" y="260" font-family="system-ui,-apple-system,PingFang SC,Microsoft YaHei,sans-serif" font-size="20" font-weight="700" fill="#64748b" text-anchor="middle">利润/亏损</text>
   <line x1="40" y1="138" x2="1240" y2="138" stroke="#e2e8f0" stroke-width="1.5"/>
 
   <!-- 行1 验证期 -->
   <rect x="40" y="138" width="1200" height="72" fill="#ffffff"/>
   <rect x="40" y="138" width="4" height="72" fill="#94a3b8"/>
-  <text x="160" y="166" font-family="system-ui,-apple-system,PingFang SC,Microsoft YaHei,sans-serif" font-size="20" font-weight="700" fill="#64748b" text-anchor="middle">验证期</text>
-  <text x="340" y="174" font-family="system-ui,-apple-system,PingFang SC,Microsoft YaHei,sans-serif" font-size="21" fill="#475569" text-anchor="middle">0-3个月</text>
-  <text x="520" y="162" font-family="system-ui,-apple-system,PingFang SC,Microsoft YaHei,sans-serif" font-size="20" font-weight="900" fill="#64748b" text-anchor="middle">1家客户</text>
-  <text x="520" y="197" font-family="system-ui,-apple-system,PingFang SC,Microsoft YaHei,sans-serif" font-size="21" fill="#94a3b8" text-anchor="middle">自有免费</text>
-  <text x="700" y="174" font-family="system-ui,-apple-system,PingFang SC,Microsoft YaHei,sans-serif" font-size="20" font-weight="900" fill="#64748b" text-anchor="middle">¥0</text>
-  <text x="880" y="174" font-family="system-ui,-apple-system,PingFang SC,Microsoft YaHei,sans-serif" font-size="20" font-weight="900" fill="#475569" text-anchor="middle">≈5万</text>
+  <text x="160" y="316" font-family="system-ui,-apple-system,PingFang SC,Microsoft YaHei,sans-serif" font-size="20" font-weight="700" fill="#64748b" text-anchor="middle">验证期</text>
+  <text x="340" y="345.4" font-family="system-ui,-apple-system,PingFang SC,Microsoft YaHei,sans-serif" font-size="21" fill="#475569" text-anchor="middle">0-3个月</text>
+  <text x="520" y="288" font-family="system-ui,-apple-system,PingFang SC,Microsoft YaHei,sans-serif" font-size="20" font-weight="900" fill="#64748b" text-anchor="middle">1家客户</text>
+  <text x="520" y="460.2" font-family="system-ui,-apple-system,PingFang SC,Microsoft YaHei,sans-serif" font-size="21" fill="#94a3b8" text-anchor="middle">自有免费</text>
+  <text x="700" y="374.8" font-family="system-ui,-apple-system,PingFang SC,Microsoft YaHei,sans-serif" font-size="20" font-weight="900" fill="#64748b" text-anchor="middle">¥0</text>
+  <text x="880" y="402.8" font-family="system-ui,-apple-system,PingFang SC,Microsoft YaHei,sans-serif" font-size="20" font-weight="900" fill="#475569" text-anchor="middle">≈5万</text>
   <rect x="980" y="152" width="200" height="40" rx="6" fill="#fee2e2"/>
-  <text x="1080" y="176" font-family="system-ui,-apple-system,PingFang SC,Microsoft YaHei,sans-serif" font-size="20" font-weight="900" fill="#dc2626" text-anchor="middle">-5万</text>
+  <text x="1080" y="430.8" font-family="system-ui,-apple-system,PingFang SC,Microsoft YaHei,sans-serif" font-size="20" font-weight="900" fill="#dc2626" text-anchor="middle">-5万</text>
   <line x1="40" y1="210" x2="1240" y2="210" stroke="#e2e8f0" stroke-width="1"/>
 
   <!-- 行2 种子期 -->
   <rect x="40" y="210" width="1200" height="72" fill="#f8fafc"/>
   <rect x="40" y="210" width="4" height="72" fill="#f59e0b"/>
-  <text x="160" y="238" font-family="system-ui,-apple-system,PingFang SC,Microsoft YaHei,sans-serif" font-size="20" font-weight="700" fill="#d97706" text-anchor="middle">种子期</text>
-  <text x="340" y="246" font-family="system-ui,-apple-system,PingFang SC,Microsoft YaHei,sans-serif" font-size="21" fill="#475569" text-anchor="middle">3-6个月</text>
-  <text x="520" y="238" font-family="system-ui,-apple-system,PingFang SC,Microsoft YaHei,sans-serif" font-size="20" font-weight="900" fill="#d97706" text-anchor="middle">10家</text>
-  <text x="700" y="246" font-family="system-ui,-apple-system,PingFang SC,Microsoft YaHei,sans-serif" font-size="20" font-weight="900" fill="#d97706" text-anchor="middle">≈8万</text>
-  <text x="880" y="246" font-family="system-ui,-apple-system,PingFang SC,Microsoft YaHei,sans-serif" font-size="20" font-weight="900" fill="#475569" text-anchor="middle">≈15万</text>
+  <text x="160" y="489.6" font-family="system-ui,-apple-system,PingFang SC,Microsoft YaHei,sans-serif" font-size="20" font-weight="700" fill="#d97706" text-anchor="middle">种子期</text>
+  <text x="340" y="547" font-family="system-ui,-apple-system,PingFang SC,Microsoft YaHei,sans-serif" font-size="21" fill="#475569" text-anchor="middle">3-6个月</text>
+  <text x="520" y="517.6" font-family="system-ui,-apple-system,PingFang SC,Microsoft YaHei,sans-serif" font-size="20" font-weight="900" fill="#d97706" text-anchor="middle">10家</text>
+  <text x="700" y="576.4" font-family="system-ui,-apple-system,PingFang SC,Microsoft YaHei,sans-serif" font-size="20" font-weight="900" fill="#d97706" text-anchor="middle">≈8万</text>
+  <text x="880" y="604.4" font-family="system-ui,-apple-system,PingFang SC,Microsoft YaHei,sans-serif" font-size="20" font-weight="900" fill="#475569" text-anchor="middle">≈15万</text>
   <rect x="980" y="224" width="200" height="40" rx="6" fill="#fee2e2"/>
-  <text x="1080" y="248" font-family="system-ui,-apple-system,PingFang SC,Microsoft YaHei,sans-serif" font-size="20" font-weight="900" fill="#dc2626" text-anchor="middle">-7万</text>
+  <text x="1080" y="632.4" font-family="system-ui,-apple-system,PingFang SC,Microsoft YaHei,sans-serif" font-size="20" font-weight="900" fill="#dc2626" text-anchor="middle">-7万</text>
   <line x1="40" y1="282" x2="1240" y2="282" stroke="#e2e8f0" stroke-width="1"/>
 
   <!-- 行3 增长期 -->
   <rect x="40" y="282" width="1200" height="72" fill="#ffffff"/>
   <rect x="40" y="282" width="4" height="72" fill="#0284c7"/>
-  <text x="160" y="310" font-family="system-ui,-apple-system,PingFang SC,Microsoft YaHei,sans-serif" font-size="20" font-weight="700" fill="#0284c7" text-anchor="middle">增长期</text>
-  <text x="340" y="318" font-family="system-ui,-apple-system,PingFang SC,Microsoft YaHei,sans-serif" font-size="21" fill="#475569" text-anchor="middle">6-18个月</text>
-  <text x="520" y="310" font-family="system-ui,-apple-system,PingFang SC,Microsoft YaHei,sans-serif" font-size="20" font-weight="900" fill="#0284c7" text-anchor="middle">100家</text>
-  <text x="700" y="318" font-family="system-ui,-apple-system,PingFang SC,Microsoft YaHei,sans-serif" font-size="20" font-weight="900" fill="#0284c7" text-anchor="middle">≈170万</text>
-  <text x="880" y="318" font-family="system-ui,-apple-system,PingFang SC,Microsoft YaHei,sans-serif" font-size="20" font-weight="900" fill="#475569" text-anchor="middle">≈100万</text>
+  <text x="160" y="660.4" font-family="system-ui,-apple-system,PingFang SC,Microsoft YaHei,sans-serif" font-size="20" font-weight="700" fill="#0284c7" text-anchor="middle">增长期</text>
+
+  <text x="520" y="688.4" font-family="system-ui,-apple-system,PingFang SC,Microsoft YaHei,sans-serif" font-size="20" font-weight="900" fill="#0284c7" text-anchor="middle">100家</text>
+
+
   <rect x="980" y="296" width="200" height="40" rx="6" fill="#f0fdf4"/>
-  <text x="1080" y="320" font-family="system-ui,-apple-system,PingFang SC,Microsoft YaHei,sans-serif" font-size="20" font-weight="900" fill="#16a34a" text-anchor="middle">+70万</text>
+
   <line x1="40" y1="354" x2="1240" y2="354" stroke="#e2e8f0" stroke-width="1"/>
 
   <!-- 行4 扩张期 -->
   <rect x="40" y="354" width="1200" height="72" fill="#f8fafc"/>
   <rect x="40" y="354" width="4" height="72" fill="#dc2626"/>
-  <text x="160" y="382" font-family="system-ui,-apple-system,PingFang SC,Microsoft YaHei,sans-serif" font-size="20" font-weight="700" fill="#dc2626" text-anchor="middle">扩张期</text>
-  <text x="340" y="390" font-family="system-ui,-apple-system,PingFang SC,Microsoft YaHei,sans-serif" font-size="21" fill="#475569" text-anchor="middle">18-36个月</text>
-  <text x="520" y="382" font-family="system-ui,-apple-system,PingFang SC,Microsoft YaHei,sans-serif" font-size="20" font-weight="900" fill="#dc2626" text-anchor="middle">500家</text>
-  <text x="700" y="390" font-family="system-ui,-apple-system,PingFang SC,Microsoft YaHei,sans-serif" font-size="20" font-weight="900" fill="#dc2626" text-anchor="middle">≈1000万</text>
-  <text x="880" y="390" font-family="system-ui,-apple-system,PingFang SC,Microsoft YaHei,sans-serif" font-size="20" font-weight="900" fill="#475569" text-anchor="middle">≈400万</text>
+
+
+
+
+
   <rect x="980" y="368" width="200" height="40" rx="6" fill="#f0fdf4"/>
-  <text x="1080" y="392" font-family="system-ui,-apple-system,PingFang SC,Microsoft YaHei,sans-serif" font-size="20" font-weight="900" fill="#16a34a" text-anchor="middle">+600万</text>
+
   <line x1="40" y1="426" x2="1240" y2="426" stroke="#e2e8f0" stroke-width="1.5"/>
 
   <!-- 补充说明 -->
@@ -78,17 +78,17 @@
   <!-- 底部两个补充卡片 -->
   <rect x="40" y="552" width="580" height="128" rx="10" fill="#ffffff"/>
   <rect x="40" y="552" width="580" height="4" rx="2" fill="#0284c7"/>
-  <text x="330" y="582" font-family="system-ui,-apple-system,PingFang SC,Microsoft YaHei,sans-serif" font-size="21" font-weight="700" fill="#0284c7" text-anchor="middle">获客策略</text>
-  <text x="60" y="606" font-family="system-ui,-apple-system,PingFang SC,Microsoft YaHei,sans-serif" font-size="21" fill="#475569">阶段1：0号客户即自己 → 0成本验证产品</text>
-  <text x="60" y="628" font-family="system-ui,-apple-system,PingFang SC,Microsoft YaHei,sans-serif" font-size="21" fill="#475569">阶段2：连锁协会 / 行业展会 / 口碑裂变</text>
-  <text x="60" y="650" font-family="system-ui,-apple-system,PingFang SC,Microsoft YaHei,sans-serif" font-size="21" fill="#475569">阶段3：内容营销 + 地推 + 老客转介绍</text>
+
+
+
+
 
   <rect x="660" y="552" width="580" height="128" rx="10" fill="#ffffff"/>
   <rect x="660" y="552" width="580" height="4" rx="2" fill="#dc2626"/>
-  <text x="950" y="582" font-family="system-ui,-apple-system,PingFang SC,Microsoft YaHei,sans-serif" font-size="21" font-weight="700" fill="#dc2626" text-anchor="middle">关键里程碑</text>
-  <text x="680" y="606" font-family="system-ui,-apple-system,PingFang SC,Microsoft YaHei,sans-serif" font-size="21" fill="#475569">第3个月：MVP上线，自有60家验证</text>
-  <text x="680" y="628" font-family="system-ui,-apple-system,PingFang SC,Microsoft YaHei,sans-serif" font-size="21" fill="#475569">第6个月：10家外部付费，NPS验证</text>
-  <text x="680" y="650" font-family="system-ui,-apple-system,PingFang SC,Microsoft YaHei,sans-serif" font-size="21" fill="#475569">第18个月：100家付费，盈亏平衡</text>
-  <text x="680" y="670" font-family="system-ui,-apple-system,PingFang SC,Microsoft YaHei,sans-serif" font-size="21" fill="#475569">第36个月：500家，ARR 1000万</text>
+
+
+
+
+
 
 </svg>
