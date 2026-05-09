@@ -5,88 +5,88 @@
   <rect x="0" y="0" width="1280" height="72" fill="#ffffff" opacity="0.95"/>
   <rect width="1280" height="4" fill="#dc2626"/>
   <rect x="40" y="16" width="4" height="40" fill="#dc2626"/>
-  <text x="56" y="32" font-family="system-ui,-apple-system,PingFang SC,Microsoft YaHei,sans-serif" font-size="21" fill="#dc2626" font-weight="600">COMPETITIVE ADVANTAGE</text>
+  <text x="56" y="32" font-family="system-ui,-apple-system,PingFang SC,Microsoft YaHei,sans-serif" font-size="11" fill="#dc2626" font-weight="600">COMPETITIVE ADVANTAGE</text>
   <text x="56" y="56" font-family="system-ui,-apple-system,PingFang SC,Microsoft YaHei,sans-serif" font-size="20" font-weight="700" fill="#0f172a">为什么是我们？</text>
-
+  <text x="640" y="712" font-family="system-ui,-apple-system,PingFang SC,Microsoft YaHei,sans-serif" font-size="11" fill="#94a3b8" text-anchor="middle">店盈AI · 商业计划书 2026 · 第10页</text>
 
   <!-- 上半：成本优势 -->
   <rect x="40" y="90" width="1200" height="190" rx="10" fill="#ffffff"/>
   <rect x="40" y="90" width="1200" height="4" rx="2" fill="#16a34a"/>
-  <text x="340" y="122" font-family="system-ui,-apple-system,PingFang SC,Microsoft YaHei,sans-serif" font-size="20" font-weight="700" fill="#16a34a" text-anchor="middle">我们的成本优势（给投资人看）</text>
+  <text x="340" y="122" font-family="system-ui,-apple-system,PingFang SC,Microsoft YaHei,sans-serif" font-size="14" font-weight="700" fill="#16a34a" text-anchor="middle">我们的成本优势（给投资人看）</text>
 
   <!-- 传统 vs 我们 -->
   <rect x="60" y="134" width="480" height="120" rx="8" fill="#fee2e2"/>
   <rect x="60" y="134" width="4" height="120" rx="2" fill="#dc2626"/>
-  <text x="80" y="158" font-family="system-ui,-apple-system,PingFang SC,Microsoft YaHei,sans-serif" font-size="21" font-weight="700" fill="#dc2626">传统SaaS开发</text>
-  <text x="80" y="216.8" font-family="system-ui,-apple-system,PingFang SC,Microsoft YaHei,sans-serif" font-size="21" fill="#475569">5-10人团队 × 6-12个月开发</text>
-  <text x="80" y="275.6" font-family="system-ui,-apple-system,PingFang SC,Microsoft YaHei,sans-serif" font-size="21" fill="#475569">前期资金投入：数百万元</text>
+  <text x="80" y="158" font-family="system-ui,-apple-system,PingFang SC,Microsoft YaHei,sans-serif" font-size="13" font-weight="700" fill="#dc2626">传统SaaS开发</text>
+  <text x="80" y="180" font-family="system-ui,-apple-system,PingFang SC,Microsoft YaHei,sans-serif" font-size="13" fill="#475569">5-10人团队 × 6-12个月开发</text>
+  <text x="80" y="200" font-family="system-ui,-apple-system,PingFang SC,Microsoft YaHei,sans-serif" font-size="13" fill="#475569">前期资金投入：数百万元</text>
 
-  <text x="640" y="355.4" font-family="system-ui,-apple-system,PingFang SC,Microsoft YaHei,sans-serif" font-size="36" font-weight="900" fill="#64748b" text-anchor="middle">VS</text>
+  <text x="640" y="204" font-family="system-ui,-apple-system,PingFang SC,Microsoft YaHei,sans-serif" font-size="36" font-weight="900" fill="#64748b" text-anchor="middle">VS</text>
 
   <rect x="660" y="134" width="560" height="120" rx="8" fill="#f0fdf4"/>
   <rect x="660" y="134" width="4" height="120" rx="2" fill="#16a34a"/>
-  <text x="680" y="187.4" font-family="system-ui,-apple-system,PingFang SC,Microsoft YaHei,sans-serif" font-size="21" font-weight="700" fill="#16a34a">我们的方式</text>
-  <text x="680" y="246.2" font-family="system-ui,-apple-system,PingFang SC,Microsoft YaHei,sans-serif" font-size="21" fill="#475569">AI辅助编程，2人团队，3个月MVP上线</text>
-  <text x="680" y="305" font-family="system-ui,-apple-system,PingFang SC,Microsoft YaHei,sans-serif" font-size="21" fill="#475569">服务器成本低（AI按token计费，边际为零）</text>
-  <text x="680" y="405.8" font-family="system-ui,-apple-system,PingFang SC,Microsoft YaHei,sans-serif" font-size="21" fill="#475569">0号客户就是自己，迭代快、试错低</text>
+  <text x="680" y="158" font-family="system-ui,-apple-system,PingFang SC,Microsoft YaHei,sans-serif" font-size="13" font-weight="700" fill="#16a34a">我们的方式</text>
+  <text x="680" y="180" font-family="system-ui,-apple-system,PingFang SC,Microsoft YaHei,sans-serif" font-size="13" fill="#475569">AI辅助编程，2人团队，3个月MVP上线</text>
+  <text x="680" y="200" font-family="system-ui,-apple-system,PingFang SC,Microsoft YaHei,sans-serif" font-size="13" fill="#475569">服务器成本低（AI按token计费，边际为零）</text>
+  <text x="680" y="220" font-family="system-ui,-apple-system,PingFang SC,Microsoft YaHei,sans-serif" font-size="13" fill="#475569">0号客户就是自己，迭代快、试错低</text>
 
   <!-- 下半：竞争对比表 -->
   <rect x="40" y="298" width="1200" height="340" rx="10" fill="#ffffff"/>
   <rect x="40" y="298" width="1200" height="4" rx="2" fill="#dc2626"/>
-  <text x="640" y="435.2" font-family="system-ui,-apple-system,PingFang SC,Microsoft YaHei,sans-serif" font-size="20" font-weight="700" fill="#0f172a" text-anchor="middle">竞争格局分析</text>
+  <text x="640" y="330" font-family="system-ui,-apple-system,PingFang SC,Microsoft YaHei,sans-serif" font-size="14" font-weight="700" fill="#0f172a" text-anchor="middle">竞争格局分析</text>
 
   <!-- 表头 -->
   <rect x="60" y="344" width="1160" height="32" rx="4" fill="#f1f5f9"/>
-  <text x="220" y="463.2" font-family="system-ui,-apple-system,PingFang SC,Microsoft YaHei,sans-serif" font-size="20" font-weight="700" fill="#64748b" text-anchor="middle">竞争对手</text>
-  <text x="540" y="491.2" font-family="system-ui,-apple-system,PingFang SC,Microsoft YaHei,sans-serif" font-size="20" font-weight="700" fill="#64748b" text-anchor="middle">核心弱点</text>
-  <text x="1000" y="519.2" font-family="system-ui,-apple-system,PingFang SC,Microsoft YaHei,sans-serif" font-size="20" font-weight="700" fill="#dc2626" text-anchor="middle">我们的优势</text>
+  <text x="220" y="365" font-family="system-ui,-apple-system,PingFang SC,Microsoft YaHei,sans-serif" font-size="12" font-weight="700" fill="#64748b" text-anchor="middle">竞争对手</text>
+  <text x="540" y="365" font-family="system-ui,-apple-system,PingFang SC,Microsoft YaHei,sans-serif" font-size="12" font-weight="700" fill="#64748b" text-anchor="middle">核心弱点</text>
+  <text x="1000" y="365" font-family="system-ui,-apple-system,PingFang SC,Microsoft YaHei,sans-serif" font-size="12" font-weight="700" fill="#dc2626" text-anchor="middle">我们的优势</text>
 
   <!-- 行1 万店掌 -->
   <line x1="60" y1="376" x2="1220" y2="376" stroke="#e2e8f0" stroke-width="1"/>
   <rect x="60" y="377" width="1160" height="50" rx="0" fill="#f8fafc"/>
-  <text x="220" y="604.6" font-family="system-ui,-apple-system,PingFang SC,Microsoft YaHei,sans-serif" font-size="21" font-weight="700" fill="#0f172a" text-anchor="middle">万店掌</text>
-  <text x="540" y="547.2" font-family="system-ui,-apple-system,PingFang SC,Microsoft YaHei,sans-serif" font-size="20" fill="#475569" text-anchor="middle">重硬件，面向大连锁，无营销内容生成</text>
-  <text x="1000" y="575.2" font-family="system-ui,-apple-system,PingFang SC,Microsoft YaHei,sans-serif" font-size="20" fill="#16a34a" text-anchor="middle">纯SaaS，3-100家即用，8000元起</text>
+  <text x="220" y="398" font-family="system-ui,-apple-system,PingFang SC,Microsoft YaHei,sans-serif" font-size="13" font-weight="700" fill="#0f172a" text-anchor="middle">万店掌</text>
+  <text x="540" y="396" font-family="system-ui,-apple-system,PingFang SC,Microsoft YaHei,sans-serif" font-size="12" fill="#475569" text-anchor="middle">重硬件，面向大连锁，无营销内容生成</text>
+  <text x="1000" y="396" font-family="system-ui,-apple-system,PingFang SC,Microsoft YaHei,sans-serif" font-size="12" fill="#16a34a" text-anchor="middle">纯SaaS，3-100家即用，8000元起</text>
 
   <!-- 行2 帷幄Whale -->
   <line x1="60" y1="427" x2="1220" y2="427" stroke="#e2e8f0" stroke-width="1"/>
   <rect x="60" y="428" width="1160" height="50" rx="0" fill="#ffffff"/>
-  <text x="220" y="634" font-family="system-ui,-apple-system,PingFang SC,Microsoft YaHei,sans-serif" font-size="21" font-weight="700" fill="#0f172a" text-anchor="middle">帷幄Whale</text>
-  <text x="540" y="663.4" font-family="system-ui,-apple-system,PingFang SC,Microsoft YaHei,sans-serif" font-size="20" fill="#475569" text-anchor="middle">面向品牌商/厂商，非连锁门店自用</text>
-  <text x="1000" y="691.4" font-family="system-ui,-apple-system,PingFang SC,Microsoft YaHei,sans-serif" font-size="20" fill="#16a34a" text-anchor="middle">连锁门店自用，2万/年含AI</text>
+  <text x="220" y="449" font-family="system-ui,-apple-system,PingFang SC,Microsoft YaHei,sans-serif" font-size="13" font-weight="700" fill="#0f172a" text-anchor="middle">帷幄Whale</text>
+  <text x="540" y="449" font-family="system-ui,-apple-system,PingFang SC,Microsoft YaHei,sans-serif" font-size="12" fill="#475569" text-anchor="middle">面向品牌商/厂商，非连锁门店自用</text>
+  <text x="1000" y="449" font-family="system-ui,-apple-system,PingFang SC,Microsoft YaHei,sans-serif" font-size="12" fill="#16a34a" text-anchor="middle">连锁门店自用，2万/年含AI</text>
 
   <!-- 行3 有赞/微盟 -->
   <line x1="60" y1="478" x2="1220" y2="478" stroke="#e2e8f0" stroke-width="1"/>
   <rect x="60" y="479" width="1160" height="50" rx="0" fill="#f8fafc"/>
-
-
-
+  <text x="220" y="500" font-family="system-ui,-apple-system,PingFang SC,Microsoft YaHei,sans-serif" font-size="13" font-weight="700" fill="#0f172a" text-anchor="middle">有赞 / 微盟</text>
+  <text x="540" y="500" font-family="system-ui,-apple-system,PingFang SC,Microsoft YaHei,sans-serif" font-size="12" fill="#475569" text-anchor="middle">偏线上营销，无点位管理，功能过重</text>
+  <text x="1000" y="500" font-family="system-ui,-apple-system,PingFang SC,Microsoft YaHei,sans-serif" font-size="12" fill="#16a34a" text-anchor="middle">专注线下点位+执行，1/3价格</text>
 
   <!-- 行4 钉钉/飞书 -->
   <line x1="60" y1="529" x2="1220" y2="529" stroke="#e2e8f0" stroke-width="1"/>
   <rect x="60" y="530" width="1160" height="50" rx="0" fill="#ffffff"/>
-
-
-
+  <text x="220" y="551" font-family="system-ui,-apple-system,PingFang SC,Microsoft YaHei,sans-serif" font-size="13" font-weight="700" fill="#0f172a" text-anchor="middle">钉钉 / 飞书</text>
+  <text x="540" y="555" font-family="system-ui,-apple-system,PingFang SC,Microsoft YaHei,sans-serif" font-size="12" fill="#475569" text-anchor="middle">通用协作工具，不贴合营销场景</text>
+  <text x="1000" y="555" font-family="system-ui,-apple-system,PingFang SC,Microsoft YaHei,sans-serif" font-size="12" fill="#16a34a" text-anchor="middle">垂直深耕门店营销，开箱即用</text>
 
   <!-- 行5 人工/Excel -->
   <line x1="60" y1="580" x2="1220" y2="580" stroke="#e2e8f0" stroke-width="1"/>
   <rect x="60" y="581" width="1160" height="46" rx="0" fill="#f8fafc"/>
-
-
-
+  <text x="220" y="600" font-family="system-ui,-apple-system,PingFang SC,Microsoft YaHei,sans-serif" font-size="13" font-weight="700" fill="#0f172a" text-anchor="middle">人工 / Excel</text>
+  <text x="540" y="606" font-family="system-ui,-apple-system,PingFang SC,Microsoft YaHei,sans-serif" font-size="12" fill="#475569" text-anchor="middle">低效、易错、不可追溯，无法规模化</text>
+  <text x="1000" y="606" font-family="system-ui,-apple-system,PingFang SC,Microsoft YaHei,sans-serif" font-size="12" fill="#16a34a" text-anchor="middle">全链路可视化+AI自动化，增店不增人</text>
 
   <!-- 分众定位对比 -->
   <rect x="60" y="588" width="560" height="50" rx="6" fill="#f1f5f9"/>
-
-
-
+  <text x="350" y="609" font-family="system-ui,-apple-system,PingFang SC,Microsoft YaHei,sans-serif" font-size="12" fill="#64748b" text-anchor="middle">分众管理广告主的</text>
+  <text x="350" y="629" font-family="system-ui,-apple-system,PingFang SC,Microsoft YaHei,sans-serif" font-size="15" font-weight="900" fill="#0f172a" text-anchor="middle">300 万个点位</text>
+  <text x="640" y="620" font-family="system-ui,-apple-system,PingFang SC,Microsoft YaHei,sans-serif" font-size="22" font-weight="900" fill="#dc2626" text-anchor="middle">VS</text>
   <rect x="720" y="588" width="560" height="50" rx="6" fill="#fff1f2"/>
-
-
+  <text x="1000" y="609" font-family="system-ui,-apple-system,PingFang SC,Microsoft YaHei,sans-serif" font-size="12" fill="#64748b" text-anchor="middle">我们帮品牌管好自己的</text>
+  <text x="1000" y="629" font-family="system-ui,-apple-system,PingFang SC,Microsoft YaHei,sans-serif" font-size="15" font-weight="900" fill="#dc2626" text-anchor="middle">300 个点位</text>
 
   <!-- 护城河 -->
   <rect x="60" y="648" width="1160" height="24" rx="4" fill="#fef3c7"/>
-
+  <text x="640" y="664" font-family="system-ui,-apple-system,PingFang SC,Microsoft YaHei,sans-serif" font-size="12" font-weight="700" fill="#d97706" text-anchor="middle">护城河：客户数据越积越重（点位、SKU、执行历史），替换成本越来越高，续费率 &gt;85%</text>
 
 </svg>

@@ -5,105 +5,105 @@
   <rect x="0" y="0" width="1280" height="72" fill="#ffffff" opacity="0.95"/>
   <rect width="1280" height="4" fill="#dc2626"/>
   <rect x="40" y="16" width="4" height="40" fill="#dc2626"/>
-  <text x="56" y="32" font-family="system-ui,-apple-system,PingFang SC,Microsoft YaHei,sans-serif" font-size="21" fill="#dc2626" font-weight="600">ROI &amp; VALUE PROPOSITION</text>
+  <text x="56" y="32" font-family="system-ui,-apple-system,PingFang SC,Microsoft YaHei,sans-serif" font-size="11" fill="#dc2626" font-weight="600">ROI &amp; VALUE PROPOSITION</text>
   <text x="56" y="56" font-family="system-ui,-apple-system,PingFang SC,Microsoft YaHei,sans-serif" font-size="20" font-weight="700" fill="#0f172a">降本 + 增收，算得清的账</text>
-
+  <text x="640" y="712" font-family="system-ui,-apple-system,PingFang SC,Microsoft YaHei,sans-serif" font-size="11" fill="#94a3b8" text-anchor="middle">店盈AI · 商业计划书 2026 · 第6页</text>
 
   <!-- 左栏 — 降本 x=40-610 -->
   <rect x="40" y="90" width="570" height="590" rx="10" fill="#ffffff"/>
   <rect x="40" y="90" width="570" height="4" rx="2" fill="#dc2626"/>
-  <text x="325" y="124" font-family="system-ui,-apple-system,PingFang SC,Microsoft YaHei,sans-serif" font-size="20" font-weight="700" fill="#dc2626" text-anchor="middle">降本：减少人力投入</text>
+  <text x="325" y="124" font-family="system-ui,-apple-system,PingFang SC,Microsoft YaHei,sans-serif" font-size="14" font-weight="700" fill="#dc2626" text-anchor="middle">降本：减少人力投入</text>
 
   <!-- 人力对比表头 -->
   <rect x="60" y="136" width="530" height="32" rx="4" fill="#f1f5f9"/>
-  <text x="180" y="180" font-family="system-ui,-apple-system,PingFang SC,Microsoft YaHei,sans-serif" font-size="20" font-weight="700" fill="#0f172a" text-anchor="middle">岗位</text>
-  <text x="360" y="208" font-family="system-ui,-apple-system,PingFang SC,Microsoft YaHei,sans-serif" font-size="20" font-weight="700" fill="#dc2626" text-anchor="middle">传统模式</text>
-  <text x="530" y="236" font-family="system-ui,-apple-system,PingFang SC,Microsoft YaHei,sans-serif" font-size="20" font-weight="700" fill="#16a34a" text-anchor="middle">本系统+AI</text>
+  <text x="180" y="157" font-family="system-ui,-apple-system,PingFang SC,Microsoft YaHei,sans-serif" font-size="12" font-weight="700" fill="#0f172a" text-anchor="middle">岗位</text>
+  <text x="360" y="157" font-family="system-ui,-apple-system,PingFang SC,Microsoft YaHei,sans-serif" font-size="12" font-weight="700" fill="#dc2626" text-anchor="middle">传统模式</text>
+  <text x="530" y="157" font-family="system-ui,-apple-system,PingFang SC,Microsoft YaHei,sans-serif" font-size="12" font-weight="700" fill="#16a34a" text-anchor="middle">本系统+AI</text>
   <line x1="60" y1="168" x2="590" y2="168" stroke="#e2e8f0" stroke-width="1"/>
 
   <!-- 行1 -->
-  <text x="120" y="322.8" font-family="system-ui,-apple-system,PingFang SC,Microsoft YaHei,sans-serif" font-size="21" fill="#0f172a">策划</text>
-  <text x="360" y="352.2" font-family="system-ui,-apple-system,PingFang SC,Microsoft YaHei,sans-serif" font-size="21" fill="#dc2626" text-anchor="middle">1人 × 10万/年</text>
-  <text x="530" y="381.6" font-family="system-ui,-apple-system,PingFang SC,Microsoft YaHei,sans-serif" font-size="21" fill="#16a34a" text-anchor="middle">兼任（无额外成本）</text>
+  <text x="120" y="190" font-family="system-ui,-apple-system,PingFang SC,Microsoft YaHei,sans-serif" font-size="13" fill="#0f172a">策划</text>
+  <text x="360" y="190" font-family="system-ui,-apple-system,PingFang SC,Microsoft YaHei,sans-serif" font-size="13" fill="#dc2626" text-anchor="middle">1人 × 10万/年</text>
+  <text x="530" y="190" font-family="system-ui,-apple-system,PingFang SC,Microsoft YaHei,sans-serif" font-size="13" fill="#16a34a" text-anchor="middle">兼任（无额外成本）</text>
   <line x1="60" y1="200" x2="590" y2="200" stroke="#f1f5f9" stroke-width="1"/>
 
   <!-- 行2 -->
-  <text x="120" y="440.4" font-family="system-ui,-apple-system,PingFang SC,Microsoft YaHei,sans-serif" font-size="21" fill="#0f172a">设计</text>
-  <text x="360" y="469.8" font-family="system-ui,-apple-system,PingFang SC,Microsoft YaHei,sans-serif" font-size="21" fill="#dc2626" text-anchor="middle">2人 × 8万/年</text>
-  <text x="530" y="499.2" font-family="system-ui,-apple-system,PingFang SC,Microsoft YaHei,sans-serif" font-size="21" fill="#16a34a" text-anchor="middle">AI代劳（约0元）</text>
+  <text x="120" y="222" font-family="system-ui,-apple-system,PingFang SC,Microsoft YaHei,sans-serif" font-size="13" fill="#0f172a">设计</text>
+  <text x="360" y="222" font-family="system-ui,-apple-system,PingFang SC,Microsoft YaHei,sans-serif" font-size="13" fill="#dc2626" text-anchor="middle">2人 × 8万/年</text>
+  <text x="530" y="222" font-family="system-ui,-apple-system,PingFang SC,Microsoft YaHei,sans-serif" font-size="13" fill="#16a34a" text-anchor="middle">AI代劳（约0元）</text>
   <line x1="60" y1="232" x2="590" y2="232" stroke="#f1f5f9" stroke-width="1"/>
 
   <!-- 行3 -->
-  <text x="120" y="528.6" font-family="system-ui,-apple-system,PingFang SC,Microsoft YaHei,sans-serif" font-size="21" fill="#0f172a">督导</text>
-  <text x="360" y="558" font-family="system-ui,-apple-system,PingFang SC,Microsoft YaHei,sans-serif" font-size="21" fill="#dc2626" text-anchor="middle">2人 × 8万/年</text>
-  <text x="530" y="587.4" font-family="system-ui,-apple-system,PingFang SC,Microsoft YaHei,sans-serif" font-size="21" fill="#16a34a" text-anchor="middle">系统替代</text>
+  <text x="120" y="254" font-family="system-ui,-apple-system,PingFang SC,Microsoft YaHei,sans-serif" font-size="13" fill="#0f172a">督导</text>
+  <text x="360" y="254" font-family="system-ui,-apple-system,PingFang SC,Microsoft YaHei,sans-serif" font-size="13" fill="#dc2626" text-anchor="middle">2人 × 8万/年</text>
+  <text x="530" y="254" font-family="system-ui,-apple-system,PingFang SC,Microsoft YaHei,sans-serif" font-size="13" fill="#16a34a" text-anchor="middle">系统替代</text>
   <line x1="60" y1="264" x2="590" y2="264" stroke="#e2e8f0" stroke-width="1.5"/>
 
   <!-- 合计 -->
   <rect x="60" y="272" width="530" height="48" rx="4" fill="#f0fdf4"/>
-  <text x="120" y="644.8" font-family="system-ui,-apple-system,PingFang SC,Microsoft YaHei,sans-serif" font-size="20" font-weight="700" fill="#0f172a">合计</text>
-  <text x="360" y="672.8" font-family="system-ui,-apple-system,PingFang SC,Microsoft YaHei,sans-serif" font-size="20" font-weight="900" fill="#dc2626" text-anchor="middle">5人 约44万/年</text>
-
+  <text x="120" y="301" font-family="system-ui,-apple-system,PingFang SC,Microsoft YaHei,sans-serif" font-size="14" font-weight="700" fill="#0f172a">合计</text>
+  <text x="360" y="301" font-family="system-ui,-apple-system,PingFang SC,Microsoft YaHei,sans-serif" font-size="16" font-weight="900" fill="#dc2626" text-anchor="middle">5人 约44万/年</text>
+  <text x="530" y="301" font-family="system-ui,-apple-system,PingFang SC,Microsoft YaHei,sans-serif" font-size="16" font-weight="900" fill="#16a34a" text-anchor="middle">1人 约12万/年</text>
 
   <!-- 节省 -->
   <rect x="60" y="332" width="530" height="52" rx="8" fill="#dc2626"/>
-
+  <text x="325" y="362" font-family="system-ui,-apple-system,PingFang SC,Microsoft YaHei,sans-serif" font-size="18" font-weight="900" fill="#ffffff" text-anchor="middle">每年节省约 32万元 人力成本</text>
 
   <!-- 时间成本 -->
-
+  <text x="325" y="420" font-family="system-ui,-apple-system,PingFang SC,Microsoft YaHei,sans-serif" font-size="13" font-weight="700" fill="#64748b" text-anchor="middle">时间成本对比</text>
   <line x1="60" y1="428" x2="590" y2="428" stroke="#e2e8f0" stroke-width="1"/>
 
   <rect x="60" y="440" width="155" height="100" rx="8" fill="#f8fafc"/>
-
-
-
+  <text x="137" y="470" font-family="system-ui,-apple-system,PingFang SC,Microsoft YaHei,sans-serif" font-size="11" fill="#94a3b8" text-anchor="middle">活动上线</text>
+  <text x="137" y="498" font-family="system-ui,-apple-system,PingFang SC,Microsoft YaHei,sans-serif" font-size="13" font-weight="900" fill="#dc2626" text-anchor="middle">3天</text>
+  <text x="137" y="516" font-family="system-ui,-apple-system,PingFang SC,Microsoft YaHei,sans-serif" font-size="11" fill="#16a34a" text-anchor="middle">→ 30分钟</text>
 
   <rect x="227" y="440" width="155" height="100" rx="8" fill="#f8fafc"/>
-
-
-
+  <text x="304" y="470" font-family="system-ui,-apple-system,PingFang SC,Microsoft YaHei,sans-serif" font-size="11" fill="#94a3b8" text-anchor="middle">活动复盘</text>
+  <text x="304" y="498" font-family="system-ui,-apple-system,PingFang SC,Microsoft YaHei,sans-serif" font-size="13" font-weight="900" fill="#dc2626" text-anchor="middle">2周</text>
+  <text x="304" y="516" font-family="system-ui,-apple-system,PingFang SC,Microsoft YaHei,sans-serif" font-size="11" fill="#16a34a" text-anchor="middle">→ 1小时</text>
 
   <rect x="394" y="440" width="196" height="100" rx="8" fill="#f8fafc"/>
-
-
-
+  <text x="492" y="470" font-family="system-ui,-apple-system,PingFang SC,Microsoft YaHei,sans-serif" font-size="11" fill="#94a3b8" text-anchor="middle">点位核对</text>
+  <text x="492" y="498" font-family="system-ui,-apple-system,PingFang SC,Microsoft YaHei,sans-serif" font-size="13" font-weight="900" fill="#dc2626" text-anchor="middle">2天</text>
+  <text x="492" y="516" font-family="system-ui,-apple-system,PingFang SC,Microsoft YaHei,sans-serif" font-size="11" fill="#16a34a" text-anchor="middle">→ 10秒</text>
 
   <!-- 老板算账 -->
   <rect x="60" y="556" width="530" height="100" rx="8" fill="#fef3c7"/>
   <rect x="60" y="556" width="4" height="100" rx="2" fill="#f59e0b"/>
-
-
+  <text x="80" y="578" font-family="system-ui,-apple-system,PingFang SC,Microsoft YaHei,sans-serif" font-size="13" font-weight="700" fill="#d97706">老板只需记住</text>
+  <text x="80" y="600" font-family="system-ui,-apple-system,PingFang SC,Microsoft YaHei,sans-serif" font-size="16" font-weight="900" fill="#0f172a">花 2万，省 32万，还能多赚钱</text>
 
   <!-- 右栏 — 增收 x=660-1240 -->
   <rect x="660" y="90" width="580" height="590" rx="10" fill="#ffffff"/>
   <rect x="660" y="90" width="580" height="4" rx="2" fill="#f59e0b"/>
-  <text x="950" y="152" font-family="system-ui,-apple-system,PingFang SC,Microsoft YaHei,sans-serif" font-size="20" font-weight="700" fill="#f59e0b" text-anchor="middle">增收：激活沉睡资产</text>
+  <text x="950" y="124" font-family="system-ui,-apple-system,PingFang SC,Microsoft YaHei,sans-serif" font-size="14" font-weight="700" fill="#f59e0b" text-anchor="middle">增收：激活沉睡资产</text>
 
   <!-- 点位激活 -->
   <rect x="680" y="136" width="540" height="120" rx="8" fill="#fefce8"/>
   <rect x="680" y="136" width="4" height="120" rx="2" fill="#f59e0b"/>
-  <text x="700" y="264" font-family="system-ui,-apple-system,PingFang SC,Microsoft YaHei,sans-serif" font-size="20" font-weight="700" fill="#d97706">被遗忘的广告位</text>
-  <text x="700" y="293.4" font-family="system-ui,-apple-system,PingFang SC,Microsoft YaHei,sans-serif" font-size="21" fill="#0f172a">原来放弃的墙面 / 电子屏 / 收银台</text>
-  <text x="700" y="411" font-family="system-ui,-apple-system,PingFang SC,Microsoft YaHei,sans-serif" font-size="21" fill="#0f172a">全部被激活，纳入系统统一管理</text>
+  <text x="700" y="162" font-family="system-ui,-apple-system,PingFang SC,Microsoft YaHei,sans-serif" font-size="14" font-weight="700" fill="#d97706">被遗忘的广告位</text>
+  <text x="700" y="184" font-family="system-ui,-apple-system,PingFang SC,Microsoft YaHei,sans-serif" font-size="13" fill="#0f172a">原来放弃的墙面 / 电子屏 / 收银台</text>
+  <text x="700" y="204" font-family="system-ui,-apple-system,PingFang SC,Microsoft YaHei,sans-serif" font-size="13" fill="#0f172a">全部被激活，纳入系统统一管理</text>
 
   <!-- 未来点位售卖 -->
   <rect x="680" y="272" width="540" height="120" rx="8" fill="#fff7ed"/>
   <rect x="680" y="272" width="4" height="120" rx="2" fill="#ea580c"/>
-  <text x="700" y="616.8" font-family="system-ui,-apple-system,PingFang SC,Microsoft YaHei,sans-serif" font-size="20" font-weight="700" fill="#ea580c">未来：品牌变"小型分众传媒"</text>
-
-
+  <text x="700" y="298" font-family="system-ui,-apple-system,PingFang SC,Microsoft YaHei,sans-serif" font-size="14" font-weight="700" fill="#ea580c">未来：品牌变"小型分众传媒"</text>
+  <text x="700" y="320" font-family="system-ui,-apple-system,PingFang SC,Microsoft YaHei,sans-serif" font-size="13" fill="#0f172a">点位对外开放招商，接受品牌投放</text>
+  <text x="700" y="340" font-family="system-ui,-apple-system,PingFang SC,Microsoft YaHei,sans-serif" font-size="13" fill="#0f172a">30家门店×10个点位 = 300个可售资源</text>
 
   <!-- AI设计工具加成 -->
   <rect x="680" y="408" width="540" height="120" rx="8" fill="#f0fdf4"/>
   <rect x="680" y="408" width="4" height="120" rx="2" fill="#16a34a"/>
-
-
-
+  <text x="700" y="434" font-family="system-ui,-apple-system,PingFang SC,Microsoft YaHei,sans-serif" font-size="14" font-weight="700" fill="#16a34a">AI设计工具的时代红利</text>
+  <text x="700" y="456" font-family="system-ui,-apple-system,PingFang SC,Microsoft YaHei,sans-serif" font-size="13" fill="#0f172a">Midjourney/Canva AI/即梦等工具</text>
+  <text x="700" y="476" font-family="system-ui,-apple-system,PingFang SC,Microsoft YaHei,sans-serif" font-size="13" fill="#0f172a">可替代80%的海报生成工作</text>
 
   <!-- 底部ROI总结 -->
   <rect x="680" y="544" width="540" height="120" rx="8" fill="#0f172a"/>
-
-
-
+  <text x="950" y="578" font-family="system-ui,-apple-system,PingFang SC,Microsoft YaHei,sans-serif" font-size="14" fill="#94a3b8" text-anchor="middle">投资回报测算</text>
+  <text x="950" y="608" font-family="system-ui,-apple-system,PingFang SC,Microsoft YaHei,sans-serif" font-size="22" font-weight="900" fill="#f59e0b" text-anchor="middle">年费2万元</text>
+  <text x="950" y="632" font-family="system-ui,-apple-system,PingFang SC,Microsoft YaHei,sans-serif" font-size="14" fill="#ffffff" text-anchor="middle">节省32万 + 增收潜力 + 品牌资产沉淀</text>
 
 </svg>

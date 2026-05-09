@@ -8,82 +8,82 @@
   <rect x="0" y="0" width="1280" height="72" fill="#ffffff" opacity="0.95"/>
   <rect width="1280" height="4" fill="#dc2626"/>
   <rect x="40" y="16" width="4" height="40" fill="#dc2626"/>
-  <text x="56" y="32" font-family="system-ui,-apple-system,PingFang SC,Microsoft YaHei,sans-serif" font-size="21" fill="#dc2626" font-weight="600">PRODUCT POSITIONING</text>
+  <text x="56" y="32" font-family="system-ui,-apple-system,PingFang SC,Microsoft YaHei,sans-serif" font-size="11" fill="#dc2626" font-weight="600">PRODUCT POSITIONING</text>
   <text x="56" y="56" font-family="system-ui,-apple-system,PingFang SC,Microsoft YaHei,sans-serif" font-size="20" font-weight="700" fill="#0f172a">店盈AI · 产品定位</text>
-  <text x="56" y="80" font-family="system-ui,-apple-system,PingFang SC,Microsoft YaHei,sans-serif" font-size="20" fill="#64748b">定位：面向中小企业连锁门店的AI营销管理系统</text>
+  <text x="56" y="80" font-family="system-ui,-apple-system,PingFang SC,Microsoft YaHei,sans-serif" font-size="14" fill="#64748b">定位：面向中小企业连锁门店的AI营销管理系统</text>
   <!-- 底部页码 -->
-
+  <text x="640" y="712" font-family="system-ui,-apple-system,PingFang SC,Microsoft YaHei,sans-serif" font-size="11" fill="#94a3b8" text-anchor="middle">店盈AI · 商业计划书 2026 · 第2页</text>
 
   <!-- 左栏背景 x=40-620 -->
   <rect x="40" y="90" width="580" height="600" rx="10" fill="#ffffff"/>
   <rect x="40" y="90" width="580" height="4" rx="2" fill="#dc2626"/>
 
   <!-- 左栏：大标题 -->
-  <text x="60" y="159.4" font-family="system-ui,-apple-system,PingFang SC,Microsoft YaHei,sans-serif" font-size="21" fill="#94a3b8" font-weight="600">面向</text>
-  <text x="60" y="195.8" font-family="system-ui,-apple-system,PingFang SC,Microsoft YaHei,sans-serif" font-size="26" font-weight="900" fill="#0f172a">中小连锁门店的</text>
-  <text x="60" y="310.6" font-family="system-ui,-apple-system,PingFang SC,Microsoft YaHei,sans-serif" font-size="26" font-weight="900" fill="#dc2626">AI营销管理系统</text>
+  <text x="60" y="140" font-family="system-ui,-apple-system,PingFang SC,Microsoft YaHei,sans-serif" font-size="13" fill="#94a3b8" font-weight="600">面向</text>
+  <text x="60" y="170" font-family="system-ui,-apple-system,PingFang SC,Microsoft YaHei,sans-serif" font-size="26" font-weight="900" fill="#0f172a">中小连锁门店的</text>
+  <text x="60" y="204" font-family="system-ui,-apple-system,PingFang SC,Microsoft YaHei,sans-serif" font-size="26" font-weight="900" fill="#dc2626">AI营销管理系统</text>
 
   <!-- 目标人群卡片 -->
   <rect x="60" y="220" width="540" height="110" rx="8" fill="#eff6ff"/>
   <rect x="60" y="220" width="4" height="110" rx="2" fill="#0284c7"/>
-  <text x="82" y="347" font-family="system-ui,-apple-system,PingFang SC,Microsoft YaHei,sans-serif" font-size="21" font-weight="700" fill="#0284c7">目标客户</text>
-  <text x="82" y="376.4" font-family="system-ui,-apple-system,PingFang SC,Microsoft YaHei,sans-serif" font-size="20" font-weight="700" fill="#0f172a">拥有 3–100 家门店的中小连锁品牌</text>
+  <text x="82" y="245" font-family="system-ui,-apple-system,PingFang SC,Microsoft YaHei,sans-serif" font-size="13" font-weight="700" fill="#0284c7">目标客户</text>
+  <text x="82" y="268" font-family="system-ui,-apple-system,PingFang SC,Microsoft YaHei,sans-serif" font-size="16" font-weight="700" fill="#0f172a">拥有 3–100 家门店的中小连锁品牌</text>
 
   <!-- 核心功能标题 -->
-  <text x="60" y="464.6" font-family="system-ui,-apple-system,PingFang SC,Microsoft YaHei,sans-serif" font-size="21" font-weight="700" fill="#64748b">核心功能</text>
+  <text x="60" y="360" font-family="system-ui,-apple-system,PingFang SC,Microsoft YaHei,sans-serif" font-size="13" font-weight="700" fill="#64748b">核心功能</text>
   <line x1="60" y1="368" x2="600" y2="368" stroke="#e2e8f0" stroke-width="1"/>
 
   <!-- 功能4项 -->
   <circle cx="76" cy="398" r="8" fill="#dc2626" opacity="0.15"/>
-  <text x="72" y="522" font-family="system-ui,-apple-system,PingFang SC,Microsoft YaHei,sans-serif" font-size="20" text-anchor="middle" fill="#dc2626">◉</text>
-  <text x="96" y="494" font-family="system-ui,-apple-system,PingFang SC,Microsoft YaHei,sans-serif" font-size="20" font-weight="700" fill="#0f172a">广告点位管理</text>
-  <text x="96" y="580.8" font-family="system-ui,-apple-system,PingFang SC,Microsoft YaHei,sans-serif" font-size="20" fill="#64748b">可视化管理、实时状态、可追溯</text>
+  <text x="72" y="402" font-family="system-ui,-apple-system,PingFang SC,Microsoft YaHei,sans-serif" font-size="12" text-anchor="middle" fill="#dc2626">◉</text>
+  <text x="96" y="401" font-family="system-ui,-apple-system,PingFang SC,Microsoft YaHei,sans-serif" font-size="14" font-weight="700" fill="#0f172a">广告点位管理</text>
+  <text x="96" y="418" font-family="system-ui,-apple-system,PingFang SC,Microsoft YaHei,sans-serif" font-size="14" fill="#64748b">可视化管理、实时状态、可追溯</text>
 
   <circle cx="76" cy="448" r="8" fill="#f59e0b" opacity="0.15"/>
-  <text x="72" y="667.6" font-family="system-ui,-apple-system,PingFang SC,Microsoft YaHei,sans-serif" font-size="20" text-anchor="middle" fill="#f59e0b">◉</text>
-  <text x="96" y="639.6" font-family="system-ui,-apple-system,PingFang SC,Microsoft YaHei,sans-serif" font-size="20" font-weight="700" fill="#0f172a">素材库管理</text>
-  <text x="96" y="695.6" font-family="system-ui,-apple-system,PingFang SC,Microsoft YaHei,sans-serif" font-size="20" fill="#64748b">企业级共享素材库，永远用最新版</text>
+  <text x="72" y="452" font-family="system-ui,-apple-system,PingFang SC,Microsoft YaHei,sans-serif" font-size="12" text-anchor="middle" fill="#f59e0b">◉</text>
+  <text x="96" y="451" font-family="system-ui,-apple-system,PingFang SC,Microsoft YaHei,sans-serif" font-size="14" font-weight="700" fill="#0f172a">素材库管理</text>
+  <text x="96" y="468" font-family="system-ui,-apple-system,PingFang SC,Microsoft YaHei,sans-serif" font-size="14" fill="#64748b">企业级共享素材库，永远用最新版</text>
 
   <circle cx="76" cy="498" r="8" fill="#0284c7" opacity="0.15"/>
-
-
-
+  <text x="72" y="502" font-family="system-ui,-apple-system,PingFang SC,Microsoft YaHei,sans-serif" font-size="12" text-anchor="middle" fill="#0284c7">◉</text>
+  <text x="96" y="501" font-family="system-ui,-apple-system,PingFang SC,Microsoft YaHei,sans-serif" font-size="14" font-weight="700" fill="#0f172a">全链路任务管理</text>
+  <text x="96" y="518" font-family="system-ui,-apple-system,PingFang SC,Microsoft YaHei,sans-serif" font-size="14" fill="#64748b">策划 → 执行 → 复盘，全程可追溯</text>
 
   <circle cx="76" cy="548" r="8" fill="#7c3aed" opacity="0.15"/>
-
-
-
+  <text x="72" y="552" font-family="system-ui,-apple-system,PingFang SC,Microsoft YaHei,sans-serif" font-size="12" text-anchor="middle" fill="#7c3aed">◉</text>
+  <text x="96" y="551" font-family="system-ui,-apple-system,PingFang SC,Microsoft YaHei,sans-serif" font-size="14" font-weight="700" fill="#0f172a">AI辅助</text>
+  <text x="96" y="568" font-family="system-ui,-apple-system,PingFang SC,Microsoft YaHei,sans-serif" font-size="14" fill="#64748b">策划、内容生成、审核提醒一体化</text>
 
   <!-- 右栏背景 x=660-1240 -->
   <rect x="660" y="90" width="580" height="600" rx="10" fill="#ffffff"/>
   <rect x="660" y="90" width="580" height="4" rx="2" fill="#f59e0b"/>
 
   <!-- 核心价值标题 -->
-  <text x="680" y="130" font-family="system-ui,-apple-system,PingFang SC,Microsoft YaHei,sans-serif" font-size="21" font-weight="700" fill="#64748b">核心价值主张</text>
+  <text x="680" y="130" font-family="system-ui,-apple-system,PingFang SC,Microsoft YaHei,sans-serif" font-size="13" font-weight="700" fill="#64748b">核心价值主张</text>
   <line x1="680" y1="138" x2="1220" y2="138" stroke="#e2e8f0" stroke-width="1"/>
 
   <!-- 价值1 -->
   <rect x="680" y="152" width="540" height="100" rx="8" fill="#fefce8"/>
   <rect x="680" y="152" width="4" height="100" rx="2" fill="#f59e0b"/>
-  <text x="700" y="235" font-family="system-ui,-apple-system,PingFang SC,Microsoft YaHei,sans-serif" font-size="28" font-weight="900" fill="#f59e0b">1人</text>
-  <text x="700" y="274.2" font-family="system-ui,-apple-system,PingFang SC,Microsoft YaHei,sans-serif" font-size="21" font-weight="700" fill="#0f172a">管好 100家 店的营销</text>
+  <text x="700" y="178" font-family="system-ui,-apple-system,PingFang SC,Microsoft YaHei,sans-serif" font-size="28" font-weight="900" fill="#f59e0b">1人</text>
+  <text x="700" y="198" font-family="system-ui,-apple-system,PingFang SC,Microsoft YaHei,sans-serif" font-size="13" font-weight="700" fill="#0f172a">管好 100家 店的营销</text>
 
   <!-- 价值2 -->
   <rect x="680" y="268" width="540" height="100" rx="8" fill="#fefce8"/>
   <rect x="680" y="268" width="4" height="100" rx="2" fill="#f59e0b"/>
-  <text x="700" y="405.8" font-family="system-ui,-apple-system,PingFang SC,Microsoft YaHei,sans-serif" font-size="21" font-weight="900" fill="#f59e0b">盘活门店免费广告位</text>
-  <text x="700" y="435.2" font-family="system-ui,-apple-system,PingFang SC,Microsoft YaHei,sans-serif" font-size="21" font-weight="700" fill="#0f172a">墙面、电子屏、收银台 → 品牌资产</text>
+  <text x="700" y="292" font-family="system-ui,-apple-system,PingFang SC,Microsoft YaHei,sans-serif" font-size="15" font-weight="900" fill="#f59e0b">盘活门店免费广告位</text>
+  <text x="700" y="312" font-family="system-ui,-apple-system,PingFang SC,Microsoft YaHei,sans-serif" font-size="13" font-weight="700" fill="#0f172a">墙面、电子屏、收银台 → 品牌资产</text>
 
   <!-- 价值3 -->
   <rect x="680" y="384" width="540" height="100" rx="8" fill="#fefce8"/>
   <rect x="680" y="384" width="4" height="100" rx="2" fill="#f59e0b"/>
-  <text x="700" y="551.4" font-family="system-ui,-apple-system,PingFang SC,Microsoft YaHei,sans-serif" font-size="21" font-weight="900" fill="#f59e0b">比肩大企业的营销管理体系</text>
-  <text x="700" y="610.2" font-family="system-ui,-apple-system,PingFang SC,Microsoft YaHei,sans-serif" font-size="21" font-weight="700" fill="#0f172a">分众有KUMA系统管300万个点位</text>
+  <text x="700" y="408" font-family="system-ui,-apple-system,PingFang SC,Microsoft YaHei,sans-serif" font-size="15" font-weight="900" fill="#f59e0b">比肩大企业的营销管理体系</text>
+  <text x="700" y="428" font-family="system-ui,-apple-system,PingFang SC,Microsoft YaHei,sans-serif" font-size="13" font-weight="700" fill="#0f172a">分众有KUMA系统管300万个点位</text>
 
   <!-- 底部一句话 -->
   <rect x="660" y="504" width="580" height="170" rx="10" fill="#0f172a"/>
-
-
-
+  <text x="950" y="560" font-family="system-ui,-apple-system,PingFang SC,Microsoft YaHei,sans-serif" font-size="13" fill="#94a3b8" text-anchor="middle">口号  SLOGAN</text>
+  <text x="950" y="592" font-family="system-ui,-apple-system,PingFang SC,Microsoft YaHei,sans-serif" font-size="18" font-weight="900" fill="#f59e0b" text-anchor="middle">让每一家小店</text>
+  <text x="950" y="618" font-family="system-ui,-apple-system,PingFang SC,Microsoft YaHei,sans-serif" font-size="18" font-weight="900" fill="#ffffff" text-anchor="middle">都拥有大企业的营销能力</text>
 
 </svg>
