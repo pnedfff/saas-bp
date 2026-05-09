@@ -3,90 +3,96 @@
   <rect width="1280" height="4" fill="#dc2626"/>
 
   <!-- 顶部标题 -->
-  <text x="60" y="60" font-family="system-ui,-apple-system,PingFang SC,Microsoft YaHei,sans-serif" font-size="13" fill="#94a3b8" font-weight="700" letter-spacing="3">TECHNICAL ARCHITECTURE</text>
-  <text x="60" y="100" font-family="system-ui,-apple-system,PingFang SC,Microsoft YaHei,sans-serif" font-size="32" font-weight="900" fill="#0f172a">技术路径 · 三层架构</text>
-  <text x="60" y="128" font-family="system-ui,-apple-system,PingFang SC,Microsoft YaHei,sans-serif" font-size="14" fill="#64748b">不只用 AI 做产品，更让产品本身就是 AI。三层架构 = 速度、价值、护城河</text>
+  <text x="60" y="60" font-family="system-ui,-apple-system,PingFang SC,Microsoft YaHei,sans-serif" font-size="13" fill="#94a3b8" font-weight="700" letter-spacing="3">VALUE TO BUSINESS</text>
+  <text x="60" y="100" font-family="system-ui,-apple-system,PingFang SC,Microsoft YaHei,sans-serif" font-size="32" font-weight="900" fill="#0f172a">我们厉害在哪？</text>
+  <text x="312" y="100" font-family="system-ui,-apple-system,PingFang SC,Microsoft YaHei,sans-serif" font-size="28" font-weight="700" fill="#dc2626">3 件你能听懂的事</text>
+  <text x="60" y="128" font-family="system-ui,-apple-system,PingFang SC,Microsoft YaHei,sans-serif" font-size="14" fill="#64748b">不用懂代码，也能看明白我们的护城河 — 每个角度都有一个生活类比</text>
 
-  <!-- 三层卡片 -->
+  <!-- ===== 列 ① 上线快 ===== -->
+  <rect x="60" y="160" width="386" height="466" rx="12" fill="#ffffff" stroke="#e2e8f0" stroke-width="1"/>
 
-  <!-- 层 1：AI 原生开发 -->
-  <rect x="60" y="170" width="380" height="430" rx="12" fill="#ffffff" stroke="#e2e8f0" stroke-width="1"/>
-  <rect x="60" y="170" width="380" height="6" rx="3" fill="#0284c7"/>
-  <text x="80" y="208" font-family="system-ui,-apple-system,PingFang SC,Microsoft YaHei,sans-serif" font-size="13" font-weight="700" fill="#0284c7" letter-spacing="2">LAYER 1 · BUILD-TIME</text>
-  <text x="80" y="240" font-family="system-ui,-apple-system,PingFang SC,Microsoft YaHei,sans-serif" font-size="22" font-weight="900" fill="#0f172a">AI 原生开发</text>
-  <text x="80" y="266" font-family="system-ui,-apple-system,PingFang SC,Microsoft YaHei,sans-serif" font-size="13" fill="#64748b">建设期成本优势</text>
+  <circle cx="100" cy="200" r="22" fill="#0284c7"/>
+  <text x="100" y="208" font-family="system-ui,-apple-system,PingFang SC,Microsoft YaHei,sans-serif" font-size="22" font-weight="900" fill="#ffffff" text-anchor="middle">①</text>
+  <text x="140" y="207" font-family="system-ui,-apple-system,PingFang SC,Microsoft YaHei,sans-serif" font-size="22" font-weight="900" fill="#0f172a">上线快、便宜</text>
 
-  <line x1="80" y1="285" x2="420" y2="285" stroke="#e2e8f0" stroke-width="1"/>
+  <text x="80" y="252" font-family="system-ui,-apple-system,PingFang SC,Microsoft YaHei,sans-serif" font-size="12" fill="#94a3b8" font-style="italic">老板会问：</text>
+  <text x="80" y="274" font-family="system-ui,-apple-system,PingFang SC,Microsoft YaHei,sans-serif" font-size="14" fill="#475569" font-weight="600">"凭什么比别家快、还便宜？"</text>
 
-  <text x="80" y="318" font-family="system-ui,-apple-system,PingFang SC,Microsoft YaHei,sans-serif" font-size="13" font-weight="700" fill="#0f172a">技术栈</text>
-  <text x="80" y="342" font-family="system-ui,-apple-system,PingFang SC,Microsoft YaHei,sans-serif" font-size="12" fill="#475569">● Claude Code + Cursor + Codex</text>
-  <text x="80" y="362" font-family="system-ui,-apple-system,PingFang SC,Microsoft YaHei,sans-serif" font-size="12" fill="#475569">● Specs-driven development</text>
-  <text x="80" y="382" font-family="system-ui,-apple-system,PingFang SC,Microsoft YaHei,sans-serif" font-size="12" fill="#475569">● 60% 代码 AI 生成 + 40% 架构审核</text>
+  <text x="80" y="312" font-family="system-ui,-apple-system,PingFang SC,Microsoft YaHei,sans-serif" font-size="12" fill="#94a3b8" font-style="italic">我们的做法：</text>
+  <text x="80" y="334" font-family="system-ui,-apple-system,PingFang SC,Microsoft YaHei,sans-serif" font-size="13" fill="#0f172a">用 AI 工具写代码，2 个人就能</text>
+  <text x="80" y="352" font-family="system-ui,-apple-system,PingFang SC,Microsoft YaHei,sans-serif" font-size="13" fill="#0f172a">干 5-10 个工程师的活</text>
 
-  <text x="80" y="420" font-family="system-ui,-apple-system,PingFang SC,Microsoft YaHei,sans-serif" font-size="13" font-weight="700" fill="#0f172a">关键数字</text>
-  <rect x="80" y="435" width="340" height="60" rx="6" fill="#eff6ff"/>
-  <text x="100" y="465" font-family="system-ui,-apple-system,PingFang SC,Microsoft YaHei,sans-serif" font-size="24" font-weight="900" fill="#0284c7">2 人 = 6 人速度</text>
-  <text x="100" y="485" font-family="system-ui,-apple-system,PingFang SC,Microsoft YaHei,sans-serif" font-size="11" fill="#64748b">3 个月 MVP · 全栈成本 ≤ 30 万</text>
+  <rect x="80" y="380" width="346" height="80" rx="8" fill="#eff6ff"/>
+  <text x="253" y="412" font-family="system-ui,-apple-system,PingFang SC,Microsoft YaHei,sans-serif" font-size="26" font-weight="900" fill="#0284c7" text-anchor="middle">30万 / 3个月</text>
+  <text x="253" y="438" font-family="system-ui,-apple-system,PingFang SC,Microsoft YaHei,sans-serif" font-size="13" fill="#64748b" text-anchor="middle">vs 传统 200万 / 6个月</text>
 
-  <text x="80" y="525" font-family="system-ui,-apple-system,PingFang SC,Microsoft YaHei,sans-serif" font-size="13" font-weight="700" fill="#0f172a">投资人答疑</text>
-  <text x="80" y="548" font-family="system-ui,-apple-system,PingFang SC,Microsoft YaHei,sans-serif" font-size="11" fill="#64748b">"AI 工具 = 速度，但单速度不是护城河。</text>
-  <text x="80" y="566" font-family="system-ui,-apple-system,PingFang SC,Microsoft YaHei,sans-serif" font-size="11" fill="#64748b">资金效率高 = 我们用 30 万跑通,</text>
-  <text x="80" y="584" font-family="system-ui,-apple-system,PingFang SC,Microsoft YaHei,sans-serif" font-size="11" fill="#64748b">对手要花 200 万试错。"</text>
+  <text x="80" y="492" font-family="system-ui,-apple-system,PingFang SC,Microsoft YaHei,sans-serif" font-size="12" fill="#94a3b8" font-style="italic">就像：</text>
+  <text x="80" y="514" font-family="system-ui,-apple-system,PingFang SC,Microsoft YaHei,sans-serif" font-size="13" fill="#0f172a">你用 ChatGPT 写邮件，10 倍快，</text>
+  <text x="80" y="532" font-family="system-ui,-apple-system,PingFang SC,Microsoft YaHei,sans-serif" font-size="13" fill="#0f172a">不用一字一字敲</text>
 
-  <!-- 层 2：AI 原生产品 -->
-  <rect x="450" y="170" width="380" height="430" rx="12" fill="#ffffff" stroke="#e2e8f0" stroke-width="1"/>
-  <rect x="450" y="170" width="380" height="6" rx="3" fill="#dc2626"/>
-  <text x="470" y="208" font-family="system-ui,-apple-system,PingFang SC,Microsoft YaHei,sans-serif" font-size="13" font-weight="700" fill="#dc2626" letter-spacing="2">LAYER 2 · RUN-TIME</text>
-  <text x="470" y="240" font-family="system-ui,-apple-system,PingFang SC,Microsoft YaHei,sans-serif" font-size="22" font-weight="900" fill="#0f172a">AI 原生产品</text>
-  <text x="470" y="266" font-family="system-ui,-apple-system,PingFang SC,Microsoft YaHei,sans-serif" font-size="13" fill="#64748b">运行期付费理由</text>
+  <line x1="80" y1="560" x2="426" y2="560" stroke="#e2e8f0" stroke-width="1"/>
+  <text x="80" y="586" font-family="system-ui,-apple-system,PingFang SC,Microsoft YaHei,sans-serif" font-size="12" fill="#94a3b8" font-weight="700">对你的意义</text>
+  <text x="80" y="610" font-family="system-ui,-apple-system,PingFang SC,Microsoft YaHei,sans-serif" font-size="15" font-weight="700" fill="#0284c7">你的钱 = 6 倍效率</text>
 
-  <line x1="470" y1="285" x2="810" y2="285" stroke="#e2e8f0" stroke-width="1"/>
+  <!-- ===== 列 ② 店长爱用 ===== -->
+  <rect x="466" y="160" width="386" height="466" rx="12" fill="#ffffff" stroke="#e2e8f0" stroke-width="1"/>
 
-  <text x="470" y="318" font-family="system-ui,-apple-system,PingFang SC,Microsoft YaHei,sans-serif" font-size="13" font-weight="700" fill="#0f172a">产品里的 AI 在干什么</text>
-  <text x="470" y="342" font-family="system-ui,-apple-system,PingFang SC,Microsoft YaHei,sans-serif" font-size="12" fill="#475569">● 素材 AI 生成（海报/文案/短视频）</text>
-  <text x="470" y="362" font-family="system-ui,-apple-system,PingFang SC,Microsoft YaHei,sans-serif" font-size="12" fill="#475569">● 任务智能派发（按店员能力/负载）</text>
-  <text x="470" y="382" font-family="system-ui,-apple-system,PingFang SC,Microsoft YaHei,sans-serif" font-size="12" fill="#475569">● 验收照片 AI 审核</text>
-  <text x="470" y="402" font-family="system-ui,-apple-system,PingFang SC,Microsoft YaHei,sans-serif" font-size="12" fill="#475569">● 周报自动生成 + 改进建议</text>
+  <circle cx="506" cy="200" r="22" fill="#dc2626"/>
+  <text x="506" y="208" font-family="system-ui,-apple-system,PingFang SC,Microsoft YaHei,sans-serif" font-size="22" font-weight="900" fill="#ffffff" text-anchor="middle">②</text>
+  <text x="546" y="207" font-family="system-ui,-apple-system,PingFang SC,Microsoft YaHei,sans-serif" font-size="22" font-weight="900" fill="#0f172a">店长真的会用</text>
 
-  <text x="470" y="438" font-family="system-ui,-apple-system,PingFang SC,Microsoft YaHei,sans-serif" font-size="13" font-weight="700" fill="#0f172a">关键数字</text>
-  <rect x="470" y="453" width="340" height="60" rx="6" fill="#fef2f2"/>
-  <text x="490" y="483" font-family="system-ui,-apple-system,PingFang SC,Microsoft YaHei,sans-serif" font-size="24" font-weight="900" fill="#dc2626">单店每月省 4 小时</text>
-  <text x="490" y="503" font-family="system-ui,-apple-system,PingFang SC,Microsoft YaHei,sans-serif" font-size="11" fill="#64748b">¥8000/年订阅有了硬支撑 · ROI 正向</text>
+  <text x="486" y="252" font-family="system-ui,-apple-system,PingFang SC,Microsoft YaHei,sans-serif" font-size="12" fill="#94a3b8" font-style="italic">老板会问：</text>
+  <text x="486" y="274" font-family="system-ui,-apple-system,PingFang SC,Microsoft YaHei,sans-serif" font-size="14" fill="#475569" font-weight="600">"我 60 个店长真能学会吗？"</text>
 
-  <text x="470" y="540" font-family="system-ui,-apple-system,PingFang SC,Microsoft YaHei,sans-serif" font-size="13" font-weight="700" fill="#0f172a">独家优势</text>
-  <text x="470" y="563" font-family="system-ui,-apple-system,PingFang SC,Microsoft YaHei,sans-serif" font-size="11" fill="#64748b">WeChat 官方 Bot + Hermes Agent</text>
-  <text x="470" y="581" font-family="system-ui,-apple-system,PingFang SC,Microsoft YaHei,sans-serif" font-size="11" fill="#64748b">国内中小连锁场景唯一合规方案</text>
+  <text x="486" y="312" font-family="system-ui,-apple-system,PingFang SC,Microsoft YaHei,sans-serif" font-size="12" fill="#94a3b8" font-style="italic">我们的做法：</text>
+  <text x="486" y="334" font-family="system-ui,-apple-system,PingFang SC,Microsoft YaHei,sans-serif" font-size="13" fill="#0f172a">不下 app、不学操作 — 直接在</text>
+  <text x="486" y="352" font-family="system-ui,-apple-system,PingFang SC,Microsoft YaHei,sans-serif" font-size="13" fill="#0f172a">微信里收任务、拍照、汇报</text>
 
-  <!-- 层 3：数据护城河 -->
-  <rect x="840" y="170" width="380" height="430" rx="12" fill="#ffffff" stroke="#e2e8f0" stroke-width="1"/>
-  <rect x="840" y="170" width="380" height="6" rx="3" fill="#f59e0b"/>
-  <text x="860" y="208" font-family="system-ui,-apple-system,PingFang SC,Microsoft YaHei,sans-serif" font-size="13" font-weight="700" fill="#f59e0b" letter-spacing="2">LAYER 3 · DATA MOAT</text>
-  <text x="860" y="240" font-family="system-ui,-apple-system,PingFang SC,Microsoft YaHei,sans-serif" font-size="22" font-weight="900" fill="#0f172a">数据飞轮</text>
-  <text x="860" y="266" font-family="system-ui,-apple-system,PingFang SC,Microsoft YaHei,sans-serif" font-size="13" fill="#64748b">长期不可复制壁垒</text>
+  <rect x="486" y="380" width="346" height="80" rx="8" fill="#fef2f2"/>
+  <text x="659" y="412" font-family="system-ui,-apple-system,PingFang SC,Microsoft YaHei,sans-serif" font-size="26" font-weight="900" fill="#dc2626" text-anchor="middle">0 下载 / 0 学习</text>
+  <text x="659" y="438" font-family="system-ui,-apple-system,PingFang SC,Microsoft YaHei,sans-serif" font-size="13" fill="#64748b" text-anchor="middle">扫码 30 秒，开始干活</text>
 
-  <line x1="860" y1="285" x2="1200" y2="285" stroke="#e2e8f0" stroke-width="1"/>
+  <text x="486" y="492" font-family="system-ui,-apple-system,PingFang SC,Microsoft YaHei,sans-serif" font-size="12" fill="#94a3b8" font-style="italic">就像：</text>
+  <text x="486" y="514" font-family="system-ui,-apple-system,PingFang SC,Microsoft YaHei,sans-serif" font-size="13" fill="#0f172a">店长每天微信跟你说话一样自然，</text>
+  <text x="486" y="532" font-family="system-ui,-apple-system,PingFang SC,Microsoft YaHei,sans-serif" font-size="13" fill="#0f172a">只不过对面是 AI 同事</text>
 
-  <text x="860" y="318" font-family="system-ui,-apple-system,PingFang SC,Microsoft YaHei,sans-serif" font-size="13" font-weight="700" fill="#0f172a">沉淀什么</text>
-  <text x="860" y="342" font-family="system-ui,-apple-system,PingFang SC,Microsoft YaHei,sans-serif" font-size="12" fill="#475569">● 门店画像（地理 × 客群 × 品类）</text>
-  <text x="860" y="362" font-family="system-ui,-apple-system,PingFang SC,Microsoft YaHei,sans-serif" font-size="12" fill="#475569">● 素材 × 客群 × 表现 三元矩阵</text>
-  <text x="860" y="382" font-family="system-ui,-apple-system,PingFang SC,Microsoft YaHei,sans-serif" font-size="12" fill="#475569">● 跨客户匿名联邦学习（合规）</text>
+  <line x1="486" y1="560" x2="832" y2="560" stroke="#e2e8f0" stroke-width="1"/>
+  <text x="486" y="586" font-family="system-ui,-apple-system,PingFang SC,Microsoft YaHei,sans-serif" font-size="12" fill="#94a3b8" font-weight="700">对你的意义</text>
+  <text x="486" y="610" font-family="system-ui,-apple-system,PingFang SC,Microsoft YaHei,sans-serif" font-size="15" font-weight="700" fill="#dc2626">落地率 = 100%（不是束之高阁）</text>
 
-  <text x="860" y="420" font-family="system-ui,-apple-system,PingFang SC,Microsoft YaHei,sans-serif" font-size="13" font-weight="700" fill="#0f172a">关键数字</text>
-  <rect x="860" y="435" width="340" height="60" rx="6" fill="#fffbeb"/>
-  <text x="880" y="465" font-family="system-ui,-apple-system,PingFang SC,Microsoft YaHei,sans-serif" font-size="22" font-weight="900" fill="#f59e0b">72,000 样本/年</text>
-  <text x="880" y="485" font-family="system-ui,-apple-system,PingFang SC,Microsoft YaHei,sans-serif" font-size="11" fill="#64748b">100 客户 × 60 店 × 12 月</text>
+  <!-- ===== 列 ③ 越用越聪明 ===== -->
+  <rect x="872" y="160" width="348" height="466" rx="12" fill="#ffffff" stroke="#e2e8f0" stroke-width="1"/>
 
-  <text x="860" y="525" font-family="system-ui,-apple-system,PingFang SC,Microsoft YaHei,sans-serif" font-size="13" font-weight="700" fill="#0f172a">复利效应</text>
-  <text x="860" y="548" font-family="system-ui,-apple-system,PingFang SC,Microsoft YaHei,sans-serif" font-size="11" fill="#64748b">第 2 年起 AI 推荐准确率每季 +5%</text>
-  <text x="860" y="566" font-family="system-ui,-apple-system,PingFang SC,Microsoft YaHei,sans-serif" font-size="11" fill="#64748b">后来者团队再大、AI 工具一样,</text>
-  <text x="860" y="584" font-family="system-ui,-apple-system,PingFang SC,Microsoft YaHei,sans-serif" font-size="11" fill="#475569" font-weight="700">3 年内追不上数据飞轮</text>
+  <circle cx="912" cy="200" r="22" fill="#f59e0b"/>
+  <text x="912" y="208" font-family="system-ui,-apple-system,PingFang SC,Microsoft YaHei,sans-serif" font-size="22" font-weight="900" fill="#ffffff" text-anchor="middle">③</text>
+  <text x="952" y="207" font-family="system-ui,-apple-system,PingFang SC,Microsoft YaHei,sans-serif" font-size="22" font-weight="900" fill="#0f172a">越用越聪明</text>
 
-  <!-- 底部三件套总结条 -->
-  <rect x="60" y="630" width="1160" height="50" rx="8" fill="#0f172a"/>
-  <text x="84" y="660" font-family="system-ui,-apple-system,PingFang SC,Microsoft YaHei,sans-serif" font-size="13" fill="#94a3b8" font-weight="700">核心论点 →</text>
-  <text x="200" y="660" font-family="system-ui,-apple-system,PingFang SC,Microsoft YaHei,sans-serif" font-size="14" fill="#ffffff" font-weight="700">三层叠加 = 18-24 个月不可压缩窗口期，足够跑到 1000 客户</text>
+  <text x="892" y="252" font-family="system-ui,-apple-system,PingFang SC,Microsoft YaHei,sans-serif" font-size="12" fill="#94a3b8" font-style="italic">老板会问：</text>
+  <text x="892" y="274" font-family="system-ui,-apple-system,PingFang SC,Microsoft YaHei,sans-serif" font-size="14" fill="#475569" font-weight="600">"如果对手抄你呢？"</text>
 
-  <!-- 底部页脚 -->
-  <text x="60" y="703" font-family="system-ui,-apple-system" font-size="12" fill="#94a3b8">店盈AI · 商业计划书 2026 · 第15页</text>
-  <text x="1220" y="703" font-family="system-ui,-apple-system" font-size="12" fill="#94a3b8" text-anchor="end">15 / 16</text>
+  <text x="892" y="312" font-family="system-ui,-apple-system,PingFang SC,Microsoft YaHei,sans-serif" font-size="12" fill="#94a3b8" font-style="italic">我们的做法：</text>
+  <text x="892" y="334" font-family="system-ui,-apple-system,PingFang SC,Microsoft YaHei,sans-serif" font-size="13" fill="#0f172a">每次执行都喂给 AI — 越多客户、</text>
+  <text x="892" y="352" font-family="system-ui,-apple-system,PingFang SC,Microsoft YaHei,sans-serif" font-size="13" fill="#0f172a">越多门店，AI 推荐越准</text>
+
+  <rect x="892" y="380" width="308" height="80" rx="8" fill="#fffbeb"/>
+  <text x="1046" y="412" font-family="system-ui,-apple-system,PingFang SC,Microsoft YaHei,sans-serif" font-size="26" font-weight="900" fill="#f59e0b" text-anchor="middle">7 万样本 / 年</text>
+  <text x="1046" y="438" font-family="system-ui,-apple-system,PingFang SC,Microsoft YaHei,sans-serif" font-size="13" fill="#64748b" text-anchor="middle">100 客户 × 60 店 × 12 月</text>
+
+  <text x="892" y="492" font-family="system-ui,-apple-system,PingFang SC,Microsoft YaHei,sans-serif" font-size="12" fill="#94a3b8" font-style="italic">就像：</text>
+  <text x="892" y="514" font-family="system-ui,-apple-system,PingFang SC,Microsoft YaHei,sans-serif" font-size="13" fill="#0f172a">Netflix 越用越懂你想看什么 —</text>
+  <text x="892" y="532" font-family="system-ui,-apple-system,PingFang SC,Microsoft YaHei,sans-serif" font-size="13" fill="#0f172a">用在你的连锁经营</text>
+
+  <line x1="892" y1="560" x2="1200" y2="560" stroke="#e2e8f0" stroke-width="1"/>
+  <text x="892" y="586" font-family="system-ui,-apple-system,PingFang SC,Microsoft YaHei,sans-serif" font-size="12" fill="#94a3b8" font-weight="700">对你的意义</text>
+  <text x="892" y="610" font-family="system-ui,-apple-system,PingFang SC,Microsoft YaHei,sans-serif" font-size="15" font-weight="700" fill="#f59e0b">3 年内对手追不上你</text>
+
+  <!-- 底部黑色总结条 -->
+  <rect x="60" y="646" width="1160" height="44" rx="8" fill="#0f172a"/>
+  <text x="84" y="674" font-family="system-ui,-apple-system,PingFang SC,Microsoft YaHei,sans-serif" font-size="13" fill="#94a3b8" font-weight="700">三件叠加 →</text>
+  <text x="220" y="674" font-family="system-ui,-apple-system,PingFang SC,Microsoft YaHei,sans-serif" font-size="14" fill="#ffffff" font-weight="700">便宜上线 + 100% 落地 + 时间复利 = </text>
+  <text x="700" y="674" font-family="system-ui,-apple-system,PingFang SC,Microsoft YaHei,sans-serif" font-size="14" fill="#f59e0b" font-weight="900">18-24 个月对手不可追赶的窗口期</text>
+
+  <!-- 页脚 -->
+  <text x="60" y="710" font-family="system-ui,-apple-system" font-size="12" fill="#94a3b8">店盈AI · 商业计划书 2026 · 第15页</text>
+  <text x="1220" y="710" font-family="system-ui,-apple-system" font-size="12" fill="#94a3b8" text-anchor="end">15 / 15</text>
 </svg>
