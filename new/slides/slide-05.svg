@@ -39,44 +39,49 @@
   <rect x="56" y="632" width="570" height="44" rx="8" fill="#fef9ec" stroke="#fde68a" stroke-width="1"/>
   <text x="341" y="659" font-family="system-ui,-apple-system" font-size="13" fill="#92400e" font-weight="700" text-anchor="middle">三件叠加 = 18-24个月窗口期内，对手无法追赶</text>
 
-  <!-- ──分割线── -->
+    <!-- ──分割线── -->
   <line x1="648" y1="100" x2="648" y2="680" stroke="#e2e8f0" stroke-width="1" stroke-dasharray="4,3"/>
 
-  <!-- ──右列：全体下移55px（顶底均≈79px）── -->
-  <!-- 原y=118→173, 140→195, 158→213, 232→287, 242→297, 322→377, 332→387, 424→479, 432→487, 514→569 -->
+  <!-- ──右列：y=116~676，与左列完全对齐，箭头14px各侧7px呼吸── -->
+  <!-- title block y=116~146 (30px) -->
+  <text x="672" y="132" font-family="system-ui,-apple-system" font-size="15" font-weight="700" fill="#0f172a">技术交付架构</text>
+  <text x="672" y="150" font-family="system-ui,-apple-system" font-size="13" fill="#64748b">官方微信Bot + AI大脑，店长扫码即用</text>
 
-  <text x="672" y="173" font-family="system-ui,-apple-system" font-size="15" font-weight="700" fill="#0f172a">技术交付架构</text>
-  <text x="672" y="195" font-family="system-ui,-apple-system" font-size="13" fill="#64748b">官方微信Bot + AI大脑，店长扫码即用</text>
+  <!-- G1=64px → 总部 box y=210 -->
+  <rect x="780" y="210" width="280" height="56" rx="8" fill="#0f172a"/>
+  <text x="920" y="232" font-family="system-ui,-apple-system" font-size="12" fill="#94a3b8" text-anchor="middle">总部</text>
+  <text x="920" y="252" font-family="system-ui,-apple-system" font-size="14" font-weight="700" fill="#fff" text-anchor="middle">老板 · 派任务 / 看报表</text>
 
-  <!-- 总部 y=213 h=56 -->
-  <rect x="780" y="213" width="280" height="56" rx="8" fill="#0f172a"/>
-  <text x="920" y="235" font-family="system-ui,-apple-system" font-size="12" fill="#94a3b8" text-anchor="middle">总部</text>
-  <text x="920" y="255" font-family="system-ui,-apple-system" font-size="14" font-weight="700" fill="#fff" text-anchor="middle">老板 · 派任务 / 看报表</text>
-  <text x="920" y="287" font-family="system-ui,-apple-system" font-size="20" fill="#a78bfa" text-anchor="middle">↕</text>
+  <!-- 箭头区32px：总部end=266，arrow_baseline=287(top=273,gap_above=7✓)，微信Bot=298(gap_below=7✓) -->
+  <text x="920" y="287" font-family="system-ui,-apple-system" font-size="14" fill="#a78bfa" text-anchor="middle">↕</text>
 
-  <!-- 微信Bot y=297 h=60 -->
-  <rect x="730" y="297" width="380" height="60" rx="8" fill="#e8faf1" stroke="#07c160" stroke-width="2"/>
-  <text x="920" y="321" font-family="system-ui,-apple-system" font-size="13" fill="#065f46" font-weight="700" text-anchor="middle">📱 微信官方Bot（合规 · 零封号）</text>
-  <text x="920" y="345" font-family="system-ui,-apple-system" font-size="12" fill="#374151" text-anchor="middle">总店命令中心</text>
-  <text x="920" y="377" font-family="system-ui,-apple-system" font-size="20" fill="#a78bfa" text-anchor="middle">↕</text>
+  <!-- 微信Bot y=298 h=60 end=358 -->
+  <rect x="730" y="298" width="380" height="60" rx="8" fill="#e8faf1" stroke="#07c160" stroke-width="2"/>
+  <text x="920" y="322" font-family="system-ui,-apple-system" font-size="13" fill="#065f46" font-weight="700" text-anchor="middle">📱 微信官方Bot（合规 · 零封号）</text>
+  <text x="920" y="346" font-family="system-ui,-apple-system" font-size="12" fill="#374151" text-anchor="middle">总店命令中心</text>
 
-  <!-- Hermes Agent y=387 h=72 -->
-  <rect x="730" y="387" width="380" height="72" rx="8" fill="#ede9fe" stroke="#a78bfa" stroke-width="2"/>
-  <text x="920" y="413" font-family="system-ui,-apple-system" font-size="14" fill="#5b21b6" font-weight="700" text-anchor="middle">🤖 AI大脑（Hermes Agent）</text>
-  <text x="920" y="433" font-family="system-ui,-apple-system" font-size="12" fill="#6d28d9" text-anchor="middle">任务编排 · AI审核 · 数据沉淀</text>
-  <text x="920" y="451" font-family="system-ui,-apple-system" font-size="12" fill="#7c3aed" text-anchor="middle">Claude + Gemini + 国产模型</text>
-  <text x="920" y="479" font-family="system-ui,-apple-system" font-size="20" fill="#a78bfa" text-anchor="middle">↕</text>
+  <!-- 箭头区32px：微信Bot end=358，arrow_baseline=379(top=365,gap_above=7✓)，Hermes=390(gap_below=7✓) -->
+  <text x="920" y="379" font-family="system-ui,-apple-system" font-size="14" fill="#a78bfa" text-anchor="middle">↕</text>
 
-  <!-- 店长 y=487 h=66 -->
-  <rect x="672" y="487" width="496" height="66" rx="8" fill="#f0fdf4" stroke="#16a34a" stroke-width="2"/>
-  <text x="920" y="511" font-family="system-ui,-apple-system" font-size="14" fill="#15803d" font-weight="700" text-anchor="middle">店长（个人微信，扫码绑定）</text>
-  <text x="920" y="531" font-family="system-ui,-apple-system" font-size="12" fill="#16a34a" text-anchor="middle">拍照 · 汇报 · 收素材 · 问进度 — 全在对话框</text>
-  <text x="920" y="547" font-family="system-ui,-apple-system" font-size="12" fill="#94a3b8" text-anchor="middle">0下载 · 0注册 · 0培训</text>
+  <!-- Hermes y=390 h=72 end=462 -->
+  <rect x="730" y="390" width="380" height="72" rx="8" fill="#ede9fe" stroke="#a78bfa" stroke-width="2"/>
+  <text x="920" y="414" font-family="system-ui,-apple-system" font-size="14" fill="#5b21b6" font-weight="700" text-anchor="middle">🤖 AI大脑（Hermes Agent）</text>
+  <text x="920" y="434" font-family="system-ui,-apple-system" font-size="12" fill="#6d28d9" text-anchor="middle">任务编排 · AI审核 · 数据沉淀</text>
+  <text x="920" y="452" font-family="system-ui,-apple-system" font-size="12" fill="#7c3aed" text-anchor="middle">Claude + Gemini + 国产模型</text>
 
-  <!-- 护城河 y=569 h=52 -->
-  <rect x="672" y="569" width="496" height="52" rx="8" fill="#fef9ec" stroke="#fde68a" stroke-width="1"/>
-  <text x="920" y="591" font-family="system-ui,-apple-system" font-size="13" fill="#92400e" font-weight="700" text-anchor="middle">为什么对手追不上？</text>
-  <text x="920" y="611" font-family="system-ui,-apple-system" font-size="12" fill="#92400e" text-anchor="middle">官方Bot + AI大脑 + 数据飞轮 = 三件套合法唯一玩家</text>
+  <!-- 箭头区32px：Hermes end=462，arrow_baseline=483(top=469,gap_above=7✓)，店长=494(gap_below=7✓) -->
+  <text x="920" y="483" font-family="system-ui,-apple-system" font-size="14" fill="#a78bfa" text-anchor="middle">↕</text>
+
+  <!-- 店长 y=494 h=66 end=560 -->
+  <rect x="672" y="494" width="496" height="66" rx="8" fill="#f0fdf4" stroke="#16a34a" stroke-width="2"/>
+  <text x="920" y="516" font-family="system-ui,-apple-system" font-size="14" fill="#15803d" font-weight="700" text-anchor="middle">店长（个人微信，扫码绑定）</text>
+  <text x="920" y="536" font-family="system-ui,-apple-system" font-size="12" fill="#16a34a" text-anchor="middle">拍照 · 汇报 · 收素材 · 问进度 — 全在对话框</text>
+  <text x="920" y="552" font-family="system-ui,-apple-system" font-size="12" fill="#94a3b8" text-anchor="middle">0下载 · 0注册 · 0培训</text>
+
+  <!-- G2=64px → 护城河 y=624 h=52 end=676 ✓ 对齐左列bottom -->
+  <rect x="672" y="624" width="496" height="52" rx="8" fill="#fef9ec" stroke="#fde68a" stroke-width="1"/>
+  <text x="920" y="646" font-family="system-ui,-apple-system" font-size="13" fill="#92400e" font-weight="700" text-anchor="middle">为什么对手追不上？</text>
+  <text x="920" y="664" font-family="system-ui,-apple-system" font-size="12" fill="#92400e" text-anchor="middle">官方Bot + AI大脑 + 数据飞轮 = 三件套合法唯一玩家</text>
 
   <text x="640" y="700" font-family="system-ui,-apple-system" font-size="11" fill="#94a3b8" text-anchor="middle">店盈AI · 商业计划书 2026 · 第5页</text>
   <rect x="0" y="716" width="1280" height="4" fill="#dc2626"/>
