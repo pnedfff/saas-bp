@@ -24,7 +24,7 @@
 
 
   <line x1="80" y1="560" x2="426" y2="560" stroke="#e2e8f0" stroke-width="1"/>
-  <text x="80" y="610" font-family="system-ui,-apple-system,PingFang SC,Microsoft YaHei,sans-serif" font-size="15" font-weight="700" fill="#0284c7">你的钱 = 6 倍效率</text>
+  <text x="80" y="610" font-family="system-ui,-apple-system,PingFang SC,Microsoft YaHei,sans-serif" font-size="15" font-weight="700" fill="#0284c7">你的钱 = 300 倍资金效率</text>
 
   <!-- ===== 列 ② 店长爱用 ===== -->
   <rect x="466" y="160" width="386" height="466" rx="12" fill="#ffffff" stroke="#e2e8f0" stroke-width="1"/>
