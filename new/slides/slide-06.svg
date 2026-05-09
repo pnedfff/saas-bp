@@ -86,8 +86,8 @@
   <rect x="848" y="150" width="200" height="44" rx="10" fill="#dc2626"/>
   <rect x="848" y="178" width="200" height="16" fill="#dc2626"/>
   <text x="948" y="178" font-family="system-ui,-apple-system" font-size="13" font-weight="700" fill="#fff" text-anchor="middle">★ 最受欢迎</text>
-  <text x="948" y="212" font-family="system-ui,-apple-system" font-size="15" font-weight="700" fill="#0f172a" text-anchor="middle">专业版</text>
-  <text x="948" y="232" font-family="system-ui,-apple-system" font-size="11" fill="#94a3b8" text-anchor="middle">30-100家门店</text>
+  <text x="948" y="216" font-family="system-ui,-apple-system" font-size="15" font-weight="700" fill="#0f172a" text-anchor="middle">专业版</text>
+  <text x="948" y="236" font-family="system-ui,-apple-system" font-size="11" fill="#94a3b8" text-anchor="middle">30-100家门店</text>
   <line x1="860" y1="242" x2="1036" y2="242" stroke="#fecaca" stroke-width="1"/>
   <text x="948" y="262" font-family="system-ui,-apple-system" font-size="12" fill="#64748b" text-anchor="middle">年费</text>
   <text x="948" y="294" font-family="system-ui,-apple-system" font-size="30" font-weight="800" fill="#dc2626" text-anchor="middle">¥20,000</text>
