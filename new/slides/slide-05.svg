@@ -52,7 +52,7 @@
 
   <!-- 总部 -->
   <rect x="780" y="150" width="280" height="52" rx="8" fill="#0f172a"/>
-  <text x="920" y="171" font-family="system-ui,-apple-system" font-size="12" fill="#94a3b8" text-anchor="middle">HEADQUARTERS · 总部</text>
+  <text x="920" y="171" font-family="system-ui,-apple-system" font-size="12" fill="#94a3b8" text-anchor="middle">总部</text>
   <text x="920" y="191" font-family="system-ui,-apple-system" font-size="13" font-weight="700" fill="#fff" text-anchor="middle">总店运营/老板 · 派任务/看报表</text>
 
   <!-- 箭头 -->
