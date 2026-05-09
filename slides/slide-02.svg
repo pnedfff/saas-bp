@@ -10,6 +10,7 @@
   <rect x="40" y="16" width="4" height="40" fill="#dc2626"/>
   <text x="56" y="32" font-family="system-ui,-apple-system,PingFang SC,Microsoft YaHei,sans-serif" font-size="11" fill="#dc2626" font-weight="600">PRODUCT POSITIONING</text>
   <text x="56" y="56" font-family="system-ui,-apple-system,PingFang SC,Microsoft YaHei,sans-serif" font-size="20" font-weight="700" fill="#0f172a">店盈AI · 产品定位</text>
+  <text x="56" y="80" font-family="system-ui,-apple-system,PingFang SC,Microsoft YaHei,sans-serif" font-size="14" fill="#64748b">定位：面向中小企业连锁门店的AI营销管理系统</text>
   <!-- 底部页码 -->
   <text x="640" y="712" font-family="system-ui,-apple-system,PingFang SC,Microsoft YaHei,sans-serif" font-size="11" fill="#94a3b8" text-anchor="middle">店盈AI · 商业计划书 2026 · 第2页</text>
 
