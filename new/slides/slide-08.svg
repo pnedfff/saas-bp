@@ -21,7 +21,7 @@
   <text x="87" y="282" font-family="system-ui,-apple-system" font-size="12" fill="#64748b">● 深度理解一线痛点，0号用户</text>
   <rect x="87" y="296" width="302" height="34" rx="6" fill="#fef2f2"/>
   <text x="99" y="314" font-family="system-ui,-apple-system" font-size="12" fill="#dc2626" font-style="italic">我自己就是用户，我在给自己做工具</text>
-  <text x="87" y="357" font-family="system-ui,-apple-system" font-size="12" fill="#94a3b8">核心优势：零距离洞察真实需求</text>
+  <text x="87" y="357" font-family="system-ui,-apple-system" font-size="12" fill="#64748b">核心优势：零距离洞察真实需求</text>
 
   <!-- CTO卡片 -->
   <rect x="422" y="182" width="330" height="190" rx="10" fill="#f8fafc" stroke="#e2e8f0" stroke-width="1.5"/>
@@ -32,7 +32,7 @@
   <text x="437" y="282" font-family="system-ui,-apple-system" font-size="12" fill="#64748b">● AI集成与LLM应用开发经验</text>
   <rect x="437" y="296" width="302" height="34" rx="6" fill="#fef2f2"/>
   <text x="449" y="314" font-family="system-ui,-apple-system" font-size="12" fill="#dc2626" font-style="italic">AI辅助开发，3个月MVP，资金效率极高</text>
-  <text x="437" y="357" font-family="system-ui,-apple-system" font-size="12" fill="#94a3b8">核心优势：AI+人效比极高</text>
+  <text x="437" y="357" font-family="system-ui,-apple-system" font-size="12" fill="#64748b">核心优势：AI+人效比极高</text>
 
   <!-- 顾问卡片 -->
   <rect x="772" y="182" width="280" height="190" rx="10" fill="#f8fafc" stroke="#e2e8f0" stroke-width="1.5"/>
@@ -53,7 +53,7 @@
   <rect x="72" y="432" width="280" height="180" rx="10" fill="#fef2f2" stroke="#fecaca" stroke-width="1.5"/>
   <text x="212" y="460" font-family="system-ui,-apple-system" font-size="13" fill="#dc2626" font-weight="700" text-anchor="middle">本轮融资方案</text>
   <text x="212" y="510" font-family="system-ui,-apple-system" font-size="30" font-weight="900" fill="#dc2626" text-anchor="middle">200万元</text>
-  <text x="212" y="536" font-family="system-ui,-apple-system" font-size="12" fill="#94a3b8" text-anchor="middle">天使轮（可调：150-300万）</text>
+  <text x="212" y="536" font-family="system-ui,-apple-system" font-size="12" fill="#64748b" text-anchor="middle">天使轮（可调：150-300万）</text>
   <line x1="90" y1="546" x2="342" y2="546" stroke="#fecaca" stroke-width="1"/>
   <text x="212" y="558" font-family="system-ui,-apple-system" font-size="12" fill="#64748b" text-anchor="middle">出让股份 <tspan font-weight="700" fill="#0f172a">10%-15%</tspan></text>
   <text x="212" y="576" font-family="system-ui,-apple-system" font-size="12" fill="#64748b" text-anchor="middle">投后估值 <tspan font-weight="700" fill="#0f172a">约1,500万</tspan></text>
@@ -66,20 +66,20 @@
   <rect x="390" y="472" width="140" height="112" rx="8" fill="#fff" stroke="#e2e8f0" stroke-width="1"/>
   <text x="460" y="497" font-family="system-ui,-apple-system" font-size="12" fill="#64748b" text-anchor="middle">12个月</text>
   <text x="460" y="522" font-family="system-ui,-apple-system" font-size="20" font-weight="800" fill="#dc2626" text-anchor="middle">年收入 170万</text>
-  <text x="460" y="542" font-family="system-ui,-apple-system" font-size="12" fill="#94a3b8" text-anchor="middle">100家付费客户</text>
-  <text x="460" y="560" font-family="system-ui,-apple-system" font-size="12" fill="#94a3b8" text-anchor="middle">完成产品验证</text>
+  <text x="460" y="542" font-family="system-ui,-apple-system" font-size="12" fill="#64748b" text-anchor="middle">100家付费客户</text>
+  <text x="460" y="560" font-family="system-ui,-apple-system" font-size="12" fill="#64748b" text-anchor="middle">完成产品验证</text>
   <!-- 24个月 -->
   <rect x="548" y="472" width="140" height="112" rx="8" fill="#fff" stroke="#e2e8f0" stroke-width="1"/>
   <text x="618" y="497" font-family="system-ui,-apple-system" font-size="12" fill="#64748b" text-anchor="middle">24个月</text>
   <text x="618" y="522" font-family="system-ui,-apple-system" font-size="20" font-weight="800" fill="#dc2626" text-anchor="middle">年收入 1,000万</text>
-  <text x="618" y="542" font-family="system-ui,-apple-system" font-size="12" fill="#94a3b8" text-anchor="middle">500家客户</text>
-  <text x="618" y="560" font-family="system-ui,-apple-system" font-size="12" fill="#94a3b8" text-anchor="middle">华南市场领先</text>
+  <text x="618" y="542" font-family="system-ui,-apple-system" font-size="12" fill="#64748b" text-anchor="middle">500家客户</text>
+  <text x="618" y="560" font-family="system-ui,-apple-system" font-size="12" fill="#64748b" text-anchor="middle">华南市场领先</text>
   <!-- 36个月 -->
   <rect x="706" y="472" width="148" height="112" rx="8" fill="#fff" stroke="#fecaca" stroke-width="1"/>
   <text x="780" y="497" font-family="system-ui,-apple-system" font-size="12" fill="#dc2626" text-anchor="middle">36个月</text>
   <text x="780" y="522" font-family="system-ui,-apple-system" font-size="20" font-weight="800" fill="#dc2626" text-anchor="middle">准备A轮</text>
-  <text x="780" y="542" font-family="system-ui,-apple-system" font-size="12" fill="#94a3b8" text-anchor="middle">市场领导地位</text>
-  <text x="780" y="560" font-family="system-ui,-apple-system" font-size="12" fill="#94a3b8" text-anchor="middle">估值5,000万+</text>
+  <text x="780" y="542" font-family="system-ui,-apple-system" font-size="12" fill="#64748b" text-anchor="middle">市场领导地位</text>
+  <text x="780" y="560" font-family="system-ui,-apple-system" font-size="12" fill="#64748b" text-anchor="middle">估值5,000万+</text>
 
   <!-- 投资回报 -->
   <rect x="892" y="432" width="380" height="168" rx="10" fill="#f0fdf4" stroke="#bbf7d0" stroke-width="1.5"/>
@@ -92,7 +92,7 @@
   <text x="908" y="590" font-family="system-ui,-apple-system" font-size="13" fill="#15803d" font-weight="700">保守回报：<tspan font-size="16">2.5x - 6x</tspan></text>
 
   <!-- 底部页码 -->
-  <text x="640" y="695" font-family="system-ui,-apple-system" font-size="12" fill="#94a3b8" text-anchor="middle">店盈AI · 商业计划书 2026 · 第8页</text>
+  <text x="640" y="695" font-family="system-ui,-apple-system" font-size="12" fill="#64748b" text-anchor="middle">店盈AI · 商业计划书 2026 · 第8页</text>
   <!-- 底部红线 -->
   <rect x="0" y="716" width="1280" height="4" fill="#dc2626"/>
 </svg>

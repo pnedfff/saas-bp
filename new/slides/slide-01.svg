@@ -32,7 +32,7 @@
   <text x="640" y="356" font-family="system-ui,-apple-system" font-size="52" font-weight="900" fill="#0f172a" text-anchor="middle" letter-spacing="-1">1个人，管好 <tspan fill="#dc2626">100</tspan> 家店的营销</text>
 
   <!-- 副标题 -->
-  <text x="640" y="406" font-family="system-ui,-apple-system" font-size="20" font-weight="500" fill="#f59e0b" text-anchor="middle" letter-spacing="4">中小连锁门店的 AI 营销管理系统</text>
+  <text x="640" y="406" font-family="system-ui,-apple-system" font-size="20" font-weight="700" fill="#b45309" text-anchor="middle" letter-spacing="4">中小连锁门店的 AI 营销管理系统</text>
 
   <!-- 分隔线 -->
   <line x1="480" y1="434" x2="800" y2="434" stroke="#e2e8f0" stroke-width="1"/>
@@ -51,8 +51,8 @@
   <text x="835" y="491" font-family="system-ui,-apple-system" font-size="15" fill="#64748b" text-anchor="middle" font-weight="600">AI 驱动</text>
 
   <!-- 底部信息 -->
-  <text x="640" y="556" font-family="system-ui,-apple-system" font-size="13" fill="#94a3b8" text-anchor="middle">天使轮融资中 · 2026 路演版</text>
+  <text x="640" y="556" font-family="system-ui,-apple-system" font-size="13" fill="#64748b" text-anchor="middle">天使轮融资中 · 2026 路演版</text>
 
   <!-- 底部页脚 -->
-  <text x="80" y="695" font-family="system-ui,-apple-system" font-size="12" fill="#94a3b8">店盈AI · 商业计划书 2026</text>
+  <text x="80" y="695" font-family="system-ui,-apple-system" font-size="12" fill="#64748b">店盈AI · 商业计划书 2026</text>
 </svg>

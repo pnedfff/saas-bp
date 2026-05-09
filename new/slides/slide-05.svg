@@ -14,7 +14,7 @@
   <text x="76" y="133" font-family="system-ui,-apple-system" font-size="20" font-weight="900" fill="#fff">① 便宜上线 — 10万/1个月搞定</text>
   <text x="76" y="198" font-family="system-ui,-apple-system" font-size="36" font-weight="900" fill="#dc2626"><tspan>10万</tspan><tspan font-size="18" fill="#64748b"> vs 传统 </tspan><tspan fill="#dc2626">300万</tspan></text>
   <text x="76" y="228" font-family="system-ui,-apple-system" font-size="13" fill="#64748b">AI辅助编程，2人团队，效率约300倍，你的资金利用率极高</text>
-  <text x="76" y="250" font-family="system-ui,-apple-system" font-size="13" fill="#94a3b8">1个月 vs 传统12个月</text>
+  <text x="76" y="250" font-family="system-ui,-apple-system" font-size="13" fill="#64748b">1个月 vs 传统12个月</text>
 
   <!-- card y=279 h=165 -->
   <rect x="56" y="279" width="570" height="165" rx="10" fill="#f5f3ff" stroke="#7c3aed" stroke-width="1.5" stroke-opacity="0.3"/>
@@ -23,7 +23,7 @@
   <text x="76" y="312" font-family="system-ui,-apple-system" font-size="20" font-weight="900" fill="#fff">② 店长零门槛 — 用微信就能干</text>
   <text x="76" y="377" font-family="system-ui,-apple-system" font-size="36" font-weight="900" fill="#7c3aed">0下载 · 0学习</text>
   <text x="76" y="407" font-family="system-ui,-apple-system" font-size="13" fill="#64748b">直接在微信里收任务、拍照、汇报 — 落地率100%，不是束之高阁</text>
-  <text x="76" y="429" font-family="system-ui,-apple-system" font-size="13" fill="#94a3b8">对手App安装率低，我们用微信，店长早就会</text>
+  <text x="76" y="429" font-family="system-ui,-apple-system" font-size="13" fill="#64748b">对手App安装率低，我们用微信，店长早就会</text>
 
   <!-- card y=458 h=165 -->
   <rect x="56" y="458" width="570" height="165" rx="10" fill="#f0fdf4" stroke="#16a34a" stroke-width="1.5" stroke-opacity="0.3"/>
@@ -32,7 +32,7 @@
   <text x="76" y="491" font-family="system-ui,-apple-system" font-size="20" font-weight="900" fill="#fff">③ 越用越聪明 — 对手3年追不上</text>
   <text x="76" y="556" font-family="system-ui,-apple-system" font-size="36" font-weight="900" fill="#16a34a">数据飞轮</text>
   <text x="76" y="586" font-family="system-ui,-apple-system" font-size="13" fill="#64748b">每次执行都喂给AI，客户越多推荐越准，替换成本越来越高</text>
-  <text x="76" y="608" font-family="system-ui,-apple-system" font-size="13" fill="#94a3b8">越多门店 → 越准确的AI → 越难替换</text>
+  <text x="76" y="608" font-family="system-ui,-apple-system" font-size="13" fill="#64748b">越多门店 → 越准确的AI → 越难替换</text>
 
   <!-- card y=100 h=165 -->
   <rect x="654" y="100" width="570" height="165" rx="10" fill="#f1f5f9" stroke="#0f172a" stroke-width="1.5" stroke-opacity="0.3"/>
@@ -41,7 +41,7 @@
   <text x="674" y="133" font-family="system-ui,-apple-system" font-size="20" font-weight="900" fill="#fff">🏢 入口层 — 总部下达，合规通道</text>
   <text x="674" y="198" font-family="system-ui,-apple-system" font-size="36" font-weight="900" fill="#0f172a"><tspan>微信官方Bot</tspan><tspan font-size="18" fill="#64748b"> · </tspan><tspan fill="#0f172a">零封号</tspan></text>
   <text x="674" y="228" font-family="system-ui,-apple-system" font-size="13" fill="#64748b">老板/总店运营 → 通过官方通道派任务到所有门店</text>
-  <text x="674" y="250" font-family="system-ui,-apple-system" font-size="13" fill="#94a3b8">企业微信API · 合规接入 · 100% 不封号</text>
+  <text x="674" y="250" font-family="system-ui,-apple-system" font-size="13" fill="#64748b">企业微信API · 合规接入 · 100% 不封号</text>
 
   <!-- card y=279 h=165 -->
   <rect x="654" y="279" width="570" height="165" rx="10" fill="#ede9fe" stroke="#6d28d9" stroke-width="1.5" stroke-opacity="0.3"/>
@@ -50,7 +50,7 @@
   <text x="674" y="312" font-family="system-ui,-apple-system" font-size="20" font-weight="900" fill="#fff">🤖 中枢层 — Hermes Agent · AI大脑</text>
   <text x="674" y="377" font-family="system-ui,-apple-system" font-size="36" font-weight="900" fill="#6d28d9"><tspan>Claude + Gemini</tspan><tspan font-size="18" fill="#64748b"> + </tspan><tspan fill="#6d28d9">国产</tspan></text>
   <text x="674" y="407" font-family="system-ui,-apple-system" font-size="13" fill="#64748b">任务编排 · AI审核 · 数据沉淀 · 多LLM混合调度</text>
-  <text x="674" y="429" font-family="system-ui,-apple-system" font-size="13" fill="#94a3b8">推理用Claude · 批量用Gemini · 隐私用国产</text>
+  <text x="674" y="429" font-family="system-ui,-apple-system" font-size="13" fill="#64748b">推理用Claude · 批量用Gemini · 隐私用国产</text>
 
   <!-- card y=458 h=165 -->
   <rect x="654" y="458" width="570" height="165" rx="10" fill="#f0fdf4" stroke="#15803d" stroke-width="1.5" stroke-opacity="0.3"/>
@@ -59,7 +59,7 @@
   <text x="674" y="491" font-family="system-ui,-apple-system" font-size="20" font-weight="900" fill="#fff">📱 终端层 — 店长个人微信即用</text>
   <text x="674" y="556" font-family="system-ui,-apple-system" font-size="36" font-weight="900" fill="#15803d">扫码绑定 · 全在对话框</text>
   <text x="674" y="586" font-family="system-ui,-apple-system" font-size="13" fill="#64748b">店长拍照 → AI实时审核 → 合规自动推送总部</text>
-  <text x="674" y="608" font-family="system-ui,-apple-system" font-size="13" fill="#94a3b8">0下载 · 0注册 · 0培训 · 落地率100%</text>
+  <text x="674" y="608" font-family="system-ui,-apple-system" font-size="13" fill="#64748b">0下载 · 0注册 · 0培训 · 落地率100%</text>
 
   <!-- 左总结 y=637 h=44 -->
   <rect x="56" y="637" width="570" height="44" rx="8" fill="#fef9ec" stroke="#fde68a" stroke-width="1"/>
@@ -72,6 +72,6 @@
   <rect x="654" y="637" width="570" height="44" rx="8" fill="#fef9ec" stroke="#fde68a" stroke-width="1"/>
   <text x="939" y="664" font-family="system-ui,-apple-system" font-size="13" fill="#92400e" font-weight="700" text-anchor="middle">官方Bot + AI大脑 + 数据飞轮 = 三件套合法 stack 唯一玩家</text>
 
-  <text x="640" y="700" font-family="system-ui,-apple-system" font-size="11" fill="#94a3b8" text-anchor="middle">店盈AI · 商业计划书 2026 · 第5页</text>
+  <text x="640" y="700" font-family="system-ui,-apple-system" font-size="11" fill="#64748b" text-anchor="middle">店盈AI · 商业计划书 2026 · 第5页</text>
   <rect x="0" y="716" width="1280" height="4" fill="#dc2626"/>
 </svg>

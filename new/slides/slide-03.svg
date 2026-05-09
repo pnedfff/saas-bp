@@ -8,9 +8,9 @@
   <line x1="72" y1="82" x2="1200" y2="82" stroke="#e2e8f0" stroke-width="1"/>
 
   <!-- 列头 -->
-  <text x="220" y="101" font-family="system-ui,-apple-system" font-size="12" fill="#94a3b8" text-anchor="middle">问题</text>
-  <text x="640" y="101" font-family="system-ui,-apple-system" font-size="12" fill="#94a3b8" text-anchor="middle">解决方案</text>
-  <text x="1060" y="101" font-family="system-ui,-apple-system" font-size="12" fill="#94a3b8" text-anchor="middle">效果</text>
+  <text x="220" y="101" font-family="system-ui,-apple-system" font-size="12" fill="#64748b" text-anchor="middle">问题</text>
+  <text x="640" y="101" font-family="system-ui,-apple-system" font-size="12" fill="#64748b" text-anchor="middle">解决方案</text>
+  <text x="1060" y="101" font-family="system-ui,-apple-system" font-size="12" fill="#64748b" text-anchor="middle">效果</text>
 
   <!-- ── 行1：点位管理 ── -->
   <rect x="40" y="127" width="374" height="168" rx="10" fill="#fee2e2"/>
@@ -22,7 +22,7 @@
   <text x="60" y="239" font-family="system-ui,-apple-system" font-size="13" fill="#64748b">总部看不到实时状态</text>
   <text x="60" y="281" font-family="system-ui,-apple-system" font-size="12" fill="#dc2626" font-weight="600">→ 活动浪费 30% 以上点位</text>
 
-  <text x="427" y="215" font-family="system-ui,-apple-system" font-size="22" fill="#cbd5e1" text-anchor="middle">→</text>
+  <text x="427" y="215" font-family="system-ui,-apple-system" font-size="22" fill="#94a3b8" text-anchor="middle">→</text>
 
   <rect x="442" y="127" width="396" height="168" rx="10" fill="#f0fdf4"/>
   <rect x="442" y="127" width="4" height="168" rx="2" fill="#16a34a"/>
@@ -32,7 +32,7 @@
   <text x="462" y="217" font-family="system-ui,-apple-system" font-size="13" fill="#374151">AI自动推送正确物料到对应点位</text>
   <text x="462" y="267" font-family="system-ui,-apple-system" font-size="12" fill="#16a34a" font-weight="600">系统驱动，不靠人记</text>
 
-  <text x="851" y="215" font-family="system-ui,-apple-system" font-size="22" fill="#cbd5e1" text-anchor="middle">→</text>
+  <text x="851" y="215" font-family="system-ui,-apple-system" font-size="22" fill="#94a3b8" text-anchor="middle">→</text>
 
   <rect x="866" y="127" width="374" height="168" rx="10" fill="#f8fafc" stroke="#e2e8f0" stroke-width="1.5"/>
   <text x="1053" y="177" font-family="system-ui,-apple-system" font-size="40" font-weight="900" fill="#dc2626" text-anchor="middle">0</text>
@@ -40,8 +40,8 @@
   <line x1="966" y1="224" x2="1140" y2="224" stroke="#e2e8f0" stroke-width="1"/>
   <text x="966" y="251" font-family="system-ui,-apple-system" font-size="13" fill="#16a34a" font-weight="600" text-anchor="middle">100%</text>
   <text x="1140" y="251" font-family="system-ui,-apple-system" font-size="13" fill="#16a34a" font-weight="600" text-anchor="middle">实时</text>
-  <text x="966" y="269" font-family="system-ui,-apple-system" font-size="11" fill="#94a3b8" text-anchor="middle">点位可追溯</text>
-  <text x="1140" y="269" font-family="system-ui,-apple-system" font-size="11" fill="#94a3b8" text-anchor="middle">状态可查</text>
+  <text x="966" y="269" font-family="system-ui,-apple-system" font-size="11" fill="#64748b" text-anchor="middle">点位可追溯</text>
+  <text x="1140" y="269" font-family="system-ui,-apple-system" font-size="11" fill="#64748b" text-anchor="middle">状态可查</text>
 
   <!-- ── 行2：素材管理 ── -->
   <rect x="40" y="328" width="374" height="144" rx="10" fill="#fef3c7"/>
@@ -52,7 +52,7 @@
   <text x="60" y="418" font-family="system-ui,-apple-system" font-size="13" fill="#64748b">微信传图压缩失真，门店自己修改</text>
   <text x="60" y="458" font-family="system-ui,-apple-system" font-size="12" fill="#d97706" font-weight="600">→ 品牌形象失控</text>
 
-  <text x="427" y="402" font-family="system-ui,-apple-system" font-size="22" fill="#cbd5e1" text-anchor="middle">→</text>
+  <text x="427" y="402" font-family="system-ui,-apple-system" font-size="22" fill="#94a3b8" text-anchor="middle">→</text>
 
   <rect x="442" y="328" width="396" height="144" rx="10" fill="#fefce8"/>
   <rect x="442" y="328" width="4" height="144" rx="2" fill="#f59e0b"/>
@@ -61,7 +61,7 @@
   <text x="462" y="396" font-family="system-ui,-apple-system" font-size="13" fill="#374151">总部上传，所有门店秒同步</text>
   <text x="462" y="442" font-family="system-ui,-apple-system" font-size="12" fill="#d97706" font-weight="600">一次上传，百店到达</text>
 
-  <text x="851" y="402" font-family="system-ui,-apple-system" font-size="22" fill="#cbd5e1" text-anchor="middle">→</text>
+  <text x="851" y="402" font-family="system-ui,-apple-system" font-size="22" fill="#94a3b8" text-anchor="middle">→</text>
 
   <rect x="866" y="328" width="374" height="144" rx="10" fill="#f8fafc" stroke="#e2e8f0" stroke-width="1.5"/>
   <text x="966" y="384" font-family="system-ui,-apple-system" font-size="36" font-weight="900" fill="#f59e0b" text-anchor="middle">1处</text>
@@ -79,7 +79,7 @@
   <text x="60" y="595" font-family="system-ui,-apple-system" font-size="13" fill="#64748b">执行结果靠Excel回收，漏洞多</text>
   <text x="60" y="635" font-family="system-ui,-apple-system" font-size="12" fill="#0284c7" font-weight="600">→ 任务完成率仅60%</text>
 
-  <text x="427" y="579" font-family="system-ui,-apple-system" font-size="22" fill="#cbd5e1" text-anchor="middle">→</text>
+  <text x="427" y="579" font-family="system-ui,-apple-system" font-size="22" fill="#94a3b8" text-anchor="middle">→</text>
 
   <rect x="442" y="505" width="396" height="144" rx="10" fill="#eff6ff"/>
   <rect x="442" y="505" width="4" height="144" rx="2" fill="#0284c7"/>
@@ -89,14 +89,14 @@
   <text x="462" y="591" font-family="system-ui,-apple-system" font-size="13" fill="#374151">每个节点系统驱动，不靠人推</text>
   <text x="462" y="631" font-family="system-ui,-apple-system" font-size="12" fill="#0284c7" font-weight="600">人肉推进 → 系统驱动</text>
 
-  <text x="851" y="579" font-family="system-ui,-apple-system" font-size="22" fill="#cbd5e1" text-anchor="middle">→</text>
+  <text x="851" y="579" font-family="system-ui,-apple-system" font-size="22" fill="#94a3b8" text-anchor="middle">→</text>
 
   <rect x="866" y="505" width="374" height="144" rx="10" fill="#f8fafc" stroke="#e2e8f0" stroke-width="1.5"/>
   <text x="1053" y="563" font-family="system-ui,-apple-system" font-size="40" font-weight="900" fill="#0284c7" text-anchor="middle">92%</text>
   <text x="1053" y="589" font-family="system-ui,-apple-system" font-size="13" fill="#64748b" text-anchor="middle">任务完成率</text>
-  <text x="1053" y="613" font-family="system-ui,-apple-system" font-size="13" fill="#94a3b8" text-anchor="middle">较之前60%提升32%</text>
+  <text x="1053" y="613" font-family="system-ui,-apple-system" font-size="13" fill="#64748b" text-anchor="middle">较之前60%提升32%</text>
   <text x="1053" y="635" font-family="system-ui,-apple-system" font-size="13" fill="#16a34a" font-weight="600" text-anchor="middle">↑ 32个百分点</text>
 
-  <text x="640" y="695" font-family="system-ui,-apple-system" font-size="11" fill="#94a3b8" text-anchor="middle">店盈AI · 商业计划书 2026 · 第3页</text>
+  <text x="640" y="695" font-family="system-ui,-apple-system" font-size="11" fill="#64748b" text-anchor="middle">店盈AI · 商业计划书 2026 · 第3页</text>
   <rect x="0" y="716" width="1280" height="4" fill="#dc2626"/>
 </svg>
