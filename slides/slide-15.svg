@@ -6,7 +6,6 @@
   <text x="60" y="60" font-family="system-ui,-apple-system,PingFang SC,Microsoft YaHei,sans-serif" font-size="13" fill="#94a3b8" font-weight="700" letter-spacing="3">VALUE TO BUSINESS</text>
   <text x="60" y="100" font-family="system-ui,-apple-system,PingFang SC,Microsoft YaHei,sans-serif" font-size="32" font-weight="900" fill="#0f172a">我们厉害在哪？</text>
   <text x="312" y="100" font-family="system-ui,-apple-system,PingFang SC,Microsoft YaHei,sans-serif" font-size="28" font-weight="700" fill="#dc2626">3 件你能听懂的事</text>
-  <text x="60" y="128" font-family="system-ui,-apple-system,PingFang SC,Microsoft YaHei,sans-serif" font-size="14" fill="#64748b">不用懂代码，也能看明白我们的护城河 — 每个角度都有一个生活类比</text>
 
   <!-- ===== 列 ① 上线快 ===== -->
   <rect x="60" y="160" width="386" height="466" rx="12" fill="#ffffff" stroke="#e2e8f0" stroke-width="1"/>
@@ -15,23 +14,16 @@
   <text x="100" y="208" font-family="system-ui,-apple-system,PingFang SC,Microsoft YaHei,sans-serif" font-size="22" font-weight="900" fill="#ffffff" text-anchor="middle">①</text>
   <text x="140" y="207" font-family="system-ui,-apple-system,PingFang SC,Microsoft YaHei,sans-serif" font-size="22" font-weight="900" fill="#0f172a">上线快、便宜</text>
 
-  <text x="80" y="252" font-family="system-ui,-apple-system,PingFang SC,Microsoft YaHei,sans-serif" font-size="12" fill="#94a3b8" font-style="italic">老板会问：</text>
   <text x="80" y="274" font-family="system-ui,-apple-system,PingFang SC,Microsoft YaHei,sans-serif" font-size="14" fill="#475569" font-weight="600">"凭什么比别家快、还便宜？"</text>
 
-  <text x="80" y="312" font-family="system-ui,-apple-system,PingFang SC,Microsoft YaHei,sans-serif" font-size="12" fill="#94a3b8" font-style="italic">我们的做法：</text>
   <text x="80" y="334" font-family="system-ui,-apple-system,PingFang SC,Microsoft YaHei,sans-serif" font-size="13" fill="#0f172a">用 AI 工具写代码，2 个人就能</text>
   <text x="80" y="352" font-family="system-ui,-apple-system,PingFang SC,Microsoft YaHei,sans-serif" font-size="13" fill="#0f172a">干 5-10 个工程师的活</text>
 
   <rect x="80" y="380" width="346" height="80" rx="8" fill="#eff6ff"/>
   <text x="253" y="412" font-family="system-ui,-apple-system,PingFang SC,Microsoft YaHei,sans-serif" font-size="26" font-weight="900" fill="#0284c7" text-anchor="middle">10万 / 1个月</text>
-  <text x="253" y="438" font-family="system-ui,-apple-system,PingFang SC,Microsoft YaHei,sans-serif" font-size="13" fill="#64748b" text-anchor="middle">vs 传统 300万 / 12个月</text>
 
-  <text x="80" y="492" font-family="system-ui,-apple-system,PingFang SC,Microsoft YaHei,sans-serif" font-size="12" fill="#94a3b8" font-style="italic">就像：</text>
-  <text x="80" y="514" font-family="system-ui,-apple-system,PingFang SC,Microsoft YaHei,sans-serif" font-size="13" fill="#0f172a">你用 ChatGPT 写邮件，10 倍快，</text>
-  <text x="80" y="532" font-family="system-ui,-apple-system,PingFang SC,Microsoft YaHei,sans-serif" font-size="13" fill="#0f172a">不用一字一字敲</text>
 
   <line x1="80" y1="560" x2="426" y2="560" stroke="#e2e8f0" stroke-width="1"/>
-  <text x="80" y="586" font-family="system-ui,-apple-system,PingFang SC,Microsoft YaHei,sans-serif" font-size="12" fill="#94a3b8" font-weight="700">对你的意义</text>
   <text x="80" y="610" font-family="system-ui,-apple-system,PingFang SC,Microsoft YaHei,sans-serif" font-size="15" font-weight="700" fill="#0284c7">你的钱 = 6 倍效率</text>
 
   <!-- ===== 列 ② 店长爱用 ===== -->
@@ -41,23 +33,16 @@
   <text x="506" y="208" font-family="system-ui,-apple-system,PingFang SC,Microsoft YaHei,sans-serif" font-size="22" font-weight="900" fill="#ffffff" text-anchor="middle">②</text>
   <text x="546" y="207" font-family="system-ui,-apple-system,PingFang SC,Microsoft YaHei,sans-serif" font-size="22" font-weight="900" fill="#0f172a">店长真的会用</text>
 
-  <text x="486" y="252" font-family="system-ui,-apple-system,PingFang SC,Microsoft YaHei,sans-serif" font-size="12" fill="#94a3b8" font-style="italic">老板会问：</text>
   <text x="486" y="274" font-family="system-ui,-apple-system,PingFang SC,Microsoft YaHei,sans-serif" font-size="14" fill="#475569" font-weight="600">"我 60 个店长真能学会吗？"</text>
 
-  <text x="486" y="312" font-family="system-ui,-apple-system,PingFang SC,Microsoft YaHei,sans-serif" font-size="12" fill="#94a3b8" font-style="italic">我们的做法：</text>
   <text x="486" y="334" font-family="system-ui,-apple-system,PingFang SC,Microsoft YaHei,sans-serif" font-size="13" fill="#0f172a">不下 app、不学操作 — 直接在</text>
   <text x="486" y="352" font-family="system-ui,-apple-system,PingFang SC,Microsoft YaHei,sans-serif" font-size="13" fill="#0f172a">微信里收任务、拍照、汇报</text>
 
   <rect x="486" y="380" width="346" height="80" rx="8" fill="#fef2f2"/>
   <text x="659" y="412" font-family="system-ui,-apple-system,PingFang SC,Microsoft YaHei,sans-serif" font-size="26" font-weight="900" fill="#dc2626" text-anchor="middle">0 下载 / 0 学习</text>
-  <text x="659" y="438" font-family="system-ui,-apple-system,PingFang SC,Microsoft YaHei,sans-serif" font-size="13" fill="#64748b" text-anchor="middle">扫码 30 秒，开始干活</text>
 
-  <text x="486" y="492" font-family="system-ui,-apple-system,PingFang SC,Microsoft YaHei,sans-serif" font-size="12" fill="#94a3b8" font-style="italic">就像：</text>
-  <text x="486" y="514" font-family="system-ui,-apple-system,PingFang SC,Microsoft YaHei,sans-serif" font-size="13" fill="#0f172a">店长每天微信跟你说话一样自然，</text>
-  <text x="486" y="532" font-family="system-ui,-apple-system,PingFang SC,Microsoft YaHei,sans-serif" font-size="13" fill="#0f172a">只不过对面是 AI 同事</text>
 
   <line x1="486" y1="560" x2="832" y2="560" stroke="#e2e8f0" stroke-width="1"/>
-  <text x="486" y="586" font-family="system-ui,-apple-system,PingFang SC,Microsoft YaHei,sans-serif" font-size="12" fill="#94a3b8" font-weight="700">对你的意义</text>
   <text x="486" y="610" font-family="system-ui,-apple-system,PingFang SC,Microsoft YaHei,sans-serif" font-size="15" font-weight="700" fill="#dc2626">落地率 = 100%（不是束之高阁）</text>
 
   <!-- ===== 列 ③ 越用越聪明 ===== -->
@@ -67,23 +52,16 @@
   <text x="912" y="208" font-family="system-ui,-apple-system,PingFang SC,Microsoft YaHei,sans-serif" font-size="22" font-weight="900" fill="#ffffff" text-anchor="middle">③</text>
   <text x="952" y="207" font-family="system-ui,-apple-system,PingFang SC,Microsoft YaHei,sans-serif" font-size="22" font-weight="900" fill="#0f172a">越用越聪明</text>
 
-  <text x="892" y="252" font-family="system-ui,-apple-system,PingFang SC,Microsoft YaHei,sans-serif" font-size="12" fill="#94a3b8" font-style="italic">老板会问：</text>
   <text x="892" y="274" font-family="system-ui,-apple-system,PingFang SC,Microsoft YaHei,sans-serif" font-size="14" fill="#475569" font-weight="600">"如果对手抄你呢？"</text>
 
-  <text x="892" y="312" font-family="system-ui,-apple-system,PingFang SC,Microsoft YaHei,sans-serif" font-size="12" fill="#94a3b8" font-style="italic">我们的做法：</text>
   <text x="892" y="334" font-family="system-ui,-apple-system,PingFang SC,Microsoft YaHei,sans-serif" font-size="13" fill="#0f172a">每次执行都喂给 AI — 越多客户、</text>
   <text x="892" y="352" font-family="system-ui,-apple-system,PingFang SC,Microsoft YaHei,sans-serif" font-size="13" fill="#0f172a">越多门店，AI 推荐越准</text>
 
   <rect x="892" y="380" width="308" height="80" rx="8" fill="#fffbeb"/>
   <text x="1046" y="412" font-family="system-ui,-apple-system,PingFang SC,Microsoft YaHei,sans-serif" font-size="26" font-weight="900" fill="#f59e0b" text-anchor="middle">7 万样本 / 年</text>
-  <text x="1046" y="438" font-family="system-ui,-apple-system,PingFang SC,Microsoft YaHei,sans-serif" font-size="13" fill="#64748b" text-anchor="middle">100 客户 × 60 店 × 12 月</text>
 
-  <text x="892" y="492" font-family="system-ui,-apple-system,PingFang SC,Microsoft YaHei,sans-serif" font-size="12" fill="#94a3b8" font-style="italic">就像：</text>
-  <text x="892" y="514" font-family="system-ui,-apple-system,PingFang SC,Microsoft YaHei,sans-serif" font-size="13" fill="#0f172a">Netflix 越用越懂你想看什么 —</text>
-  <text x="892" y="532" font-family="system-ui,-apple-system,PingFang SC,Microsoft YaHei,sans-serif" font-size="13" fill="#0f172a">用在你的连锁经营</text>
 
   <line x1="892" y1="560" x2="1200" y2="560" stroke="#e2e8f0" stroke-width="1"/>
-  <text x="892" y="586" font-family="system-ui,-apple-system,PingFang SC,Microsoft YaHei,sans-serif" font-size="12" fill="#94a3b8" font-weight="700">对你的意义</text>
   <text x="892" y="610" font-family="system-ui,-apple-system,PingFang SC,Microsoft YaHei,sans-serif" font-size="15" font-weight="700" fill="#f59e0b">3 年内对手追不上你</text>
 
   <!-- 底部黑色总结条 -->

@@ -20,22 +20,18 @@
 
   <rect x="60" y="140" width="340" height="100" rx="8" fill="#f1f5f9"/>
   <text x="80" y="164" font-family="system-ui,-apple-system,PingFang SC,Microsoft YaHei,sans-serif" font-size="14" font-weight="700" fill="#0f172a">分众传媒</text>
-  <text x="80" y="184" font-family="system-ui,-apple-system,PingFang SC,Microsoft YaHei,sans-serif" font-size="12" fill="#475569">自研KUMA系统管理 300万个点位</text>
-  <text x="80" y="202" font-family="system-ui,-apple-system,PingFang SC,Microsoft YaHei,sans-serif" font-size="12" fill="#475569">市值约 1,000亿元</text>
-  <text x="80" y="222" font-family="system-ui,-apple-system,PingFang SC,Microsoft YaHei,sans-serif" font-size="11" fill="#94a3b8">靠规模化点位资产，成为千亿媒体帝国</text>
+  <text x="80" y="184" font-family="system-ui,-apple-system,PingFang SC,Microsoft YaHei,sans-serif" font-size="14" fill="#475569">自研KUMA系统管理 300万个点位</text>
 
   <rect x="60" y="256" width="340" height="100" rx="8" fill="#f1f5f9"/>
   <text x="80" y="280" font-family="system-ui,-apple-system,PingFang SC,Microsoft YaHei,sans-serif" font-size="14" font-weight="700" fill="#0f172a">头部连锁品牌</text>
-  <text x="80" y="300" font-family="system-ui,-apple-system,PingFang SC,Microsoft YaHei,sans-serif" font-size="12" fill="#475569">采购有赞/微盟，年费 1-5万元</text>
-  <text x="80" y="320" font-family="system-ui,-apple-system,PingFang SC,Microsoft YaHei,sans-serif" font-size="12" fill="#475569">大客户定制更高，百万级亦有</text>
-  <text x="80" y="340" font-family="system-ui,-apple-system,PingFang SC,Microsoft YaHei,sans-serif" font-size="11" fill="#94a3b8">大品牌舍得投入，小品牌望而却步</text>
+  <text x="80" y="300" font-family="system-ui,-apple-system,PingFang SC,Microsoft YaHei,sans-serif" font-size="14" fill="#475569">采购有赞/微盟，年费 1-5万元</text>
 
   <rect x="60" y="372" width="340" height="130" rx="8" fill="#fef3c7"/>
   <text x="80" y="396" font-family="system-ui,-apple-system,PingFang SC,Microsoft YaHei,sans-serif" font-size="13" font-weight="700" fill="#d97706">结论</text>
   <text x="80" y="418" font-family="system-ui,-apple-system,PingFang SC,Microsoft YaHei,sans-serif" font-size="13" fill="#0f172a">大企业早已用系统管点位、</text>
   <text x="80" y="438" font-family="system-ui,-apple-system,PingFang SC,Microsoft YaHei,sans-serif" font-size="13" fill="#0f172a">管素材、管任务</text>
-  <text x="80" y="462" font-family="system-ui,-apple-system,PingFang SC,Microsoft YaHei,sans-serif" font-size="12" fill="#64748b">差距不是能力，是工具</text>
-  <text x="80" y="482" font-family="system-ui,-apple-system,PingFang SC,Microsoft YaHei,sans-serif" font-size="12" fill="#64748b">我们来弥合这个差距</text>
+  <text x="80" y="462" font-family="system-ui,-apple-system,PingFang SC,Microsoft YaHei,sans-serif" font-size="14" fill="#64748b">差距不是能力，是工具</text>
+  <text x="80" y="482" font-family="system-ui,-apple-system,PingFang SC,Microsoft YaHei,sans-serif" font-size="14" fill="#64748b">我们来弥合这个差距</text>
 
   <!-- 中列 — 中小企业现状 x=440-820 -->
   <rect x="440" y="90" width="380" height="440" rx="10" fill="#ffffff"/>
@@ -44,15 +40,12 @@
 
   <rect x="460" y="140" width="340" height="52" rx="6" fill="#fee2e2"/>
   <text x="480" y="162" font-family="system-ui,-apple-system,PingFang SC,Microsoft YaHei,sans-serif" font-size="13" fill="#dc2626" font-weight="600">付不起几十万定制系统</text>
-  <text x="480" y="180" font-family="system-ui,-apple-system,PingFang SC,Microsoft YaHei,sans-serif" font-size="12" fill="#64748b">定制开发门槛极高，远超预算</text>
 
   <rect x="460" y="204" width="340" height="52" rx="6" fill="#fee2e2"/>
   <text x="480" y="226" font-family="system-ui,-apple-system,PingFang SC,Microsoft YaHei,sans-serif" font-size="13" fill="#dc2626" font-weight="600">有赞/微盟功能过重、定价偏高</text>
-  <text x="480" y="244" font-family="system-ui,-apple-system,PingFang SC,Microsoft YaHei,sans-serif" font-size="12" fill="#64748b">电商功能占大头，营销点位管理是空白</text>
 
   <rect x="460" y="268" width="340" height="52" rx="6" fill="#fee2e2"/>
   <text x="480" y="290" font-family="system-ui,-apple-system,PingFang SC,Microsoft YaHei,sans-serif" font-size="13" fill="#dc2626" font-weight="600">被迫用文件夹+微信群+Excel</text>
-  <text x="480" y="308" font-family="system-ui,-apple-system,PingFang SC,Microsoft YaHei,sans-serif" font-size="12" fill="#64748b">低效、易错、不可追溯</text>
 
   <!-- 数据佐证 -->
   <rect x="460" y="332" width="340" height="130" rx="8" fill="#fff7ed"/>
@@ -60,9 +53,6 @@
   <text x="480" y="356" font-family="system-ui,-apple-system,PingFang SC,Microsoft YaHei,sans-serif" font-size="12" font-weight="700" fill="#d97706">数据佐证：</text>
   <text x="480" y="376" font-family="system-ui,-apple-system,PingFang SC,Microsoft YaHei,sans-serif" font-size="12" fill="#475569">有赞付费商家 4年内下滑 42%</text>
   <text x="480" y="396" font-family="system-ui,-apple-system,PingFang SC,Microsoft YaHei,sans-serif" font-size="20" font-weight="900" fill="#dc2626">9.7万 → 5.6万</text>
-  <text x="480" y="418" font-family="system-ui,-apple-system,PingFang SC,Microsoft YaHei,sans-serif" font-size="12" fill="#64748b">印证传统SaaS模式承压</text>
-  <text x="480" y="438" font-family="system-ui,-apple-system,PingFang SC,Microsoft YaHei,sans-serif" font-size="12" fill="#64748b">旧有工具正在失去客户</text>
-  <text x="480" y="456" font-family="system-ui,-apple-system,PingFang SC,Microsoft YaHei,sans-serif" font-size="11" fill="#94a3b8">来源：有赞历年财报</text>
 
   <!-- 右列 — 市场机会 x=840-1240 -->
   <rect x="840" y="90" width="400" height="440" rx="10" fill="#0f172a"/>
@@ -71,22 +61,18 @@
 
   <rect x="860" y="140" width="360" height="60" rx="6" fill="#1e293b"/>
   <text x="880" y="164" font-family="system-ui,-apple-system,PingFang SC,Microsoft YaHei,sans-serif" font-size="13" fill="#f8fafc" font-weight="600">连锁百强2024年门店达25万家</text>
-  <text x="880" y="184" font-family="system-ui,-apple-system,PingFang SC,Microsoft YaHei,sans-serif" font-size="12" fill="#94a3b8">同比增长 +13.5%，持续扩张</text>
 
   <rect x="860" y="212" width="360" height="60" rx="6" fill="#1e293b"/>
   <text x="880" y="236" font-family="system-ui,-apple-system,PingFang SC,Microsoft YaHei,sans-serif" font-size="13" fill="#f8fafc" font-weight="600">中小连锁数字化渗透率最低</text>
-  <text x="880" y="256" font-family="system-ui,-apple-system,PingFang SC,Microsoft YaHei,sans-serif" font-size="12" fill="#94a3b8">被巨头忽视，专属工具几乎空白</text>
 
   <rect x="860" y="284" width="360" height="60" rx="6" fill="#1e293b"/>
   <text x="880" y="308" font-family="system-ui,-apple-system,PingFang SC,Microsoft YaHei,sans-serif" font-size="13" fill="#f8fafc" font-weight="600">没有轻量、低价、好用的专属工具</text>
-  <text x="880" y="328" font-family="system-ui,-apple-system,PingFang SC,Microsoft YaHei,sans-serif" font-size="12" fill="#94a3b8">这正是我们的切入点</text>
 
   <!-- 大字结论 -->
   <rect x="860" y="356" width="360" height="148" rx="8" fill="#dc2626"/>
   <text x="1040" y="394" font-family="system-ui,-apple-system,PingFang SC,Microsoft YaHei,sans-serif" font-size="14" fill="#fecaca" text-anchor="middle">这是</text>
   <text x="1040" y="422" font-family="system-ui,-apple-system,PingFang SC,Microsoft YaHei,sans-serif" font-size="20" font-weight="900" fill="#ffffff" text-anchor="middle">被巨头忽视的</text>
   <text x="1040" y="450" font-family="system-ui,-apple-system,PingFang SC,Microsoft YaHei,sans-serif" font-size="20" font-weight="900" fill="#ffffff" text-anchor="middle">市场空白</text>
-  <text x="1040" y="484" font-family="system-ui,-apple-system,PingFang SC,Microsoft YaHei,sans-serif" font-size="12" fill="#fecaca" text-anchor="middle">轻量 · 低价 · 专注营销点位场景</text>
 
   <!-- 底部核心口号 -->
   <rect x="40" y="548" width="1200" height="68" rx="8" fill="#0f172a"/>

@@ -42,7 +42,6 @@
   <text x="540" y="256" font-family="system-ui,-apple-system,PingFang SC,Microsoft YaHei,sans-serif" font-size="28" font-weight="900" fill="#0284c7" text-anchor="middle">287</text>
   <text x="540" y="274" font-family="system-ui,-apple-system,PingFang SC,Microsoft YaHei,sans-serif" font-size="11" fill="#64748b" text-anchor="middle">在用点位</text>
 
-  <text x="335" y="352" font-family="system-ui,-apple-system,PingFang SC,Microsoft YaHei,sans-serif" font-size="12" fill="#64748b" text-anchor="middle">总部实时查看全国门店点位状态，执行率自动刷新</text>
 
   <!-- 卡片2 — 工作流可视化 右上 x=650-1240 y=90-390 -->
   <rect x="650" y="90" width="590" height="285" rx="10" fill="#ffffff"/>
@@ -55,8 +54,6 @@
   <rect x="670" y="136" width="110" height="80" rx="8" fill="#f0fdf4"/>
   <rect x="670" y="136" width="4" height="80" rx="2" fill="#16a34a"/>
   <text x="725" y="162" font-family="system-ui,-apple-system,PingFang SC,Microsoft YaHei,sans-serif" font-size="12" font-weight="700" fill="#16a34a" text-anchor="middle">策划创建</text>
-  <text x="725" y="180" font-family="system-ui,-apple-system,PingFang SC,Microsoft YaHei,sans-serif" font-size="10" fill="#64748b" text-anchor="middle">张总 05-01</text>
-  <text x="725" y="196" font-family="system-ui,-apple-system,PingFang SC,Microsoft YaHei,sans-serif" font-size="10" fill="#94a3b8" text-anchor="middle">已完成 ✓</text>
 
   <polygon points="782,176 798,169 798,183" fill="#16a34a"/>
   <line x1="780" y1="176" x2="798" y2="176" stroke="#16a34a" stroke-width="1.5"/>
@@ -64,8 +61,6 @@
   <rect x="800" y="136" width="110" height="80" rx="8" fill="#eff6ff"/>
   <rect x="800" y="136" width="4" height="80" rx="2" fill="#0284c7"/>
   <text x="855" y="162" font-family="system-ui,-apple-system,PingFang SC,Microsoft YaHei,sans-serif" font-size="12" font-weight="700" fill="#0284c7" text-anchor="middle">任务下发</text>
-  <text x="855" y="180" font-family="system-ui,-apple-system,PingFang SC,Microsoft YaHei,sans-serif" font-size="10" fill="#64748b" text-anchor="middle">系统自动 05-02</text>
-  <text x="855" y="196" font-family="system-ui,-apple-system,PingFang SC,Microsoft YaHei,sans-serif" font-size="10" fill="#94a3b8" text-anchor="middle">已完成 ✓</text>
 
   <polygon points="912,176 928,169 928,183" fill="#0284c7"/>
   <line x1="910" y1="176" x2="928" y2="176" stroke="#0284c7" stroke-width="1.5"/>
@@ -73,8 +68,6 @@
   <rect x="930" y="136" width="110" height="80" rx="8" fill="#fef3c7"/>
   <rect x="930" y="136" width="4" height="80" rx="2" fill="#f59e0b"/>
   <text x="985" y="162" font-family="system-ui,-apple-system,PingFang SC,Microsoft YaHei,sans-serif" font-size="12" font-weight="700" fill="#d97706" text-anchor="middle">执行中</text>
-  <text x="985" y="180" font-family="system-ui,-apple-system,PingFang SC,Microsoft YaHei,sans-serif" font-size="10" fill="#64748b" text-anchor="middle">各店长 05-05</text>
-  <text x="985" y="196" font-family="system-ui,-apple-system,PingFang SC,Microsoft YaHei,sans-serif" font-size="10" fill="#f59e0b" text-anchor="middle">进行中 ●</text>
 
   <polygon points="1042,176 1058,169 1058,183" fill="#e2e8f0"/>
   <line x1="1040" y1="176" x2="1058" y2="176" stroke="#e2e8f0" stroke-width="1.5"/>
@@ -82,16 +75,10 @@
   <rect x="1060" y="136" width="162" height="80" rx="8" fill="#f8fafc"/>
   <rect x="1060" y="136" width="4" height="80" rx="2" fill="#94a3b8"/>
   <text x="1141" y="162" font-family="system-ui,-apple-system,PingFang SC,Microsoft YaHei,sans-serif" font-size="12" font-weight="700" fill="#94a3b8" text-anchor="middle">复盘报告</text>
-  <text x="1141" y="180" font-family="system-ui,-apple-system,PingFang SC,Microsoft YaHei,sans-serif" font-size="10" fill="#94a3b8" text-anchor="middle">AI自动生成</text>
-  <text x="1141" y="196" font-family="system-ui,-apple-system,PingFang SC,Microsoft YaHei,sans-serif" font-size="10" fill="#94a3b8" text-anchor="middle">待执行</text>
 
   <!-- 操作记录 -->
   <rect x="670" y="232" width="550" height="60" rx="6" fill="#f8fafc"/>
-  <text x="690" y="252" font-family="system-ui,-apple-system,PingFang SC,Microsoft YaHei,sans-serif" font-size="11" fill="#94a3b8">操作记录</text>
-  <text x="690" y="270" font-family="system-ui,-apple-system,PingFang SC,Microsoft YaHei,sans-serif" font-size="12" fill="#475569">05-03 14:22  李店长（北京朝阳店）上传了"端午主海报"验收照片</text>
-  <text x="690" y="286" font-family="system-ui,-apple-system,PingFang SC,Microsoft YaHei,sans-serif" font-size="12" fill="#475569">05-03 09:10  系统自动提醒：上海浦东店任务逾期1天</text>
 
-  <text x="945" y="352" font-family="system-ui,-apple-system,PingFang SC,Microsoft YaHei,sans-serif" font-size="12" fill="#64748b" text-anchor="middle">谁、什么时候、做了什么 — 全程可追溯</text>
 
   <!-- 卡片3 — 素材知识库 左下 x=40-640 y=405-680 -->
   <rect x="40" y="394" width="590" height="285" rx="10" fill="#ffffff"/>
@@ -123,10 +110,7 @@
 
   <!-- 功能标注 -->
   <rect x="60" y="542" width="550" height="60" rx="6" fill="#f8fafc"/>
-  <text x="335" y="568" font-family="system-ui,-apple-system,PingFang SC,Microsoft YaHei,sans-serif" font-size="12" fill="#475569" text-anchor="middle">支持预览 · 一键下发 · 版本历史 · 按门店/活动/类型分类</text>
-  <text x="335" y="588" font-family="system-ui,-apple-system,PingFang SC,Microsoft YaHei,sans-serif" font-size="12" fill="#64748b" text-anchor="middle">设计师不被追，店长永远用最新版，版本混乱成历史</text>
 
-  <text x="335" y="660" font-family="system-ui,-apple-system,PingFang SC,Microsoft YaHei,sans-serif" font-size="12" fill="#64748b" text-anchor="middle">企业级素材库，云端统一管理，多端同步</text>
 
   <!-- 卡片4 — 点位管理矩阵 右下 x=650-1240 y=405-680 -->
   <rect x="650" y="394" width="590" height="285" rx="10" fill="#ffffff"/>
@@ -180,13 +164,9 @@
   <text x="1170" y="540" font-family="system-ui,-apple-system,PingFang SC,Microsoft YaHei,sans-serif" font-size="10" fill="#16a34a" text-anchor="middle">动图v1 ✓</text>
 
   <line x1="670" y1="548" x2="1220" y2="548" stroke="#e2e8f0" stroke-width="1"/>
-  <text x="945" y="574" font-family="system-ui,-apple-system,PingFang SC,Microsoft YaHei,sans-serif" font-size="11" fill="#94a3b8" text-anchor="middle">（共60家门店，点击任意单元格查看详情）</text>
 
-  <text x="945" y="610" font-family="system-ui,-apple-system,PingFang SC,Microsoft YaHei,sans-serif" font-size="12" fill="#64748b" text-anchor="middle">行=门店，列=点位，每格=当前画面+执行状态</text>
-  <text x="945" y="630" font-family="system-ui,-apple-system,PingFang SC,Microsoft YaHei,sans-serif" font-size="12" fill="#64748b" text-anchor="middle">总监看全盘，店长看自己，权限清晰</text>
 
   <!-- 底部说明 -->
   <rect x="40" y="688" width="1200" height="22" rx="4" fill="#f1f5f9"/>
-  <text x="640" y="703" font-family="system-ui,-apple-system,PingFang SC,Microsoft YaHei,sans-serif" font-size="11" fill="#64748b" text-anchor="middle">每个店长看到的是自己的点位和任务，每个总监看到的是全盘 — 权限分级，各司其职</text>
 
 </svg>

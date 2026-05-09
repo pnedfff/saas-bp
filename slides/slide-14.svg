@@ -35,30 +35,25 @@
 
   <!-- 对标三家 -->
   <line x1="160" y1="348" x2="1120" y2="348" stroke="#1e293b" stroke-width="1"/>
-  <text x="640" y="376" font-family="system-ui,-apple-system,PingFang SC,Microsoft YaHei,sans-serif" font-size="13" fill="#64748b" text-anchor="middle">我们是谁的融合？</text>
 
   <rect x="120" y="390" width="240" height="72" rx="8" fill="#1e293b"/>
   <text x="240" y="420" font-family="system-ui,-apple-system,PingFang SC,Microsoft YaHei,sans-serif" font-size="14" font-weight="700" fill="#dc2626" text-anchor="middle">分众传媒</text>
-  <text x="240" y="444" font-family="system-ui,-apple-system,PingFang SC,Microsoft YaHei,sans-serif" font-size="12" fill="#94a3b8" text-anchor="middle">点位资产化</text>
 
   <text x="420" y="430" font-family="system-ui,-apple-system,PingFang SC,Microsoft YaHei,sans-serif" font-size="24" fill="#334155" text-anchor="middle">+</text>
 
   <rect x="490" y="390" width="300" height="72" rx="8" fill="#1e293b"/>
   <text x="640" y="420" font-family="system-ui,-apple-system,PingFang SC,Microsoft YaHei,sans-serif" font-size="14" font-weight="700" fill="#f59e0b" text-anchor="middle">有赞 · 微盟</text>
-  <text x="640" y="444" font-family="system-ui,-apple-system,PingFang SC,Microsoft YaHei,sans-serif" font-size="12" fill="#94a3b8" text-anchor="middle">门店SaaS管理</text>
 
   <text x="860" y="430" font-family="system-ui,-apple-system,PingFang SC,Microsoft YaHei,sans-serif" font-size="24" fill="#334155" text-anchor="middle">+</text>
 
   <rect x="920" y="390" width="240" height="72" rx="8" fill="#1e293b"/>
   <text x="1040" y="420" font-family="system-ui,-apple-system,PingFang SC,Microsoft YaHei,sans-serif" font-size="14" font-weight="700" fill="#16a34a" text-anchor="middle">AI设计工具</text>
-  <text x="1040" y="444" font-family="system-ui,-apple-system,PingFang SC,Microsoft YaHei,sans-serif" font-size="12" fill="#94a3b8" text-anchor="middle">内容生成革命</text>
 
   <!-- 等号和结论 -->
   <text x="640" y="498" font-family="system-ui,-apple-system,PingFang SC,Microsoft YaHei,sans-serif" font-size="22" fill="#334155" text-anchor="middle">= 店盈AI</text>
 
   <!-- 大Slogan -->
   <line x1="160" y1="516" x2="1120" y2="516" stroke="#1e293b" stroke-width="1"/>
-  <text x="640" y="548" font-family="system-ui,-apple-system,PingFang SC,Microsoft YaHei,sans-serif" font-size="13" fill="#475569" text-anchor="middle" letter-spacing="2">— 我们的承诺 —</text>
   <text x="640" y="584" font-family="system-ui,-apple-system,PingFang SC,Microsoft YaHei,sans-serif" font-size="22" font-weight="700" fill="#64748b" text-anchor="middle">1个人，管好100家店的营销</text>
 
   <!-- 联系方式 -->

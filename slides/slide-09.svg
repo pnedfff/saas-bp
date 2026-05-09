@@ -22,7 +22,6 @@
   <line x1="60" y1="224" x2="300" y2="224" stroke="#e2e8f0" stroke-width="1"/>
   <text x="60" y="248" font-family="system-ui,-apple-system,PingFang SC,Microsoft YaHei,sans-serif" font-size="12" fill="#475569">持续性强，可预测</text>
   <text x="60" y="268" font-family="system-ui,-apple-system,PingFang SC,Microsoft YaHei,sans-serif" font-size="12" fill="#475569">续费率目标 &gt;85%</text>
-  <text x="60" y="288" font-family="system-ui,-apple-system,PingFang SC,Microsoft YaHei,sans-serif" font-size="12" fill="#64748b">基础版8千/专业版2万/年</text>
 
   <!-- 来源2 AI服务费 -->
   <rect x="340" y="98" width="280" height="210" rx="10" fill="#ffffff"/>
@@ -35,7 +34,6 @@
   <line x1="360" y1="224" x2="600" y2="224" stroke="#e2e8f0" stroke-width="1"/>
   <text x="360" y="248" font-family="system-ui,-apple-system,PingFang SC,Microsoft YaHei,sans-serif" font-size="12" fill="#475569">海报生成 0.2元/张</text>
   <text x="360" y="268" font-family="system-ui,-apple-system,PingFang SC,Microsoft YaHei,sans-serif" font-size="12" fill="#475569">策划方案 1元/次</text>
-  <text x="360" y="288" font-family="system-ui,-apple-system,PingFang SC,Microsoft YaHei,sans-serif" font-size="12" fill="#64748b">AI成本边际递减，毛利极高</text>
 
   <!-- 来源3 增值服务 -->
   <rect x="640" y="98" width="280" height="210" rx="10" fill="#ffffff"/>
@@ -48,7 +46,6 @@
   <line x1="660" y1="224" x2="900" y2="224" stroke="#e2e8f0" stroke-width="1"/>
   <text x="660" y="248" font-family="system-ui,-apple-system,PingFang SC,Microsoft YaHei,sans-serif" font-size="12" fill="#475569">代制作物料（外包）</text>
   <text x="660" y="268" font-family="system-ui,-apple-system,PingFang SC,Microsoft YaHei,sans-serif" font-size="12" fill="#475569">代运营营销活动</text>
-  <text x="660" y="288" font-family="system-ui,-apple-system,PingFang SC,Microsoft YaHei,sans-serif" font-size="12" fill="#64748b">客户粘性强，复购率高</text>
 
   <!-- 来源4 平台佣金（未来）-->
   <rect x="940" y="98" width="300" height="210" rx="10" fill="#ffffff"/>
@@ -61,7 +58,6 @@
   <line x1="960" y1="224" x2="1220" y2="224" stroke="#e2e8f0" stroke-width="1"/>
   <text x="960" y="248" font-family="system-ui,-apple-system,PingFang SC,Microsoft YaHei,sans-serif" font-size="12" fill="#475569">点位交易市场</text>
   <text x="960" y="268" font-family="system-ui,-apple-system,PingFang SC,Microsoft YaHei,sans-serif" font-size="12" fill="#475569">品牌方对外招商</text>
-  <text x="960" y="288" font-family="system-ui,-apple-system,PingFang SC,Microsoft YaHei,sans-serif" font-size="12" fill="#64748b">平台网络效应，无边界扩展</text>
 
   <!-- ARR公式 -->
   <rect x="40" y="326" width="1200" height="64" rx="10" fill="#0f172a"/>
@@ -73,18 +69,11 @@
   <rect x="40" y="408" width="570" height="4" rx="2" fill="#dc2626"/>
   <text x="325" y="440" font-family="system-ui,-apple-system,PingFang SC,Microsoft YaHei,sans-serif" font-size="13" font-weight="700" fill="#dc2626" text-anchor="middle">第1年目标测算（100家客户）</text>
 
-  <text x="60" y="468" font-family="system-ui,-apple-system,PingFang SC,Microsoft YaHei,sans-serif" font-size="13" fill="#475569">专业版 50家 × 2万 =</text>
-  <text x="500" y="468" font-family="system-ui,-apple-system,PingFang SC,Microsoft YaHei,sans-serif" font-size="13" font-weight="700" fill="#0f172a" text-anchor="end">100万</text>
-  <text x="60" y="492" font-family="system-ui,-apple-system,PingFang SC,Microsoft YaHei,sans-serif" font-size="13" fill="#475569">基础版 50家 × 0.8万 =</text>
-  <text x="500" y="492" font-family="system-ui,-apple-system,PingFang SC,Microsoft YaHei,sans-serif" font-size="13" font-weight="700" fill="#0f172a" text-anchor="end">40万</text>
-  <text x="60" y="516" font-family="system-ui,-apple-system,PingFang SC,Microsoft YaHei,sans-serif" font-size="13" fill="#475569">AI服务费 100家 × 0.1万 =</text>
-  <text x="500" y="516" font-family="system-ui,-apple-system,PingFang SC,Microsoft YaHei,sans-serif" font-size="13" font-weight="700" fill="#0f172a" text-anchor="end">10万</text>
   <line x1="60" y1="528" x2="590" y2="528" stroke="#e2e8f0" stroke-width="1.5"/>
   <text x="60" y="552" font-family="system-ui,-apple-system,PingFang SC,Microsoft YaHei,sans-serif" font-size="15" font-weight="700" fill="#0f172a">第1年ARR合计</text>
   <text x="500" y="552" font-family="system-ui,-apple-system,PingFang SC,Microsoft YaHei,sans-serif" font-size="22" font-weight="900" fill="#dc2626" text-anchor="end">≈150万</text>
   <text x="60" y="576" font-family="system-ui,-apple-system,PingFang SC,Microsoft YaHei,sans-serif" font-size="12" fill="#64748b">第2年续费率85% + 新增客户 → ARR 300万+</text>
   <text x="60" y="596" font-family="system-ui,-apple-system,PingFang SC,Microsoft YaHei,sans-serif" font-size="12" fill="#64748b">第3年增长至 500家客户 → ARR 1000万+</text>
-  <text x="60" y="616" font-family="system-ui,-apple-system,PingFang SC,Microsoft YaHei,sans-serif" font-size="11" fill="#94a3b8">以上为保守测算，不含增值服务和企业版定制</text>
 
   <!-- 续费飞轮 -->
   <rect x="630" y="408" width="610" height="255" rx="10" fill="#ffffff"/>
@@ -95,12 +84,9 @@
   <rect x="650" y="456" width="4" height="80" rx="2" fill="#f59e0b"/>
   <text x="670" y="478" font-family="system-ui,-apple-system,PingFang SC,Microsoft YaHei,sans-serif" font-size="13" font-weight="700" fill="#d97706">数据越积越重</text>
   <text x="670" y="500" font-family="system-ui,-apple-system,PingFang SC,Microsoft YaHei,sans-serif" font-size="13" fill="#475569">点位信息、SKU历史、执行记录、素材库</text>
-  <text x="670" y="520" font-family="system-ui,-apple-system,PingFang SC,Microsoft YaHei,sans-serif" font-size="12" fill="#64748b">替换成本极高，客户不会轻易离开</text>
 
   <rect x="650" y="548" width="570" height="80" rx="8" fill="#f0fdf4"/>
   <rect x="650" y="548" width="4" height="80" rx="2" fill="#16a34a"/>
   <text x="670" y="570" font-family="system-ui,-apple-system,PingFang SC,Microsoft YaHei,sans-serif" font-size="13" font-weight="700" fill="#16a34a">续费率目标 &gt;85%</text>
-  <text x="670" y="592" font-family="system-ui,-apple-system,PingFang SC,Microsoft YaHei,sans-serif" font-size="13" fill="#475569">每年留住85%客户的基础上继续增长</text>
-  <text x="670" y="612" font-family="system-ui,-apple-system,PingFang SC,Microsoft YaHei,sans-serif" font-size="12" fill="#64748b">ARR复利增长，3年内达到1000万</text>
 
 </svg>

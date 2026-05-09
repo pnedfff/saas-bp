@@ -22,14 +22,10 @@
 
   <line x1="100" y1="268" x2="380" y2="268" stroke="#e2e8f0" stroke-width="1"/>
 
-  <text x="100" y="296" font-family="system-ui,-apple-system,PingFang SC,Microsoft YaHei,sans-serif" font-size="12" font-weight="600" fill="#64748b">功能包含：</text>
   <text x="116" y="320" font-family="system-ui,-apple-system,PingFang SC,Microsoft YaHei,sans-serif" font-size="13" fill="#475569">✓  广告点位管理</text>
   <text x="116" y="344" font-family="system-ui,-apple-system,PingFang SC,Microsoft YaHei,sans-serif" font-size="13" fill="#475569">✓  企业级素材库</text>
   <text x="116" y="368" font-family="system-ui,-apple-system,PingFang SC,Microsoft YaHei,sans-serif" font-size="13" fill="#475569">✓  全链路任务管理</text>
   <text x="116" y="392" font-family="system-ui,-apple-system,PingFang SC,Microsoft YaHei,sans-serif" font-size="13" fill="#475569">✓  移动端App（iOS/Android）</text>
-  <text x="116" y="416" font-family="system-ui,-apple-system,PingFang SC,Microsoft YaHei,sans-serif" font-size="13" fill="#94a3b8">✗  AI策划辅助</text>
-  <text x="116" y="440" font-family="system-ui,-apple-system,PingFang SC,Microsoft YaHei,sans-serif" font-size="13" fill="#94a3b8">✗  AI内容生成</text>
-  <text x="116" y="464" font-family="system-ui,-apple-system,PingFang SC,Microsoft YaHei,sans-serif" font-size="13" fill="#94a3b8">✗  高级数据看板</text>
 
   <rect x="100" y="492" width="260" height="44" rx="8" fill="#f1f5f9"/>
   <text x="230" y="519" font-family="system-ui,-apple-system,PingFang SC,Microsoft YaHei,sans-serif" font-size="13" fill="#64748b" text-anchor="middle">适合小品牌入门使用</text>
@@ -49,14 +45,12 @@
 
   <line x1="510" y1="260" x2="790" y2="260" stroke="#b91c1c" stroke-width="1"/>
 
-  <text x="510" y="288" font-family="system-ui,-apple-system,PingFang SC,Microsoft YaHei,sans-serif" font-size="12" font-weight="600" fill="#fecaca">功能包含：</text>
   <text x="526" y="312" font-family="system-ui,-apple-system,PingFang SC,Microsoft YaHei,sans-serif" font-size="13" fill="#ffffff">✓  基础版全部功能</text>
   <text x="526" y="336" font-family="system-ui,-apple-system,PingFang SC,Microsoft YaHei,sans-serif" font-size="13" fill="#ffffff">✓  AI活动策划辅助</text>
   <text x="526" y="360" font-family="system-ui,-apple-system,PingFang SC,Microsoft YaHei,sans-serif" font-size="13" fill="#ffffff">✓  AI批量内容生成</text>
   <text x="526" y="384" font-family="system-ui,-apple-system,PingFang SC,Microsoft YaHei,sans-serif" font-size="13" fill="#ffffff">✓  AI验收（拍照识别）</text>
   <text x="526" y="408" font-family="system-ui,-apple-system,PingFang SC,Microsoft YaHei,sans-serif" font-size="13" fill="#ffffff">✓  高级数据看板</text>
   <text x="526" y="432" font-family="system-ui,-apple-system,PingFang SC,Microsoft YaHei,sans-serif" font-size="13" fill="#ffffff">✓  多角色权限管理</text>
-  <text x="526" y="456" font-family="system-ui,-apple-system,PingFang SC,Microsoft YaHei,sans-serif" font-size="13" fill="#fecaca">✗  定制开发</text>
 
   <rect x="510" y="484" width="260" height="44" rx="8" fill="#b91c1c"/>
   <text x="640" y="511" font-family="system-ui,-apple-system,PingFang SC,Microsoft YaHei,sans-serif" font-size="13" fill="#fecaca" text-anchor="middle">最受欢迎，性价比最高</text>
@@ -73,14 +67,9 @@
 
   <line x1="920" y1="268" x2="1200" y2="268" stroke="#334155" stroke-width="1"/>
 
-  <text x="920" y="296" font-family="system-ui,-apple-system,PingFang SC,Microsoft YaHei,sans-serif" font-size="12" font-weight="600" fill="#94a3b8">功能包含：</text>
   <text x="936" y="320" font-family="system-ui,-apple-system,PingFang SC,Microsoft YaHei,sans-serif" font-size="13" fill="#f8fafc">✓  专业版全部功能</text>
   <text x="936" y="344" font-family="system-ui,-apple-system,PingFang SC,Microsoft YaHei,sans-serif" font-size="13" fill="#f8fafc">✓  定制功能开发</text>
   <text x="936" y="368" font-family="system-ui,-apple-system,PingFang SC,Microsoft YaHei,sans-serif" font-size="13" fill="#f8fafc">✓  API对接（ERP/CRM等）</text>
-  <text x="936" y="392" font-family="system-ui,-apple-system,PingFang SC,Microsoft YaHei,sans-serif" font-size="13" fill="#f8fafc">✓  专属客户成功经理</text>
-  <text x="936" y="416" font-family="system-ui,-apple-system,PingFang SC,Microsoft YaHei,sans-serif" font-size="13" fill="#f8fafc">✓  私有化部署（可选）</text>
-  <text x="936" y="440" font-family="system-ui,-apple-system,PingFang SC,Microsoft YaHei,sans-serif" font-size="13" fill="#f8fafc">✓  SLA 99.9% 保障</text>
-  <text x="936" y="464" font-family="system-ui,-apple-system,PingFang SC,Microsoft YaHei,sans-serif" font-size="13" fill="#f8fafc">✓  不限用户数</text>
 
   <rect x="920" y="492" width="260" height="44" rx="8" fill="#1e293b"/>
   <text x="1050" y="519" font-family="system-ui,-apple-system,PingFang SC,Microsoft YaHei,sans-serif" font-size="13" fill="#94a3b8" text-anchor="middle">可定制，价格面议</text>
@@ -89,6 +78,5 @@
   <rect x="60" y="636" width="1160" height="52" rx="8" fill="#fef3c7"/>
   <rect x="60" y="636" width="4" height="52" rx="2" fill="#f59e0b"/>
   <text x="640" y="658" font-family="system-ui,-apple-system,PingFang SC,Microsoft YaHei,sans-serif" font-size="13" font-weight="700" fill="#0f172a" text-anchor="middle">定价依据：不超过一个品牌专员年薪的1/4</text>
-  <text x="640" y="678" font-family="system-ui,-apple-system,PingFang SC,Microsoft YaHei,sans-serif" font-size="12" fill="#64748b" text-anchor="middle">但能替代至少1-2个人力，ROI超过1600%，第一年即可回本</text>
 
 </svg>

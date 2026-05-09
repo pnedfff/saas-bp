@@ -28,7 +28,6 @@
 
   <!-- 效果 -->
   <rect x="56" y="172" width="640" height="36" rx="6" fill="#f0fdf4"/>
-  <text x="76" y="195" font-family="system-ui,-apple-system,PingFang SC,Microsoft YaHei,sans-serif" font-size="12" fill="#16a34a">实时查询SKU→点位对应关系，撤除自动触发提醒，拍照验收留档</text>
 
   <!-- 右侧亮点数字 -->
   <text x="900" y="145" font-family="system-ui,-apple-system,PingFang SC,Microsoft YaHei,sans-serif" font-size="36" font-weight="900" fill="#dc2626" text-anchor="middle">0</text>
@@ -54,7 +53,6 @@
   <text x="100" y="335" font-family="system-ui,-apple-system,PingFang SC,Microsoft YaHei,sans-serif" font-size="13" fill="#0f172a">企业级共享素材库 — 按门店/活动/版本分类，云端统一管理</text>
 
   <rect x="56" y="347" width="640" height="36" rx="6" fill="#fefce8"/>
-  <text x="76" y="370" font-family="system-ui,-apple-system,PingFang SC,Microsoft YaHei,sans-serif" font-size="12" fill="#d97706">设计师不被追问，店长不用找文件，所有人永远用最新版本</text>
 
   <text x="900" y="320" font-family="system-ui,-apple-system,PingFang SC,Microsoft YaHei,sans-serif" font-size="36" font-weight="900" fill="#f59e0b" text-anchor="middle">1处</text>
   <text x="900" y="340" font-family="system-ui,-apple-system,PingFang SC,Microsoft YaHei,sans-serif" font-size="12" fill="#64748b" text-anchor="middle">统一管理</text>
@@ -77,37 +75,31 @@
   <!-- 流程链 -->
   <rect x="56" y="524" width="130" height="52" rx="6" fill="#eff6ff"/>
   <text x="121" y="547" font-family="system-ui,-apple-system,PingFang SC,Microsoft YaHei,sans-serif" font-size="12" font-weight="700" fill="#0284c7" text-anchor="middle">AI策划</text>
-  <text x="121" y="566" font-family="system-ui,-apple-system,PingFang SC,Microsoft YaHei,sans-serif" font-size="10" fill="#64748b" text-anchor="middle">输入目标自动拆解</text>
   <polygon points="190,550 206,543 206,557" fill="#0284c7"/>
   <line x1="188" y1="550" x2="206" y2="550" stroke="#0284c7" stroke-width="1.5"/>
 
   <rect x="208" y="524" width="130" height="52" rx="6" fill="#eff6ff"/>
   <text x="273" y="547" font-family="system-ui,-apple-system,PingFang SC,Microsoft YaHei,sans-serif" font-size="12" font-weight="700" fill="#0284c7" text-anchor="middle">AI内容生成</text>
-  <text x="273" y="566" font-family="system-ui,-apple-system,PingFang SC,Microsoft YaHei,sans-serif" font-size="10" fill="#64748b" text-anchor="middle">批量生成多店版本</text>
   <polygon points="342,550 358,543 358,557" fill="#0284c7"/>
   <line x1="340" y1="550" x2="358" y2="550" stroke="#0284c7" stroke-width="1.5"/>
 
   <rect x="360" y="524" width="130" height="52" rx="6" fill="#eff6ff"/>
   <text x="425" y="547" font-family="system-ui,-apple-system,PingFang SC,Microsoft YaHei,sans-serif" font-size="12" font-weight="700" fill="#0284c7" text-anchor="middle">任务下发</text>
-  <text x="425" y="566" font-family="system-ui,-apple-system,PingFang SC,Microsoft YaHei,sans-serif" font-size="10" fill="#64748b" text-anchor="middle">自动分配到门店</text>
   <polygon points="494,550 510,543 510,557" fill="#0284c7"/>
   <line x1="492" y1="550" x2="510" y2="550" stroke="#0284c7" stroke-width="1.5"/>
 
   <rect x="512" y="524" width="130" height="52" rx="6" fill="#eff6ff"/>
   <text x="577" y="547" font-family="system-ui,-apple-system,PingFang SC,Microsoft YaHei,sans-serif" font-size="12" font-weight="700" fill="#0284c7" text-anchor="middle">门店执行</text>
-  <text x="577" y="566" font-family="system-ui,-apple-system,PingFang SC,Microsoft YaHei,sans-serif" font-size="10" fill="#64748b" text-anchor="middle">拍照上传验收</text>
   <polygon points="646,550 662,543 662,557" fill="#0284c7"/>
   <line x1="644" y1="550" x2="662" y2="550" stroke="#0284c7" stroke-width="1.5"/>
 
   <rect x="664" y="524" width="130" height="52" rx="6" fill="#eff6ff"/>
   <text x="729" y="547" font-family="system-ui,-apple-system,PingFang SC,Microsoft YaHei,sans-serif" font-size="12" font-weight="700" fill="#0284c7" text-anchor="middle">AI验收</text>
-  <text x="729" y="566" font-family="system-ui,-apple-system,PingFang SC,Microsoft YaHei,sans-serif" font-size="10" fill="#64748b" text-anchor="middle">自动识别合规</text>
   <polygon points="798,550 814,543 814,557" fill="#0284c7"/>
   <line x1="796" y1="550" x2="814" y2="550" stroke="#0284c7" stroke-width="1.5"/>
 
   <rect x="816" y="524" width="130" height="52" rx="6" fill="#0284c7"/>
   <text x="881" y="547" font-family="system-ui,-apple-system,PingFang SC,Microsoft YaHei,sans-serif" font-size="12" font-weight="700" fill="#ffffff" text-anchor="middle">复盘报告</text>
-  <text x="881" y="566" font-family="system-ui,-apple-system,PingFang SC,Microsoft YaHei,sans-serif" font-size="10" fill="#bae6fd" text-anchor="middle">自动生成数据报告</text>
 
   <!-- 底部总结 -->
   <rect x="40" y="640" width="1200" height="36" rx="8" fill="#0f172a"/>

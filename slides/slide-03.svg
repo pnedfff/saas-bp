@@ -24,7 +24,6 @@
   <rect x="220" y="90" width="4" height="90" rx="2" fill="#dc2626"/>
   <text x="240" y="114" font-family="system-ui,-apple-system,PingFang SC,Microsoft YaHei,sans-serif" font-size="15" font-weight="700" fill="#0f172a">下达方案</text>
   <text x="240" y="136" font-family="system-ui,-apple-system,PingFang SC,Microsoft YaHei,sans-serif" font-size="13" fill="#475569">设计师赶出5张海报，发到20个店长微信群</text>
-  <text x="240" y="158" font-family="system-ui,-apple-system,PingFang SC,Microsoft YaHei,sans-serif" font-size="13" fill="#64748b">没有点位信息、没有尺寸对应、没有执行截止时间</text>
   <rect x="900" y="98" width="120" height="28" rx="14" fill="#fee2e2"/>
   <text x="960" y="116" font-family="system-ui,-apple-system,PingFang SC,Microsoft YaHei,sans-serif" font-size="12" fill="#dc2626" text-anchor="middle" font-weight="600">信息残缺下达</text>
 
@@ -36,7 +35,6 @@
   <rect x="220" y="205" width="4" height="90" rx="2" fill="#f59e0b"/>
   <text x="240" y="229" font-family="system-ui,-apple-system,PingFang SC,Microsoft YaHei,sans-serif" font-size="15" font-weight="700" fill="#0f172a">混乱开始</text>
   <text x="240" y="251" font-family="system-ui,-apple-system,PingFang SC,Microsoft YaHei,sans-serif" font-size="13" fill="#475569">A问"用哪张？" B说"没收到" C直接贴了旧版</text>
-  <text x="240" y="273" font-family="system-ui,-apple-system,PingFang SC,Microsoft YaHei,sans-serif" font-size="13" fill="#64748b">品牌总监开始逐个回复，耗时2小时，还有7家没响应</text>
   <rect x="900" y="213" width="120" height="28" rx="14" fill="#fef3c7"/>
   <text x="960" y="231" font-family="system-ui,-apple-system,PingFang SC,Microsoft YaHei,sans-serif" font-size="12" fill="#d97706" text-anchor="middle" font-weight="600">执行失控</text>
 
@@ -48,7 +46,6 @@
   <rect x="220" y="320" width="4" height="90" rx="2" fill="#0284c7"/>
   <text x="240" y="344" font-family="system-ui,-apple-system,PingFang SC,Microsoft YaHei,sans-serif" font-size="15" font-weight="700" fill="#0f172a">督导反馈</text>
   <text x="240" y="366" font-family="system-ui,-apple-system,PingFang SC,Microsoft YaHei,sans-serif" font-size="13" fill="#475569">3家贴错 / 2家没贴 / 1家还在用端午节老物料</text>
-  <text x="240" y="388" font-family="system-ui,-apple-system,PingFang SC,Microsoft YaHei,sans-serif" font-size="13" fill="#64748b">实地巡店才发现，来不及纠正，活动已经开始</text>
   <rect x="900" y="328" width="120" height="28" rx="14" fill="#e0f2fe"/>
   <text x="960" y="346" font-family="system-ui,-apple-system,PingFang SC,Microsoft YaHei,sans-serif" font-size="12" fill="#0284c7" text-anchor="middle" font-weight="600">品牌受损</text>
 
@@ -60,27 +57,25 @@
   <rect x="220" y="435" width="4" height="90" rx="2" fill="#6b21a8"/>
   <text x="240" y="459" font-family="system-ui,-apple-system,PingFang SC,Microsoft YaHei,sans-serif" font-size="15" font-weight="700" fill="#0f172a">复盘失败</text>
   <text x="240" y="481" font-family="system-ui,-apple-system,PingFang SC,Microsoft YaHei,sans-serif" font-size="13" fill="#475569">Excel回收率50%，30%点位浪费，半数店长没填报</text>
-  <text x="240" y="503" font-family="system-ui,-apple-system,PingFang SC,Microsoft YaHei,sans-serif" font-size="13" fill="#64748b">无法判断是创意差还是执行差，下次活动继续重蹈覆辙</text>
   <rect x="900" y="443" width="120" height="28" rx="14" fill="#f3e8ff"/>
   <text x="960" y="461" font-family="system-ui,-apple-system,PingFang SC,Microsoft YaHei,sans-serif" font-size="12" fill="#6b21a8" text-anchor="middle" font-weight="600">数据缺失</text>
 
   <!-- 底部后果卡片 -->
-  <text x="640" y="560" font-family="system-ui,-apple-system,PingFang SC,Microsoft YaHei,sans-serif" font-size="12" fill="#94a3b8" text-anchor="middle">这不是偶发事故，而是每次活动的常态</text>
 
   <rect x="40" y="574" width="280" height="64" rx="8" fill="#fee2e2"/>
   <text x="180" y="600" font-family="system-ui,-apple-system,PingFang SC,Microsoft YaHei,sans-serif" font-size="22" font-weight="900" fill="#dc2626" text-anchor="middle">活动效果差</text>
-  <text x="180" y="622" font-family="system-ui,-apple-system,PingFang SC,Microsoft YaHei,sans-serif" font-size="12" fill="#dc2626" text-anchor="middle">30% 点位白白浪费</text>
+  <text x="180" y="622" font-family="system-ui,-apple-system,PingFang SC,Microsoft YaHei,sans-serif" font-size="14" fill="#dc2626" text-anchor="middle">30% 点位白白浪费</text>
 
   <rect x="340" y="574" width="280" height="64" rx="8" fill="#fef3c7"/>
   <text x="480" y="600" font-family="system-ui,-apple-system,PingFang SC,Microsoft YaHei,sans-serif" font-size="22" font-weight="900" fill="#d97706" text-anchor="middle">品牌形象受损</text>
-  <text x="480" y="622" font-family="system-ui,-apple-system,PingFang SC,Microsoft YaHei,sans-serif" font-size="12" fill="#d97706" text-anchor="middle">旧物料、错海报曝光门店</text>
+  <text x="480" y="622" font-family="system-ui,-apple-system,PingFang SC,Microsoft YaHei,sans-serif" font-size="14" fill="#d97706" text-anchor="middle">旧物料、错海报曝光门店</text>
 
   <rect x="640" y="574" width="280" height="64" rx="8" fill="#e0f2fe"/>
   <text x="780" y="600" font-family="system-ui,-apple-system,PingFang SC,Microsoft YaHei,sans-serif" font-size="22" font-weight="900" fill="#0284c7" text-anchor="middle">资源严重浪费</text>
-  <text x="780" y="622" font-family="system-ui,-apple-system,PingFang SC,Microsoft YaHei,sans-serif" font-size="12" fill="#0284c7" text-anchor="middle">设计、印刷、人工全打水漂</text>
+  <text x="780" y="622" font-family="system-ui,-apple-system,PingFang SC,Microsoft YaHei,sans-serif" font-size="14" fill="#0284c7" text-anchor="middle">设计、印刷、人工全打水漂</text>
 
   <rect x="940" y="574" width="300" height="64" rx="8" fill="#f3e8ff"/>
   <text x="1090" y="600" font-family="system-ui,-apple-system,PingFang SC,Microsoft YaHei,sans-serif" font-size="22" font-weight="900" fill="#6b21a8" text-anchor="middle">战略性放弃</text>
-  <text x="1090" y="622" font-family="system-ui,-apple-system,PingFang SC,Microsoft YaHei,sans-serif" font-size="12" fill="#6b21a8" text-anchor="middle">老板开始怀疑营销的价值</text>
+  <text x="1090" y="622" font-family="system-ui,-apple-system,PingFang SC,Microsoft YaHei,sans-serif" font-size="14" fill="#6b21a8" text-anchor="middle">老板开始怀疑营销的价值</text>
 
 </svg>

@@ -48,15 +48,12 @@
   <!-- 图例 -->
   <rect x="310" y="452" width="12" height="12" rx="2" fill="#dc2626" opacity="0.85"/>
   <text x="330" y="463" font-family="system-ui,-apple-system,PingFang SC,Microsoft YaHei,sans-serif" font-size="13" fill="#0f172a">60%  产品研发</text>
-  <text x="330" y="480" font-family="system-ui,-apple-system,PingFang SC,Microsoft YaHei,sans-serif" font-size="12" fill="#64748b">AI能力 / 移动端 / 可视化</text>
 
   <rect x="310" y="496" width="12" height="12" rx="2" fill="#f59e0b" opacity="0.85"/>
   <text x="330" y="507" font-family="system-ui,-apple-system,PingFang SC,Microsoft YaHei,sans-serif" font-size="13" fill="#0f172a">30%  市场拓展</text>
-  <text x="330" y="524" font-family="system-ui,-apple-system,PingFang SC,Microsoft YaHei,sans-serif" font-size="12" fill="#64748b">地推 / 展会 / 种子客户补贴</text>
 
   <rect x="310" y="540" width="12" height="12" rx="2" fill="#0284c7" opacity="0.85"/>
   <text x="330" y="551" font-family="system-ui,-apple-system,PingFang SC,Microsoft YaHei,sans-serif" font-size="13" fill="#0f172a">10%  运营备用</text>
-  <text x="330" y="568" font-family="system-ui,-apple-system,PingFang SC,Microsoft YaHei,sans-serif" font-size="12" fill="#64748b">法务 / 财务 / 不确定性储备</text>
 
   <!-- 右栏 里程碑 + 回报 x=660-1240 -->
   <rect x="660" y="90" width="580" height="580" rx="10" fill="#ffffff"/>
@@ -68,19 +65,16 @@
   <rect x="680" y="136" width="4" height="80" rx="2" fill="#f59e0b"/>
   <text x="700" y="160" font-family="system-ui,-apple-system,PingFang SC,Microsoft YaHei,sans-serif" font-size="12" font-weight="700" fill="#d97706">12个月目标</text>
   <text x="700" y="182" font-family="system-ui,-apple-system,PingFang SC,Microsoft YaHei,sans-serif" font-size="14" fill="#0f172a">100家付费客户，ARR 170万</text>
-  <text x="700" y="204" font-family="system-ui,-apple-system,PingFang SC,Microsoft YaHei,sans-serif" font-size="13" fill="#16a34a">盈亏平衡，产品市场契合验证</text>
 
   <rect x="680" y="228" width="540" height="80" rx="8" fill="#fefce8"/>
   <rect x="680" y="228" width="4" height="80" rx="2" fill="#f59e0b"/>
   <text x="700" y="252" font-family="system-ui,-apple-system,PingFang SC,Microsoft YaHei,sans-serif" font-size="12" font-weight="700" fill="#d97706">24个月目标</text>
   <text x="700" y="274" font-family="system-ui,-apple-system,PingFang SC,Microsoft YaHei,sans-serif" font-size="14" fill="#0f172a">500家客户，ARR 1,000万</text>
-  <text x="700" y="296" font-family="system-ui,-apple-system,PingFang SC,Microsoft YaHei,sans-serif" font-size="13" fill="#0284c7">开放品牌点位广告市场</text>
 
   <rect x="680" y="320" width="540" height="80" rx="8" fill="#fefce8"/>
   <rect x="680" y="320" width="4" height="80" rx="2" fill="#f59e0b"/>
   <text x="700" y="344" font-family="system-ui,-apple-system,PingFang SC,Microsoft YaHei,sans-serif" font-size="12" font-weight="700" fill="#d97706">36个月目标</text>
   <text x="700" y="366" font-family="system-ui,-apple-system,PingFang SC,Microsoft YaHei,sans-serif" font-size="14" fill="#0f172a">市场领导地位，准备A轮融资</text>
-  <text x="700" y="388" font-family="system-ui,-apple-system,PingFang SC,Microsoft YaHei,sans-serif" font-size="13" fill="#6b21a8">点位交易市场网络效应形成</text>
 
   <!-- 投资人预期回报 -->
   <rect x="680" y="416" width="540" height="220" rx="10" fill="#0f172a"/>
@@ -103,6 +97,5 @@
   <text x="1200" y="572" font-family="system-ui,-apple-system,PingFang SC,Microsoft YaHei,sans-serif" font-size="20" font-weight="900" fill="#f59e0b" text-anchor="end">500万-1,200万</text>
 
   <text x="950" y="610" font-family="system-ui,-apple-system,PingFang SC,Microsoft YaHei,sans-serif" font-size="14" font-weight="700" fill="#ffffff" text-anchor="middle">2.5x - 6x 回报</text>
-  <text x="950" y="628" font-family="system-ui,-apple-system,PingFang SC,Microsoft YaHei,sans-serif" font-size="12" fill="#64748b" text-anchor="middle">天使轮200万 → 3年内退出回报</text>
 
 </svg>
