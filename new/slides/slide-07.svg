@@ -26,7 +26,7 @@
   <rect x="660" y="134" width="560" height="120" rx="8" fill="#f0fdf4"/>
   <rect x="660" y="134" width="4" height="120" rx="2" fill="#16a34a"/>
   <text x="680" y="158" font-family="system-ui,-apple-system,PingFang SC,Microsoft YaHei,sans-serif" font-size="13" font-weight="700" fill="#16a34a">我们的方式</text>
-  <text x="680" y="180" font-family="system-ui,-apple-system,PingFang SC,Microsoft YaHei,sans-serif" font-size="13" fill="#475569">AI辅助编程，2人团队，3个月MVP上线</text>
+  <text x="680" y="180" font-family="system-ui,-apple-system,PingFang SC,Microsoft YaHei,sans-serif" font-size="13" fill="#475569">AI辅助编程，2人团队，3个月产品上线</text>
   <text x="680" y="200" font-family="system-ui,-apple-system,PingFang SC,Microsoft YaHei,sans-serif" font-size="13" fill="#475569">服务器成本低（AI按token计费，边际为零）</text>
   <text x="680" y="220" font-family="system-ui,-apple-system,PingFang SC,Microsoft YaHei,sans-serif" font-size="13" fill="#475569">0号客户就是自己，迭代快、试错低</text>
 

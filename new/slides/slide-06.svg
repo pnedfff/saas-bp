@@ -12,13 +12,13 @@
 
   <!-- 主收入卡片 -->
   <rect x="72" y="128" width="240" height="78" rx="8" fill="#fef2f2" stroke="#fecaca" stroke-width="1.5"/>
-  <text x="88" y="150" font-family="system-ui,-apple-system" font-size="11" fill="#dc2626" font-weight="600">主收入  80%</text>
+  <text x="88" y="150" font-family="system-ui,-apple-system" font-size="12" fill="#dc2626" font-weight="600">主收入  80%</text>
   <text x="88" y="172" font-family="system-ui,-apple-system" font-size="15" font-weight="700" fill="#0f172a">年费订阅</text>
   <text x="88" y="194" font-family="system-ui,-apple-system" font-size="12" fill="#64748b">8,000 – 50,000元/年</text>
 
   <!-- 增值卡片 -->
   <rect x="328" y="128" width="240" height="78" rx="8" fill="#f0fdf4" stroke="#bbf7d0" stroke-width="1.5"/>
-  <text x="344" y="150" font-family="system-ui,-apple-system" font-size="11" fill="#16a34a" font-weight="600">增值服务  20%</text>
+  <text x="344" y="150" font-family="system-ui,-apple-system" font-size="12" fill="#16a34a" font-weight="600">增值服务  20%</text>
   <text x="344" y="172" font-family="system-ui,-apple-system" font-size="15" font-weight="700" fill="#0f172a">定制开发</text>
   <text x="344" y="194" font-family="system-ui,-apple-system" font-size="12" fill="#64748b">大客户ERP/CRM对接</text>
 
@@ -29,21 +29,21 @@
   <rect x="72" y="252" width="156" height="88" rx="8" fill="#f8fafc" stroke="#e2e8f0" stroke-width="1.5"/>
   <text x="150" y="278" font-family="system-ui,-apple-system" font-size="12" fill="#64748b" text-anchor="middle">验证期</text>
   <text x="150" y="306" font-family="system-ui,-apple-system" font-size="22" font-weight="800" fill="#dc2626" text-anchor="middle">120万</text>
-  <text x="150" y="328" font-family="system-ui,-apple-system" font-size="11" fill="#94a3b8" text-anchor="middle">1客户·60门店</text>
+  <text x="150" y="328" font-family="system-ui,-apple-system" font-size="12" fill="#94a3b8" text-anchor="middle">1客户·60门店</text>
 
   <text x="238" y="300" font-family="system-ui,-apple-system" font-size="18" fill="#cbd5e1" text-anchor="middle">→</text>
 
   <rect x="252" y="252" width="156" height="88" rx="8" fill="#f8fafc" stroke="#e2e8f0" stroke-width="1.5"/>
   <text x="330" y="278" font-family="system-ui,-apple-system" font-size="12" fill="#64748b" text-anchor="middle">12个月</text>
   <text x="330" y="306" font-family="system-ui,-apple-system" font-size="22" font-weight="800" fill="#dc2626" text-anchor="middle">170万</text>
-  <text x="330" y="328" font-family="system-ui,-apple-system" font-size="11" fill="#94a3b8" text-anchor="middle">100家客户</text>
+  <text x="330" y="328" font-family="system-ui,-apple-system" font-size="12" fill="#94a3b8" text-anchor="middle">100家客户</text>
 
   <text x="418" y="300" font-family="system-ui,-apple-system" font-size="18" fill="#cbd5e1" text-anchor="middle">→</text>
 
   <rect x="432" y="252" width="156" height="88" rx="8" fill="#fef2f2" stroke="#fecaca" stroke-width="1.5"/>
   <text x="510" y="278" font-family="system-ui,-apple-system" font-size="12" fill="#dc2626" text-anchor="middle">24个月</text>
   <text x="510" y="306" font-family="system-ui,-apple-system" font-size="22" font-weight="800" fill="#dc2626" text-anchor="middle">1,000万</text>
-  <text x="510" y="328" font-family="system-ui,-apple-system" font-size="11" fill="#94a3b8" text-anchor="middle">500家客户</text>
+  <text x="510" y="328" font-family="system-ui,-apple-system" font-size="12" fill="#94a3b8" text-anchor="middle">500家客户</text>
 
   <!-- 毛利率 -->
   <text x="72" y="376" font-family="system-ui,-apple-system" font-size="13" font-weight="700" fill="#0f172a">服务成本与利润</text>
@@ -68,15 +68,15 @@
   <!-- 基础版 -->
   <rect x="670" y="152" width="184" height="248" rx="10" fill="#f8fafc" stroke="#e2e8f0" stroke-width="1.5"/>
   <text x="762" y="180" font-family="system-ui,-apple-system" font-size="15" font-weight="700" fill="#0f172a" text-anchor="middle">基础版</text>
-  <text x="762" y="200" font-family="system-ui,-apple-system" font-size="11" fill="#94a3b8" text-anchor="middle">≤30家门店</text>
+  <text x="762" y="200" font-family="system-ui,-apple-system" font-size="12" fill="#94a3b8" text-anchor="middle">≤30家门店</text>
   <line x1="682" y1="210" x2="842" y2="210" stroke="#e2e8f0" stroke-width="1"/>
   <text x="762" y="232" font-family="system-ui,-apple-system" font-size="12" fill="#64748b" text-anchor="middle">年费</text>
   <text x="762" y="262" font-family="system-ui,-apple-system" font-size="28" font-weight="800" fill="#0f172a" text-anchor="middle">¥8,000</text>
-  <text x="762" y="288" font-family="system-ui,-apple-system" font-size="11" fill="#64748b" text-anchor="middle">✓ 广告点位管理</text>
-  <text x="762" y="308" font-family="system-ui,-apple-system" font-size="11" fill="#64748b" text-anchor="middle">✓ 企业素材库</text>
-  <text x="762" y="328" font-family="system-ui,-apple-system" font-size="11" fill="#64748b" text-anchor="middle">✓ 任务全链路</text>
-  <text x="762" y="348" font-family="system-ui,-apple-system" font-size="11" fill="#64748b" text-anchor="middle">✓ 移动App</text>
-  <text x="762" y="385" font-family="system-ui,-apple-system" font-size="11" fill="#94a3b8" text-anchor="middle">小品牌入门</text>
+  <text x="762" y="288" font-family="system-ui,-apple-system" font-size="12" fill="#64748b" text-anchor="middle">✓ 广告点位管理</text>
+  <text x="762" y="308" font-family="system-ui,-apple-system" font-size="12" fill="#64748b" text-anchor="middle">✓ 企业素材库</text>
+  <text x="762" y="328" font-family="system-ui,-apple-system" font-size="12" fill="#64748b" text-anchor="middle">✓ 任务全链路</text>
+  <text x="762" y="348" font-family="system-ui,-apple-system" font-size="12" fill="#64748b" text-anchor="middle">✓ 移动App</text>
+  <text x="762" y="385" font-family="system-ui,-apple-system" font-size="12" fill="#94a3b8" text-anchor="middle">小品牌入门</text>
 
   <!-- 专业版（推荐）-->
   <rect x="870" y="142" width="200" height="268" rx="10" fill="#fff" stroke="#dc2626" stroke-width="2"/>
@@ -84,27 +84,27 @@
   <rect x="870" y="168" width="200" height="18" fill="#dc2626"/>
   <text x="970" y="168" font-family="system-ui,-apple-system" font-size="12" font-weight="700" fill="#fff" text-anchor="middle">★ 最受欢迎</text>
   <text x="970" y="200" font-family="system-ui,-apple-system" font-size="15" font-weight="700" fill="#0f172a" text-anchor="middle">专业版</text>
-  <text x="970" y="220" font-family="system-ui,-apple-system" font-size="11" fill="#94a3b8" text-anchor="middle">30-100家门店</text>
+  <text x="970" y="220" font-family="system-ui,-apple-system" font-size="12" fill="#94a3b8" text-anchor="middle">30-100家门店</text>
   <line x1="882" y1="230" x2="1058" y2="230" stroke="#fecaca" stroke-width="1"/>
   <text x="970" y="252" font-family="system-ui,-apple-system" font-size="12" fill="#64748b" text-anchor="middle">年费</text>
   <text x="970" y="284" font-family="system-ui,-apple-system" font-size="30" font-weight="800" fill="#dc2626" text-anchor="middle">¥20,000</text>
-  <text x="970" y="310" font-family="system-ui,-apple-system" font-size="11" fill="#64748b" text-anchor="middle">✓ 基础版全部</text>
-  <text x="970" y="330" font-family="system-ui,-apple-system" font-size="11" fill="#64748b" text-anchor="middle">✓ AI活动策划</text>
-  <text x="970" y="350" font-family="system-ui,-apple-system" font-size="11" fill="#64748b" text-anchor="middle">✓ AI批量内容生成</text>
-  <text x="970" y="370" font-family="system-ui,-apple-system" font-size="11" fill="#64748b" text-anchor="middle">✓ AI上刊验收</text>
-  <text x="970" y="390" font-family="system-ui,-apple-system" font-size="11" fill="#64748b" text-anchor="middle">✓ 数据看板</text>
+  <text x="970" y="310" font-family="system-ui,-apple-system" font-size="12" fill="#64748b" text-anchor="middle">✓ 基础版全部</text>
+  <text x="970" y="330" font-family="system-ui,-apple-system" font-size="12" fill="#64748b" text-anchor="middle">✓ AI活动策划</text>
+  <text x="970" y="350" font-family="system-ui,-apple-system" font-size="12" fill="#64748b" text-anchor="middle">✓ AI批量内容生成</text>
+  <text x="970" y="370" font-family="system-ui,-apple-system" font-size="12" fill="#64748b" text-anchor="middle">✓ AI上刊验收</text>
+  <text x="970" y="390" font-family="system-ui,-apple-system" font-size="12" fill="#64748b" text-anchor="middle">✓ 数据看板</text>
 
   <!-- 企业版 -->
   <rect x="1086" y="152" width="170" height="248" rx="10" fill="#f8fafc" stroke="#e2e8f0" stroke-width="1.5"/>
   <text x="1171" y="180" font-family="system-ui,-apple-system" font-size="15" font-weight="700" fill="#0f172a" text-anchor="middle">企业版</text>
-  <text x="1171" y="200" font-family="system-ui,-apple-system" font-size="11" fill="#94a3b8" text-anchor="middle">&gt;100家或定制</text>
+  <text x="1171" y="200" font-family="system-ui,-apple-system" font-size="12" fill="#94a3b8" text-anchor="middle">&gt;100家或定制</text>
   <line x1="1098" y1="210" x2="1244" y2="210" stroke="#e2e8f0" stroke-width="1"/>
   <text x="1171" y="232" font-family="system-ui,-apple-system" font-size="12" fill="#64748b" text-anchor="middle">年费起</text>
   <text x="1171" y="262" font-family="system-ui,-apple-system" font-size="24" font-weight="800" fill="#0f172a" text-anchor="middle">¥50,000</text>
-  <text x="1171" y="288" font-family="system-ui,-apple-system" font-size="11" fill="#64748b" text-anchor="middle">✓ 专业版全部</text>
-  <text x="1171" y="308" font-family="system-ui,-apple-system" font-size="11" fill="#64748b" text-anchor="middle">✓ 定制功能</text>
-  <text x="1171" y="328" font-family="system-ui,-apple-system" font-size="11" fill="#64748b" text-anchor="middle">✓ 对接第三方管理系统</text>
-  <text x="1171" y="385" font-family="system-ui,-apple-system" font-size="11" fill="#94a3b8" text-anchor="middle">价格面议</text>
+  <text x="1171" y="288" font-family="system-ui,-apple-system" font-size="12" fill="#64748b" text-anchor="middle">✓ 专业版全部</text>
+  <text x="1171" y="308" font-family="system-ui,-apple-system" font-size="12" fill="#64748b" text-anchor="middle">✓ 定制功能</text>
+  <text x="1171" y="328" font-family="system-ui,-apple-system" font-size="12" fill="#64748b" text-anchor="middle">✓ 对接第三方管理系统</text>
+  <text x="1171" y="385" font-family="system-ui,-apple-system" font-size="12" fill="#94a3b8" text-anchor="middle">价格面议</text>
 
   <!-- 性价比说明 -->
   <rect x="670" y="424" width="586" height="56" rx="8" fill="#fef2f2" stroke="#fecaca" stroke-width="1"/>
@@ -112,6 +112,6 @@
   <text x="963" y="470" font-family="system-ui,-apple-system" font-size="12" fill="#64748b" text-anchor="middle">专为中小连锁 3-100家门店设计，开箱即用，无需培训</text>
 
   <!-- 底部页码 -->
-  <text x="640" y="695" font-family="system-ui,-apple-system" font-size="11" fill="#94a3b8" text-anchor="middle">店盈AI · 商业计划书 2026 · 第6页</text>
+  <text x="640" y="695" font-family="system-ui,-apple-system" font-size="12" fill="#94a3b8" text-anchor="middle">店盈AI · 商业计划书 2026 · 第6页</text>
   <rect x="0" y="716" width="1280" height="4" fill="#dc2626"/>
 </svg>
